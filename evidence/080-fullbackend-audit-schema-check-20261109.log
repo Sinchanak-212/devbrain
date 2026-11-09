@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "C:\Users\piotr\OneDrive\Dokumenty\ChatGPT\devbrain\evidence\audit-fullbackend-native-failure-20261109.py", line 39, in <module>
-    assert sup["unobservable_external_processes"] == []
-AssertionError

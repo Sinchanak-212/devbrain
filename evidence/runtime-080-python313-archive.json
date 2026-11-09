@@ -1,9 +1,0 @@
-{
-  "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20261026/cpython-3.13.18%2B20261026-x86_64-unknown-linux-gnu-install_only_stripped.tar.gz",
-  "sha256": "df15fe60d3ff55bf9dcf25824b5572756bb8816ff93865a273d3301d7066a8b7",
-  "python": "/home/piotr/.cache/devbrain-runtime-080/python313/runtime/python/bin/python3.13",
-  "venv": "/home/piotr/.cache/devbrain-runtime-080/python313/venv",
-  "release_source": "https://www.python.org/downloads/release/python-31318/",
-  "asset_digest_source": "https://api.github.com/repos/astral-sh/python-build-standalone/releases/tags/20261026",
-  "dependency_pins_sha256": "da5edd5506fe2ed399445d193aaec9f3ebe021acac4510f888f4474258646d6a"
-}

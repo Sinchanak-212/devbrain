@@ -1,6 +1,0 @@
-{"phase": "starting", "client": "codex"}
-{"phase": "finished", "client": "codex", "status": "passed", "error_code": null}
-{"phase": "starting", "client": "claude"}
-{"phase": "finished", "client": "claude", "status": "passed", "error_code": null}
-{"phase": "starting", "client": "codex"}
-{"phase": "finished", "client": "codex", "status": "passed", "error_code": null}

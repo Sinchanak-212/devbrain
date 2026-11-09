@@ -1,5 +1,0 @@
-{
-  "status": "passed",
-  "command": "uv pip check --python /home/piotr/.local/share/uv/tools/devbrain/bin/python",
-  "observed_at": "2026-11-07T11:13:05.4263420+01:00"
-}

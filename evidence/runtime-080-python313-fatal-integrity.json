@@ -1,9 +1,0 @@
-{
-  "binary": "/home/piotr/.cache/devbrain-runtime-080/python313/runtime/python/bin/python3.13",
-  "expected_sha256": "e314bd43fc9c17769c3bd276ca7aafa1462af1b2364a7c908a6cf82e60a92281",
-  "actual_sha256": "e314bd43fc9c17769c3bd276ca7aafa1462af1b2364a7c908a6cf82e60a92281",
-  "matches_archive": true,
-  "core_sha256": "6e3e73f1ea05ab572fb93e0906532fd7fbb8861ccf93eca9412fee7092179c39",
-  "core_bytes": 17833984,
-  "owned_live_pids": []
-}

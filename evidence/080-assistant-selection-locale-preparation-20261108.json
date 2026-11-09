@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_assistant_selection_persistence_locale_preparation",
+  "status": "static_prepared_pending_fresh_runtime_qualification",
+  "created_utc": "2026-11-08T16:04:17.309964+00:00",
+  "files": {
+    "devbrain/src/devbrain/terminal_panels.py": "4f5a522837642c224f7226db585bec5f5b263adbc969af63464ee4e84fb60028",
+    "devbrain/src/devbrain/workspace_state.py": "9049b85a71892e4097deb3c7c35d6e76069ade33f8df51768e4f503a78fa5dc2",
+    "devbrain/src/devbrain/terminal_i18n.py": "40eb2f5f5d68e987331c44a6fc27a2245ccb05b1c0952e00fce89f5d6f39869f",
+    "devbrain/src/devbrain/terminal_ui.py": "6476f6dd978aba2078c6156e6f9bd81202ec81317b0d685be910f80e8ad375d3",
+    "devbrain/tests/test_terminal_ux080.py": "d41d975488ad8cf3672deeea4e0eced47479973ec1b98623505ac7bfa85277a3",
+    "devbrain/tests/test_workspace_state.py": "008c02c2b2f1cebb865dedef3457f1d49441ccd5c5a4b18ec25fe5aa8590ef09"
+  },
+  "previous_files": {
+    "devbrain/src/devbrain/terminal_panels.py": "daf342508b38ec695445a11f5bd1c063896be79b45ab8caf72adab7d46fbe8fe",
+    "devbrain/src/devbrain/workspace_state.py": "831464ed6f0035fcd7599c3c6e44a43e069f8e60375b5e02111f6538e26cff2f",
+    "devbrain/src/devbrain/terminal_i18n.py": "bb3f7a801a1bd5ed78424d7a456f0e93246559800b8c7a9ead54f72117644c52",
+    "devbrain/src/devbrain/terminal_ui.py": "1b438a20575c3630112c30c933f0a6aec4d67c47b11b083fbef7ec90dae81150",
+    "devbrain/tests/test_terminal_ux080.py": "9c5bdd4b550835abcb8c0dad97c99f3a3c2dc3d9fe5c2f17e16c9ec5cb80dd9f",
+    "devbrain/tests/test_workspace_state.py": "94807743c44beba1780fead62b161a83c1e4771e63fe60839688e28a4cf1290b"
+  },
+  "source_baseline_run": "app080-20261108T145550Z",
+  "source_baseline_sha256": "0fa3de9de99966b92aeea416417e97a0dca718e114fb8812ff6fc0662d2805de",
+  "source_file_count": 198,
+  "only_six_owned_files_changed": true,
+  "windows_ast_passed": 6,
+  "old_test_functions_and_assertions_unchanged": true,
+  "new_authored_cases": 30,
+  "new_locale_error_cases": 10,
+  "planned_ux_cases": 377,
+  "planned_ux_modules": 28,
+  "planned_full_suite_cases": 1508,
+  "actual_collection_authoritative": true,
+  "runtime_tests": "not_run",
+  "linux_processes_started": false,
+  "acceptance_passed": false,
+  "frozen_sources_and_529_helpers_modified": false,
+  "previous_preparation": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-assistant-selection-persistence-preparation-20261108.json",
+  "previous_preparation_sha256": "6d5ffc1e644ab46ad399ebf85b09acc555ef6a299805ff66c8efc762d3517f59",
+  "minimal_locale_delta": [
+    "Four new preference-validation errors mapped to Polish",
+    "Exact existing stale_workspace_revision Polish message maps to English via legacy catalog",
+    "Explicit choose catches known persistence failures and routes exception through standard notice without changing selected slot",
+    "Generic worker error passes original exception to localized safe literal notice, without concatenating untranslated prefix"
+  ],
+  "meaningful_error_coverage": [
+    "Real revision-CAS conflict during keyboard choice EN/PL retains previous preference and concurrent writer state",
+    "Real WorkspaceState validation failures in Textual worker EN/PL render all four localized errors and preserve state"
+  ],
+  "source_runtime_api_auth_cas_semantics_unchanged": true,
+  "new_source_candidate_required": true
+}

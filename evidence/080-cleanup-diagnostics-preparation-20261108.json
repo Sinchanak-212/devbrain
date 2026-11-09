@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "status": "prepared_not_run",
+  "files": {
+    "validate-native-account080.py": "a9d36ab4806ce2499ba57f0293edf516125d23d5804802ed6b4396bea1064765",
+    "run-regressions-080.py": "b5c936e29d81cc9d7fcf2ffe40aa88b495e5b8ed94b6cacb935bcc19c3ded68d",
+    "test_account080_guards.py": "860d7311f0f1b0564227ad4666fd325c04f05b25162f9ce645883a76aada35c9",
+    "test_regressions080_guards.py": "0e96dc40574ce678f54c7ed5229afe745cabcbceb1dbf827c7fb83cb5f638c2b"
+  },
+  "windows_ast": "passed",
+  "common_outside_quiet_scope_byte_identical": true,
+  "oauth_cas_unchanged": true,
+  "predicate_deadline_signals_cleanup_unchanged": true,
+  "metadata_fields": [
+    "pid",
+    "birth",
+    "state",
+    "uid",
+    "parent_pid",
+    "executable",
+    "control_group",
+    "scope_unit",
+    "scope_cgroup_identity",
+    "capture_status"
+  ],
+  "forbidden_metadata": [
+    "cmdline",
+    "environment",
+    "cwd",
+    "credential_values",
+    "source_content"
+  ],
+  "new_guard_cases": 6,
+  "expected_total_guard_cases": 362,
+  "linux_tests_run": false,
+  "historical_bundles_changed": false,
+  "application_source_changed": false,
+  "failure_evidence": "evidence/080-ux-cleanup-failure-20261108.json",
+  "frozen": true,
+  "peer_review_status": "readonly_ack_no_concrete_blocker",
+  "peer_review_sha256": "931545befca5f81cdcbafb549094087e95f60ec85934eefce03b951e59f6c2ee",
+  "peer_review": "evidence/080-cleanup-diagnostics-peer-review-20261108.json"
+}

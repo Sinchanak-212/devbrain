@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_final594_gate_stager_static_peer_review",
+  "status": "static_ack_pending_actual_fixture_report",
+  "created_utc": "2026-11-08T17:15:27.523642+00:00",
+  "stager": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-final-gates-594-20261108.ps1",
+  "stager_sha256": "40b635a8727ed6522fbd47c23b9d3f8b5b5c787a44ef4cc68181823b62267d57",
+  "reviewer": "release_review",
+  "concrete_blockers": [],
+  "checks": [
+    "Default without -Stage returns before any staging; no workload/process launch commands.",
+    "Complete named fresh5 report, exact SHA, five unique modes, expected negative raw verdicts, retained actual exits and quiet periods are checked before new filesystem roots.",
+    "All55 frozen inputs and38helper SHA, current198source, actual594 receipt, currentUX/UI and v4 candidate are rechecked.",
+    "Actual normal/nonzero/timeout/orphan oracle field shapes and processor hashes match read-only current records; parent-loss final aggregate still pending at review.",
+    "Safe relative paths, canonical/no-reparse guards, CreateNew publication and pre/post-copy hash checks preserve historical roots.",
+    "Only run/artifact placeholders are substituted in previously reviewed5 specification objects; source160614/literalvenv and exactargument sets are retained.",
+    "Published contexts remain launch_permitted=false and require root serial handoff; no software/release qualification claimed."
+  ],
+  "limitations": [
+    "This is static review, not execution of -Stage. Exact final fixture report must exist and satisfy all conditions before staging.",
+    "No Linux workload, production data, OAuth content or credential hash read."
+  ],
+  "linux_started": false,
+  "production_modified": false
+}

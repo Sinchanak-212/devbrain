@@ -1,0 +1,98 @@
+{
+  "process_signalling_tested": false,
+  "passed": true,
+  "scope": "devbrain_parent_loss_windows_guards",
+  "real_power_api_called": false,
+  "source_sha256": "425afb692abe364b2be3295eb2a25392351a04ed628cb05ac82eafb50f17343f",
+  "linux_started": false,
+  "checks": [
+    {
+      "passed": true,
+      "case": "none",
+      "errors": [],
+      "restore_attempts": 1
+    },
+    {
+      "passed": true,
+      "case": "kill",
+      "errors": [
+        "Cleanup: synthetic kill"
+      ],
+      "restore_attempts": 1
+    },
+    {
+      "passed": true,
+      "case": "wait",
+      "errors": [
+        "Cleanup: synthetic wait"
+      ],
+      "restore_attempts": 1
+    },
+    {
+      "passed": true,
+      "case": "flush",
+      "errors": [
+        "Cleanup: synthetic flush"
+      ],
+      "restore_attempts": 1
+    },
+    {
+      "passed": true,
+      "case": "restore",
+      "errors": [
+        "Sleep restoration: synthetic restore"
+      ],
+      "restore_attempts": 1
+    },
+    {
+      "passed": true,
+      "case": "dispose",
+      "errors": [
+        "Handle disposal: synthetic dispose"
+      ],
+      "restore_attempts": 1
+    },
+    {
+      "passed": true,
+      "case": "hash",
+      "errors": [],
+      "restore_attempts": 1
+    },
+    {
+      "passed": true,
+      "case": "publish",
+      "errors": [],
+      "restore_attempts": 1
+    },
+    {
+      "passed": true,
+      "case": "multiple",
+      "errors": [
+        "Cleanup: synthetic multiple",
+        "Sleep restoration: synthetic restore",
+        "Handle disposal: synthetic dispose"
+      ],
+      "restore_attempts": 1
+    },
+    {
+      "passed": true,
+      "case": "parent_streams_oracle_exited_False",
+      "close_calls": 0
+    },
+    {
+      "passed": true,
+      "case": "parent_streams_oracle_exited_True",
+      "close_calls": 1
+    },
+    {
+      "passed": true,
+      "case": "power_command_failure_False",
+      "real_power_api_called": false
+    },
+    {
+      "passed": true,
+      "case": "power_command_failure_True",
+      "real_power_api_called": false
+    }
+  ]
+}

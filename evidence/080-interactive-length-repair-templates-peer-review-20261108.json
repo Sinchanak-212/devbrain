@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_length_repair_interactive_metadata_peer",
+  "status": "static_ack_not_run",
+  "master_sha256": "5f7a9ffe5467eaa2f203986a7385fe60243da249dd6e3b023792f0b72f0c45a4",
+  "stager_sha256": "992ef717655b1c901e556034a32af781a092ae47fb8367523e3a70038b78bf29",
+  "template_hashes_verified": 3,
+  "exact_spec_transform": "Only source and literal venv 192100 to202627; all23argv/env/artifacts unchanged",
+  "protocol_sha256": "054b1795dead1de89fac3faebd1596b1d223c86ffa0b2f1e42f12e9319e39392",
+  "same_five_tasks_three_os_observations": true,
+  "stager_delta": "Only current source/preparation/guard/V7 binding names and completed backend1537 to1557 count; prior strict future-proof admission preserved",
+  "future_backend_queue_ux_proofs_required": true,
+  "launch_performed": false,
+  "linux_executed": false,
+  "credentials_read": false,
+  "blockers": []
+}

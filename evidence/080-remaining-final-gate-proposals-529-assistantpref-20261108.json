@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_remaining_final_gate_proposals",
+  "status": "prepared_not_run_pending_current_ui_candidate_and_actual_final_gates",
+  "source_snapshot": "app080-20261108T160614Z",
+  "source_freeze_sha256": "5ea43988e1943c783e802acbe5a39fdfcc3318d41655ed244716a69a0d71b28f",
+  "app_prepare_receipt_sha256": "90aa2c03898b1dd5d5bb9602c58618ddc6daeadc15776740ea7bdf556491f02c",
+  "guard_receipt_sha256": "9f6c16a82b820b06135ecb073ba85223f002a5b31cacf8276ec06996d43782d2",
+  "helper_count": 36,
+  "guard_cases": 529,
+  "ux_receipt_sha256": "91ed4dbfb8e7de42f5244d8418b08c460497876076e3835152d714253fadc271",
+  "candidate_updater_sha256": null,
+  "candidate_zip_sha256": null,
+  "current_UI_receipt_sha256": null,
+  "full_suite_attestation_sha256": null,
+  "launch_permitted": false,
+  "linux_workload_started": false,
+  "private_backup_or_credentials_read": false,
+  "production_remains_stopped": true,
+  "proposals": {
+    "queue_copy": {
+      "specification_sha256": "7ce8d661a9e75ca11ced73037b0bd622ae97a30a32f949bc5333c5e12411f66e",
+      "launch_permitted": false,
+      "input_files": 22,
+      "context": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-queue-copy-assistantpref-proposal-20261108.json",
+      "input_freeze_sha256": "9c8a0aeb05bac2aa13a66f55da4e20d510c11085867da9ea2e22387b7c527e46",
+      "windows_root": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\queue-copy-final080-proposal-20261108T163149Z-66a7c488",
+      "context_sha256": "d83f8afd47aee0bb65635ea7a8ba78db938b8cc355936f82ff4d9dd60b2b0099"
+    },
+    "upgrade_smoke": {
+      "specification_sha256": "9825d2a34f3734dc24a098731df1987b8793dfe7a83418258332c30fc12b3f86",
+      "launch_permitted": false,
+      "input_files": 22,
+      "context": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-updater-smoke-assistantpref-proposal-20261108.json",
+      "input_freeze_sha256": "0572bc62a4c0e6b2ea59eeef821c679f5c110ebaeee338ad4d1bae50cf265333",
+      "windows_root": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\smoke-final080-proposal-20261108T163149Z-3d22658f",
+      "context_sha256": "69ad40d8a825898f0797cf20c8d8a4d2bcb1af9744c28a15f2d4c1a9b6387077"
+    },
+    "full_suite_attestation": {
+      "specification_sha256": "806d37120de6583b9e421f05278119e0d07a5c037d8e85476514a974b3c33434",
+      "launch_permitted": false,
+      "input_files": 21,
+      "context": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-full-suite-attestation-assistantpref-proposal-20261108.json",
+      "input_freeze_sha256": "a074213bc835538620dcb145255b5ed72e0c7ddcb3e3d5463adda639d678c4bc",
+      "windows_root": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\suite-attest080-proposal-20261108T163149Z-c5b36fb7",
+      "context_sha256": "5aa8eecbb79b565d40ba5395644f02b0336678c86f73cacc85296a43a06372af"
+    },
+    "soak": {
+      "specification_sha256": "b88616211459d8e612a96f85b3229f4ac10fbe8dd09524444c77ba27e337eaaa",
+      "launch_permitted": false,
+      "input_files": 21,
+      "context": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-soak-assistantpref-proposal-20261108.json",
+      "input_freeze_sha256": "d0f46ff1d273a610600853c8c7d11142ae2934e5837f6a0b6afbad60007900c5",
+      "windows_root": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\soak-final080-proposal-20261108T163149Z-761af190",
+      "context_sha256": "4f0a5a807ed5a2b38691b1e54700c978f8807be9511eae3d1a9fe51d8d42e542"
+    }
+  },
+  "standalone_attestor_requires_actual_process_exit_and_output_hash": true,
+  "all_prior_contexts_preserved": true,
+  "created_utc": "2026-11-08T16:32:01.4131203Z"
+}

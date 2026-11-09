@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "scope": "interactive_locale_environment_ordering",
+  "status": "static_peer_review_ack_tests_not_run",
+  "recorded_utc": "2026-11-08T11:27:28.4386865Z",
+  "files_sha256": {
+    "run-interactive-ux080.py": "0c0bb05b2165f509b77026a5ffefd39d0aabccd5e9f45682a2371df065b9c1bc",
+    "validate-native-account080.py": "b093d5a6aa9bfb39a769ff9184fc08db6210f00535d4439db0cffc07bd221e27",
+    "test_interactive_ux080_guards.py": "15127894b67fcd65d78e377c63a27e6362417e5253086ed9ad72621faad218e5",
+    "test_account080_guards.py": "cb6053946249551aba79ba22676040f5823b484f535e21e34fcf330bed1a7ca5"
+  },
+  "baseline_bundle": "guards-cleanup080-20261108T103318Z",
+  "changed_runtime_helpers": [
+    "run-interactive-ux080.py: attach and workload compute clean_environment before os.environ.clear",
+    "validate-native-account080.py: clean_environment allowlist includes LC_CTYPE"
+  ],
+  "auth_cas_behavior_changed": false,
+  "other_common_bytes_unchanged": true,
+  "other_interactive_bytes_unchanged": true,
+  "application_source_changed": false,
+  "live_bundle_modified": false,
+  "windows_ast_passed": 4,
+  "linux_started": false,
+  "tests_executed": false,
+  "new_guard_cases": 5,
+  "expected_full_guard_case_count": 367,
+  "actual_collection_authoritative": true,
+  "guard_scope": [
+    "attach and controller actual three-statement environment boundaries preserve input locale and do not clear input if cleaner fails",
+    "real clean_environment retains LANG/LC_ALL/LC_CTYPE/TZ/certificate paths but omits unrelated private environment"
+  ],
+  "peer_review": "evidence/080-interactive-locale-peer-review-20261108.json",
+  "peer_review_sha256": "c56d5b57f318b543e87313daf7eb6cd5d3d07e04eeb32c495c60e4ec63547de4",
+  "peer_reviewer": "release_review",
+  "remaining_preexisting_out_of_scope": [
+    "Native-account main entrypoint still clears before clean_environment; root notified. This delta deliberately covers interactive controller/attach only."
+  ],
+  "next_step": "Root stages a fresh reviewed helper bundle and runs the complete guard collection later; no qualification or live process change claimed."
+}

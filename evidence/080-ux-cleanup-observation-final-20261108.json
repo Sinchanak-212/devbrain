@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "status": "failed_cleanup_verified_owned_tmux_after_all_pytest_passed",
+  "passed": false,
+  "run_id": "ux080-20261108T103653Z",
+  "actual_windows_exit_code": 1,
+  "windows_exec_session": 20375,
+  "receipt": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux080-20261108T103653Z\\artifacts\\receipt.json",
+  "receipt_sha256": "fcd69a5becf800dfd9107162090fbd05889edcd0edb39b18a3a2adf1e2a4fa5f",
+  "receipt_artifact_hashes_verified": true,
+  "receipt_artifact_count": 8,
+  "pytest_counts": {
+    "collected": 303,
+    "passed": 303,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0,
+    "unexpected_skips": 0,
+    "duplicates": 0,
+    "missing": 0,
+    "expected_skips": {},
+    "observed_skips": {}
+  },
+  "modules": [
+    "tests/test_api_worker.py",
+    "tests/test_api_workspace_e2e.py",
+    "tests/test_client_runtime.py",
+    "tests/test_cockpit_cli.py",
+    "tests/test_cockpit_migration.py",
+    "tests/test_cockpit_server.py",
+    "tests/test_cockpit_state.py",
+    "tests/test_graph_raster.py",
+    "tests/test_graph_widget_rendering.py",
+    "tests/test_memory_tui.py",
+    "tests/test_runtime_pane.py",
+    "tests/test_terminal_bridge.py",
+    "tests/test_terminal_client.py",
+    "tests/test_terminal_commands.py",
+    "tests/test_terminal_graph.py",
+    "tests/test_terminal_latency080.py",
+    "tests/test_terminal_panels.py",
+    "tests/test_terminal_preview.py",
+    "tests/test_terminal_ux080.py",
+    "tests/test_terminal_workspace_e2e.py",
+    "tests/test_tui.py",
+    "tests/test_workspace.py",
+    "tests/test_workspace_background_inference.py",
+    "tests/test_workspace_cli.py",
+    "tests/test_workspace_state.py",
+    "tests/test_workspace_ux080.py"
+  ],
+  "latency_properties": [
+    {
+      "nodeid": "tests/test_terminal_latency080.py::test_local_input_remains_responsive_during_three_second_backend_delay[size0]",
+      "keyboard_samples": "50",
+      "keyboard_to_refresh_p95_ms": "31.753",
+      "maximum_ui_loop_interval_ms": "109.934",
+      "controlled_backend_delay_seconds": "3"
+    },
+    {
+      "nodeid": "tests/test_terminal_latency080.py::test_local_input_remains_responsive_during_three_second_backend_delay[size1]",
+      "keyboard_samples": "50",
+      "keyboard_to_refresh_p95_ms": "125.732",
+      "maximum_ui_loop_interval_ms": "129.085",
+      "controlled_backend_delay_seconds": "3"
+    }
+  ],
+  "pytest_junit_sha256": "2a19c4d999c22efb322af44e88a88241b8592daea561139e4a1b0367d36d2235",
+  "cleanup_observation": {
+    "scope_unit": "devbrain-q-b8e1291bdd5743fa93f823fe94df6d4a.scope",
+    "control_group": "/user.slice/user-1000.slice/user@1000.service/app.slice/devbrain-q-b8e1291bdd5743fa93f823fe94df6d4a.scope",
+    "scope_cgroup_identity": "25:2961",
+    "processes": [
+      {
+        "pid": 7376,
+        "birth": "20540",
+        "state": "S",
+        "uid": 1000,
+        "parent_pid": 463,
+        "executable": "/home/piotr/.cache/devbrain-runtime-080/runtimes/tmux-3.8/bin/tmux",
+        "control_group": "/user.slice/user-1000.slice/user@1000.service/app.slice/devbrain-q-b8e1291bdd5743fa93f823fe94df6d4a.scope"
+      }
+    ],
+    "capture_status": "verified_owned"
+  },
+  "remaining_descendant_identity_recorded": true,
+  "root_cause_confirmed": false,
+  "controller_errors": [
+    "owned_descendant_remains"
+  ],
+  "controller_cleanup_complete": false,
+  "supervisor_cleanup_complete": true,
+  "external_receipt_cleanup_complete": false,
+  "supervisor_forced_cleanup": true,
+  "external_receipt_forced_cleanup": true,
+  "engine": {
+    "started": true,
+    "actual_exit_verified": true,
+    "forced_cleanup": false,
+    "ready": true,
+    "unexpected_exit_before_shutdown": false,
+    "graceful_shutdown_requested": true,
+    "returncode": 143,
+    "cleanup_complete": true
+  },
+  "scope_empty_verified": true,
+  "remaining_scope_processes": [],
+  "remaining_tagged_processes": [],
+  "native_failure": false,
+  "new_wsl_dumps": [],
+  "new_kernel_fatals": [],
+  "initial_boot_id": "7410e0ab-52dc-43b0-a59c-c4807efc916a",
+  "final_boot_id": "7410e0ab-52dc-43b0-a59c-c4807efc916a",
+  "scope_cleanup_grace_seconds": 30.88184899999999,
+  "cleanup_grace_seconds": 33,
+  "sleep_inhibition": {
+    "restored": true,
+    "thread_id": 10,
+    "previous_flags": 2147483648,
+    "acquired": true,
+    "requested_flags": 2147483649
+  },
+  "full_suite_pass": false,
+  "ux_qualification_pass": false,
+  "history_preserved": true,
+  "smoke_handoff_granted": false
+}

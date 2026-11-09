@@ -1,0 +1,94 @@
+{
+  "production_accessed": false,
+  "status": "ack_actual_native_and_copilot",
+  "schema_version": 1,
+  "readers_or_CLIs_rerun": false,
+  "findings": [],
+  "credential_stores_read": false,
+  "continuous_eight_hours_qualified": false,
+  "reviewer_linux_execution": false,
+  "existing_artifacts_or_contexts_modified": false,
+  "credentials_or_principals_exported": false,
+  "scope": "devbrain_native_and_copilot_independent_final_evidence_peer",
+  "created_utc": "2026-11-08T17:58:05.5820217Z",
+  "application_full_release_qualification": false,
+  "trials": [
+    {
+      "receipt_sha256": "259a008f7e7f6ef51fc49a3039fd8562bdde8a54c2172057a13d714e99e3f681",
+      "final_report_sha256": "30f863d1084c3b3f636a44a4db0f3e11d8b0e6b333d8be3d20e89f91be7278a3",
+      "context": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-native-deploy-active-context-20261108.json",
+      "kind": "native",
+      "outer_post_exit_seconds": 33,
+      "phase_facts": {
+        "real_native_compaction_tested": false,
+        "phase_clients": [
+          "codex",
+          "claude",
+          "codex"
+        ],
+        "fresh_phases": 3,
+        "previous_ack_invalidated_for_phases2and3": true,
+        "oauth_lease_released": true,
+        "oauth_phase_and_final_sync_passed": true,
+        "exact_packet_ack_verified": true,
+        "synthetic_precompact_event": true
+      },
+      "native_boot_power_sleep_clean": true,
+      "artifact_sha256": {
+        "supervisor-report.json": "68b244c62649e9ee69542a7c1d12a3283974a1c8c7d4ab9e69e301e15c1f5f87",
+        "controller-report.json": "b446b6a900d4192ad4ca76c6c2db9638f7a6d5ec1a3800ae9046c6e8a4a87956",
+        "native-results.json": "e548f57c553b4c9ea5d837f7223295773f18ba4001b7a4651dbd2cd41c82f36a",
+        "power-samples.jsonl": "77232c4662e1f20f6c0ae03cfea5b5ea8faa8e141d1a65d3ddde6d46acf5d2b4",
+        "gate.json": "a6bd365cea68986ed6795990272c766679bbd29fd9407e904a12c2956bcdf7fb"
+      },
+      "receipt_artifacts_rehashed": 5,
+      "helper_hashes_reverified": 38,
+      "actual_root_exec_session": 69948,
+      "graceful_engine_shutdown": true,
+      "scope_quiet_seconds": 30.475369799999996,
+      "context_sha256": "56fe9263320ba39be5050c94c5eece0dbe17a1c4e7b8154a74e4f3faac982fa4",
+      "scope_empty_verified": true,
+      "actual_root_exit": 0,
+      "private_oauth_contents_exported": false,
+      "power_samples_verified": 7,
+      "owned_engine_actual_exit_verified": true
+    },
+    {
+      "receipt_sha256": "abdaf4afaf1898e8b00332f329268b0a3a700ed9f764596033a398d1741e54fa",
+      "final_report_sha256": "c7d22cf187dac418a2f177d74d3a31582e3d01fa47ba491acf1153997e7b3b6e",
+      "context": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-copilot-deploy-active-context-20261108.json",
+      "kind": "copilot",
+      "outer_post_exit_seconds": 34,
+      "phase_facts": {
+        "actual_model_ack_verified": true,
+        "protocol_order_verified": true,
+        "project_unchanged": true,
+        "api_key_provided": false,
+        "file_read_verified": true,
+        "only_owned_database_removed": true,
+        "oauth_store_reused": true,
+        "oauth_lease_released": true,
+        "response_contains_marker": true
+      },
+      "native_boot_power_sleep_clean": true,
+      "artifact_sha256": {
+        "supervisor-report.json": "04b840d4992221b80ad5924d7835aa0e8cad2402c04b0dd25929d5e1183580a8",
+        "controller-report.json": "5540ea5fae3edbcce2ba3d1f69fe6b45482c2df1015aa11d1d1044b3e7eb1475",
+        "gate.json": "a6bd365cea68986ed6795990272c766679bbd29fd9407e904a12c2956bcdf7fb",
+        "copilot-results.json": "8e8569b1ea938e573dab8b50018b72664c300aa7421f43dd4e0e668ff5d7eb31",
+        "power-samples.jsonl": "28471ab7caa4282572842fa48d6e4f0093c46a8cfbd8717a30e39911f1ef5cb9"
+      },
+      "receipt_artifacts_rehashed": 5,
+      "helper_hashes_reverified": 38,
+      "actual_root_exec_session": 69166,
+      "graceful_engine_shutdown": true,
+      "scope_quiet_seconds": 30.349908,
+      "context_sha256": "a51308cecc5c5bae60db07cb936767824c5f6a08b077537b82bf6a441432232a",
+      "scope_empty_verified": true,
+      "actual_root_exit": 0,
+      "private_oauth_contents_exported": false,
+      "power_samples_verified": 5,
+      "owned_engine_actual_exit_verified": true
+    }
+  ]
+}

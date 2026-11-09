@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_final_ux_ui_529_templates",
+  "status": "prepared_not_run_pending_actual529",
+  "template_root": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\ux-ui-529-templates-20261108",
+  "files": {
+    "ux.spec.template.json": "f41d327859ce033f91f4c290b25b04189632282caccfcaddadda95c607d31cf1",
+    "ux.context.template.json": "3e6763d7f20f269c08abb7e1a9481f8e019e1bcb587e94a12d317e2c9ee559d8",
+    "interactive.spec.template.json": "e321ecd2602daedaa6dc536fde3a44a42c71104c9556a1cf25d801caca4f0cd4",
+    "interactive.context.template.json": "bd6bc9ba00485f75e015d80a51b60de2ce06dbc35fa885d93231bebf3f00ddfc"
+  },
+  "source_snapshot": "app080-20261108T145550Z",
+  "source_freeze_sha256": "0fa3de9de99966b92aeea416417e97a0dca718e114fb8812ff6fc0662d2805de",
+  "app_prepare_receipt_sha256": "29b0e5eae06fd68b858af37c05ee05995621365cebd3ddf8c91091314962c65d",
+  "candidate_updater_sha256": "76dbc0fc548024d7e0f60a6dc1337e122c27cf5c1be5ac8eb4319116519f0a07",
+  "candidate_zip_sha256": "c08cbdd268cf3a257ff8e68d32c4d9a9dd718742949829a18345fedff4b22e0b",
+  "reviewed_helpers": 36,
+  "expected_guard_cases": 529,
+  "guard_receipt_sha256": null,
+  "ux_expected_modules": 28,
+  "ux_expected_cases": 347,
+  "interactive_tasks": 5,
+  "interactive_geometries": 3,
+  "operator": "agent",
+  "human_reported": false,
+  "launch_permitted": false,
+  "linux_workload_started": false,
+  "all_previous_contexts_preserved": true,
+  "created_utc": "2026-11-08T15:17:58.3414946Z"
+}

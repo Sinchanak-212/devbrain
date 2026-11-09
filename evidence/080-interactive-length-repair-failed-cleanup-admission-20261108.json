@@ -1,0 +1,309 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_failed_interactive_owned_cleanup_admission",
+  "status": "safe_next_owned_workload_only_ui_failed",
+  "safe_next_workload": true,
+  "created_utc": "2026-11-08T22:02:37.765002+00:00",
+  "run_id": "interactive-length-repair080-20261108T212356Z-2297ae43",
+  "root_actual_windows_exec_session": 77868,
+  "root_actual_windows_exit_code": 1,
+  "root_actual_exit_source": "Explicit root observed process completion, persisted failed context and retained proxy exit checkpoint.",
+  "reviewer": "/root/release_review",
+  "qualification_passed": false,
+  "ui_acceptance_passed": false,
+  "release_qualified": false,
+  "production_modified": false,
+  "eight_hour_started": false,
+  "eight_hour_authorized_this_session": false,
+  "context_snapshot": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\interactive-length-repair080-20261108T212356Z-2297ae43\\artifacts\\failed-ui-context-before-cleanup-admission.json",
+  "context_snapshot_sha256": "d25c63ef983fdc738fa942e57c6fbaa56498618618b6410659f090fa0078627a",
+  "raw_artifacts_root": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\interactive-length-repair080-20261108T212356Z-2297ae43\\artifacts",
+  "raw_artifact_sha256": {
+    "receipt.json": "a4e426112e7d46de367b6ff6719af20c053d079f26a188eef82be4e196ba5c9f",
+    "supervisor-report.json": "66929f42013c48b95086999e6d26a1627f2925260bbde48dfa591bc5a5c746f8",
+    "controller-report.json": "337fabbc4d71fdb0700358ab1ce0680342a7670adef30cc9519c1d62b2f943c9",
+    "interactive-results.json": "ad6c6b2061d79a94b834bc9ff56e3f63fecbd41d9d18c779d03d873fdfac0f53",
+    "supervisor-exit.json": "ae26b43eaf9fa23bb6b548385d9c8db5bd88ad364752a0732b651a2aa4804f9e",
+    "mapping-proof.json": "007e8fce66a6c5552ec7a74b645b8ca610ecac6da83e686d73fb9d1abc7284c2",
+    "spec.json": "4fab29aa278370cc033919aee34c860909bd1b690c82302c86701d341fc02ca8",
+    "gate.json": "a6bd365cea68986ed6795990272c766679bbd29fd9407e904a12c2956bcdf7fb",
+    "power-samples.jsonl": "db3060c1e1314575a712a9fbab1ab6cdaeff3af7589f78dba71a2b9f98515b49",
+    "probe-scope.stdout.log": "e85617190aa599f1d2d2b1950ddb46361974bca630d7b551fca775117248b611",
+    "probe-scope.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "probe-boot.stdout.log": "3253bcd95b6277f5042b740a2e03261397d56a09eed8f8959a377dc884c23f88",
+    "probe-boot.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "probe-kernel.stdout.log": "c557a246a9427d8f6969fe43f1b54822dc2598f8d10c05f66f6b8c22fd3162cb",
+    "probe-kernel.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scope-stop.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "scope-stop.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "supervisor.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "supervisor.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "controller.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "controller.stderr.log": "6ba5a98fd5b37b397741bf03af63b5603dbf3e65fc679c8dd7295f8c2c45540c",
+    "agent-operator-evidence.json": "2b949c2f822444306ce5b44cbf2bcb37e8888e19f23a5fbf96c80ee8f17ebe96",
+    "windows-observer-120x36.json": "e087e55a53632af3e79fead4328a56db6e3f6833e6b830454c10d6ba9910b272",
+    "windows-observer-120x36-exit.json": "eafe81eb18164f83389d139bfc017e421fcddee54a83e3f76b6daaade599dcd8",
+    "windows-observer-80x24.json": "981f45afe047558584bb6401dcefa624cbf40eb93f66082fcaf8c390678a31f1",
+    "failed-ui-context-before-cleanup-admission.json": "d25c63ef983fdc738fa942e57c6fbaa56498618618b6410659f090fa0078627a"
+  },
+  "frozen_input_manifest": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\interactive-length-repair080-20261108T212356Z-2297ae43\\prepared-input-freeze.json",
+  "frozen_input_manifest_sha256": "61e1ef7c0b4916b7e0795bc2246666a601624c111599e57407003e15c9bd33dd",
+  "frozen_inputs_rehashed": 20,
+  "qualified_helper_files_rehashed": 38,
+  "qualified_helper_sha256": {
+    "test_full_suite_080_guards.py": "060c9b19de95f6dfb7c2d16df7456efc958c185ac6e787afdcf641abb24712d0",
+    "test_production_backup080_guards.py": "122135ad7e83083afc6db2bd729fbd63cbf109461a1a890a6456c172e551c9ce",
+    "test_devbrain_update080_guards.py": "2fa80b80071455b77fbf722707e1bf379fcdefd032a6a4fbfd9af0081cdf7968",
+    "watch-parent-loss080.py": "b1987cfc34607f1872d2c9bb210544156ca8daae509483ded3602bb02821b668",
+    "validate-copilot-account080.py": "1eeec037ea5070c30c44c267192f5a590766b471ed083fb722256358dfb1e31e",
+    "open-interactive-ux080.ps1": "0b575ba17e23117c98ed0dc3cb726adee3bc68f14745ffdd5557ae4a9b8d160f",
+    "attest-full-suite-080.py": "def4cde1e76febbda1a7351bec045e5eeb2e63ad83e750ea4280b39037eb36ee",
+    "supervise-080.py": "865f3b19b3140218da9b080dc517f5eefb724718d96317a88ac37942128a910f",
+    "test_stability_080_guards.py": "7d53d662bd6221bd6a5a5e2e2bbc9042e4171bdd201b5e23dd920c312433812f",
+    "run-regressions-080.py": "7b3997838a3b1e894e845f2f8a1a1fad656b9feceb456d272e8dc6d7f0577fb2",
+    "build-devbrain-update-080.py": "b3783bbd0a193d92e9ff9b24c2abd4926ffbb7aaf10a8edeaa1ebf3485c0d5e9",
+    "test_production_deploy080_guards.py": "9fddad5f3aca8c4fb64ca5ad0593f7a1b49129e4b108a540f4e6e769bbdff216",
+    "soak-workload-080.py": "374bbf679db398510e4a4389627b1488d64bdfbc36791f95d804986b6b3d51bf",
+    "test_account080_guards.py": "89d952b240278b503589ae8b6ae854b81800ae5a4a1901538c8a962128913dee",
+    "qualification-power-080.ps1": "0a46c1d6a2abca8a4be4dfc79daaff33332e91f95d4c627fe7c301523ba9e8a9",
+    "deploy-production080.py": "53eece60c4d177cbfc352c8293f5c5b3cbe3e7ca25d7656f2a10c74d1a9dceb0",
+    "devbrain-update080-template.py": "56e33ddc4f810f72ab2c250b5e7b2c5e04886753700854ce874348d9feb5f17b",
+    "test_supervision080_fixture.py": "0cdb8c34a08cd4f5f1339eefa9a7eafca6acb47ffd6e57f42926a9430b26f8fe",
+    "validate-copilot-account-e2e.py": "35e06c6a0837eae7af2487b9961aa534cf0c527e5861e33706ecc96f12062a19",
+    "retry-production-queue-080.py": "f24c3cf721dbdbcc9b810f09c4e688c04a5682ea502853b084cdba593429d90e",
+    "test_devbrain_update080_smoke.py": "eef53b1c37f67c0441a917ce39f9c90d14a4634f37c9364ba1720e2aef4792c8",
+    "replay-failed-queue-080.py": "e8513a36aa5d7443db76935f4a6a01c62b547a7c92341ac5b05d9a3710a70d1b",
+    "run-supervised-080.ps1": "721109e2295099fcc4dea6e1a1bc55e773e577e2de673931c33a7e4bb7812c74",
+    "validate-stability-080.py": "5717c26217ef392340d86a8726fae90c8384d0001ba808f5c83a7bdab32fe143",
+    "validate-local-recall.py": "92a032a7ce19dcd85e7a26c1b796e5afb41557e00be426906ece50fa2254d9f2",
+    "validate-native-account080.py": "ba530b74cf39cce33775c848422d7ba0e477e7d35e260ad9e806dd89faba65e2",
+    "run-interactive-ux080.py": "0c0bb05b2165f509b77026a5ffefd39d0aabccd5e9f45682a2371df065b9c1bc",
+    "test_regressions080_guards.py": "daadfc290bdaf7b73b0f19459d44b5f345915cdd17a1eaa7fb113616911dc5a7",
+    "test_interactive_ux080_guards.py": "15127894b67fcd65d78e377c63a27e6362417e5253086ed9ad72621faad218e5",
+    "run-full-suite-080.py": "f38ffa41c876db9329b0811a7066804248c92a72ebff5cc5c5c515c1612e0df1",
+    "backup-production080.py": "77fc478583368d7e3a99063de27f19de2cb5ce6a834bda63cd972923def6ab88",
+    "run-baseline-ux072.py": "a0e1eadf2b7a6f8b5bd23477dc84875ebfcdec5939775279295508b3a99a7744",
+    "test_scope_080_guards.py": "f683e56cd5790d16fe1542d34c2b7cc2265c01ab14258a55a8ea24bfc5023bd0",
+    "test_queue_replay080_guards.py": "0423ae6e131ddfa40f6adf1d7e7dd48fd7ad15536bd4d9b55563bfa5332075ab",
+    "test_devbrain_update071_smoke.py": "6ac95888f8930f8b41a1e55facae119f26c489a536a67691c5d17e8e7b34b4fa",
+    "test_production_queue080_guards.py": "cede3a01a8d3e6f982142ceda64aff3313d3eaaf2a0bd5c2b86b1855b315ad9a",
+    "test_parent_loss080_guards.py": "df2372a46da89934cf351fe0f98cdfdcc8efe82ff9b4852bed417b32b4023614",
+    "run-parent-loss080.ps1": "425afb692abe364b2be3295eb2a25392351a04ed628cb05ac82eafb50f17343f"
+  },
+  "receipt_bound_artifacts_rehashed": 6,
+  "raw_receipt_flags_preserved": {
+    "passed": false,
+    "cleanup_complete": false,
+    "forced_cleanup": true,
+    "controller_exit_verified": false,
+    "supervisor_exit_verified": true,
+    "explicit_tagged_cleanup_may_be_required": true,
+    "native_failure": false,
+    "errors": [
+      "Linux supervisor returned nonzero or crashed.",
+      "Final evidence verification: Supervisor did not verify passed.",
+      "Actual successful supervisor exit was not verified.",
+      "Owned scope emptiness and post-cleanup grace were not verified."
+    ]
+  },
+  "raw_supervisor_flags_preserved": {
+    "passed": false,
+    "child_returncode": 1,
+    "controller_exit_verified": true,
+    "cleanup_complete": true,
+    "forced_cleanup": false,
+    "native_failure": false,
+    "errors": [
+      "RuntimeError: Controller returned a nonzero exit code",
+      "Final verification: Unsupported or incomplete controller status"
+    ]
+  },
+  "raw_controller_flags_preserved": {
+    "status": "failed",
+    "controller_exit_verified": false,
+    "cleanup_complete": true,
+    "forced_cleanup": false,
+    "errors": [],
+    "agent_acceptance_passed": false,
+    "human_acceptance_passed": false
+  },
+  "cleanup_basis": {
+    "exact_owned_scope_unit": "devbrain-q-291f4c27094747ccbddeb05c839dc453.scope",
+    "exact_owned_cgroup": "/user.slice/user-1000.slice/user@1000.service/app.slice/devbrain-q-291f4c27094747ccbddeb05c839dc453.scope",
+    "exact_owned_cgroup_device_inode": "25:2961",
+    "initially_absent": true,
+    "membership_verified_by_windows_and_linux": true,
+    "controller_actual_exit_verified_by_supervisor": true,
+    "controller_identity": {
+      "pid": 494,
+      "birth": "351",
+      "state": "R",
+      "uid": 1000,
+      "executable": "/home/piotr/.cache/devbrain-runtime-080/runtimes/python/bin/python3.12",
+      "parent_pid": 477
+    },
+    "owned_windows_proxy_identity": {
+      "pid": 61332,
+      "started_utc": "2026-11-08T21:25:12.4250133Z"
+    },
+    "owned_proxy_actual_exit_code": 1,
+    "owned_proxy_stdio_complete": true,
+    "supervisor_actual_exit_verified": true,
+    "controller_quiet_scope_seconds": 30.178,
+    "supervisor_remaining_scope_processes": [],
+    "supervisor_remaining_tagged_processes": [],
+    "supervisor_scope_descendants_stopped": true,
+    "windows_exact_scope_empty_verified": true,
+    "windows_exact_scope_empty_grace_seconds": 33.14194179999981,
+    "windows_post_supervisor_exit_seconds": 35,
+    "final_scope_probe_load": "not-found",
+    "final_scope_probe_population": 0,
+    "final_scope_probe_mapping_and_controller_hashes_verified": true,
+    "owned_jvm": {
+      "started": true,
+      "actual_exit_verified": true,
+      "forced_cleanup": false,
+      "ready": true,
+      "unexpected_exit_before_shutdown": false,
+      "graceful_shutdown_requested": true,
+      "returncode": 143,
+      "cleanup_complete": true
+    },
+    "registered_and_observed_tmux_viewers_actual_pidfd_exit_verified": true,
+    "windows_error_path_scope_stop_invoked": true,
+    "windows_scope_stop_result": "bounded command completed with empty stdout/stderr and no refusal/failure error; exact scope subsequently empty throughout grace",
+    "forced_cleanup_false_claim_for_whole_run": false
+  },
+  "oauth_cache_handling": {
+    "phase_sync": {
+      "passed": true,
+      "codex_cache_synced": false,
+      "claude_store_reused": true,
+      "conflict": false,
+      "error_codes": []
+    },
+    "final_sync": {
+      "passed": true,
+      "codex_cache_synced": false,
+      "claude_store_reused": true,
+      "conflict": false,
+      "error_codes": []
+    },
+    "lease_release": {
+      "passed": true,
+      "error_codes": []
+    },
+    "finalsync_after_native_and_viewer_cleanup_verified_in_frozen_controller": true,
+    "journal_close_requested_only_after_cleanup_and_sync_pass": true,
+    "credential_contents_principals_or_credential_hashes_read_or_exported": false,
+    "future_network_account_usability_claimed": false
+  },
+  "native_clients_and_viewers": {
+    "claude_previous_pid": 34976,
+    "claude_previous_birth": "72122",
+    "individual_claude_exit_returncode_known": false,
+    "claude_shutdown_evidence": "Frozen controller validates live pane identity/scope, retains pidfd, sends TERM and waits actual exit before native.stop; controller cleanup completed without error and exact owned scope emptied. No live PID-absence inference or invented per-client exit code.",
+    "codex_operator_error": {
+      "unintended_start": true,
+      "pid": 9190,
+      "birth": "18554",
+      "actual_exit_code": 1,
+      "actual_dead_verified_by_operator": true,
+      "cause": "unknown",
+      "retry_performed": false
+    },
+    "normal_viewer_operator_records": [
+      {
+        "size": "120x36",
+        "exec_session": 67261,
+        "actual_exit_code": 0,
+        "actual_exit_verified": true,
+        "started": null
+      },
+      {
+        "size": "80x24",
+        "exec_session": 63475,
+        "actual_exit_code": 1,
+        "actual_exit_verified": true,
+        "started": null
+      },
+      {
+        "size": "180x55",
+        "exec_session": null,
+        "actual_exit_code": null,
+        "actual_exit_verified": null,
+        "started": false
+      }
+    ],
+    "root_readonly_120_exit": {
+      "pid": 88633,
+      "birth": "172014",
+      "actual_exit_verified": true,
+      "readonly_observer_only": true
+    },
+    "root_readonly_80_absence_proof": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-old-ui-readonly80-absence-probe-20261108.json",
+    "root_readonly_80_absence_proof_sha256": "750fbe6bfbc51d978226329a14e469a32ddae8c4e595993bbfc66ae8423bb0a1",
+    "root_readonly_80_windows_socket_proxy_matches": 0,
+    "root_readonly_80_linux_exact_exe_socket_attach_matches": 0,
+    "root_readonly_80_socket_absent": true,
+    "root_readonly_80_individual_exit_code_or_retained_exit_claimed": false,
+    "root_readonly_80_reasoned_closure": "Read-only ownership-specific absence probe plus dead owned server/scope; attach-session cannot recreate the expired server.",
+    "unobservable_external_processes_outside_owned_scope": [
+      {
+        "pid": 400,
+        "control_group": "/user.slice/user-1000.slice/user@1000.service/init.scope",
+        "reason": "inaccessible_same_uid_outside_owned_scope"
+      },
+      {
+        "pid": 401,
+        "control_group": "/user.slice/user-1000.slice/user@1000.service/init.scope",
+        "reason": "inaccessible_same_uid_outside_owned_scope"
+      }
+    ],
+    "global_machine_process_absence_claimed": false
+  },
+  "environment": {
+    "initial_boot_id": "26c0b4c6-4480-4357-a8d4-548b416ba778",
+    "final_boot_id": "26c0b4c6-4480-4357-a8d4-548b416ba778",
+    "new_wsl_dumps": [],
+    "new_kernel_fatals": [],
+    "native_failure": false,
+    "qualified_power_settings_sha256": "6bac59f1660b69c8c9e8d83728cbb7cf2fd184458181fa05a351b72c4c2d9dc1",
+    "power_unchanged": true,
+    "power_sample_count": 64,
+    "power_maximum_gap_seconds": 30.682888999999932,
+    "power_samples_cover_scope_grace": true,
+    "sleep_inhibition_restored": true,
+    "runtime6_and_helper_start_end_unchanged": true
+  },
+  "failed_acceptance_preserved": {
+    "reason": "deadline_expired_incomplete_interactive_acceptance",
+    "recorded_observations": 6,
+    "required_observations": 8,
+    "tasks_recorded_passed": 5,
+    "geometries_recorded_passed": [
+      "120x36"
+    ],
+    "geometries_missing": [
+      "80x24",
+      "180x55"
+    ],
+    "manual_polish_toggle_observed": false,
+    "operator_wrong_codex_start_and_unknown_exit1_preserved": true,
+    "observations_may_be_pooled_into_next_run": false
+  },
+  "review_actions": {
+    "windows_public_artifact_read_and_hash_only": true,
+    "new_linux_processes_started_by_reviewer": false,
+    "production_or_private_auth_files_read": false,
+    "raw_reports_or_frozen_files_modified": false
+  },
+  "limits": [
+    "SAFE_NEXT is ownership cleanup admission for a fresh serial trial only, not UI qualification.",
+    "Raw external receipt remains FAIL with forced_cleanup=true, cleanup_complete=false and explicit cleanup flag true.",
+    "External PID400/401 outside owned scope were inaccessible and are not claimed absent.",
+    "Individual root80 exit code is unknown; its closure uses root ownership-specific absence evidence.",
+    "No account usability inference beyond the successful safe cache sync/release metadata.",
+    "No 8h, deployment or production resume authorized by this admission."
+  ]
+}

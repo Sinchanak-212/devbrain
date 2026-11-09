@@ -1,0 +1,214 @@
+[
+  {
+    "path": "__init__.py",
+    "sha256": "56d231ac75f4497b87d08417dd1b505c138a7c58c88d5be048b9e1b6d4e22810"
+  },
+  {
+    "path": "__main__.py",
+    "sha256": "a459811163da6af78c89a7fddb26969052c04b19300980dc456a297aed044b85"
+  },
+  {
+    "path": "agent_journal.py",
+    "sha256": "d99955bc44fbaa987c8e6f7685cd6f373dd93f4eef0fa9ef80afb79ad7227ff7"
+  },
+  {
+    "path": "agent_memory.py",
+    "sha256": "702a8dcc7741d1ad2d64f07d3219b8b0f13ea74f440afa932468d890be6b8685"
+  },
+  {
+    "path": "agent_tools.py",
+    "sha256": "de16238c3fd439561e2b3610e1705ebcc085f054ec3d24269b3a5f066d8b7dd8"
+  },
+  {
+    "path": "agent.py",
+    "sha256": "9b6097317eb4182af5ec1792f70d22400e6fd2d71911520f34f45997a29d3430"
+  },
+  {
+    "path": "answer_contract.py",
+    "sha256": "6d3dbb9bd5cc6af458617490033ac074cfae0bbb921ece6b73c2988dd71c1113"
+  },
+  {
+    "path": "api_agent.py",
+    "sha256": "05b60d3e7e156d8075398e8115ebfd7cac9a29585ae4df13c7c081dac5718295"
+  },
+  {
+    "path": "api_credentials.py",
+    "sha256": "67c5e0f6ec3b564c8033c8b6c75a7f480d4076025aabe2db5155a2a5e6acba60"
+  },
+  {
+    "path": "api_profiles.py",
+    "sha256": "c34dcb06fb09c7085374597be82c0d87be88e2c727da2bb87daf4c29e998e06b"
+  },
+  {
+    "path": "api_providers.py",
+    "sha256": "66347cb604667c2e95c5b411cdff054ee320be65eaf09fd3e17e9f226c01010c"
+  },
+  {
+    "path": "api_runtime.py",
+    "sha256": "5c58afad5d0072b8fed5eb37eb7c86a2d872bc3fa385fe2f91b659f2972a7b7a"
+  },
+  {
+    "path": "api_worker.py",
+    "sha256": "d80635997ac4590efa9ca49255a3ae866377703dbe24b272740c591b35ec8360"
+  },
+  {
+    "path": "arcade.py",
+    "sha256": "2ba6faafd4c1ade9fd1970a2fde694ca6aeadf9398851501fffa147ecd9081e7"
+  },
+  {
+    "path": "cli.py",
+    "sha256": "0073bf23f072fd066b727966b0bd048c1b2a168d5392abf28781b33752ba16db"
+  },
+  {
+    "path": "client_adapters.py",
+    "sha256": "fdb87e50d8d7da4431bb471aeb8cfa5d95bb6c3e50c38a14ca3369938b17907e"
+  },
+  {
+    "path": "client_auth.py",
+    "sha256": "7ec400526ee6ac6f76f0d3a0cfd2767ca85f772e6112cfe6340f2476d31ed6dd"
+  },
+  {
+    "path": "client_runtime.py",
+    "sha256": "58062de4971e5d3d3b17aed70c0813517a28acb7f6de662b7e17cfc192a088dd"
+  },
+  {
+    "path": "cockpit_state.py",
+    "sha256": "44977a43c18539d644199f5250da961f3a58dc615516f290a16b2e6d8f70d8aa"
+  },
+  {
+    "path": "cockpit.py",
+    "sha256": "8d9e5213692df8318004415cef269452c74b4093057c3f7c3852ea7c4a9f4928"
+  },
+  {
+    "path": "config.py",
+    "sha256": "d810a54d84ed6db3d5714ca06406d370d42aca2d71676b844a16f284b6843bf4"
+  },
+  {
+    "path": "copilot_adapter.py",
+    "sha256": "f1237bededc66a0fd9e2a7b1c8de71e3ff694a4597adac4ba4eba83a94ce4aab"
+  },
+  {
+    "path": "engine.py",
+    "sha256": "b8386bd7cb184e6f0b3d9351b303a9f928cc9b6f6f3a99458f184349a5a19568"
+  },
+  {
+    "path": "evaluation.py",
+    "sha256": "86b59d31cb326c97af11b5d584759124c0bde450e94a41d45226b50a5f57bb1a"
+  },
+  {
+    "path": "graph_raster.py",
+    "sha256": "505697700036b7e9b24389d571e8442a37c62a8542146ec82ba6bd76d866d736"
+  },
+  {
+    "path": "ingest.py",
+    "sha256": "0f3925f62607d9ba38bf733de9e16071e96553e0c0a34e1a087ac0a9de715251"
+  },
+  {
+    "path": "inspector_api.py",
+    "sha256": "78635829b692f9c13f4e1378d3d7876fd1b835a6184ce6fa719d0d46578b0c2a"
+  },
+  {
+    "path": "inspector.py",
+    "sha256": "e31f3e16de76193fa926d3c61aa3a9e053044398624550395c8fc37c7cc00b9f"
+  },
+  {
+    "path": "integrations.py",
+    "sha256": "61b5fc275a8082964570e56aa257efb7466f67a9820a2b0e21ffa79cd0e26ea5"
+  },
+  {
+    "path": "journal.py",
+    "sha256": "4e3ec77075f1ee8dd974ff026e59f64c18e85bf98d0c598cdd47ec46bce1fd21"
+  },
+  {
+    "path": "mcp_server.py",
+    "sha256": "97c6544a015195f05f17a985dac5c4d51b4cc56bfdf962e2f6b7d27b42f3b585"
+  },
+  {
+    "path": "memory_evaluation.py",
+    "sha256": "43379a29e277aefed8cf9896bfe80e361e9a7a0b574df78af2e1829281dbf4a7"
+  },
+  {
+    "path": "memory_paths.py",
+    "sha256": "2508ffd8a1859b40700a527df44071267d1da32a13e2dedc3232d6d08aff2aac"
+  },
+  {
+    "path": "memory.py",
+    "sha256": "075795b3ee1cde835d2fe027251f7fedbbef8048dca26f25a311fbac2a586f91"
+  },
+  {
+    "path": "native_worker.py",
+    "sha256": "3a2ac384d7b6b4b4c09edce68dfc8999dff26d1d96621ead4a73945df1bb7329"
+  },
+  {
+    "path": "ollama.py",
+    "sha256": "de51a4818389c720760615021de253e9b6fb02c5b28e4c9542a705ca48576369"
+  },
+  {
+    "path": "parsing.py",
+    "sha256": "6510235061affe480931da3064fa750f4a7b16d7ae36722820f20a7daa5607e3"
+  },
+  {
+    "path": "plans.py",
+    "sha256": "f17e6f9de9b0eab348f2ba4c932bfb5495d4983d3ee03d31621a73bc70fe7d03"
+  },
+  {
+    "path": "retrieval.py",
+    "sha256": "303c3346da5cfc3368cee9d50ac487ac163069f5ef4e62337109d4bb3a3a74a6"
+  },
+  {
+    "path": "service.py",
+    "sha256": "eb769b4d5229259fb2ce2c613b4c3042e7009c0b90a78403462fbcc02150e806"
+  },
+  {
+    "path": "sessions.py",
+    "sha256": "1a7dd4ca0ba4c759c8766f22a9b908a3a10f9c6c3633434c1e7b2ad7d65ebc19"
+  },
+  {
+    "path": "store.py",
+    "sha256": "7da2f8765462f0963d83a1f76f1a58e304395d5da9d662ea2e890e1adffd0912"
+  },
+  {
+    "path": "terminal_bridge.py",
+    "sha256": "e5fd740590cb7c32ff877fa89079c92a921bd230193e7c1869d16d58091a4330"
+  },
+  {
+    "path": "terminal_client.py",
+    "sha256": "47d7f86377b9058243ca7403edf9c889135776fab39d0aded71dc205d8acaa1c"
+  },
+  {
+    "path": "terminal_graph.py",
+    "sha256": "5e61557d406080814c6a1771a02cfb158bf3b4400f097e8fdd6c4b415383daa7"
+  },
+  {
+    "path": "terminal_inspector.py",
+    "sha256": "84ad26d0e61beff0fd54c080a60fbf963791be3a4609a3d82497f0263754759b"
+  },
+  {
+    "path": "terminal_panels.py",
+    "sha256": "dc64939a508f50d939724dcec3c35bf4aaa75b0f96b41fb426667bc0b3011ad5"
+  },
+  {
+    "path": "terminal_safe.py",
+    "sha256": "b0b7e4d32eba18cd34d6b0c08395940a28e40fa1cf814d3cf0f4b5ba8f189378"
+  },
+  {
+    "path": "terminal_ui.py",
+    "sha256": "89f2a632987e22bdb9952ee6417d6427f9d0289ec6783d7ce58f161b9ff77ec2"
+  },
+  {
+    "path": "tui.py",
+    "sha256": "d72740d13fafa1adae57774bec2c6ff9ffd53f71837b0a9f9618a71d6b966be8"
+  },
+  {
+    "path": "verification.py",
+    "sha256": "816281443ab5369c43f685d68ab449276ba7c87c2587e3e2ee4b7d05e0899487"
+  },
+  {
+    "path": "workspace_state.py",
+    "sha256": "d2afa432b612454889e41f134ca8f68aa6d2c59b23c392d4134920b942121526"
+  },
+  {
+    "path": "workspace.py",
+    "sha256": "1e67dc435c2c5e65f4b5db7f07ee89420dc5203f0796e3b6eff26b4704db5cd6"
+  }
+]

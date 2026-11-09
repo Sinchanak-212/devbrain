@@ -1,0 +1,90 @@
+{
+  "supervisor_sha256": "8bebebde048052004f6443a8eef7567aad47ab123ad9f7397e5f494d1e705f80",
+  "authentication": "existing_native_accounts_no_API_keys",
+  "API_key_used": false,
+  "release_qualified": false,
+  "scope": "devbrain_independent_native_diagnostic_review",
+  "native_failure": false,
+  "phases": [
+    {
+      "phase": 1,
+      "client": "codex",
+      "status": "passed",
+      "fresh_process": true,
+      "answer_matches_expected": true
+    },
+    {
+      "phase": 2,
+      "client": "claude",
+      "status": "passed",
+      "fresh_process": true,
+      "answer_matches_expected": true
+    },
+    {
+      "phase": 3,
+      "client": "codex",
+      "status": "passed",
+      "fresh_process": true,
+      "answer_matches_expected": true
+    }
+  ],
+  "current_ui_passed": false,
+  "source_files": 153,
+  "receipt_sha256": "802a782e0cb97e5bac619af591cbf0cd263531b68958c45006a36caea8ec7a3f",
+  "controller_sha256": "6c13dfbdcc72d450063fd7acc8703589fce58883fc48f4486c82e9c93dbbe6a0",
+  "scope_identity": "25:2961",
+  "source_freeze_sha256": "ad77e00450537294fd26200d0713915689d82ff5a90e65f6c8fb1285fcbb4703",
+  "synthetic_precompact_event": true,
+  "boot_id": "3a4ea314-4109-4615-bbcb-6df88fb85134",
+  "power_changed": false,
+  "private_oauth_contents_exported": false,
+  "formal_release_gate": false,
+  "scope_unit": "devbrain-q-850a7a2ba2f24f98989e193b4f1c0bdc.scope",
+  "scope_quiet_seconds": 32.887974799999995,
+  "actual_windows_exit_code": 0,
+  "engine": {
+    "started": true,
+    "actual_exit_verified": true,
+    "forced_cleanup": false,
+    "ready": true,
+    "unexpected_exit_before_shutdown": false,
+    "graceful_shutdown_requested": true,
+    "returncode": 143,
+    "cleanup_complete": true
+  },
+  "fresh_native_processes": 3,
+  "status": "diagnostic_passed_not_release_qualified",
+  "account_login_performed": false,
+  "controller_quiet_seconds": 30.092,
+  "real_native_compaction_tested": false,
+  "safe_next_owned_scope_only": true,
+  "created_utc": "2026-11-09T11:03:34.7969893Z",
+  "receipt": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\native-diag080-20261109T100750Z-1d6f048c\\artifacts\\receipt.json",
+  "oauth_final_sync_passed": true,
+  "local_model_inference": false,
+  "oauth_phase_sync_passed": true,
+  "exact_memory_packet_ack_verified": true,
+  "sleep_restored": true,
+  "run_id": "native-diag080-20261109T100750Z-1d6f048c",
+  "outer_quiet_seconds": 37,
+  "application_qualified": false,
+  "schema_version": 1,
+  "actual_windows_exec_session": 95003,
+  "oauth_source_lease_released": true,
+  "previous_ack_invalidated": [
+    null,
+    true,
+    true
+  ],
+  "raw_artifact_sha256": {
+    "controller-report.json": "6c13dfbdcc72d450063fd7acc8703589fce58883fc48f4486c82e9c93dbbe6a0",
+    "power-samples.jsonl": "600974744c73b407df3cdc6b5486a4da9cb4a94513fdda5157be20db67600b8e",
+    "gate.json": "a6bd365cea68986ed6795990272c766679bbd29fd9407e904a12c2956bcdf7fb",
+    "supervisor-report.json": "8bebebde048052004f6443a8eef7567aad47ab123ad9f7397e5f494d1e705f80",
+    "native-results.json": "e548f57c553b4c9ea5d837f7223295773f18ba4001b7a4651dbd2cd41c82f36a"
+  },
+  "error_inventory_only": true,
+  "owned_database_removed": true,
+  "helper_count": 38,
+  "cleanup_complete": true
+}

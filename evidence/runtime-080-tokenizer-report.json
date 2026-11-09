@@ -1,0 +1,323 @@
+{
+  "status": "pass_diagnostic_only",
+  "diagnostic_only": true,
+  "gate_pass": false,
+  "cases": [
+    {
+      "index": 0,
+      "module": "textual.css.tokenize",
+      "cache": "existing_cache",
+      "argv": [
+        "/home/piotr/.cache/devbrain-runtime-080/software313-tmux38/venv/bin/python",
+        "-I",
+        "-X",
+        "faulthandler",
+        "-X",
+        "importtime",
+        "/mnt/c/Users/piotr/OneDrive/Dokumenty/ChatGPT/devbrain/release-tools/diagnose-tokenizer-080.py",
+        "--worker",
+        "textual.css.tokenize"
+      ],
+      "log": "/home/piotr/.cache/devbrain-runtime-080/tokenizer-diagnostic-1/00-textual.css.tokenize-existing_cache.log",
+      "returncode": 0,
+      "import_completed": true
+    },
+    {
+      "index": 1,
+      "module": "textual.css.tokenize",
+      "cache": "existing_cache",
+      "argv": [
+        "/home/piotr/.cache/devbrain-runtime-080/software313-tmux38/venv/bin/python",
+        "-I",
+        "-X",
+        "faulthandler",
+        "-X",
+        "importtime",
+        "/mnt/c/Users/piotr/OneDrive/Dokumenty/ChatGPT/devbrain/release-tools/diagnose-tokenizer-080.py",
+        "--worker",
+        "textual.css.tokenize"
+      ],
+      "log": "/home/piotr/.cache/devbrain-runtime-080/tokenizer-diagnostic-1/01-textual.css.tokenize-existing_cache.log",
+      "returncode": 0,
+      "import_completed": true
+    },
+    {
+      "index": 2,
+      "module": "textual.css.tokenize",
+      "cache": "existing_cache",
+      "argv": [
+        "/home/piotr/.cache/devbrain-runtime-080/software313-tmux38/venv/bin/python",
+        "-I",
+        "-X",
+        "faulthandler",
+        "-X",
+        "importtime",
+        "/mnt/c/Users/piotr/OneDrive/Dokumenty/ChatGPT/devbrain/release-tools/diagnose-tokenizer-080.py",
+        "--worker",
+        "textual.css.tokenize"
+      ],
+      "log": "/home/piotr/.cache/devbrain-runtime-080/tokenizer-diagnostic-1/02-textual.css.tokenize-existing_cache.log",
+      "returncode": 0,
+      "import_completed": true
+    },
+    {
+      "index": 3,
+      "module": "textual.css.tokenize",
+      "cache": "existing_cache",
+      "argv": [
+        "/home/piotr/.cache/devbrain-runtime-080/software313-tmux38/venv/bin/python",
+        "-I",
+        "-X",
+        "faulthandler",
+        "-X",
+        "importtime",
+        "/mnt/c/Users/piotr/OneDrive/Dokumenty/ChatGPT/devbrain/release-tools/diagnose-tokenizer-080.py",
+        "--worker",
+        "textual.css.tokenize"
+      ],
+      "log": "/home/piotr/.cache/devbrain-runtime-080/tokenizer-diagnostic-1/03-textual.css.tokenize-existing_cache.log",
+      "returncode": 0,
+      "import_completed": true
+    },
+    {
+      "index": 4,
+      "module": "textual.css.tokenize",
+      "cache": "existing_cache",
+      "argv": [
+        "/home/piotr/.cache/devbrain-runtime-080/software313-tmux38/venv/bin/python",
+        "-I",
+        "-X",
+        "faulthandler",
+        "-X",
+        "importtime",
+        "/mnt/c/Users/piotr/OneDrive/Dokumenty/ChatGPT/devbrain/release-tools/diagnose-tokenizer-080.py",
+        "--worker",
+        "textual.css.tokenize"
+      ],
+      "log": "/home/piotr/.cache/devbrain-runtime-080/tokenizer-diagnostic-1/04-textual.css.tokenize-existing_cache.log",
+      "returncode": 0,
+      "import_completed": true
+    },
+    {
+      "index": 5,
+      "module": "textual.css.tokenize",
+      "cache": "fresh_cache",
+      "argv": [
+        "/home/piotr/.cache/devbrain-runtime-080/software313-tmux38/venv/bin/python",
+        "-I",
+        "-X",
+        "faulthandler",
+        "-X",
+        "importtime",
+        "-X",
+        "pycache_prefix=/home/piotr/.cache/devbrain-runtime-080/tokenizer-diagnostic-1/empty-cache-5",
+        "/mnt/c/Users/piotr/OneDrive/Dokumenty/ChatGPT/devbrain/release-tools/diagnose-tokenizer-080.py",
+        "--worker",
+        "textual.css.tokenize"
+      ],
+      "log": "/home/piotr/.cache/devbrain-runtime-080/tokenizer-diagnostic-1/05-textual.css.tokenize-fresh_cache.log",
+      "returncode": 0,
+      "import_completed": true
+    },
+    {
+      "index": 6,
+      "module": "textual.css.tokenize",
+      "cache": "fresh_cache",
+      "argv": [
+        "/home/piotr/.cache/devbrain-runtime-080/software313-tmux38/venv/bin/python",
+        "-I",
+        "-X",
+        "faulthandler",
+        "-X",
+        "importtime",
+        "-X",
+        "pycache_prefix=/home/piotr/.cache/devbrain-runtime-080/tokenizer-diagnostic-1/empty-cache-6",
+        "/mnt/c/Users/piotr/OneDrive/Dokumenty/ChatGPT/devbrain/release-tools/diagnose-tokenizer-080.py",
+        "--worker",
+        "textual.css.tokenize"
+      ],
+      "log": "/home/piotr/.cache/devbrain-runtime-080/tokenizer-diagnostic-1/06-textual.css.tokenize-fresh_cache.log",
+      "returncode": 0,
+      "import_completed": true
+    },
+    {
+      "index": 7,
+      "module": "textual.css.tokenize",
+      "cache": "fresh_cache",
+      "argv": [
+        "/home/piotr/.cache/devbrain-runtime-080/software313-tmux38/venv/bin/python",
+        "-I",
+        "-X",
+        "faulthandler",
+        "-X",
+        "importtime",
+        "-X",
+        "pycache_prefix=/home/piotr/.cache/devbrain-runtime-080/tokenizer-diagnostic-1/empty-cache-7",
+        "/mnt/c/Users/piotr/OneDrive/Dokumenty/ChatGPT/devbrain/release-tools/diagnose-tokenizer-080.py",
+        "--worker",
+        "textual.css.tokenize"
+      ],
+      "log": "/home/piotr/.cache/devbrain-runtime-080/tokenizer-diagnostic-1/07-textual.css.tokenize-fresh_cache.log",
+      "returncode": 0,
+      "import_completed": true
+    },
+    {
+      "index": 8,
+      "module": "textual.css.tokenize",
+      "cache": "fresh_cache",
+      "argv": [
+        "/home/piotr/.cache/devbrain-runtime-080/software313-tmux38/venv/bin/python",
+        "-I",
+        "-X",
+        "faulthandler",
+        "-X",
+        "importtime",
+        "-X",
+        "pycache_prefix=/home/piotr/.cache/devbrain-runtime-080/tokenizer-diagnostic-1/empty-cache-8",
+        "/mnt/c/Users/piotr/OneDrive/Dokumenty/ChatGPT/devbrain/release-tools/diagnose-tokenizer-080.py",
+        "--worker",
+        "textual.css.tokenize"
+      ],
+      "log": "/home/piotr/.cache/devbrain-runtime-080/tokenizer-diagnostic-1/08-textual.css.tokenize-fresh_cache.log",
+      "returncode": 0,
+      "import_completed": true
+    },
+    {
+      "index": 9,
+      "module": "textual.css.tokenize",
+      "cache": "fresh_cache",
+      "argv": [
+        "/home/piotr/.cache/devbrain-runtime-080/software313-tmux38/venv/bin/python",
+        "-I",
+        "-X",
+        "faulthandler",
+        "-X",
+        "importtime",
+        "-X",
+        "pycache_prefix=/home/piotr/.cache/devbrain-runtime-080/tokenizer-diagnostic-1/empty-cache-9",
+        "/mnt/c/Users/piotr/OneDrive/Dokumenty/ChatGPT/devbrain/release-tools/diagnose-tokenizer-080.py",
+        "--worker",
+        "textual.css.tokenize"
+      ],
+      "log": "/home/piotr/.cache/devbrain-runtime-080/tokenizer-diagnostic-1/09-textual.css.tokenize-fresh_cache.log",
+      "returncode": 0,
+      "import_completed": true
+    },
+    {
+      "index": 10,
+      "module": "devbrain.terminal_panels",
+      "cache": "existing_cache",
+      "argv": [
+        "/home/piotr/.cache/devbrain-runtime-080/software313-tmux38/venv/bin/python",
+        "-I",
+        "-X",
+        "faulthandler",
+        "-X",
+        "importtime",
+        "/mnt/c/Users/piotr/OneDrive/Dokumenty/ChatGPT/devbrain/release-tools/diagnose-tokenizer-080.py",
+        "--worker",
+        "devbrain.terminal_panels"
+      ],
+      "log": "/home/piotr/.cache/devbrain-runtime-080/tokenizer-diagnostic-1/10-devbrain.terminal_panels-existing_cache.log",
+      "returncode": 0,
+      "import_completed": true
+    },
+    {
+      "index": 11,
+      "module": "devbrain.terminal_panels",
+      "cache": "existing_cache",
+      "argv": [
+        "/home/piotr/.cache/devbrain-runtime-080/software313-tmux38/venv/bin/python",
+        "-I",
+        "-X",
+        "faulthandler",
+        "-X",
+        "importtime",
+        "/mnt/c/Users/piotr/OneDrive/Dokumenty/ChatGPT/devbrain/release-tools/diagnose-tokenizer-080.py",
+        "--worker",
+        "devbrain.terminal_panels"
+      ],
+      "log": "/home/piotr/.cache/devbrain-runtime-080/tokenizer-diagnostic-1/11-devbrain.terminal_panels-existing_cache.log",
+      "returncode": 0,
+      "import_completed": true
+    },
+    {
+      "index": 12,
+      "module": "devbrain.terminal_panels",
+      "cache": "existing_cache",
+      "argv": [
+        "/home/piotr/.cache/devbrain-runtime-080/software313-tmux38/venv/bin/python",
+        "-I",
+        "-X",
+        "faulthandler",
+        "-X",
+        "importtime",
+        "/mnt/c/Users/piotr/OneDrive/Dokumenty/ChatGPT/devbrain/release-tools/diagnose-tokenizer-080.py",
+        "--worker",
+        "devbrain.terminal_panels"
+      ],
+      "log": "/home/piotr/.cache/devbrain-runtime-080/tokenizer-diagnostic-1/12-devbrain.terminal_panels-existing_cache.log",
+      "returncode": 0,
+      "import_completed": true
+    },
+    {
+      "index": 13,
+      "module": "devbrain.terminal_panels",
+      "cache": "existing_cache",
+      "argv": [
+        "/home/piotr/.cache/devbrain-runtime-080/software313-tmux38/venv/bin/python",
+        "-I",
+        "-X",
+        "faulthandler",
+        "-X",
+        "importtime",
+        "/mnt/c/Users/piotr/OneDrive/Dokumenty/ChatGPT/devbrain/release-tools/diagnose-tokenizer-080.py",
+        "--worker",
+        "devbrain.terminal_panels"
+      ],
+      "log": "/home/piotr/.cache/devbrain-runtime-080/tokenizer-diagnostic-1/13-devbrain.terminal_panels-existing_cache.log",
+      "returncode": 0,
+      "import_completed": true
+    },
+    {
+      "index": 14,
+      "module": "devbrain.terminal_panels",
+      "cache": "existing_cache",
+      "argv": [
+        "/home/piotr/.cache/devbrain-runtime-080/software313-tmux38/venv/bin/python",
+        "-I",
+        "-X",
+        "faulthandler",
+        "-X",
+        "importtime",
+        "/mnt/c/Users/piotr/OneDrive/Dokumenty/ChatGPT/devbrain/release-tools/diagnose-tokenizer-080.py",
+        "--worker",
+        "devbrain.terminal_panels"
+      ],
+      "log": "/home/piotr/.cache/devbrain-runtime-080/tokenizer-diagnostic-1/14-devbrain.terminal_panels-existing_cache.log",
+      "returncode": 0,
+      "import_completed": true
+    }
+  ],
+  "limits": {
+    "workload_seconds": 60,
+    "post_cleanup_watch_seconds": 30,
+    "address_space_mib_each": 512,
+    "concurrent_children": 1
+  },
+  "network_guard": "Python socket AF_INET/AF_INET6 constructors and SSL context blocked; no OS seccomp added",
+  "subprocesses_in_workers": false,
+  "database": false,
+  "java": false,
+  "tmux": false,
+  "app_run": false,
+  "gpu_or_models": false,
+  "boot_id": "19058685-ffde-45e1-a471-b0912f9b4bd8",
+  "kernel_aslr_randomize_va_space": "2",
+  "binary_sha256": "e314bd43fc9c17769c3bd276ca7aafa1462af1b2364a7c908a6cf82e60a92281",
+  "build": "CPython3.13.18 classicGIL Clang23.1.3; verified official PBS archive, ELF BOLT text/warm/cold sections",
+  "time_utc": "2026-11-07T11:34:27Z",
+  "workload_seconds": 3.193139129999963,
+  "completed_imports": 15,
+  "seconds_including_post_cleanup_watch": 34.93847508199997
+}

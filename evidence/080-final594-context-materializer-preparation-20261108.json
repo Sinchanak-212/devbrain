@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_final594_context_materializer_preparation",
+  "status": "prepared_static_reviewed_not_run",
+  "stager": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-final-gates-594-20261108.ps1",
+  "stager_sha256": "40b635a8727ed6522fbd47c23b9d3f8b5b5c787a44ef4cc68181823b62267d57",
+  "peer_review": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-five594-gate-stager-peer-review-20261108.json",
+  "peer_review_sha256": "994036e0f8675741e49f10cf7314bc4d7d8bab050a366f88b8d805b107c4dd44",
+  "template_master_sha256": "610110f2c035789cc1ef6bbc47c0046d689dc161ee66362798563cce04c57ab9",
+  "guard_receipt_sha256": "20ec03224dab3da992557d5c8f5a5ddf28dd2f9ed6b8f85e4a2dd5a80e960c82",
+  "required_final_fixture_report": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-controlled-fixtures-deploy-final-20261108.json",
+  "required_final_fixture_report_sha256": null,
+  "ps_parser_errors": 0,
+  "existing_prerequisites_readonly_hash_audit_passed": true,
+  "final_fixture_predicates_not_yet_executed": true,
+  "stage_switch_executed": false,
+  "new_runnable_contexts_created": false,
+  "linux_workload_started": false,
+  "private_backup_or_credentials_read": false,
+  "source_or_helpers_edited": false,
+  "created_utc": "2026-11-08T17:17:08.7748894Z"
+}

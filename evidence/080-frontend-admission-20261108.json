@@ -1,0 +1,81 @@
+{
+  "scope": "devbrain_frontend_metadata_admission",
+  "schema_version": 1,
+  "workload_started": false,
+  "linux": {
+    "boot_id": "9c96aa85-f347-444c-85b6-3606d22b2143",
+    "runtime_sha_matches_gate": {
+      "python": true,
+      "java": true,
+      "tmux": true
+    },
+    "kernel_probe_exit": 0,
+    "kernel_fatal_count": 0,
+    "kernel_fatal_lines": [],
+    "node": {
+      "path": "/home/piotr/.cache/devbrain-validation-20261107/tooling/node-v22.14.0-linux-x64/bin/node",
+      "sha256": "1abce2374a485bddae3c27b17a3e3143e2780232026e627c4fe74ddde3f380a1"
+    },
+    "npm_cli": {
+      "path": "/home/piotr/.cache/devbrain-validation-20261107/tooling/node-v22.14.0-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "sha256": "8e5f6f3429f8cdbe693cdc29904e9d5a7b127a494bd15c804bd54c7403bfcbe7"
+    },
+    "chromium": {
+      "path": "/home/piotr/.cache/devbrain-validation-20261107/tooling/playwright/chromium-1193/chrome-linux/chrome",
+      "sha256": "5386de944dc312f838d69a974253d23bdb029acc072e28e6b11aa478c8b504d5"
+    }
+  },
+  "wsl_dump_metadata": [
+    {
+      "bytes": 1503232,
+      "last_write_utc": "2026-11-07T10:45:15.4050307Z",
+      "name": "wsl-crash-1794048315-747-_usr_bin_tmux-11.dmp"
+    },
+    {
+      "bytes": 87007232,
+      "last_write_utc": "2026-11-07T10:46:47.2651299Z",
+      "name": "wsl-crash-1794048407-1508-_usr_bin_python3.12-11.dmp"
+    },
+    {
+      "bytes": 1495040,
+      "last_write_utc": "2026-11-07T10:49:27.0632400Z",
+      "name": "wsl-crash-1794048567-773-_usr_bin_tmux-11.dmp"
+    },
+    {
+      "bytes": 1495040,
+      "last_write_utc": "2026-11-07T10:50:31.3982301Z",
+      "name": "wsl-crash-1794048631-1194-_usr_bin_tmux-11.dmp"
+    },
+    {
+      "bytes": 1970176,
+      "last_write_utc": "2026-11-07T10:52:41.0994119Z",
+      "name": "wsl-crash-1794048760-3459-_usr_bin_tmux-11.dmp"
+    },
+    {
+      "bytes": 9322496,
+      "last_write_utc": "2026-11-07T10:56:19.0170463Z",
+      "name": "wsl-crash-1794048979-10985-_home_piotr_.cache_devbrain-runtime-080_runtimes_python_bin_python3.12-11.dmp"
+    },
+    {
+      "bytes": 2322432,
+      "last_write_utc": "2026-11-07T11:06:38.2227563Z",
+      "name": "wsl-crash-1794049598-86735-_usr_bin_tmux-11.dmp"
+    },
+    {
+      "bytes": 1495040,
+      "last_write_utc": "2026-11-07T11:12:04.7219407Z",
+      "name": "wsl-crash-1794049925-98183-_usr_bin_tmux-11.dmp"
+    },
+    {
+      "bytes": 17833984,
+      "last_write_utc": "2026-11-07T11:24:12.7074517Z",
+      "name": "wsl-crash-1794050652-106645-_home_piotr_.cache_devbrain-runtime-080_python313_runtime_python_bin_python3.13-6.dmp"
+    },
+    {
+      "bytes": 23687168,
+      "last_write_utc": "2026-11-07T11:40:26.0473273Z",
+      "name": "wsl-crash-1794051625-107923-_usr_bin_perl-11.dmp"
+    }
+  ],
+  "observed_utc": "2026-11-08T09:08:57.6996303Z"
+}

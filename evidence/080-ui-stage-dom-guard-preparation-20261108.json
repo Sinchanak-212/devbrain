@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_UI_materializer_DOM_name_guard_preparation",
+  "created_utc": "2026-11-08T21:22:43.1700735Z",
+  "status": "prepared_not_run_pending_independent_peer",
+  "old_stager": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-interactive-length-repair-agent-604-20261108.ps1",
+  "old_stager_sha256": "992ef717655b1c901e556034a32af781a092ae47fb8367523e3a70038b78bf29",
+  "new_stager": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-interactive-length-repair-agent-dom-604-20261108.ps1",
+  "new_stager_sha256": "45e6b3a7c441eeeafe7b29c1680f3857db278ab0e4e057357a7cca880dac87be",
+  "exact_single_expression_change": [
+    "$xml.DocumentElement.Name-in@(",
+    "$xml.DocumentElement.psbase.Name-in@("
+  ],
+  "exact_reverse_verified": true,
+  "old_Windows_stage_actual_exec_result": {
+    "chunk_id": "38f4ee",
+    "wall_time_seconds": 2.5916205,
+    "exit_code": 1,
+    "original_token_count": 85,
+    "output": "Exception: C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-interactive-length-repair-agent-604-20261108.ps1:19\r\nLine |\r\n  19 |  … Require([bool]$Good,[string]$Message){if(-not $Good){throw $Message}}\r\n     |                                                         ~~~~~~~~~~~~~~\r\n     | JUnit contains nonpassing tests\r\n"
+  },
+  "old_Windows_stage_actual_exit": 1,
+  "failure_fixed_code": "PowerShell_XML_adapted_Name_reads_name_attribute",
+  "actual_backend_DOM_name": "testsuites",
+  "actual_UX_DOM_name": "testsuites",
+  "actual_adapted_Name": "pytest tests",
+  "actual_backend_testcases": 1557,
+  "actual_UX_testcases": 377,
+  "actual_failure_error_skipped_nodes": 0,
+  "original_UI_active_context_created": false,
+  "refused_before_first_filesystem_mutation": true,
+  "JUnits_unchanged": true,
+  "PS_parse_errors": 0,
+  "Windows_in_memory_guard_cases_passed": 7,
+  "actual_collection_nodeid_and_zero_failure_error_skip_contract_preserved": true,
+  "source_or_helper38_changed": false,
+  "new_Stage_invoked": false,
+  "Linux_executed": false,
+  "current_UI_passed": false,
+  "quota_latest_parent_official_weekly_percent": 35,
+  "quota_5h_status": "unavailable"
+}

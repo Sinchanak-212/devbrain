@@ -1,0 +1,40 @@
+{
+  "run_id": "<FRESH_INTERACTIVE_RUN_ID>",
+  "env": {
+    "LC_ALL": "C.UTF-8",
+    "LANG": "C.UTF-8"
+  },
+  "python_launcher": "/home/piotr/.cache/devbrain-runtime-080/postbios-app080-20261108T202627Z/venv/bin/python",
+  "required_artifacts": [
+    "gate.json",
+    "controller-report.json",
+    "supervisor-report.json",
+    "interactive-ready.json",
+    "interactive-results.json"
+  ],
+  "argv": [
+    "--execute",
+    "--run-id",
+    "<FRESH_INTERACTIVE_RUN_ID>",
+    "--artifact-root",
+    "<FRESH_LINUX_ARTIFACT_ROOT>",
+    "--source-root",
+    "/home/piotr/.cache/devbrain-runtime-080/postbios-app080-20261108T202627Z/project/devbrain",
+    "--private-root",
+    "/home/piotr/.cache/devbrain-regressions-080",
+    "--arcade-dist",
+    "/home/piotr/.cache/devbrain-validation-20261107/tooling/arcadedb-26.11.1",
+    "--codex-bin",
+    "/home/piotr/.codex/packages/standalone/releases/0.166.0-x86_64-unknown-linux-musl/bin/codex",
+    "--claude-bin",
+    "/home/piotr/.local/share/claude/versions/2.1.319",
+    "--codex-auth",
+    "/home/piotr/.codex/auth.json",
+    "--claude-auth",
+    "/home/piotr/.claude/.credentials.json",
+    "--operator",
+    "agent",
+    "--duration",
+    "1800"
+  ]
+}

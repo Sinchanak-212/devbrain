@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "scope": "closed_synthetic_UI_hook_spool_metadata_only",
+  "run_id": "diag-prototype-realwt080-20261109T123316Z-e0a219b6",
+  "safe_next_report_sha256": "87958ff26b8cab75b4879a395a5b0a59191f05609449b813e120dea01212ae19",
+  "private_manifest_retained": true,
+  "private_runtime_registry_retained": true,
+  "hook_spool_retained": false,
+  "hook_files_observed": 0,
+  "event_name_counts": {},
+  "event_metadata": [],
+  "native_Resume_verified": false,
+  "database_started": false,
+  "Linux_program_started": false,
+  "model_or_account_request_started": false,
+  "private_payload_exported": false,
+  "not_observed_does_not_mean_hook_never_ran": true,
+  "expected_owned_Codex_generation_identified": true,
+  "expected_logical_id_matches_known_prefix": true,
+  "runtime_registry_native_id_present": false,
+  "classification": "no_retained_hook_event_observed_no_execution_inference"
+}

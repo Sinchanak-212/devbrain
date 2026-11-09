@@ -1,0 +1,17 @@
+{
+  "production_resumed": false,
+  "all_owned_processes_closed": true,
+  "working_source_freeze_sha256": "9e5168bece45cf3c06bd0abded7e1573b51cf55778570fdc49c8e0a8872e81b9",
+  "main_handoff": {
+    "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-NEXT-SESSION-AUTHORITATIVE-PRE8H-20261109.json",
+    "sha256": "351f501cda67a3fdadac0323154ff0c7f31b5edb7a4c6c7cd4c838b5d38dbc47"
+  },
+  "schema_version": 1,
+  "authoritative_start_here_sha256": "533b0322424ff5e2d4660fbc0674ea048a56ed3003a5d7d47387617abb1da804",
+  "authoritative_start_here": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-QUOTA-STOP-START-HERE-20261109.json",
+  "updated_utc": "2026-11-09T13:18:37.8740778+00:00",
+  "eight_hour_started": false,
+  "scope": "mutable_resume_index_not_an_acceptance_proof",
+  "status": "QUOTA_STOP5_SAVED_READY_FOR_WINDOWS_SHUTDOWN",
+  "new_test_start_allowed": false
+}

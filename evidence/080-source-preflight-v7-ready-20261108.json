@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_source_preflight_v7_reviewed_ready",
+  "status": "prepared_reviewed_not_run",
+  "prepared": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-source-preflight-v7-unmanaged-preparation-20261108.json",
+  "prepared_sha256": "cabf3339e7d3ceae03c542eb2ebe1e406b90391c440881c4d6cf3218c92ac716",
+  "peer": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-source-preflight-v7-unmanaged-qr-peer-review-20261108.json",
+  "peer_sha256": "81f0b63adc02cef8b843df2e0a48a90b4235f330337d1e19b3e6b185c3db5efb",
+  "files": {
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\release-tools\\check-production-source080-v7.py": "47838bbff07f73639563c43d0f37c5c92e3dc8ff7ab0529132e4d4fad570b8b3",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\release-tools\\run-source-preflight080-v7.ps1": "f03ddf073f85636c3fc5ac53d892f695ec761f5674117c3b8d98afbdd3a819be",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-production-source-preflight-v7-080.ps1": "366e3c1d221f80d58d4cd6bd294f54cbb30e3f66160667c7b043d1a62a0860dc",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\test-production-source-unmanaged080.py": "426550ab610c3fa504692093b8b0199e23af47d273f44a0efcfb16ce8d5712c4",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\test-production-source-observer-v7-080.ps1": "892e12c6659ba7fde9df927a4b737df80ee7e047156933dabb36aa0b831cdc9f"
+  },
+  "candidate_context_sha256": "cdd27ef8e5326c85ab4f85af562b2826c20f3b63cfd07c454441cb3fbf7766d6",
+  "baseline_expected_file_count": 182,
+  "target_expected_file_count": 198,
+  "windows_stage_commands": [
+    {
+      "script": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-production-source-preflight-v7-080.ps1",
+      "args": [
+        "-Stage",
+        "-Mode",
+        "baseline072"
+      ]
+    },
+    {
+      "script": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-production-source-preflight-v7-080.ps1",
+      "args": [
+        "-Stage",
+        "-Mode",
+        "target080"
+      ]
+    }
+  ],
+  "observer_command_template": "pwsh -NoProfile -File <NEW_ROOT>/run-source-preflight080.ps1 -InputFreezeSha256 <ACTUAL_INPUT_FREEZE_SHA256> -Execute",
+  "requires_root_serial_handoff": true,
+  "requires_fresh_baseline_before_mutation": true,
+  "requires_fresh_whole_target_after_update_before_resume": true,
+  "prior_failed_result_preserved": true,
+  "private_output_contents_unknown": true,
+  "production_modified": false,
+  "linux_started": false,
+  "stage_executed": false,
+  "observer_executed": false,
+  "checker_main_executed": false,
+  "deployment_authorized": false,
+  "created_utc": "2026-11-08T20:47:56.157556+00:00"
+}

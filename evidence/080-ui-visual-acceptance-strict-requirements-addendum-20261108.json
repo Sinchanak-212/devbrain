@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_actual_ui_visual_acceptance_requirements_addendum",
+  "status": "requirements_only_not_acceptance_evidence",
+  "created_utc": "2026-11-08T22:25:00.460738+00:00",
+  "base_requirements": {
+    "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-interactive-length-rerun-final-audit-requirements-20261108.json",
+    "sha256": "7bbb74674c4bcfeae067e70ef67130672900621f6c59536dee33f2310c89dbfe"
+  },
+  "base_template": {
+    "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-interactive-length-rerun-root-visual-review-template-20261108.json",
+    "sha256": "2adf2df8be277ea86a763e7285440533290dedf058c39fc2eb8783202a58fce9"
+  },
+  "required_final_report_field": {
+    "name": "visual_acceptance_passed",
+    "json_type": "boolean",
+    "accepted_value": true
+  },
+  "requirement": "Actual mechanical8 observations and reviewed PNG files are necessary but do not establish visual acceptance when a visible criterion fails. Any cropped/inaccessible required action keeps visual_acceptance_passed=false and blocks NEXT5.",
+  "current_failed_visual_run_id": "interactive-length-repair-rerun080-20261108T220216Z-b584d2e0",
+  "current_visual_acceptance_passed": false,
+  "actual_root_session": 14823,
+  "actual_root_exit_code_reported_by_root": 0,
+  "cleanup_final_audit_pending": true,
+  "root_observed_issue": "More action cropped at80-column view",
+  "raw_receipt_mutation_permitted": false,
+  "prior_reports_overwritten": false,
+  "no_new_acceptance_claim": true,
+  "eight_hour_launch_permitted_this_session": false
+}

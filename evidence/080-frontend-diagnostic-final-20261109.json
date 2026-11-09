@@ -1,0 +1,99 @@
+{
+  "scope_quiet_seconds": 32.81951960000001,
+  "receipt_sha256": "d4d567d6c16769ae92ec6d2b852d8fd22531425e121762fc6f3651c6a55aee96",
+  "source_files": 153,
+  "controller_sha256": "f98372ffd96e17a3352e4e001d4cb4665f833b7c952ee270910d4724cedf4c79",
+  "current_ui_passed": false,
+  "cleanup_complete": true,
+  "receipt": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\frontend-diag080-20261109T100750Z-e7bd65b8\\artifacts\\receipt.json",
+  "browser": {
+    "passed": 8,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "actual_windows_exec_session": 68778,
+  "actual_windows_exit_code": 0,
+  "helper_count": 38,
+  "supervisor_sha256": "80298429b3aa41bc9d0ef94134f0bbb6e2e178eac4af2286ad733711867b825c",
+  "retained_older_unused_static_files": 4,
+  "controller_quiet_seconds": 30.062,
+  "audit_review_history": {
+    "corrected_to": "literalPrefix.Length",
+    "first_failed_before_publication": true,
+    "first_windows_audit_exit": 1,
+    "cause": "Audit-only source namespace prefix length32vs33; product/raw frontend result unaffected",
+    "all_raw_proofs_reverified": true
+  },
+  "source_freeze_sha256": "ad77e00450537294fd26200d0713915689d82ff5a90e65f6c8fb1285fcbb4703",
+  "run_id": "frontend-diag080-20261109T100750Z-e7bd65b8",
+  "current_build_files": 7,
+  "raw_artifact_sha256": {
+    "frontend-audit-all.json": "053f64cca2c4588a2759a48e6e008b89b55abd8b27e1d572b802cdcc9a4d6195",
+    "gate.json": "a6bd365cea68986ed6795990272c766679bbd29fd9407e904a12c2956bcdf7fb",
+    "frontend-build-manifest.json": "b20ebfd34ac50f47e86859f99daa10e8859c64c07160ca5c9c09a629a8aa9eb0",
+    "frontend-unit.xml": "d443eb24d16390a55b861a39ae2f208233cd8038d47559aa69a706b9a206b657",
+    "frontend-audit-runtime.json": "053f64cca2c4588a2759a48e6e008b89b55abd8b27e1d572b802cdcc9a4d6195",
+    "regressions-results.json": "38c6b6c2927281c7a47acf661f24fc8e633416ad169561c4d2f002e1cd0af31b",
+    "frontend-browser.xml": "e18c42e0d48cc779c56d117bfc5d6f67fa1dc8341863c64fa5c93defe02ca6a0",
+    "supervisor-report.json": "80298429b3aa41bc9d0ef94134f0bbb6e2e178eac4af2286ad733711867b825c",
+    "controller-report.json": "f98372ffd96e17a3352e4e001d4cb4665f833b7c952ee270910d4724cedf4c79",
+    "power-samples.jsonl": "00e3f1a4465bfb72562664bbca3c4324560bb435f737c85bf1bacfdf4fef78ed",
+    "regression-source.json": "28675bc380c0ce4e5970702c9b718b921fa2c4252235a6829635b21d227dba46"
+  },
+  "formal_release_gate": false,
+  "application_qualified": false,
+  "sleep_restored": true,
+  "all_current_built_bytes_match_candidate": true,
+  "packaged_static_files": 11,
+  "power_changed": false,
+  "outer_quiet_seconds": 35,
+  "schema_version": 1,
+  "release_qualified": false,
+  "error_inventory_only": true,
+  "steps": {
+    "install": {
+      "returncode": 0,
+      "actual_exit_verified": true
+    },
+    "unit": {
+      "returncode": 0,
+      "actual_exit_verified": true
+    },
+    "build": {
+      "returncode": 0,
+      "actual_exit_verified": true
+    },
+    "browser": {
+      "returncode": 0,
+      "actual_exit_verified": true
+    },
+    "server_shutdown": {
+      "actual_exit_verified": true,
+      "returncode": 143
+    },
+    "audit_all": {
+      "returncode": 0,
+      "actual_exit_verified": true
+    },
+    "audit_runtime": {
+      "returncode": 0,
+      "actual_exit_verified": true
+    }
+  },
+  "scope_unit": "devbrain-q-51858c20797642ee9d243e53fa4d7d21.scope",
+  "scope": "devbrain_independent_frontend_diagnostic_review",
+  "boot_id": "8aeeed28-e54c-4f2b-9e22-4cca3b24c223",
+  "native_failure": false,
+  "frontend_source_files": 25,
+  "created_utc": "2026-11-09T10:18:58.2919272Z",
+  "status": "diagnostic_passed_not_release_qualified",
+  "safe_next_owned_scope_only": true,
+  "scope_identity": "25:3084",
+  "unit": {
+    "passed": 10,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  }
+}

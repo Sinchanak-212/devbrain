@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_080_persistent_status_resume_static_peer_review",
+  "reviewed_at_utc": "2026-11-08T13:19:36.267015+00:00",
+  "status": "static_review_passed_runtime_not_run",
+  "reviewer": "release_review",
+  "baseline": {
+    "run_id": "app080-20261108T115211Z",
+    "freeze_sha256": "701d042cdf9d9ef1f1239a5d316d6727c87cc9bc920cafeae8fc78f830719b2d"
+  },
+  "reviewed_file_sha256": {
+    "src/devbrain/workspace.py": "210c645c5c0fae522beb4bc2e5f71570feb798dadcbf1599100c8fde6903e917",
+    "src/devbrain/terminal_panels.py": "daf342508b38ec695445a11f5bd1c063896be79b45ab8caf72adab7d46fbe8fe",
+    "src/devbrain/terminal_i18n.py": "bb3f7a801a1bd5ed78424d7a456f0e93246559800b8c7a9ead54f72117644c52",
+    "tests/test_workspace_ux080.py": "ec941b5043b757a2646d61c2339a66755a4a9767c46e36ffe3f4d90e02181668",
+    "tests/test_terminal_ux080.py": "f7caa5ad9fd23d3af3c51fc2ee56030c6ba58459198ddc9fe0021a6d08e84661",
+    "tests/test_workspace.py": "28e94a147abbeca825773b40d1c762bcac56d1a25c25828551ee32041504fb88"
+  },
+  "unchanged_runtime_file_sha256": {
+    "src/devbrain/client_runtime.py": "00e46c98a410461b1d612f3d0677263e44ea9405b33140a43de8d9d2e80c30dc",
+    "src/devbrain/api_runtime.py": "5c58afad5d0072b8fed5eb37eb7c86a2d872bc3fa385fe2f91b659f2972a7b7a",
+    "src/devbrain/cockpit.py": "3fbeaddff57ff78195ca42ae9cc80dadc0c94c5f42da0a0d45347bc972345864",
+    "src/devbrain/terminal_bridge.py": "e5fd740590cb7c32ff877fa89079c92a921bd230193e7c1869d16d58091a4330",
+    "src/devbrain/workspace_state.py": "831464ed6f0035fcd7599c3c6e44a43e069f8e60375b5e02111f6538e26cff2f"
+  },
+  "windows_ast_parse": {
+    "files": 6,
+    "passed": true,
+    "application_imported": false
+  },
+  "linux_commands_executed": false,
+  "tests_executed": false,
+  "credentials_read": false,
+  "findings": [],
+  "resolved_findings": [
+    "Resume is inspect/focus only and cannot turn a stale LIVE click into a launch request.",
+    "Final success uses the latest broker LIVE run identity including available PID/birth and reconciled project/worktree/slot/client/generation; earlier, during-reconcile and final-state exit races have authored regressions.",
+    "Both LIVE selection and historical fallback exclude purpose=auth; three old synthetic coding rows now explicitly match the production purpose contract."
+  ],
+  "review_checks": {
+    "cached_connection_truthful": "Only native locally reported signed-in readiness may be Ready(local); negative installation/auth/connectivity/usage/error evidence wins. API/Copilot profile existence stays Configured/Unknown. No provider connectivity is inferred from process liveness.",
+    "memory_precedence": "Broker/memory unavailable, stale and partial precede acknowledged=true. No-run memory is Not loaded.",
+    "ownership": "Pane control is trusted only for exact run_id:generation. Native readonly maps to Other; stale binding is Unknown; each outer read-only client overrides shared pane control. New binding clears old control.",
+    "format_safety": "User project/client/run labels remove Unicode control categories, replace ASCII # before tmux interpolation and use display-cell clipping. Only fixed translated state labels enter style/conditional formats.",
+    "persistent_layout": "Two status rows remain outside pane zoom. First row is project/session, second memory/connection/control. 140x42 threshold accounts for the two status rows.",
+    "runtime_semantics": "Existing NativeRuntime/API runtime start, broker, terminal bridge and workspace state files are byte-identical to baseline. LIVE reuse tuple remains project/worktree/client/slot/purpose without model/profile changes restarting a process.",
+    "test_cleanup": "Actual PTY tests continuously drain output, detach/wait their retained children, close both terminals even after one cleanup error and preserve the primary failure; manager/native fixtures retain their own server finalizers.",
+    "existing_tests": "Existing workspaceUX/terminalUX function ASTs unchanged. test_workspace.py is exactly baseline plus three purpose=coding literals; assertions unchanged."
+  },
+  "authored_regressions": {
+    "additional_cases_static_count": 33,
+    "planned_ux_total": 338,
+    "planned_whole_modules": 27,
+    "actual_collection_authoritative": true,
+    "covers": [
+      "EN/PL",
+      "80x24/120x36/180x55",
+      "real tmux writer and read-only viewers",
+      "native other owner and stale binding",
+      "hostile tmux strings and wide Unicode",
+      "broker outage with pane identities retained",
+      "same-client profile edit reuse",
+      "auth row exclusion",
+      "real synthetic native PID/generation continuity",
+      "process exit before initial refresh, during reconcile and before final refresh",
+      "minimum 140x42 cockpit geometry"
+    ]
+  },
+  "limitations": [
+    "This is static review and Windows syntax validation only; new tests and final rendered UX still require supervised execution on a fresh frozen source.",
+    "Earlier 305-case/8-task results belong to the previous source and are not qualification of this delta."
+  ]
+}

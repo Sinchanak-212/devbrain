@@ -1,0 +1,32 @@
+{
+  "scope": "mechanical_standalone_attestation_stager_derivation",
+  "baseline": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-standalone-sidebar-resize-1561-20261109.ps1",
+  "baseline_sha256": "d8edf4496ae5827297fc3466a450a80a2b618a5bbb82649b123c6aa506169304",
+  "derived": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-standalone-native-failure-1605-20261109.ps1",
+  "derived_sha256": "19943bb8fea50075e3dc7f3a7cfb887115142c5cf584139f53ca5543b77e4dad",
+  "replacements": {
+    "standalone1561": "standalone1605",
+    "080-standalone-length-repair-attestation-prepared-context-20261108.json": "080-standalone-sidebar-resize-attestation-prepared-context-20261109.json",
+    "8598f2e8e68cd91f60d609617777ee082133e82346ab95de3dcaaed549b195ce": "dd0b9167aefc8729ffd7ce3a218d23fc257fef890cf419bf0e8f4d6e3b4aea4b",
+    "c7e8ca2373c32d22cb0113b902dc8c4fb13b0cdd19f2e69b09e8ab0564690b4f": "174a7e601b9b991a5baa02fe1bac109e78ec8c62e1b4aac61ed0b25cbb7572c7",
+    "de263bb59d27fa73e63a4f590f99e6169ea6d83375b4425b3c9310b93b4da7a6": "5f866de6f81c19b9a560c482510ec12305d7a7ecd71692f03123b52193a5cf94",
+    "080-fullbackend-sidebar-resize-active-context-20261108.json": "080-fullbackend-native-failure-diagnostic-active-context-20261109.json",
+    "54c47944a9d53fdbea1d546d56e470b6641403a1bdf07183247d7e4b10830782": "8a4b0c1a1a3074d98f9e3bd04069607bcf008ab2b122ec5cd4a6fb8c4c18d37e",
+    "$b.status-ceq'passed'": "$b.status-ceq'diagnostic_passed_not_release_qualified'",
+    "1561": "1605",
+    "56737": "74540",
+    "3befefb2a484b86e39da8ed25973b62e37bf812a5c117aafca680c0a12b39da0": "9416368767ed5d6ec8eee6486da9f868ee6350ebc1c5231300b242b0d6343d6b",
+    "90272cf32524a02a4c80d3c47203728748ebd924d89152df72cc58a3cab104a3": "106bb67cfd1338b26041d547192cc1ba6b6939cd69ab9911c07d8bca4340430b",
+    "ad77e00450537294fd26200d0713915689d82ff5a90e65f6c8fb1285fcbb4703": "9e5168bece45cf3c06bd0abded7e1573b51cf55778570fdc49c8e0a8872e81b9",
+    "4cba08753a5d44463687271f5e695ccddac4d2284ca348b66630f480facde918": "fc63c2782c515d63e8c6e45b1c130d8a16b43904a8b6a050163b4034552db0bd",
+    "080-standalone-sidebar-resize-attestation-prepared-context-20261109.json": "080-standalone-native-failure-attestation-prepared-context-20261109.json",
+    "suite-attest-sidebar-envelope-": "suite-attest-native-failure-envelope-"
+  },
+  "same_canonical_attestor_and_observer_functions": true,
+  "new_source_completion_status_explicit": true,
+  "expected_actual_cases": 1605,
+  "backend_actual_session": 74540,
+  "Linux_started": false,
+  "stage_executed": false,
+  "application_qualified": false
+}

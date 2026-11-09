@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_clone_preflight_modal_fixture_peer_review",
+  "status": "static_review_ack_runtime_not_run",
+  "reviewer": "test_suite",
+  "recorded_utc": "2026-11-08T10:07:30.0431516Z",
+  "linux_started": false,
+  "runtime_tests_executed": false,
+  "application_source_edited": false,
+  "findings": [],
+  "reviewed_file": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\devbrain\\tests\\test_terminal_workspace_e2e.py",
+  "reviewed_sha256": "20b986ffa34d311001f4e045a8727bf12f85744a6ec2c07ef2a504bb25d7d52e",
+  "baseline_file": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\app080-20261108T095822Z\\bundle\\devbrain\\tests\\test_terminal_workspace_e2e.py",
+  "baseline_sha256": "3fde5881ee4ff69a435b91e0200c9e4e9c65a75277d83599f12647aa087f5c23",
+  "baseline_snapshot": "app080-20261108T095822Z",
+  "checks": {
+    "only_documented_import_and_modal_callback_delta": true,
+    "callback_called_before_result_returned": true,
+    "sync_and_async_callback_contract_matches_FormModal": true,
+    "real_preview_request_retained": true,
+    "cancel_and_confirmation_assertions_unchanged": true,
+    "scope_identity_and_unrelated_memory_assertions_unchanged": true,
+    "no_inference_assertions_unchanged": true,
+    "all_other_module_content_unchanged": true
+  },
+  "rationale": [
+    "Production FormModal calls on_submit with values and awaits an awaitable result before dismissing with those values.",
+    "The fake modal now performs that existing callback; production import_memory_form therefore obtains its real dry-run preview and checked payload before confirmation.",
+    "No checked state is injected and neither the real preview nor either confirmation is bypassed. The cancellation, import, scope, data preservation and no-inference assertions remain identical."
+  ],
+  "test_count_delta": 0,
+  "required_next_step": "Fresh source snapshot and complete supervised UX run. This static review does not qualify runtime behavior."
+}

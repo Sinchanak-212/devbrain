@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_popup_fixture_teardown_peer_review",
+  "status": "static_review_ack_runtime_not_run",
+  "reviewer": "test_suite",
+  "recorded_utc": "2026-11-08T10:46:03.1624986Z",
+  "linux_started": false,
+  "runtime_tests_executed": false,
+  "application_source_edited": false,
+  "findings": [],
+  "reviewed_file": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\devbrain\\tests\\test_workspace_ux080.py",
+  "reviewed_sha256": "54867aa00808199cef72e7153ead1dd87b57611c9187fdbfe96c4a1326646436",
+  "baseline_file": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\app080-20261108T101806Z\\bundle\\devbrain\\tests\\test_workspace_ux080.py",
+  "baseline_sha256": "2f54613304f9c846bfc3b8554f639f60158c4827c85722d6934c6c761043ebc4",
+  "baseline_snapshot": "app080-20261108T101806Z",
+  "checks": {
+    "only_context_scope_and_patch_variable_delta": true,
+    "real_workspace_create_before_patch_unchanged": true,
+    "clients_exists_tmux_fakes_restored_before_fixture_teardown": true,
+    "restoration_on_success_and_assertion_exception": true,
+    "all_existing_popup_writer_timeout_and_rejection_assertions_preserved": true,
+    "manager_fixture_and_production_source_unchanged": true,
+    "cleanup_predicate_deadline_signals_unchanged": true,
+    "all_other_module_content_unchanged": true
+  },
+  "rationale": [
+    "The manager fixture depends on the same pytest monkeypatch fixture, so its teardown precedes the outer monkeypatch undo. The prior fake tmux swallowed manager.tmux(kill-server).",
+    "The local monkeypatch.context restores clients/exists/tmux as the test body exits, including when an assertion raises; the manager finalizer then calls the real original tmux method.",
+    "The live workspace is still created before patching. Exact reconstruction of indentation and monkeypatch-to-patch replacements matches the complete current file; no assertions were removed."
+  ],
+  "test_count_delta": 0,
+  "required_next_step": "Fresh frozen app snapshot and full supervised UX303 on the diagnostic362 toolbundle. Static review does not prove no remaining descendant; external cleanup must pass."
+}

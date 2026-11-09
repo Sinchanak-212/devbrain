@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_sidebar_resize_eight_hour_prerequisites",
+  "status": "pending_all_actual_current_source_application_proofs",
+  "template_master_sha256": "f4e039f5040cd70f2f3b0aa18699bfacc92e1f445ad2bb81dd685d96b2643dba",
+  "source_freeze_sha256": "ad77e00450537294fd26200d0713915689d82ff5a90e65f6c8fb1285fcbb4703",
+  "guard": {
+    "context": null,
+    "context_sha256": null,
+    "receipt_sha256": null,
+    "final_report_sha256": null
+  },
+  "backend": {
+    "context": null,
+    "context_sha256": null,
+    "receipt_sha256": null,
+    "final_report_sha256": null
+  },
+  "standalone": {
+    "context": null,
+    "context_sha256": null,
+    "attestation_sha256": null,
+    "observation_sha256": null,
+    "final_report_sha256": null,
+    "final_report": null
+  },
+  "gates": {
+    "ux": {
+      "context": null,
+      "context_sha256": null,
+      "receipt_sha256": null,
+      "final_report_sha256": null,
+      "run_id": null
+    },
+    "interactive": {
+      "context": null,
+      "context_sha256": null,
+      "receipt_sha256": null,
+      "final_report_sha256": null,
+      "run_id": null
+    },
+    "native": {
+      "context": null,
+      "context_sha256": null,
+      "receipt_sha256": null,
+      "final_report_sha256": null,
+      "run_id": null
+    },
+    "copilot": {
+      "context": null,
+      "context_sha256": null,
+      "receipt_sha256": null,
+      "final_report_sha256": null,
+      "run_id": null
+    },
+    "recall": {
+      "context": null,
+      "context_sha256": null,
+      "receipt_sha256": null,
+      "final_report_sha256": null,
+      "run_id": null
+    },
+    "frontend": {
+      "context": null,
+      "context_sha256": null,
+      "receipt_sha256": null,
+      "final_report_sha256": null,
+      "run_id": null
+    },
+    "queue_copy": {
+      "context": null,
+      "context_sha256": null,
+      "receipt_sha256": null,
+      "final_report_sha256": null,
+      "run_id": null
+    },
+    "upgrade_smoke": {
+      "context": null,
+      "context_sha256": null,
+      "receipt_sha256": null,
+      "final_report_sha256": null,
+      "run_id": null
+    }
+  },
+  "note": "Fill a NEW immutable proof manifest only with current222731 actual context/receipt/report hashes. Canonical1561 stays in its actual backend artifact root. UI requires literal visual_acceptance_passed=true. NO8h this session; next session fresh boot/runtime/power/native/quota checks and a new uninterrupted trial are mandatory.",
+  "eight_hour_launch_permitted_this_session": false
+}

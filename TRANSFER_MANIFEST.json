@@ -1,0 +1,797 @@
+{
+  "format": "devbrain-development-session-transfer",
+  "format_version": 1,
+  "devbrain_version": "0.7.1",
+  "created_at": "2026-11-07T09:09:14.603571+00:00",
+  "entrypoint": "START_HERE.txt",
+  "source_files": 178,
+  "includes_user_database": false,
+  "includes_credentials": false,
+  "includes_full_chat_transcript": false,
+  "files": {
+    "START_HERE.txt": {
+      "sha256": "76dfc5fba5c9b9ceaca23a3fcfd6e62338aab07ddc3e23624c82d134144fc5ef",
+      "bytes": 8946
+    },
+    "devbrain/.gitignore": {
+      "sha256": "b76d917809d037e67f4ada81d0521a5d13517529a02f01e92fe41c5ffd6463f8",
+      "bytes": 173
+    },
+    "devbrain/ARCADE_CONTRACTS.md": {
+      "sha256": "bc819fb42895f7606f4350d5d0c66cd9c5b4c591f1b6a0130f21ce0beb603ccc",
+      "bytes": 5781
+    },
+    "devbrain/CONTRACTS.md": {
+      "sha256": "7299ebf8fb95e5b57d38fc349f890f358fe0e68eac314173c1ee00856d820044",
+      "bytes": 1667
+    },
+    "devbrain/README.md": {
+      "sha256": "eb77cd1c153470e526ca25673c3cdc324dc76da3cbbfed6c7ac54204192ecf90",
+      "bytes": 20402
+    },
+    "devbrain/V03_CONTRACTS.md": {
+      "sha256": "554889bf0a6208ba7d5312f982cabfc61ccd1ce4b1d36ad5db83eb8debee9760",
+      "bytes": 12390
+    },
+    "devbrain/docs/API.md": {
+      "sha256": "c5de62fa9502a61fa95f4f60a81f584e3c2156fbf4b1a826fcbb92047175f158",
+      "bytes": 11376
+    },
+    "devbrain/docs/COCKPIT.md": {
+      "sha256": "cabda477db2690d47fe6e758a21439f1fbe09b68059e54c01009c22fc81cbac0",
+      "bytes": 9412
+    },
+    "devbrain/docs/MEMORY_CONTRACTS.md": {
+      "sha256": "ca2af84f1b25e4f53a6b5ecb2e53ad4d768196b9f2b5ddbd74ab8c85a1b24735",
+      "bytes": 4747
+    },
+    "devbrain/docs/README.md": {
+      "sha256": "1d72e6e1744c441057cef3e42fafa83a4714c801900f3b32eb9ad3e3b8859e3e",
+      "bytes": 50747
+    },
+    "devbrain/docs/TERMINAL.md": {
+      "sha256": "712508a15cf1c88c7b50903968094ebca0bdb50667f86a2c29ecbca6d27643ac",
+      "bytes": 15235
+    },
+    "devbrain/frontend/.gitignore": {
+      "sha256": "e064f420438b98fb06387bd265683e725fbdae58d5871f1db52b24365df25264",
+      "bytes": 61
+    },
+    "devbrain/frontend/.prettierrc.json": {
+      "sha256": "031f20b09bd70372c1d243ad9d691b23d09e2c60764c734c6ca2552839ff7c27",
+      "bytes": 60
+    },
+    "devbrain/frontend/README.md": {
+      "sha256": "a1e5102ff82d844ba51f58b43831441424cc26d6b78fa754d976ff4846340bab",
+      "bytes": 1376
+    },
+    "devbrain/frontend/index.html": {
+      "sha256": "64eb85b6dea233354f02b618d8b7e77307fb60ac289b912d3f55947639b8f874",
+      "bytes": 357
+    },
+    "devbrain/frontend/package-lock.json": {
+      "sha256": "920ff0b3b879b4c9331926652048acceb1d9e308ce3d38b45bb197fdd6bccce7",
+      "bytes": 142242
+    },
+    "devbrain/frontend/package.json": {
+      "sha256": "21908fd3b15efcf90c711ba61e7c2ca68cf0f76e0ef82c8a9ff23173d49ad865",
+      "bytes": 795
+    },
+    "devbrain/frontend/playwright.config.ts": {
+      "sha256": "58731e7bc098fb855caaf318e6ee078f4d614a6c61c5310543567b7a4ae9c05a",
+      "bytes": 621
+    },
+    "devbrain/frontend/src/App.tsx": {
+      "sha256": "c9fdc7fd7cd8553627f2698b41218c33881398a1c94d2640d96c7fb19ac3f71d",
+      "bytes": 45000
+    },
+    "devbrain/frontend/src/BrainGraph.tsx": {
+      "sha256": "82026401f5c5dd13adee7309c06ff5483b0af5013bcd353ac65f6773608a3519",
+      "bytes": 17296
+    },
+    "devbrain/frontend/src/InboxBrowser.tsx": {
+      "sha256": "28e257fd08ad47233382288e7658e09bad18bf1317543ab60835a12ba36b870a",
+      "bytes": 4016
+    },
+    "devbrain/frontend/src/Inspector.tsx": {
+      "sha256": "7ea2902b0f3af5b9ff91929da04c10b72c5b01bc790a7f3e69e4517b37fe6ca5",
+      "bytes": 34280
+    },
+    "devbrain/frontend/src/TerminalPanel.tsx": {
+      "sha256": "690170b07dae4888bcfc956068a42dad431d8a17036f8dda93581df390203172",
+      "bytes": 8885
+    },
+    "devbrain/frontend/src/api.ts": {
+      "sha256": "987a9cddcbb6f36ee5084ca0701a0f8f89e5e65773119495506d3987092e0edf",
+      "bytes": 3243
+    },
+    "devbrain/frontend/src/components.tsx": {
+      "sha256": "ddde6f632f0861f413aa7974adbe13ea681126ec1880e673de408d016ddbd908",
+      "bytes": 2917
+    },
+    "devbrain/frontend/src/graph.worker.ts": {
+      "sha256": "a5bc146b92cda9eeb22cd79d6047b6e1954cd5f1b6a3ad5f02d401437474adbf",
+      "bytes": 3348
+    },
+    "devbrain/frontend/src/main.tsx": {
+      "sha256": "bcc0c23bda4bc91ee797afe8f10619908505bbf5a4669b6629386b7b9c0bde63",
+      "bytes": 230
+    },
+    "devbrain/frontend/src/run_state.ts": {
+      "sha256": "fbd5f962860cf6ce9d7395df53833a8026da5e4f2c6d7f49bb5914d6386dbce4",
+      "bytes": 613
+    },
+    "devbrain/frontend/src/style.css": {
+      "sha256": "9ee2192524d72dcdc43d1570d72330c6289ad9b9b8b6d0339417c355abf1b644",
+      "bytes": 30868
+    },
+    "devbrain/frontend/src/types.ts": {
+      "sha256": "b3d925ced4d42b0316f2fce6b5f564862d37b7d012362520bdd668123e937f68",
+      "bytes": 1972
+    },
+    "devbrain/frontend/tests/api.test.ts": {
+      "sha256": "f8d25aaef468bc50f91ccb5bef6ad814c7aa94c34e5f6d657c6d275b32caf48a",
+      "bytes": 2431
+    },
+    "devbrain/frontend/tests/browser/cockpit.spec.ts": {
+      "sha256": "fd9940554194c0ab0dda53ea2b596b11596d674c852363db9a9f0f8903278171",
+      "bytes": 17226
+    },
+    "devbrain/frontend/tests/inspector.test.tsx": {
+      "sha256": "50a9a8ea58bb8c41f562a62b11f8f0d5bebf09fbf6043c2d6081b4cd3a50d0b5",
+      "bytes": 5461
+    },
+    "devbrain/frontend/tests/terminal.test.ts": {
+      "sha256": "c68595cb3d0c4861e96a5815aefa8742db6d6e1b76784de05fafac67f55eb118",
+      "bytes": 940
+    },
+    "devbrain/frontend/tsconfig.json": {
+      "sha256": "b49d4ce303fb387f3ff00f6125d5193e2125043f64daf1549270997f3cb16abd",
+      "bytes": 577
+    },
+    "devbrain/frontend/vite.config.ts": {
+      "sha256": "a3a59d0ed4089fd91f59502c9b96b2abc9881ae3d310d544ba20aca33d800632",
+      "bytes": 762
+    },
+    "devbrain/pilot/README.md": {
+      "sha256": "adb829a5be6288a96fb13ab27fed9ecc843dbccb67590923a74df616d6e00bc1",
+      "bytes": 7984
+    },
+    "devbrain/pilot/plan.json": {
+      "sha256": "2b70a5be586c6fdf7be86f9ab6ad142fd8970b81a87e1dd3382924b5052ecb34",
+      "bytes": 2104
+    },
+    "devbrain/pilot/prompts/01-codex.txt": {
+      "sha256": "045be41677949a3634d9bf74cdecfc3551c119e6958f958b0f64ebf5e80c238a",
+      "bytes": 2733
+    },
+    "devbrain/pilot/prompts/02-claude.txt": {
+      "sha256": "2247f7d8535a3b81fe4939f223f02b52b25eddd1b1bb33e6de986047d890af6e",
+      "bytes": 3860
+    },
+    "devbrain/pilot/prompts/03-fresh-codex.txt": {
+      "sha256": "39e3745453f1bc32fe806697330720b61ae7bca1a83c1bb103167ae0cd958392",
+      "bytes": 2007
+    },
+    "devbrain/pilot/templates/.gitignore": {
+      "sha256": "c0032eb8d295d13240bb29bb7ac3c5203b7fa766084478b320055adaefebea9c",
+      "bytes": 70
+    },
+    "devbrain/pilot/templates/README.md": {
+      "sha256": "0244277e9ca50942882557c22b69ac155c5503d0f5aba448df9d4236ed751dde",
+      "bytes": 1312
+    },
+    "devbrain/pilot/templates/checks.toml": {
+      "sha256": "94e3e3cd659b56ad923dd199b68695525f3cb790bb602325ef9ab2e20ebd9913",
+      "bytes": 168
+    },
+    "devbrain/pyproject.toml": {
+      "sha256": "499ef92de75e605f66737dd885f766500513cca348bd9e93b02caac5bc676051",
+      "bytes": 1246
+    },
+    "devbrain/scripts/install-wsl.sh": {
+      "sha256": "dd30326186269f4ff45a5ae2924ca932565386543bfcd319fba6768e68fd86c3",
+      "bytes": 5115
+    },
+    "devbrain/src/devbrain/__init__.py": {
+      "sha256": "bf711bb5f4c8e71d39cb727c9ddc9d88fe8885bbbd275f6b76ae31f88a863f69",
+      "bytes": 88
+    },
+    "devbrain/src/devbrain/__main__.py": {
+      "sha256": "a459811163da6af78c89a7fddb26969052c04b19300980dc456a297aed044b85",
+      "bytes": 50
+    },
+    "devbrain/src/devbrain/agent.py": {
+      "sha256": "275ceb01fa8c48dc71b66d2d6acb20a706c95fe5de0be97cc506b0d56a97b68e",
+      "bytes": 64478
+    },
+    "devbrain/src/devbrain/agent_journal.py": {
+      "sha256": "d99955bc44fbaa987c8e6f7685cd6f373dd93f4eef0fa9ef80afb79ad7227ff7",
+      "bytes": 9993
+    },
+    "devbrain/src/devbrain/agent_memory.py": {
+      "sha256": "4ec8ffe3d1fa8450338c2e311ba94804f3b5e2267cf104bd9aa9c2b2bdbed321",
+      "bytes": 22695
+    },
+    "devbrain/src/devbrain/agent_tools.py": {
+      "sha256": "de16238c3fd439561e2b3610e1705ebcc085f054ec3d24269b3a5f066d8b7dd8",
+      "bytes": 30565
+    },
+    "devbrain/src/devbrain/answer_contract.py": {
+      "sha256": "6d3dbb9bd5cc6af458617490033ac074cfae0bbb921ece6b73c2988dd71c1113",
+      "bytes": 9737
+    },
+    "devbrain/src/devbrain/api_agent.py": {
+      "sha256": "a94afb20861653e57e2cb5270c4ff4f15ac7b6043c4d743dd8c258fe462fcfae",
+      "bytes": 45912
+    },
+    "devbrain/src/devbrain/api_credentials.py": {
+      "sha256": "67c5e0f6ec3b564c8033c8b6c75a7f480d4076025aabe2db5155a2a5e6acba60",
+      "bytes": 8273
+    },
+    "devbrain/src/devbrain/api_profiles.py": {
+      "sha256": "c34dcb06fb09c7085374597be82c0d87be88e2c727da2bb87daf4c29e998e06b",
+      "bytes": 6559
+    },
+    "devbrain/src/devbrain/api_providers.py": {
+      "sha256": "66347cb604667c2e95c5b411cdff054ee320be65eaf09fd3e17e9f226c01010c",
+      "bytes": 36988
+    },
+    "devbrain/src/devbrain/api_runtime.py": {
+      "sha256": "5c58afad5d0072b8fed5eb37eb7c86a2d872bc3fa385fe2f91b659f2972a7b7a",
+      "bytes": 15875
+    },
+    "devbrain/src/devbrain/api_worker.py": {
+      "sha256": "d80635997ac4590efa9ca49255a3ae866377703dbe24b272740c591b35ec8360",
+      "bytes": 20058
+    },
+    "devbrain/src/devbrain/arcade.py": {
+      "sha256": "2ba6faafd4c1ade9fd1970a2fde694ca6aeadf9398851501fffa147ecd9081e7",
+      "bytes": 5841
+    },
+    "devbrain/src/devbrain/cli.py": {
+      "sha256": "0073bf23f072fd066b727966b0bd048c1b2a168d5392abf28781b33752ba16db",
+      "bytes": 43851
+    },
+    "devbrain/src/devbrain/client_adapters.py": {
+      "sha256": "fdb87e50d8d7da4431bb471aeb8cfa5d95bb6c3e50c38a14ca3369938b17907e",
+      "bytes": 3578
+    },
+    "devbrain/src/devbrain/client_auth.py": {
+      "sha256": "7ec400526ee6ac6f76f0d3a0cfd2767ca85f772e6112cfe6340f2476d31ed6dd",
+      "bytes": 12352
+    },
+    "devbrain/src/devbrain/client_runtime.py": {
+      "sha256": "58062de4971e5d3d3b17aed70c0813517a28acb7f6de662b7e17cfc192a088dd",
+      "bytes": 28381
+    },
+    "devbrain/src/devbrain/cockpit.py": {
+      "sha256": "8d9e5213692df8318004415cef269452c74b4093057c3f7c3852ea7c4a9f4928",
+      "bytes": 46302
+    },
+    "devbrain/src/devbrain/cockpit_state.py": {
+      "sha256": "44977a43c18539d644199f5250da961f3a58dc615516f290a16b2e6d8f70d8aa",
+      "bytes": 11720
+    },
+    "devbrain/src/devbrain/config.py": {
+      "sha256": "d810a54d84ed6db3d5714ca06406d370d42aca2d71676b844a16f284b6843bf4",
+      "bytes": 3703
+    },
+    "devbrain/src/devbrain/copilot_adapter.py": {
+      "sha256": "765e5e42415ef9d8a820e11554a6208c8064df0941d016113a3ab237eeb0f13d",
+      "bytes": 38322
+    },
+    "devbrain/src/devbrain/engine.py": {
+      "sha256": "b8386bd7cb184e6f0b3d9351b303a9f928cc9b6f6f3a99458f184349a5a19568",
+      "bytes": 8725
+    },
+    "devbrain/src/devbrain/evaluation.py": {
+      "sha256": "a679d127d303275932910bee7e947aeb555bf69fa9fe1aa5bc7b790bf55a863c",
+      "bytes": 43263
+    },
+    "devbrain/src/devbrain/graph_raster.py": {
+      "sha256": "505697700036b7e9b24389d571e8442a37c62a8542146ec82ba6bd76d866d736",
+      "bytes": 11260
+    },
+    "devbrain/src/devbrain/ingest.py": {
+      "sha256": "0f3925f62607d9ba38bf733de9e16071e96553e0c0a34e1a087ac0a9de715251",
+      "bytes": 54137
+    },
+    "devbrain/src/devbrain/inspector.py": {
+      "sha256": "e31f3e16de76193fa926d3c61aa3a9e053044398624550395c8fc37c7cc00b9f",
+      "bytes": 31505
+    },
+    "devbrain/src/devbrain/inspector_api.py": {
+      "sha256": "78635829b692f9c13f4e1378d3d7876fd1b835a6184ce6fa719d0d46578b0c2a",
+      "bytes": 9378
+    },
+    "devbrain/src/devbrain/integrations.py": {
+      "sha256": "61b5fc275a8082964570e56aa257efb7466f67a9820a2b0e21ffa79cd0e26ea5",
+      "bytes": 44466
+    },
+    "devbrain/src/devbrain/journal.py": {
+      "sha256": "4e3ec77075f1ee8dd974ff026e59f64c18e85bf98d0c598cdd47ec46bce1fd21",
+      "bytes": 14076
+    },
+    "devbrain/src/devbrain/mcp_server.py": {
+      "sha256": "97c6544a015195f05f17a985dac5c4d51b4cc56bfdf962e2f6b7d27b42f3b585",
+      "bytes": 13258
+    },
+    "devbrain/src/devbrain/memory.py": {
+      "sha256": "075795b3ee1cde835d2fe027251f7fedbbef8048dca26f25a311fbac2a586f91",
+      "bytes": 51781
+    },
+    "devbrain/src/devbrain/memory_evaluation.py": {
+      "sha256": "43379a29e277aefed8cf9896bfe80e361e9a7a0b574df78af2e1829281dbf4a7",
+      "bytes": 18497
+    },
+    "devbrain/src/devbrain/memory_paths.py": {
+      "sha256": "2508ffd8a1859b40700a527df44071267d1da32a13e2dedc3232d6d08aff2aac",
+      "bytes": 3367
+    },
+    "devbrain/src/devbrain/native_worker.py": {
+      "sha256": "3a2ac384d7b6b4b4c09edce68dfc8999dff26d1d96621ead4a73945df1bb7329",
+      "bytes": 3152
+    },
+    "devbrain/src/devbrain/ollama.py": {
+      "sha256": "de51a4818389c720760615021de253e9b6fb02c5b28e4c9542a705ca48576369",
+      "bytes": 9366
+    },
+    "devbrain/src/devbrain/parsing.py": {
+      "sha256": "6510235061affe480931da3064fa750f4a7b16d7ae36722820f20a7daa5607e3",
+      "bytes": 8976
+    },
+    "devbrain/src/devbrain/plans.py": {
+      "sha256": "f17e6f9de9b0eab348f2ba4c932bfb5495d4983d3ee03d31621a73bc70fe7d03",
+      "bytes": 24844
+    },
+    "devbrain/src/devbrain/retrieval.py": {
+      "sha256": "303c3346da5cfc3368cee9d50ac487ac163069f5ef4e62337109d4bb3a3a74a6",
+      "bytes": 33896
+    },
+    "devbrain/src/devbrain/service.py": {
+      "sha256": "eb769b4d5229259fb2ce2c613b4c3042e7009c0b90a78403462fbcc02150e806",
+      "bytes": 37457
+    },
+    "devbrain/src/devbrain/sessions.py": {
+      "sha256": "1a7dd4ca0ba4c759c8766f22a9b908a3a10f9c6c3633434c1e7b2ad7d65ebc19",
+      "bytes": 70342
+    },
+    "devbrain/src/devbrain/store.py": {
+      "sha256": "6d0dc3e847ea56f31670d0948168b1bc202f9ad4f42ed3844b162d24bed606a4",
+      "bytes": 67669
+    },
+    "devbrain/src/devbrain/terminal_bridge.py": {
+      "sha256": "e5fd740590cb7c32ff877fa89079c92a921bd230193e7c1869d16d58091a4330",
+      "bytes": 14931
+    },
+    "devbrain/src/devbrain/terminal_client.py": {
+      "sha256": "47d7f86377b9058243ca7403edf9c889135776fab39d0aded71dc205d8acaa1c",
+      "bytes": 10977
+    },
+    "devbrain/src/devbrain/terminal_graph.py": {
+      "sha256": "5e61557d406080814c6a1771a02cfb158bf3b4400f097e8fdd6c4b415383daa7",
+      "bytes": 31602
+    },
+    "devbrain/src/devbrain/terminal_inspector.py": {
+      "sha256": "84ad26d0e61beff0fd54c080a60fbf963791be3a4609a3d82497f0263754759b",
+      "bytes": 27958
+    },
+    "devbrain/src/devbrain/terminal_panels.py": {
+      "sha256": "dc64939a508f50d939724dcec3c35bf4aaa75b0f96b41fb426667bc0b3011ad5",
+      "bytes": 37311
+    },
+    "devbrain/src/devbrain/terminal_safe.py": {
+      "sha256": "b0b7e4d32eba18cd34d6b0c08395940a28e40fa1cf814d3cf0f4b5ba8f189378",
+      "bytes": 922
+    },
+    "devbrain/src/devbrain/terminal_ui.py": {
+      "sha256": "89f2a632987e22bdb9952ee6417d6427f9d0289ec6783d7ce58f161b9ff77ec2",
+      "bytes": 10231
+    },
+    "devbrain/src/devbrain/tui.py": {
+      "sha256": "d72740d13fafa1adae57774bec2c6ff9ffd53f71837b0a9f9618a71d6b966be8",
+      "bytes": 44346
+    },
+    "devbrain/src/devbrain/verification.py": {
+      "sha256": "816281443ab5369c43f685d68ab449276ba7c87c2587e3e2ee4b7d05e0899487",
+      "bytes": 33551
+    },
+    "devbrain/src/devbrain/web_static/assets/graph-mXQgwRjf.js": {
+      "sha256": "f83e929895194d07b08b14d82742f7040b7150e62be228b925f57a8f2ba8bdcf",
+      "bytes": 488972
+    },
+    "devbrain/src/devbrain/web_static/assets/graph.worker-C64HhWFK.js": {
+      "sha256": "55342916bfafe816259579f9b191fa865aefb0f54f1b66c4182bbfd4d5e120f3",
+      "bytes": 1698
+    },
+    "devbrain/src/devbrain/web_static/assets/index-BRWYG2kS.css": {
+      "sha256": "2666cf4d437c85b38079dcda59d4ccdf1e2aa5c6c9a37d9e67be9f5e14737c35",
+      "bytes": 28592
+    },
+    "devbrain/src/devbrain/web_static/assets/index-DLbTmMZ8.js": {
+      "sha256": "7af9ece27d9d84165edb8e338c480ea158ff4b8469302977c901091b010ce0b4",
+      "bytes": 248964
+    },
+    "devbrain/src/devbrain/web_static/assets/react-DPx9Otuh.js": {
+      "sha256": "c76a049fa0c00dfecebb592289c3ca3b815b2c26b49c00f5a319f3f2dd019ea7",
+      "bytes": 11609
+    },
+    "devbrain/src/devbrain/web_static/assets/terminal-BkZtEzRC.js": {
+      "sha256": "6a0c8d7e303a91a571430ec0bbc7b18fe526d9140a0b8509bf2749c7073182df",
+      "bytes": 289897
+    },
+    "devbrain/src/devbrain/web_static/index.html": {
+      "sha256": "16aeff54f57cb909fd567c22583f8088ef34dd548b62d1b6ed9cc9a5e6a5895c",
+      "bytes": 681
+    },
+    "devbrain/src/devbrain/workspace.py": {
+      "sha256": "1e67dc435c2c5e65f4b5db7f07ee89420dc5203f0796e3b6eff26b4704db5cd6",
+      "bytes": 35180
+    },
+    "devbrain/src/devbrain/workspace_state.py": {
+      "sha256": "d2afa432b612454889e41f134ca8f68aa6d2c59b23c392d4134920b942121526",
+      "bytes": 10131
+    },
+    "devbrain/tests/conftest.py": {
+      "sha256": "7e71eff4dfa73b5d7bd03ae670b421f11c9cdf3c3e70adf79a9c6f4d0c7fb367",
+      "bytes": 2576
+    },
+    "devbrain/tests/test_agent_journal.py": {
+      "sha256": "bf74cf79783d254b61d3258305a07f38bfd46cb0073840775ff8691a0a8df2c8",
+      "bytes": 8395
+    },
+    "devbrain/tests/test_agent_memory.py": {
+      "sha256": "bcb1f144d5fe1ada73dae6f22b4e0129ba923a5cd95b51fd22e2f58aec7727b4",
+      "bytes": 19878
+    },
+    "devbrain/tests/test_agent_tools.py": {
+      "sha256": "6c84351d48fd8e85553f768e5e456ace4bdbd0a3dd79cdb9b950762d6ac2e426",
+      "bytes": 18073
+    },
+    "devbrain/tests/test_answer_contract.py": {
+      "sha256": "2466cbdcd6a2b5ed7f28f4cfc294620317bb10d76fa35fb7f3f1f538e4035118",
+      "bytes": 8156
+    },
+    "devbrain/tests/test_api_agent.py": {
+      "sha256": "dfab69e411ab2f34533b075b5a2f3a1a1d7f142bd5146a4e20cf22f6ea6e081c",
+      "bytes": 35064
+    },
+    "devbrain/tests/test_api_broker.py": {
+      "sha256": "a8bdb9083424f712d636615f32ce9ae4d8f84770c05b9aa81022a81e43666394",
+      "bytes": 8594
+    },
+    "devbrain/tests/test_api_credentials.py": {
+      "sha256": "de9f220d7b197355cc387e71dbbce76aad6e08ebc359fdb4993507aecc27a5d6",
+      "bytes": 4136
+    },
+    "devbrain/tests/test_api_memory_integration.py": {
+      "sha256": "6fc8ee2b64831dcdd3672853f8513bf4196c4e591784e66d778716f82439ba6b",
+      "bytes": 8011
+    },
+    "devbrain/tests/test_api_panels.py": {
+      "sha256": "68ee20e4f836ee9268bce6ec2806020c0b42cc7991293b860c9f9031eb89a253",
+      "bytes": 6515
+    },
+    "devbrain/tests/test_api_profiles.py": {
+      "sha256": "8e9c146fdee83c641ce79a1e4263aaaf8bf8070dcd6220d9ade43ea425e8705d",
+      "bytes": 6356
+    },
+    "devbrain/tests/test_api_providers.py": {
+      "sha256": "7f42f921a1558224ea5efb65599939b7b67a565a0e2916ad9cd41c84b6b5a667",
+      "bytes": 24080
+    },
+    "devbrain/tests/test_api_runtime.py": {
+      "sha256": "7a3ca78f34d0bab0e262612686ef07a45f91bef0e2b4e26cc542b0b52bfd11af",
+      "bytes": 9025
+    },
+    "devbrain/tests/test_api_storage_scope.py": {
+      "sha256": "038798f215e311900bf2b3f1e28dc4f7f651d2034b6b3300a35f2ea681229a72",
+      "bytes": 2978
+    },
+    "devbrain/tests/test_api_worker.py": {
+      "sha256": "49ec57e2ecf27b72f54c7355d498401218cd3f4fc8a5ae7b57c850e4602fe4be",
+      "bytes": 13774
+    },
+    "devbrain/tests/test_api_workspace_e2e.py": {
+      "sha256": "d7c65f0d49b2cd7cb7a5b369ddee4033b24889afe996137aecfdcbc59891a319",
+      "bytes": 14850
+    },
+    "devbrain/tests/test_arcade.py": {
+      "sha256": "33e4204f6806906baed3ad5328c5c4f762d3b825d05237203c7fb03e5a744cee",
+      "bytes": 3321
+    },
+    "devbrain/tests/test_capture_recovery.py": {
+      "sha256": "aa6876954575363cf5d6d6cc6eb38232d39fcd6d2f38130585ea8b0016d9008e",
+      "bytes": 14494
+    },
+    "devbrain/tests/test_claude_transcript_compatibility.py": {
+      "sha256": "4d4dd0dfb5f9b844bbec22a862199cde2903f391a3924bd81e980e80f8ee2f2a",
+      "bytes": 14057
+    },
+    "devbrain/tests/test_cli.py": {
+      "sha256": "2d7967dc6528326d198666e3b2edfae0248d9fbaca84bc00cd4864bd349cbf41",
+      "bytes": 6863
+    },
+    "devbrain/tests/test_client_auth.py": {
+      "sha256": "3d48875f790968d23404eb098004a2aa72e9c14159fe15afaccfee0a52aa05b8",
+      "bytes": 12487
+    },
+    "devbrain/tests/test_client_runtime.py": {
+      "sha256": "66ba3273e15d304b1a7250e5dad9fc975799551c21ffcc076841c6344bdda51f",
+      "bytes": 18414
+    },
+    "devbrain/tests/test_cockpit_cli.py": {
+      "sha256": "01324d128b3d1a5ee2e57a09165b5993b329579d25a309c1a9109d6c1ea74a7a",
+      "bytes": 2339
+    },
+    "devbrain/tests/test_cockpit_migration.py": {
+      "sha256": "1be6c79103efee3954d48d471d50543ee336f306f35938cef2385d5ea3e12dc8",
+      "bytes": 3703
+    },
+    "devbrain/tests/test_cockpit_server.py": {
+      "sha256": "fe34ee956109a7d112a8c3aa0598b5b0d7aba94ac29d59f0117b83495dbdb3d2",
+      "bytes": 17766
+    },
+    "devbrain/tests/test_cockpit_state.py": {
+      "sha256": "f6e553c926a10815e1e6fe0a585349aca54e7960d649bca68e0afb6e85df1412",
+      "bytes": 4133
+    },
+    "devbrain/tests/test_copilot_adapter.py": {
+      "sha256": "53cb28c0a3333db40eaf4f1e7cc8bc5e448ddb808d4f542822f85c6ce42c8b91",
+      "bytes": 29368
+    },
+    "devbrain/tests/test_diagnostic_cli.py": {
+      "sha256": "2707730926e40a0fefec7e275433f9d57b79ec3fc40b9c1fed2ee43912307b26",
+      "bytes": 16269
+    },
+    "devbrain/tests/test_evaluation.py": {
+      "sha256": "b72e0fa2400448401ddcdbce835d8860040a9d99d1bab71b3a492b0f10a2dc42",
+      "bytes": 30231
+    },
+    "devbrain/tests/test_extraction_grounding.py": {
+      "sha256": "cbf0600ba5a8d0bfbcde20b449c3097173436084f9391ec973a4b7f1a58d4dcd",
+      "bytes": 10572
+    },
+    "devbrain/tests/test_extraction_safety.py": {
+      "sha256": "076b8e2c691309cdbe07670e7942d6c8880356defd7509aa991c4fbcccbd2369",
+      "bytes": 6942
+    },
+    "devbrain/tests/test_graph_raster.py": {
+      "sha256": "8a9840b8ff1820febf552747e3dc686ad5df342ee827d71d1ceb726f35f1fd96",
+      "bytes": 6632
+    },
+    "devbrain/tests/test_graph_widget_rendering.py": {
+      "sha256": "e770a7042a12420c85bf544b7c76f5b13f221beaa8cec0bc84ab23186c227011",
+      "bytes": 8267
+    },
+    "devbrain/tests/test_ingest.py": {
+      "sha256": "868a173571e35ea4302bf1e63064009ada4e15785009be449ea7d7a022a09891",
+      "bytes": 24148
+    },
+    "devbrain/tests/test_inspector.py": {
+      "sha256": "c593c3d81517a0bccb367045a068646b6dc5bf9a8cf97d76663bb9edd9816c5a",
+      "bytes": 18447
+    },
+    "devbrain/tests/test_integrations.py": {
+      "sha256": "e2485e4f86c83ac7506ad5883046338f69da6bc10f1dbef94a0a80620c10b199",
+      "bytes": 60229
+    },
+    "devbrain/tests/test_job_diagnostics.py": {
+      "sha256": "f36e8abdcee0515dde1c6a97a869d6dc949f2ebeb8892d88401172f1cb4807c8",
+      "bytes": 16283
+    },
+    "devbrain/tests/test_journal.py": {
+      "sha256": "5a759d8c884c76981d0ae3d2310f31ab8878817447c90c8445a7982af8b9be34",
+      "bytes": 10798
+    },
+    "devbrain/tests/test_knowledge.py": {
+      "sha256": "cc87d6d115b82eb7fde1463a4416785d1e3efaeefb77af59a7a1b4f2e36ea176",
+      "bytes": 68335
+    },
+    "devbrain/tests/test_memory_adversarial.py": {
+      "sha256": "6c20160856dd84690d201b79b2193aef003d0f9cdd35937964a34267f01afbf2",
+      "bytes": 19859
+    },
+    "devbrain/tests/test_memory_bindings.py": {
+      "sha256": "563be02580761e1e89678cfbaed7d19a81c651fe5e99c1c0170772449691c928",
+      "bytes": 12913
+    },
+    "devbrain/tests/test_memory_cli_service.py": {
+      "sha256": "6c3bbcf8f602db80f616924fce4f80dfe1563fe3cbc4fc0da69684e7559aaaa2",
+      "bytes": 19286
+    },
+    "devbrain/tests/test_memory_evaluation.py": {
+      "sha256": "39d874c88ef46f069931b454e7e4d3b5177c3596dda2042d14214f59cb7592a5",
+      "bytes": 9229
+    },
+    "devbrain/tests/test_memory_migration.py": {
+      "sha256": "3521182001c57437c16952c508e6ee19f5e623e3a57ab5ab7230a2da086540a2",
+      "bytes": 3951
+    },
+    "devbrain/tests/test_memory_session_resume.py": {
+      "sha256": "43f2634cb036ded611f6f33b64823dd4417e7bfd164d4ba0671e0923a0024ec9",
+      "bytes": 3060
+    },
+    "devbrain/tests/test_memory_stabilization.py": {
+      "sha256": "bc07f6fecf82b8eff4a14b08a8421d5962c7a35fa415a5f896b7c38d76b3de30",
+      "bytes": 19448
+    },
+    "devbrain/tests/test_memory_tui.py": {
+      "sha256": "646fe2db0895aa075cc64f7bd0d2eef0cea622627220656b5d781fb8a0503eb4",
+      "bytes": 8595
+    },
+    "devbrain/tests/test_migrations.py": {
+      "sha256": "4ccb941fe42eb3b17e2feb4bafaf1c3373dd8de223a79344b359cd1ba26230c7",
+      "bytes": 8201
+    },
+    "devbrain/tests/test_native_evaluation.py": {
+      "sha256": "86877f395e1d4459184df21ad023d4c09d61baec24a0190a5cd25c8cae16b2b1",
+      "bytes": 8487
+    },
+    "devbrain/tests/test_native_session_environment.py": {
+      "sha256": "7c4f4b578c6849bc4dfc0f3dfb6f093f0684792f97153f76bce619e1648ad184",
+      "bytes": 5235
+    },
+    "devbrain/tests/test_ollama.py": {
+      "sha256": "122294fc3b9b5f087c9bb2edebf322a29e525d2961f69309d935eef362284ba5",
+      "bytes": 6150
+    },
+    "devbrain/tests/test_omitted_job_reprocess.py": {
+      "sha256": "64e9487b797ed8e53f2e22cba19e93e5513f59fa35b47cc11db0d0ff1a4ac596",
+      "bytes": 10044
+    },
+    "devbrain/tests/test_parsing.py": {
+      "sha256": "52fb87a752ff14183a38c4501a9cc052a704322a8abe5cbe48c57a40b35169af",
+      "bytes": 2210
+    },
+    "devbrain/tests/test_plans.py": {
+      "sha256": "f3bfac21d1c9457e05f1fa4d7993f6d3d38532f4e08e29b56c4f3c20cbac7e06",
+      "bytes": 14156
+    },
+    "devbrain/tests/test_portable_memory.py": {
+      "sha256": "82900e4aecbbf86bf3594aaf81b17a58fb1d0ae218919365d947dc633f246d2b",
+      "bytes": 18039
+    },
+    "devbrain/tests/test_resume_mcp_protocol.py": {
+      "sha256": "43d135406978328d6a607abb0c9fcb73a228b7cac50a937db86b2250bf90b60f",
+      "bytes": 10633
+    },
+    "devbrain/tests/test_service.py": {
+      "sha256": "9d8adc4ae42797e19dbf7f720a9ed6e74b16331fe85aa7f2d22910008c6de9dc",
+      "bytes": 17959
+    },
+    "devbrain/tests/test_session_lifecycle.py": {
+      "sha256": "105ab8226daf530b031424ff5edf06c115af20dd7d2e92031d3a0bfb5a5d4d5d",
+      "bytes": 24888
+    },
+    "devbrain/tests/test_sessions.py": {
+      "sha256": "9c3fe675d504b726bb6761b03905c9f9c6a416a8b3f3aad91288132832d76b2b",
+      "bytes": 23208
+    },
+    "devbrain/tests/test_store.py": {
+      "sha256": "fcb9d4ae2cfb312af2ded3445c476d4c89a8e84f5ec484de538f9fd0f422f8da",
+      "bytes": 22072
+    },
+    "devbrain/tests/test_terminal_bridge.py": {
+      "sha256": "e165b8e100135ae63be814d3cf177bbf2a7b77ef1a476d1ec5714a2049e79dc5",
+      "bytes": 11748
+    },
+    "devbrain/tests/test_terminal_client.py": {
+      "sha256": "dae386d032355443c9084b6f017b4e0869f2b914e59f6686a43992b62b76c01f",
+      "bytes": 8198
+    },
+    "devbrain/tests/test_terminal_graph.py": {
+      "sha256": "40d12f568f2d68c79fccc318c6f9070e17bf80ff283d244dd8e290e4076dcc03",
+      "bytes": 14443
+    },
+    "devbrain/tests/test_terminal_panels.py": {
+      "sha256": "b27576c7f80fe5698d46ad0ca4a85e8d54445b0056a3784658ac9f86b0e5a955",
+      "bytes": 17882
+    },
+    "devbrain/tests/test_terminal_workspace_e2e.py": {
+      "sha256": "a2966a8bb5122c31706767619681ccf93db5b48bc71179a3f7ce8653fd08d5e8",
+      "bytes": 39169
+    },
+    "devbrain/tests/test_transcript_compatibility.py": {
+      "sha256": "91ce6f94e5d14556fc0ec8e14ce7c31eb8fdef8c6cd0ec62d15e750b7697dc1e",
+      "bytes": 15560
+    },
+    "devbrain/tests/test_tui.py": {
+      "sha256": "2702e59a4b175ff88f19a7523cca97d9082c3de4cec6cacfcd4e033eff75944a",
+      "bytes": 12769
+    },
+    "devbrain/tests/test_verification.py": {
+      "sha256": "9ab1a028a74e440ef18e51bb92f8d16f0cbcad8d1a40b1bea2d19e4f409f398f",
+      "bytes": 24122
+    },
+    "devbrain/tests/test_workflow.py": {
+      "sha256": "9bbb878d9f085346ff30cb6403530b9a788c5fea78775f45f9bd3a2888ed54aa",
+      "bytes": 12283
+    },
+    "devbrain/tests/test_workspace.py": {
+      "sha256": "51b838bfa1447d9d71d4ff637a527c243ca9ea7ba426f2b5a755bb33b089d185",
+      "bytes": 13005
+    },
+    "devbrain/tests/test_workspace_cli.py": {
+      "sha256": "144ba6ca831d70e5d047cf110778cb1f931abf9b0b0a9d51d5acb38f08b8ed0b",
+      "bytes": 4502
+    },
+    "devbrain/tests/test_workspace_state.py": {
+      "sha256": "842951e3091d94c1ce2131408700cb7f6202948360bbdb73feb07ed63f86568e",
+      "bytes": 2816
+    },
+    "devbrain/uv.lock": {
+      "sha256": "871f6d490d901256b5473fea41e903df00a7e6d6ffd19aa17203b712af7d963c",
+      "bytes": 180137
+    },
+    "evidence/devbrain-0.7.1-final-graph.xml": {
+      "sha256": "7379759b31b420eba4ea0ac5a08d7a2447212dc4758e09a9d08e6ed59baa0d93",
+      "bytes": 3603
+    },
+    "evidence/devbrain-0.7.1-graph-performance.json": {
+      "sha256": "197b25328da69920e7c784aa35cf390de090464f6527215d1906395f622b7f8e",
+      "bytes": 392
+    },
+    "evidence/devbrain-0.7.1-graph-preview.gif": {
+      "sha256": "f70c0bfd1e4fed86aeb0aa0b3ec6d65520735815a8ebb9ffec1e9685e25686ae",
+      "bytes": 2056220
+    },
+    "evidence/devbrain-0.7.1-graph-preview.png": {
+      "sha256": "67b0e33978bb999ad46e191af541cc171d46a2c512eb4c31aecf6041509f5f72",
+      "bytes": 108130
+    },
+    "evidence/devbrain-0.7.1-graph-visual-report.json": {
+      "sha256": "f911d81f7680b45a0931315efe923fdce6840be1d44333b51676bb4ca4054a36",
+      "bytes": 18934
+    },
+    "evidence/devbrain-0.7.1-terminal-regression.xml": {
+      "sha256": "08e7473368130968594ef0ed8382c895d30411ea8afbd50552a048894ccfe784",
+      "bytes": 15279
+    },
+    "evidence/devbrain-0.7.1-updater-guards.xml": {
+      "sha256": "b38c8668207540bc7cc2862e0c9368c2786b9263b42f39c0668faa450dd2a16c",
+      "bytes": 912
+    },
+    "evidence/devbrain-0.7.1-upgrade-smoke.json": {
+      "sha256": "4d9a57b4fedc7d58c2e00981e40650eeaee5aafc7bf4010b9687e2cb95a446b1",
+      "bytes": 2671
+    },
+    "evidence/devbrain-0.7.1-validation.json": {
+      "sha256": "c900e2264d784687a54e6316e603efe4e67a62028254992ba271dc48ff78f950",
+      "bytes": 6723
+    },
+    "release-tools/build-devbrain-update-071.py": {
+      "sha256": "f05f6fe00bbd47a7164f0b4d2b55c9ce88750822e18bf6f15009c06220f737de",
+      "bytes": 5350
+    },
+    "release-tools/devbrain-update071-template.py": {
+      "sha256": "89a30da494096f2c7e2ba6b4ced7e3b191b3172517079e642181315a6b3811d7",
+      "bytes": 10844
+    },
+    "release-tools/test_devbrain_update071_guards.py": {
+      "sha256": "1e3c0bef8564f400f3e4afd80b0fbeace9ef47fc87b43a74f9367dc14ecd63b1",
+      "bytes": 6432
+    },
+    "release-tools/test_devbrain_update071_smoke.py": {
+      "sha256": "6ac95888f8930f8b41a1e55facae119f26c489a536a67691c5d17e8e7b34b4fa",
+      "bytes": 38773
+    },
+    "releases/devbrain-0.7.0.zip": {
+      "sha256": "e02ca74807b74942e718d91272659563c4cb17f8dc812df4e7bd63ad1dc0c8e5",
+      "bytes": 1100871
+    },
+    "releases/devbrain-0.7.1.zip": {
+      "sha256": "5ff61d85173aaed1fbb3de0a1db3619c6d0a7a2b4a59812cdb2eba75a7cb69f6",
+      "bytes": 1111170
+    },
+    "releases/devbrain-update-0.7.1-manifest.json": {
+      "sha256": "0d55497a96e2bb809b7d56f8d52331130d2beb4c1db5ad315bcad1afa4b5d013",
+      "bytes": 4356
+    },
+    "releases/devbrain-update-0.7.1.py": {
+      "sha256": "0f4136e1970902c94bfb77ac8faef2cb0794aa0ff347cb27eca5f70d8abc9638",
+      "bytes": 154617
+    }
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "schema_version": 1,
+  "scope": "fresh_prototype_complete_UX_diagnostic_inventory_not_release_qualification",
+  "saved_utc": "2026-11-09T12:29:15.502862+00:00",
+  "run_id": "ux-uxfailure080-20261109T121905Z-1e5eb045",
+  "actual_windows_exec_session": 69901,
+  "actual_windows_exit_code": 0,
+  "diagnostic_only": true,
+  "release_qualified": false,
+  "application_qualified": false,
+  "formal_helper_map_qualified": false,
+  "pytest_maxfail": 0,
+  "expected_cases": 425,
+  "observed_cases": 425,
+  "counts": {
+    "passed": 425
+  },
+  "failed_or_skipped_cases": [],
+  "collection_junit_exact_parity": true,
+  "whole_modules": 28,
+  "latency": [
+    {
+      "nodeid": "tests/test_terminal_latency080.py::test_local_input_remains_responsive_during_three_second_backend_delay[size0]",
+      "outcome": "passed",
+      "keyboard_samples": "50",
+      "controlled_backend_delay_seconds": "3",
+      "keyboard_to_refresh_p95_ms": "34.95",
+      "maximum_ui_loop_interval_ms": "121.249",
+      "original_thresholds_passed": true
+    },
+    {
+      "nodeid": "tests/test_terminal_latency080.py::test_local_input_remains_responsive_during_three_second_backend_delay[size1]",
+      "outcome": "passed",
+      "keyboard_samples": "50",
+      "controlled_backend_delay_seconds": "3",
+      "keyboard_to_refresh_p95_ms": "132.085",
+      "maximum_ui_loop_interval_ms": "138.703",
+      "original_thresholds_passed": true
+    }
+  ],
+  "headless_frames_not_os_photos": [
+    {
+      "nodeid": "tests/test_terminal_ux080.py::test_keyboard_resume_returns_to_actual_native_pid_and_never_launches_after_exit[fresh_state-en]",
+      "language": "en",
+      "exit_stage": "fresh_state",
+      "size": [
+        80,
+        24
+      ],
+      "rendered_truncated": false,
+      "rendered_text_not_exported": true
+    },
+    {
+      "nodeid": "tests/test_terminal_ux080.py::test_keyboard_resume_returns_to_actual_native_pid_and_never_launches_after_exit[fresh_state-pl]",
+      "language": "pl",
+      "exit_stage": "fresh_state",
+      "size": [
+        80,
+        24
+      ],
+      "rendered_truncated": false,
+      "rendered_text_not_exported": true
+    },
+    {
+      "nodeid": "tests/test_terminal_ux080.py::test_keyboard_resume_returns_to_actual_native_pid_and_never_launches_after_exit[reconcile-en]",
+      "language": "en",
+      "exit_stage": "reconcile",
+      "size": [
+        80,
+        24
+      ],
+      "rendered_truncated": false,
+      "rendered_text_not_exported": true
+    },
+    {
+      "nodeid": "tests/test_terminal_ux080.py::test_keyboard_resume_returns_to_actual_native_pid_and_never_launches_after_exit[reconcile-pl]",
+      "language": "pl",
+      "exit_stage": "reconcile",
+      "size": [
+        80,
+        24
+      ],
+      "rendered_truncated": false,
+      "rendered_text_not_exported": true
+    },
+    {
+      "nodeid": "tests/test_terminal_ux080.py::test_keyboard_resume_returns_to_actual_native_pid_and_never_launches_after_exit[final_state-en]",
+      "language": "en",
+      "exit_stage": "final_state",
+      "size": [
+        80,
+        24
+      ],
+      "rendered_truncated": false,
+      "rendered_text_not_exported": true
+    },
+    {
+      "nodeid": "tests/test_terminal_ux080.py::test_keyboard_resume_returns_to_actual_native_pid_and_never_launches_after_exit[final_state-pl]",
+      "language": "pl",
+      "exit_stage": "final_state",
+      "size": [
+        80,
+        24
+      ],
+      "rendered_truncated": false,
+      "rendered_text_not_exported": true
+    }
+  ],
+  "raw_receipt_passed": true,
+  "raw_supervisor_passed": true,
+  "controller_status": "regressions_completed_pending_external_watch",
+  "owned_cleanup_observed": true,
+  "safe_next_owned_workload_only": true,
+  "manual_cleanup_admission_required": false,
+  "native_clean": true,
+  "boot_stable": true,
+  "exact_scope_identity": true,
+  "scope_unit": "devbrain-q-db271bc97af54174b4ab806112624ffd.scope",
+  "scope_identity": "25:2961",
+  "scope_quiet_seconds": 33.186523299999976,
+  "outer_quiet_seconds": 35,
+  "sleep_restored": true,
+  "forced_cleanup_recorded_by_external_wrapper": false,
+  "power_samples": 13,
+  "power_changed": false,
+  "power_observations_verified": true,
+  "latency_contract_passed": true,
+  "six_en_pl_headless_frames_complete": true,
+  "verification_findings": [],
+  "artifact_sha256": {
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\diagnostic-input-freeze.json": "90dd99cc5c226ec1a723c2160adf0c3210b03c6593f2436617f963a039634be0",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\artifacts\\spec.json": "f9847ae6ddad535562c74c2ee5ce81e0c022d1bd5410145de7649ab6626d2de7",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\run-supervised-080.ps1": "721109e2295099fcc4dea6e1a1bc55e773e577e2de673931c33a7e4bb7812c74",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\validate-stability-080.py": "5717c26217ef392340d86a8726fae90c8384d0001ba808f5c83a7bdab32fe143",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\run-full-suite-080.py": "f38ffa41c876db9329b0811a7066804248c92a72ebff5cc5c5c515c1612e0df1",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\run-parent-loss080.ps1": "425afb692abe364b2be3295eb2a25392351a04ed628cb05ac82eafb50f17343f",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\test_scope_080_guards.py": "f683e56cd5790d16fe1542d34c2b7cc2265c01ab14258a55a8ea24bfc5023bd0",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\validate-copilot-account-e2e.py": "35e06c6a0837eae7af2487b9961aa534cf0c527e5861e33706ecc96f12062a19",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\validate-native-account080.py": "ba530b74cf39cce33775c848422d7ba0e477e7d35e260ad9e806dd89faba65e2",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\test_regressions080_guards.py": "daadfc290bdaf7b73b0f19459d44b5f345915cdd17a1eaa7fb113616911dc5a7",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\test_interactive_ux080_guards.py": "15127894b67fcd65d78e377c63a27e6362417e5253086ed9ad72621faad218e5",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\devbrain-update080-template.py": "56e33ddc4f810f72ab2c250b5e7b2c5e04886753700854ce874348d9feb5f17b",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\build-devbrain-update-080.py": "b3783bbd0a193d92e9ff9b24c2abd4926ffbb7aaf10a8edeaa1ebf3485c0d5e9",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\test_production_queue080_guards.py": "cede3a01a8d3e6f982142ceda64aff3313d3eaaf2a0bd5c2b86b1855b315ad9a",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\test_stability_080_guards.py": "7d53d662bd6221bd6a5a5e2e2bbc9042e4171bdd201b5e23dd920c312433812f",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\validate-copilot-account080.py": "1eeec037ea5070c30c44c267192f5a590766b471ed083fb722256358dfb1e31e",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\test_production_deploy080_guards.py": "9fddad5f3aca8c4fb64ca5ad0593f7a1b49129e4b108a540f4e6e769bbdff216",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\run-baseline-ux072.py": "a0e1eadf2b7a6f8b5bd23477dc84875ebfcdec5939775279295508b3a99a7744",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\soak-workload-080.py": "374bbf679db398510e4a4389627b1488d64bdfbc36791f95d804986b6b3d51bf",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\replay-failed-queue-080.py": "e8513a36aa5d7443db76935f4a6a01c62b547a7c92341ac5b05d9a3710a70d1b",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\watch-parent-loss080.py": "b1987cfc34607f1872d2c9bb210544156ca8daae509483ded3602bb02821b668",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\test_devbrain_update080_smoke.py": "eef53b1c37f67c0441a917ce39f9c90d14a4634f37c9364ba1720e2aef4792c8",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\run-interactive-ux080.py": "0c0bb05b2165f509b77026a5ffefd39d0aabccd5e9f45682a2371df065b9c1bc",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\test_production_backup080_guards.py": "122135ad7e83083afc6db2bd729fbd63cbf109461a1a890a6456c172e551c9ce",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\validate-local-recall.py": "92a032a7ce19dcd85e7a26c1b796e5afb41557e00be426906ece50fa2254d9f2",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\test_supervision080_fixture.py": "0cdb8c34a08cd4f5f1339eefa9a7eafca6acb47ffd6e57f42926a9430b26f8fe",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\test_full_suite_080_guards.py": "060c9b19de95f6dfb7c2d16df7456efc958c185ac6e787afdcf641abb24712d0",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\test_devbrain_update071_smoke.py": "6ac95888f8930f8b41a1e55facae119f26c489a536a67691c5d17e8e7b34b4fa",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\test_parent_loss080_guards.py": "df2372a46da89934cf351fe0f98cdfdcc8efe82ff9b4852bed417b32b4023614",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\deploy-production080.py": "53eece60c4d177cbfc352c8293f5c5b3cbe3e7ca25d7656f2a10c74d1a9dceb0",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\test_queue_replay080_guards.py": "0423ae6e131ddfa40f6adf1d7e7dd48fd7ad15536bd4d9b55563bfa5332075ab",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\backup-production080.py": "77fc478583368d7e3a99063de27f19de2cb5ce6a834bda63cd972923def6ab88",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\open-interactive-ux080.ps1": "0b575ba17e23117c98ed0dc3cb726adee3bc68f14745ffdd5557ae4a9b8d160f",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\retry-production-queue-080.py": "f24c3cf721dbdbcc9b810f09c4e688c04a5682ea502853b084cdba593429d90e",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\test_account080_guards.py": "89d952b240278b503589ae8b6ae854b81800ae5a4a1901538c8a962128913dee",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\attest-full-suite-080.py": "def4cde1e76febbda1a7351bec045e5eeb2e63ad83e750ea4280b39037eb36ee",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\run-regressions-080.py": "f8bbfbfee3a465f1b521a005a04c6441154186acda20a7102adc747a10737218",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\qualification-power-080.ps1": "0a46c1d6a2abca8a4be4dfc79daaff33332e91f95d4c627fe7c301523ba9e8a9",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\supervise-080.py": "865f3b19b3140218da9b080dc517f5eefb724718d96317a88ac37942128a910f",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\tools\\test_devbrain_update080_guards.py": "2fa80b80071455b77fbf722707e1bf379fcdefd032a6a4fbfd9af0081cdf7968",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\inputs\\app-context.json": "387f9f0075a89195e52164c1e83a15261afc7847508ec3462f5f094d9404fd92",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\inputs\\app-source-freeze.json": "9e5168bece45cf3c06bd0abded7e1573b51cf55778570fdc49c8e0a8872e81b9",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\inputs\\app-prepare-receipt.json": "fc63c2782c515d63e8c6e45b1c130d8a16b43904a8b6a050163b4034552db0bd",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\inputs\\app-prepare-final.json": "b3882183d0921fa8f305de86f27ce3af3fc42b9d9a7211d9ee68b5208e543bed",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\inputs\\app-prepared-input-freeze.json": "073aba9e264c65d598dff07ad614674663c917c9ec6665cda919aec42bb7f343",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\inputs\\canonical-guard-context.json": "9e9d865acea676f9fab11225c54e49095610e44feb37d9a0b0cd6e882633e6d6",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\inputs\\canonical-guard-receipt.json": "9dca1fd31a494fd015d3ba198af5a7ea453211f93c484bdf5b0d931f33865f84",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\inputs\\canonical-toolbundle-freeze.json": "7e3a840ac8b6d230cc9831bdd9a28a0e7ae604ee02d34481650915ca09513f5d",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\inputs\\materializer.ps1": "4c8502480e848fc1aa69c3fab844db81ad156aefc9c0e0b86ff5c90fc40e8b56",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\diagnostic-helpers.json": "31924adb87d7de16c6964ccd06f68b152c65cac96cd50eb2e1658606e490be08",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\artifacts\\receipt.json": "7237369039d5340e26117ea0db9ed717a0e342a630869f14e88d674676f45c21",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\artifacts\\supervisor-report.json": "430b758e230b2670e5002089d13b99423f208d7a2fb116359cceeaab25b5095c",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\artifacts\\controller-report.json": "3b5e45b9414036f75a3bf7ec61178ff935e481a0c56d2c6bb644e3dac667bcbe",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\artifacts\\regression-source.json": "9eeda1d6c8612d3ff097d0714d2f5814c9a632bd599367ff077b94e6011db438",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\artifacts\\regressions-results.json": "f8d4646b0d99f7424c46cc306fb594cbe4616117405843fdddca039873e7966d",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\artifacts\\ux-collection.json": "3ff33cdb7d8271b57b55796b4d47a9d0183aad35f81615682bf66f777d9819a7",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\artifacts\\ux.xml": "a78349ccb74d4ae63d39e1c708ca7a17955d80c2e399b03a2abd18721b771668",
+    "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-uxfailure080-20261109T121905Z-1e5eb045\\artifacts\\power-samples.jsonl": "097a1b9bcdcc9cffa15248dc647714edc2d90cfdc57670cde0f06ef205e73db4"
+  },
+  "raw_test_failure_messages_and_private_terminal_output_exported": false,
+  "canonical_guard_context_unchanged": true,
+  "status": "diagnostic_pass_not_release_qualified"
+}

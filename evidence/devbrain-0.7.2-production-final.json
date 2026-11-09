@@ -1,0 +1,32 @@
+{
+  "installed_version": "0.7.2",
+  "source_version": "0.7.2",
+  "protected_files_unchanged": {
+    ".local/share/devbrain/config.json": true,
+    ".local/share/devbrain/cockpit/preferences.json": true,
+    ".local/share/devbrain/credentials/api-keys.json": true,
+    ".local/share/devbrain/runtime/copilot/config.json": true,
+    ".local/share/devbrain/models.lock.json": true,
+    ".codex/auth.json": true,
+    ".claude/.credentials.json": true
+  },
+  "source_files_verified": 182,
+  "installed_files_verified": 64,
+  "source_mismatches": [],
+  "installed_mismatches": [],
+  "backup": "/home/piotr/.local/state/devbrain-updates/20261107T093838Z-bbfafb96",
+  "release_updater_sha256": "bf1bd27200108e8e0da5bbbe42d44e7b3eb2736ae74e2886508c8cc5bb097e67",
+  "applied_updater_sha256": "61c4da4c2fcbbb80abcbc091c4ca83eaaebb34584e28e06e527b8b62a251560e",
+  "final_test_only_sync": {
+    "status": "passed",
+    "path": "/home/piotr/src/devbrain/tests/test_native_evaluation.py",
+    "only_test_changed": true,
+    "database_opened": false,
+    "installed_application_changed": false,
+    "updater_receipt_changed": false,
+    "backup": "/home/piotr/.local/state/devbrain-updates/20261107T101931Z-final-test-sync",
+    "sha256": "c1a1d9d58b0f9d4bb78f25dd91bdd05b871c57b02bb78a4d82a737111c334916"
+  },
+  "release_zip_sha256": "6b65e7315895b8c44b84bafc9146dfcdae732c3890f959d0e5e58cbf4fd9aa2c",
+  "status": "passed"
+}

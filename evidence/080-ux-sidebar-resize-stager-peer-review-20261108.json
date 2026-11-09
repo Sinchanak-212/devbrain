@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_sidebar_resize_ux_stager_peer_review",
+  "status": "static_ack_pending_actual_current604_not_staged",
+  "created_utc": "2026-11-08T22:34:10.937925+00:00",
+  "files": {
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-ux-sidebar-resize-604-20261108.ps1": "8a4eb75de06a55e5e40c3db58739d8b90079381c23fa6b6962550b29c861ff5c",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-ux-sidebar-resize-604-templates-20261108.json": "c6e226ee4f4e232f08b91d123bd5514391aeb1dd87badac9ad551b7537fe8b0e",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-ux-sidebar-resize-template-preparation-20261108.json": "fea42c3e9f50ef5957055c8b8b04a1a67b1bf128ff36b353651477681b0266ed"
+  },
+  "template_files": {
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\ux-sidebar-resize-604-templates-20261108\\ux.context.template.json": "4b1a41641e336a58cd6cdeb59fa3b3d90433afc90deb6962b2522a8e583346c6",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\ux-sidebar-resize-604-templates-20261108\\ux.spec.template.json": "4f0265ae6480a604397ac657027e3fded80c2c7e7c167829c352ea3f3744241e"
+  },
+  "findings": [],
+  "powershell_parse_errors": 0,
+  "unchanged_filesystem_function_bodies": 9,
+  "specification_changes_only_current_source_and_venv": true,
+  "argv_count": 13,
+  "required_artifact_count": 7,
+  "expected_cases": 381,
+  "whole_modules": 28,
+  "guard_count": 604,
+  "helper_count": 38,
+  "guard_module_count": 12,
+  "guard_frozen_input_count": 56,
+  "future_guard_exact_hashes_and_positive_root_session_required": true,
+  "current_source_v8_guard_and_candidate_bindings_required_before_first_directory": true,
+  "no_historical_app_pass_reuse": true,
+  "runtime_fixture594_seven_instrumentation_bytes_required": true,
+  "stage_invoked": false,
+  "linux_invoked": false,
+  "application_qualification": false,
+  "eight_hour_launch_permitted_this_session": false
+}

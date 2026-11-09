@@ -1,0 +1,39 @@
+{
+  "status": "prepared_not_run",
+  "expected_ux_cases": 377,
+  "scope": "devbrain_assistantpref_ux_ui_preparation",
+  "guard_cases": 529,
+  "guard_receipt_sha256": "9f6c16a82b820b06135ecb073ba85223f002a5b31cacf8276ec06996d43782d2",
+  "expected_ux_modules": 28,
+  "human_reported": false,
+  "interactive_sizes": 3,
+  "source_freeze_sha256": "5ea43988e1943c783e802acbe5a39fdfcc3318d41655ed244716a69a0d71b28f",
+  "linux_workload_started": false,
+  "operator": "agent",
+  "interactive_tasks": 5,
+  "tool_helper_count": 36,
+  "contexts": {
+    "ux": {
+      "sha256": "c81acf2f39654fa84d74324e798fb6a66aa4018660d32bfb4dbcec3615bcd9f2",
+      "specification_sha256": "7c6cde52e05dd439c2c63c7fb033f34fc93280bdc78c90f1503b56b60de520f0",
+      "input_freeze_sha256": "2b92ebc83ba7b14a25a997bb0219e5da63db860b159482aae05e5d9c0913b2cd",
+      "prepared_input_count": 16,
+      "run_id": "ux-assistantpref080-20261108T161042Z",
+      "specification": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ux-assistantpref080-20261108T161042Z\\artifacts\\spec.json",
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-ux-assistantpref-active-context-20261108.json"
+    },
+    "interactive": {
+      "sha256": "2ae0eca19d90fdbde849b9dac97d788704f3779cbe0d7766039889a8b80ba2ad",
+      "specification_sha256": "6a1423cacbe323d42a816ac435b240065b1c7ab87c84ada157eabb9d9576de7d",
+      "input_freeze_sha256": "8e38310cbe5c31587205772ab0858b81166a873b842b3bc60185ce74ce21ffd3",
+      "prepared_input_count": 18,
+      "run_id": "interactive-assistantpref080-20261108T161042Z",
+      "specification": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\interactive-assistantpref080-20261108T161042Z\\artifacts\\spec.json",
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-interactive-assistantpref-agent-active-context-20261108.json"
+    }
+  },
+  "all_historical_contexts_preserved": true,
+  "schema_version": 1,
+  "app_prepare_receipt_sha256": "90aa2c03898b1dd5d5bb9602c58618ddc6daeadc15776740ea7bdf556491f02c",
+  "source_snapshot": "app080-20261108T160614Z"
+}

@@ -1,0 +1,568 @@
+{
+  "status": "complete_with_runtime_limitations",
+  "completed_at": "2026-11-07T10:23:50.662013+00:00",
+  "final_collection": 1275,
+  "baseline_collection": 1262,
+  "baseline_passed_without_c1_unique": 1206,
+  "targeted_passed_unique": 240,
+  "passed_without_c1_unique": 1219,
+  "passed_only_with_diagnostic_c1_unique": 56,
+  "passed_with_all_documented_modes_unique": 1275,
+  "uncovered_with_all_documented_modes": [],
+  "default_runtime_not_verified_nodeids": [
+    "tests/test_session_lifecycle.py::test_new_action_cannot_merge_away_an_overwritten_captured_partial_tail",
+    "tests/test_session_lifecycle.py::test_real_native_lifecycle_invalidates_ack_after_state_refresh[fork]",
+    "tests/test_session_lifecycle.py::test_shorter_rewritten_generation_keeps_its_own_unproved_horizon",
+    "tests/test_sessions.py::test_archive_barrier_is_actual_eof_not_just_current_cursor",
+    "tests/test_sessions.py::test_empty_exception_rejects_other_native_config_and_substring_impersonation[codex_model]",
+    "tests/test_sessions.py::test_empty_exception_rejects_other_native_config_and_substring_impersonation[instructions]",
+    "tests/test_sessions.py::test_empty_exception_rejects_other_native_config_and_substring_impersonation[other_mcp]",
+    "tests/test_sessions.py::test_first_empty_scope_may_start_without_claiming_verified_code",
+    "tests/test_sessions.py::test_incomplete_unparsed_or_missing_ranges_are_never_ready[deleted_unproved]",
+    "tests/test_sessions.py::test_incomplete_unparsed_or_missing_ranges_are_never_ready[partial_tail]",
+    "tests/test_sessions.py::test_native_binding_scope_and_worktree_plan_selection_are_isolated",
+    "tests/test_sessions.py::test_pending_hook_horizon_and_rotation_cannot_disappear_from_scope",
+    "tests/test_sessions.py::test_real_install_into_empty_project_then_prepare_handles_index_race[claude]",
+    "tests/test_sessions.py::test_technical_tail_preserves_ack_but_compaction_invalidates_exactly_once",
+    "tests/test_sessions.py::test_unknown_code_state_is_unavailable_and_readback_versions_are_typed",
+    "tests/test_store.py::test_backup_checksum_rejected_before_any_database_mutation",
+    "tests/test_store.py::test_backup_restore_sources_queue_cursors_and_revisions",
+    "tests/test_store.py::test_completion_worktree_is_transient_and_does_not_borrow_other_root_runs",
+    "tests/test_store.py::test_cross_project_sources_and_empty_evidence_rejected",
+    "tests/test_store.py::test_jobs_deduplicate_and_claim_once_across_process_like_connections",
+    "tests/test_store.py::test_project_roots_resolve_longest_and_aliases",
+    "tests/test_store.py::test_record_graph_has_evidence_dependencies_and_replacements",
+    "tests/test_store.py::test_snapshot_dedup_preserves_historical_content",
+    "tests/test_store.py::test_snapshot_invalidates_native_ann_and_lexical_current_flags",
+    "tests/test_store.py::test_two_models_cannot_overwrite_same_version",
+    "tests/test_terminal_workspace_e2e.py::test_attached_outer_terminal_prefix_unicode_paste_compact_resize_and_detach",
+    "tests/test_terminal_workspace_e2e.py::test_real_operational_login_has_no_project_identity_or_archived_output",
+    "tests/test_terminal_workspace_e2e.py::test_real_outer_operational_login_destroys_only_its_secret_history",
+    "tests/test_terminal_workspace_e2e.py::test_real_outer_workspace_project_switch_and_broker_restart_preserve_native_identity",
+    "tests/test_terminal_workspace_e2e.py::test_real_websocket_observer_takeover_never_sends_unauthorized_input",
+    "tests/test_terminal_workspace_e2e.py::test_two_real_outer_terminals_enforce_single_writer_takeover_and_resize_authority",
+    "tests/test_transcript_compatibility.py::test_eof_import_reclassifies_legacy_unknowns_without_changing_archive_or_chunks",
+    "tests/test_transcript_compatibility.py::test_other_unknown_or_invalid_records_still_block_ready[[1,2,3]\\n]",
+    "tests/test_transcript_compatibility.py::test_other_unknown_or_invalid_records_still_block_ready[{\"type\":\"world_state\",broken}\\n]",
+    "tests/test_transcript_compatibility.py::test_prepare_repairs_the_real_seven_record_horizon_without_creating_ack",
+    "tests/test_transcript_compatibility.py::test_reparse_never_clears_hash_scope_or_provenance_conflicts[cwd_wrong_project]",
+    "tests/test_transcript_compatibility.py::test_reparse_never_clears_hash_scope_or_provenance_conflicts[other_warning]",
+    "tests/test_transcript_compatibility.py::test_reparse_preserves_durable_records_when_original_is_missing_but_does_not_invent_archive_proof",
+    "tests/test_tui.py::test_empty_launcher_registers_first_project",
+    "tests/test_tui.py::test_managed_task_update_sends_task_and_plan_versions",
+    "tests/test_tui.py::test_native_launch_suspends_ui_without_changing_arguments",
+    "tests/test_tui.py::test_plans_next_step_and_packet_readiness_are_scoped_to_registered_worktree",
+    "tests/test_tui.py::test_project_selection_shows_tasks_and_sources",
+    "tests/test_verification.py::test_all_required_profiles_and_definition_changes",
+    "tests/test_verification.py::test_code_and_task_changes_during_check_prevent_success",
+    "tests/test_verification.py::test_deleted_project_recovery_cleans_own_logs_without_killing_or_deleting_user_files",
+    "tests/test_verification.py::test_final_insert_rejects_foreign_task_and_source_references[task]",
+    "tests/test_verification.py::test_forget_after_last_output_source_cannot_resurrect_orphan_run",
+    "tests/test_verification.py::test_internal_symlink_targets_and_commit_identity_are_hashed",
+    "tests/test_verification.py::test_new_failed_attempt_cannot_reuse_old_success",
+    "tests/test_verification.py::test_nonpassing_process_outcomes_and_bounded_output[nonzero]",
+    "tests/test_verification.py::test_nonpassing_process_outcomes_and_bounded_output[timeout]",
+    "tests/test_verification.py::test_timeout_terminates_process_group",
+    "tests/test_verification.py::test_unknown_external_symlink_submodule_missing_and_unstable_inputs",
+    "tests/test_workflow.py::test_codex_claude_fresh_codex_restore_plan_check_and_compaction",
+    "tests/test_workspace_state.py::test_workspace_read_is_pure_and_updates_are_private_cas"
+  ],
+  "diagnosticC1workaround": true,
+  "default_runtime_stability": "NOT CONFIRMED: Java C2 crash and independent Python SSL abort reproduced after WSL update. C1 passing is a diagnostic workaround, not a demonstrated root-cause repair.",
+  "baseline_phases": [
+    {
+      "junit": "devbrain-backend-baseline-initial-20261107.xml",
+      "testcase_events": 753,
+      "clean_passed_unique": 753,
+      "nonpassing_events": [],
+      "unscoped_infrastructure_entries": 0
+    },
+    {
+      "junit": "devbrain-backend-baseline-shard-1-20261107.xml",
+      "testcase_events": 92,
+      "clean_passed_unique": 91,
+      "nonpassing_events": [],
+      "unscoped_infrastructure_entries": 1
+    },
+    {
+      "junit": "devbrain-backend-baseline-shard-2-20261107.xml",
+      "testcase_events": 85,
+      "clean_passed_unique": 84,
+      "nonpassing_events": [],
+      "unscoped_infrastructure_entries": 1
+    },
+    {
+      "junit": "devbrain-backend-baseline-shard-4-20261107.xml",
+      "testcase_events": 84,
+      "clean_passed_unique": 55,
+      "nonpassing_events": [
+        {
+          "nodeid": "tests/test_native_session_environment.py::test_native_codex_mcp_stdio_receives_only_explicit_launch_environment[False]",
+          "outcome": "skipped"
+        },
+        {
+          "nodeid": "tests/test_session_lifecycle.py::test_shorter_rewritten_generation_keeps_its_own_unproved_horizon",
+          "outcome": "failure"
+        },
+        {
+          "nodeid": "tests/test_sessions.py::test_incomplete_unparsed_or_missing_ranges_are_never_ready[partial_tail]",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_sessions.py::test_pending_hook_horizon_and_rotation_cannot_disappear_from_scope",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_sessions.py::test_native_binding_scope_and_worktree_plan_selection_are_isolated",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_sessions.py::test_first_empty_scope_may_start_without_claiming_verified_code",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_sessions.py::test_empty_exception_rejects_other_native_config_and_substring_impersonation[other_mcp]",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_sessions.py::test_empty_exception_rejects_other_native_config_and_substring_impersonation[codex_model]",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_store.py::test_snapshot_dedup_preserves_historical_content",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_store.py::test_two_models_cannot_overwrite_same_version",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_store.py::test_backup_restore_sources_queue_cursors_and_revisions",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_store.py::test_record_graph_has_evidence_dependencies_and_replacements",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_store.py::test_backup_checksum_rejected_before_any_database_mutation",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_terminal_workspace_e2e.py::test_real_operational_login_has_no_project_identity_or_archived_output",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_terminal_workspace_e2e.py::test_real_outer_operational_login_destroys_only_its_secret_history",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_terminal_workspace_e2e.py::test_two_real_outer_terminals_enforce_single_writer_takeover_and_resize_authority",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_transcript_compatibility.py::test_prepare_repairs_the_real_seven_record_horizon_without_creating_ack",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_transcript_compatibility.py::test_other_unknown_or_invalid_records_still_block_ready[[1,2,3]\\n]",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_transcript_compatibility.py::test_reparse_never_clears_hash_scope_or_provenance_conflicts[other_warning]",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_tui.py::test_project_selection_shows_tasks_and_sources",
+          "outcome": "failure"
+        },
+        {
+          "nodeid": "tests/test_tui.py::test_empty_launcher_registers_first_project",
+          "outcome": "failure"
+        },
+        {
+          "nodeid": "tests/test_tui.py::test_managed_task_update_sends_task_and_plan_versions",
+          "outcome": "failure"
+        },
+        {
+          "nodeid": "tests/test_verification.py::test_internal_symlink_targets_and_commit_identity_are_hashed",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_verification.py::test_new_failed_attempt_cannot_reuse_old_success",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_verification.py::test_nonpassing_process_outcomes_and_bounded_output[timeout]",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_verification.py::test_timeout_terminates_process_group",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_verification.py::test_final_insert_rejects_foreign_task_and_source_references[task]",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_workflow.py::test_codex_claude_fresh_codex_restore_plan_check_and_compaction",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_workspace_state.py::test_workspace_read_is_pure_and_updates_are_private_cas",
+          "outcome": "error"
+        }
+      ],
+      "unscoped_infrastructure_entries": 0
+    },
+    {
+      "junit": "devbrain-backend-baseline-shard-5-20261107.xml",
+      "testcase_events": 84,
+      "clean_passed_unique": 83,
+      "nonpassing_events": [
+        {
+          "nodeid": "tests/test_native_session_environment.py::test_native_codex_mcp_stdio_receives_only_explicit_launch_environment[True]",
+          "outcome": "skipped"
+        }
+      ],
+      "unscoped_infrastructure_entries": 0
+    },
+    {
+      "junit": "devbrain-backend-baseline-shard-6-20261107.xml",
+      "testcase_events": 84,
+      "clean_passed_unique": 84,
+      "nonpassing_events": [],
+      "unscoped_infrastructure_entries": 0
+    },
+    {
+      "junit": "devbrain-post-update-validation-20261107.xml",
+      "testcase_events": 113,
+      "clean_passed_unique": 57,
+      "nonpassing_events": [
+        {
+          "nodeid": "tests/test_session_lifecycle.py::test_new_action_cannot_merge_away_an_overwritten_captured_partial_tail",
+          "outcome": "failure"
+        },
+        {
+          "nodeid": "tests/test_session_lifecycle.py::test_real_native_lifecycle_invalidates_ack_after_state_refresh[fork]",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_session_lifecycle.py::test_shorter_rewritten_generation_keeps_its_own_unproved_horizon",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_sessions.py::test_archive_barrier_is_actual_eof_not_just_current_cursor",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_sessions.py::test_empty_exception_rejects_other_native_config_and_substring_impersonation[codex_model]",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_sessions.py::test_empty_exception_rejects_other_native_config_and_substring_impersonation[instructions]",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_sessions.py::test_empty_exception_rejects_other_native_config_and_substring_impersonation[other_mcp]",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_sessions.py::test_first_empty_scope_may_start_without_claiming_verified_code",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_sessions.py::test_incomplete_unparsed_or_missing_ranges_are_never_ready[deleted_unproved]",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_sessions.py::test_incomplete_unparsed_or_missing_ranges_are_never_ready[partial_tail]",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_sessions.py::test_native_binding_scope_and_worktree_plan_selection_are_isolated",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_sessions.py::test_pending_hook_horizon_and_rotation_cannot_disappear_from_scope",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_sessions.py::test_real_install_into_empty_project_then_prepare_handles_index_race[claude]",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_sessions.py::test_technical_tail_preserves_ack_but_compaction_invalidates_exactly_once",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_sessions.py::test_unknown_code_state_is_unavailable_and_readback_versions_are_typed",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_store.py::test_backup_checksum_rejected_before_any_database_mutation",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_store.py::test_backup_restore_sources_queue_cursors_and_revisions",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_store.py::test_completion_worktree_is_transient_and_does_not_borrow_other_root_runs",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_store.py::test_cross_project_sources_and_empty_evidence_rejected",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_store.py::test_jobs_deduplicate_and_claim_once_across_process_like_connections",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_store.py::test_project_roots_resolve_longest_and_aliases",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_store.py::test_record_graph_has_evidence_dependencies_and_replacements",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_store.py::test_snapshot_dedup_preserves_historical_content",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_store.py::test_snapshot_invalidates_native_ann_and_lexical_current_flags",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_store.py::test_two_models_cannot_overwrite_same_version",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_terminal_workspace_e2e.py::test_attached_outer_terminal_prefix_unicode_paste_compact_resize_and_detach",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_terminal_workspace_e2e.py::test_real_operational_login_has_no_project_identity_or_archived_output",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_terminal_workspace_e2e.py::test_real_outer_operational_login_destroys_only_its_secret_history",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_terminal_workspace_e2e.py::test_real_outer_workspace_project_switch_and_broker_restart_preserve_native_identity",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_terminal_workspace_e2e.py::test_real_websocket_observer_takeover_never_sends_unauthorized_input",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_terminal_workspace_e2e.py::test_two_real_outer_terminals_enforce_single_writer_takeover_and_resize_authority",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_transcript_compatibility.py::test_eof_import_reclassifies_legacy_unknowns_without_changing_archive_or_chunks",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_transcript_compatibility.py::test_other_unknown_or_invalid_records_still_block_ready[[1,2,3]\\n]",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_transcript_compatibility.py::test_other_unknown_or_invalid_records_still_block_ready[{\"type\":\"world_state\",broken}\\n]",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_transcript_compatibility.py::test_prepare_repairs_the_real_seven_record_horizon_without_creating_ack",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_transcript_compatibility.py::test_reparse_never_clears_hash_scope_or_provenance_conflicts[cwd_wrong_project]",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_transcript_compatibility.py::test_reparse_never_clears_hash_scope_or_provenance_conflicts[other_warning]",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_transcript_compatibility.py::test_reparse_preserves_durable_records_when_original_is_missing_but_does_not_invent_archive_proof",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_tui.py::test_empty_launcher_registers_first_project",
+          "outcome": "failure"
+        },
+        {
+          "nodeid": "tests/test_tui.py::test_managed_task_update_sends_task_and_plan_versions",
+          "outcome": "failure"
+        },
+        {
+          "nodeid": "tests/test_tui.py::test_native_launch_suspends_ui_without_changing_arguments",
+          "outcome": "failure"
+        },
+        {
+          "nodeid": "tests/test_tui.py::test_plans_next_step_and_packet_readiness_are_scoped_to_registered_worktree",
+          "outcome": "failure"
+        },
+        {
+          "nodeid": "tests/test_tui.py::test_project_selection_shows_tasks_and_sources",
+          "outcome": "failure"
+        },
+        {
+          "nodeid": "tests/test_verification.py::test_all_required_profiles_and_definition_changes",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_verification.py::test_code_and_task_changes_during_check_prevent_success",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_verification.py::test_deleted_project_recovery_cleans_own_logs_without_killing_or_deleting_user_files",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_verification.py::test_final_insert_rejects_foreign_task_and_source_references[task]",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_verification.py::test_forget_after_last_output_source_cannot_resurrect_orphan_run",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_verification.py::test_internal_symlink_targets_and_commit_identity_are_hashed",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_verification.py::test_new_failed_attempt_cannot_reuse_old_success",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_verification.py::test_nonpassing_process_outcomes_and_bounded_output[nonzero]",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_verification.py::test_nonpassing_process_outcomes_and_bounded_output[timeout]",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_verification.py::test_timeout_terminates_process_group",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_verification.py::test_unknown_external_symlink_submodule_missing_and_unstable_inputs",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_workflow.py::test_codex_claude_fresh_codex_restore_plan_check_and_compaction",
+          "outcome": "error"
+        },
+        {
+          "nodeid": "tests/test_workspace_state.py::test_workspace_read_is_pure_and_updates_are_private_cas",
+          "outcome": "error"
+        }
+      ],
+      "unscoped_infrastructure_entries": 0
+    }
+  ],
+  "targeted_phases": [
+    {
+      "junit": "copilot-account-regression-20261107.xml",
+      "testcase_events": 34,
+      "clean_passed_unique": 34,
+      "nonpassing_events": [],
+      "unscoped_infrastructure_entries": 0
+    },
+    {
+      "junit": "native-evaluation-regression-20261107.xml",
+      "testcase_events": 12,
+      "clean_passed_unique": 12,
+      "nonpassing_events": [],
+      "unscoped_infrastructure_entries": 0
+    },
+    {
+      "junit": "devbrain-local-extraction-20261107T092122Z.xml",
+      "testcase_events": 24,
+      "clean_passed_unique": 24,
+      "nonpassing_events": [],
+      "unscoped_infrastructure_entries": 0
+    },
+    {
+      "junit": "devbrain-local-job-diagnostics-20261107T092305Z.xml",
+      "testcase_events": 13,
+      "clean_passed_unique": 13,
+      "nonpassing_events": [],
+      "unscoped_infrastructure_entries": 0
+    },
+    {
+      "junit": "devbrain-final-ack-integration-20261107.xml",
+      "testcase_events": 153,
+      "clean_passed_unique": 152,
+      "nonpassing_events": [
+        {
+          "nodeid": "tests/test_api_workspace_e2e.py::test_production_worker_actual_ack_stream_archive_and_reattach",
+          "outcome": "failure"
+        }
+      ],
+      "unscoped_infrastructure_entries": 0
+    },
+    {
+      "junit": "devbrain-final-worker-e2e-20261107.xml",
+      "testcase_events": 1,
+      "clean_passed_unique": 1,
+      "nonpassing_events": [],
+      "unscoped_infrastructure_entries": 0
+    },
+    {
+      "junit": "native-parser-final-regression-20261107.xml",
+      "testcase_events": 4,
+      "clean_passed_unique": 4,
+      "nonpassing_events": [],
+      "unscoped_infrastructure_entries": 0
+    }
+  ],
+  "targeted_unresolved_nodeids": [],
+  "c1_phase": {
+    "junit": "devbrain-c1-diagnostic-validation-20261107.xml",
+    "testcase_events": 56,
+    "clean_passed_unique": 56,
+    "nonpassing_events": [],
+    "unscoped_infrastructure_entries": 0
+  },
+  "post_update_clean_passed_unique": 57,
+  "post_update_pass_call_with_error_teardown_excluded": 1,
+  "excluded_attempts": [
+    {
+      "attempt": "first /tmp backend run",
+      "reason": "Interrupted by unplanned WSL restart; no completed JUnit retained",
+      "counted": 0
+    },
+    {
+      "attempt": "devbrain-backend-baseline-shard-3-20261107.log",
+      "reason": "Python SIGSEGV before JUnit; log-only passes excluded",
+      "counted": 0
+    },
+    {
+      "attempt": "native-evaluation-python-abort-20261107.log",
+      "reason": "Python SIGABRT after 27 log-only passes; no completed JUnit",
+      "counted": 0
+    }
+  ],
+  "environment_correction": "The first final worker E2E attempt mixed broker source 0.7.2 via PYTHONPATH with installed worker 0.7.1 because its python -I ignores PYTHONPATH. Rerun with an isolated editable 0.7.2 environment passed in 16.34s. Both attempts are retained; counted as one test.",
+  "counting_rule": "Deduplicate by pytest nodeid. Within each attempt, any failure/error/skipped event prevents counting that node as a clean pass, including PASS call plus ERROR teardown. Retained interrupted baseline attempts additionally require explicit PASSED log lines. A later documented clean rerun can provide evidence for the same node.",
+  "verification_scope": "Frozen baseline snapshot plus targeted final 0.7.2 regressions and post-update retries. This is not one uninterrupted full run on the final source. Final full native/evaluation rerun aborted; earlier completed targeted and native-parser evidence is retained.",
+  "c1_environment": "devbrain-c1-diagnostic-environment-20261107.json",
+  "source_hashes": "devbrain-backend-final-source-hashes-20261107.json",
+  "frontend_evidence": "devbrain-frontend-validation-20261107.json",
+  "runtime_crash_evidence": [
+    "wsl-kernel-crashes-20261107.log",
+    "arcade-jvm-fatal-20261107.log",
+    "arcade-jvm-post-update-fatal-20261107.log",
+    "wsl-kernel-post-update-crashes-20261107.log",
+    "native-evaluation-python-abort-20261107.log"
+  ],
+  "owned_test_processes_after_completion": [],
+  "global_java_or_bios_changed": false
+}

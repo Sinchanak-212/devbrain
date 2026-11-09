@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-09T10:11:24.474Z",
+  "scope": "ux381_collect_all_diagnostic_preparation",
+  "diagnostic_only": true,
+  "release_qualification": false,
+  "formal_prepared_context_unchanged": true,
+  "formal_context_sha256": "1335f698735597cd322ece666b5a33935070bd6f892d605983dc85360b5c2cd9",
+  "stage": {
+    "session": 40611,
+    "actual_windows_exit_code": 0
+  },
+  "run_id": "ux381-diagnostic080-20261109T100907Z-df97c223",
+  "context": "C:/Users/piotr/OneDrive/Dokumenty/ChatGPT/devbrain/evidence/080-ux381-diagnostic-active-context-20261109.json",
+  "context_sha256": "ecd47bbcca805588e51272a55c38488daef4935f54495207f6678a7910c18dbc",
+  "specification_sha256": "7af3cd3e498a9bf040157dcaca99158ae8edfe228c80cf3e8ccc4e5706271b64",
+  "input_freeze_sha256": "7263ce405f39c4e526bfd0d3fe20db1f954afaf9f3d288f76bdde37d2d5ed4bb",
+  "frozen_inputs": 55,
+  "helper_count": 38,
+  "unchanged_helpers": 37,
+  "controller_sha256": "f8bbfbfee3a465f1b521a005a04c6441154186acda20a7102adc747a10737218",
+  "controller_delta": {
+    "file": "run-regressions-080.py",
+    "baseline_sha256": "7b3997838a3b1e894e845f2f8a1a1fad656b9feceb456d272e8dc6d7f0577fb2",
+    "single_ascii_byte_1_to_0": true,
+    "only_string": "--maxfail=1 -> --maxfail=0",
+    "python_AST_passed": true,
+    "other_AST_unchanged": true,
+    "byte_length": 33485
+  },
+  "stager": "evidence/stage-ux381-diagnostic-20261109.ps1",
+  "stager_sha256": "b6eb4f74159614576c90586fd29d53bb86a5e00a5eda4433ef221757c687c65c",
+  "first_windows_stager_failure": {
+    "actual_exit_code": 1,
+    "linux_started": false,
+    "reason": "Final evidence-context NewJson applied NoReparse past allowlisted workspace into existing redirected OneDrive/Documents ancestor; fixed with exact canonical workspace boundary",
+    "preserved_stager": "evidence/stage-ux381-diagnostic-first-failed-20261109.ps1",
+    "preserved_stager_sha256": "6fdc4ab6aec4dc4dc330052955b2ca5fafc749ea81e315ba53c3aa29b7b72c3c",
+    "preserved_root": "C:/Users/piotr/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/DevBrain/qualification/ux381-diagnostic080-20261109T100821Z-86d47217",
+    "private_files_preserved": 56,
+    "formal_context_unchanged": true,
+    "no_app_or_canonical_helper_edits": true
+  },
+  "source_freeze_sha256": "ad77e00450537294fd26200d0713915689d82ff5a90e65f6c8fb1285fcbb4703",
+  "expected_cases": 381,
+  "whole_modules": 28,
+  "latency_thresholds_unchanged": true,
+  "cleanup_supervisor_registry_and_wrapper_unchanged": true,
+  "linux_started": false,
+  "root_review_and_HOST_GO_required": true
+}

@@ -1,0 +1,68 @@
+{
+  "official_observations": 8,
+  "actual_windows_exit_code": 0,
+  "status": "passed_before_required_status_updates",
+  "oauth_sync_passed": true,
+  "three_geometries_passed": true,
+  "photos": [
+    {
+      "width": 769,
+      "size": "80x24",
+      "png": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\interactive-capture080-20261108T123924Z\\artifacts\\windows-terminal-080-80x24.png",
+      "readonly_observer_exit_verified": true,
+      "sha256": "5be13fed756d0b6256f2131fdd6b79bf493b2bad583f3e1fbea0927d1b28538b",
+      "height": 521,
+      "actual_os_window": true,
+      "api": "PrintWindow",
+      "root_visually_inspected": true
+    },
+    {
+      "width": 1129,
+      "size": "120x36",
+      "png": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\interactive-capture080-20261108T123924Z\\artifacts\\windows-terminal-080-120x36.png",
+      "readonly_observer_exit_verified": true,
+      "sha256": "544eee8cc86d8ea57c43f62b127ac0fddfa6bc6773babd22049bea1ec16a8aaa",
+      "height": 749,
+      "actual_os_window": true,
+      "api": "PrintWindow",
+      "root_visually_inspected": true
+    },
+    {
+      "width": 1669,
+      "size": "180x55",
+      "png": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\interactive-capture080-20261108T123924Z\\artifacts\\windows-terminal-080-180x55.png",
+      "readonly_observer_exit_verified": true,
+      "sha256": "096305da61f8730e3555f0863fc7aa7dbb3ccd49c13a38a5f70c9bfac67d4df7",
+      "height": 1110,
+      "actual_os_window": true,
+      "api": "PrintWindow",
+      "root_visually_inspected": true
+    }
+  ],
+  "eight_hour_gate_pass": false,
+  "power_changed": false,
+  "human_reported": false,
+  "oauth_release_passed": true,
+  "remaining_required_ui_fixes": [
+    "Persistent global project/session/memory/connection/control status strip",
+    "Resume session primary action for matching live client"
+  ],
+  "scope": "agent_workflow_and_windows_terminal_screens_before_status_completion",
+  "ollama20_gate_pass": false,
+  "schema_version": 1,
+  "native_operator_cancelled_readonly_tool_once_then_one_explicit_retry": true,
+  "source_freeze_sha256": "701d042cdf9d9ef1f1239a5d316d6727c87cc9bc920cafeae8fc78f830719b2d",
+  "receipt_sha256": "185763f5edec926fd0a46790b6d1056eeaafdf16f8b9a60225d6f00c4eb00901",
+  "post_exit_seconds": 33,
+  "native_failure": false,
+  "run_id": "interactive-capture080-20261108T123924Z",
+  "native_handoff_regression_pass": false,
+  "scope_empty_seconds": 30.176328799999965,
+  "actual_windows_exec_session": 39398,
+  "five_tasks_passed": true,
+  "copilot_gate_pass": false,
+  "operator": "agent",
+  "final_release_ux_pass": false,
+  "sleep_restored": true,
+  "full_backend_pass": false
+}

@@ -1,0 +1,19 @@
+{
+  "utc": "2026-11-08T22:26:12.646Z",
+  "session": 14823,
+  "actualExit": 0,
+  "scope": "devbrain-q-e91839cdd1284e27a95fa7ba5dd32720.scope",
+  "scopeIdentity": "25:2961",
+  "scopeQuiet": 32.9084869,
+  "outerQuiet": 36,
+  "controllerQuiet": 30.141,
+  "cleanup": true,
+  "noForced": true,
+  "noNative": true,
+  "oauthPhaseSyncRelease": true,
+  "engineActualExit": true,
+  "viewersActualExit": true,
+  "visualPass": false,
+  "scopeOfDecision": "Safe to modify workspace2files and start a fresh isolated preparation; NOT UIvisualPASS or qualification",
+  "independentPeer": "QR fullhash audit pending"
+}

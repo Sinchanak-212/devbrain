@@ -1,0 +1,18 @@
+{
+  "diagnostic_only": true,
+  "actual_exec_session": 51765,
+  "actual_exit_to_be_observed_from_this_tool_session": true,
+  "parallel_workloads_user_authorized": true,
+  "expected_parallel_conditions": [
+    "root backend",
+    "isolated six-job copy"
+  ],
+  "actual_exit_code": null,
+  "schema_version": 1,
+  "root_host_go_sha256": "1f193a494465f6cc7f8418d62939043f31442ee62e44d1ee14cbab9cbbfb456d",
+  "scope": "actual_owned_ux381_diagnostic_tool_session",
+  "launcher_sha256": "81cfd3ac5249eb1cbc8a5850a798f904e1122c01ee0c2dd3fb4576406f74c2e1",
+  "created_utc": "2026-11-09T10:14:56.1541542Z",
+  "run_id": "ux381-diagnostic080-20261109T100907Z-df97c223",
+  "release_qualified": false
+}

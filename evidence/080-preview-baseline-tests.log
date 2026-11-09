@@ -1,0 +1,46 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.2.0, pluggy-1.7.0 -- /home/piotr/.cache/devbrain-preview-080-baseline/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /home/piotr/.cache/devbrain-preview-080-baseline
+configfile: pyproject.toml
+plugins: asyncio-1.4.1.post1, platformdirs-4.14.5, anyio-4.16.0
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=function, asyncio_default_test_loop_scope=function
+collecting ... collected 28 items
+
+tests/test_terminal_preview.py::test_existing_data_and_symlink_are_never_adopted PASSED [  3%]
+tests/test_terminal_preview.py::test_operational_mutations_are_rejected_at_server[POST-/api/client-runs] PASSED [  7%]
+tests/test_terminal_preview.py::test_operational_mutations_are_rejected_at_server[POST-/api/auth/login] PASSED [ 10%]
+tests/test_terminal_preview.py::test_operational_mutations_are_rejected_at_server[POST-/api/copilot/login] PASSED [ 14%]
+tests/test_terminal_preview.py::test_operational_mutations_are_rejected_at_server[POST-/api/copilot/prepare] PASSED [ 17%]
+tests/test_terminal_preview.py::test_operational_mutations_are_rejected_at_server[POST-/api/profiles/x/probe] PASSED [ 21%]
+tests/test_terminal_preview.py::test_operational_mutations_are_rejected_at_server[POST-/api/memory/snapshot] PASSED [ 25%]
+tests/test_terminal_preview.py::test_operational_mutations_are_rejected_at_server[POST-/api/memory/import] PASSED [ 28%]
+tests/test_terminal_preview.py::test_operational_mutations_are_rejected_at_server[POST-/api/discovery] PASSED [ 32%]
+tests/test_terminal_preview.py::test_operational_mutations_are_rejected_at_server[PUT-/api/settings] PASSED [ 35%]
+tests/test_terminal_preview.py::test_operational_mutations_are_rejected_at_server[DELETE-/api/profiles/x/credential] PASSED [ 39%]
+tests/test_terminal_preview.py::test_operational_mutations_are_rejected_at_server[POST-/_control/stop] PASSED [ 42%]
+tests/test_terminal_preview.py::test_operational_mutations_are_rejected_at_server[PATCH-/unknown] PASSED [ 46%]
+tests/test_terminal_preview.py::test_real_broker_authentication_reads_and_reconnect_never_start_services PASSED [ 50%]
+tests/test_terminal_preview.py::test_auth_and_native_websocket_fail_closed PASSED [ 53%]
+tests/test_terminal_preview.py::test_synthetic_fixture_has_bounded_pages_and_exact_graph_identity[normal] PASSED [ 57%]
+tests/test_terminal_preview.py::test_synthetic_fixture_has_bounded_pages_and_exact_graph_identity[empty] PASSED [ 60%]
+tests/test_terminal_preview.py::test_synthetic_fixture_has_bounded_pages_and_exact_graph_identity[unicode-many] PASSED [ 64%]
+tests/test_terminal_preview.py::test_actual_panel_render_and_keyboard_without_storage[sidebar-size0] PASSED [ 67%]
+tests/test_terminal_preview.py::test_actual_panel_render_and_keyboard_without_storage[sidebar-size1] PASSED [ 71%]
+tests/test_terminal_preview.py::test_actual_panel_render_and_keyboard_without_storage[sidebar-size2] PASSED [ 75%]
+tests/test_terminal_preview.py::test_actual_panel_render_and_keyboard_without_storage[inspector-size0] PASSED [ 78%]
+tests/test_terminal_preview.py::test_actual_panel_render_and_keyboard_without_storage[inspector-size1] PASSED [ 82%]
+tests/test_terminal_preview.py::test_actual_panel_render_and_keyboard_without_storage[inspector-size2] PASSED [ 85%]
+tests/test_terminal_preview.py::test_actual_panel_render_and_keyboard_without_storage[graph-size0] PASSED [ 89%]
+tests/test_terminal_preview.py::test_actual_panel_render_and_keyboard_without_storage[graph-size1] PASSED [ 92%]
+tests/test_terminal_preview.py::test_actual_panel_render_and_keyboard_without_storage[graph-size2] PASSED [ 96%]
+tests/test_terminal_preview.py::test_real_five_pane_processes_render_and_recover PASSED [100%]
+
+=============================== warnings summary ===============================
+.venv/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /home/piotr/.cache/devbrain-preview-080-baseline/.venv/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /mnt/c/Users/piotr/OneDrive/Dokumenty/ChatGPT/devbrain/evidence/080-preview-baseline-tests.xml -
+======================== 28 passed, 1 warning in 10.02s ========================

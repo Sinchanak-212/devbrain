@@ -1,0 +1,38 @@
+{
+  "actual_collection_required": true,
+  "verdict": "PASS",
+  "reviewer_Python_CLI_tests_or_Linux_executed": false,
+  "changed_app_files": 3,
+  "scope": "devbrain_extraction_task_state_independent_static_peer",
+  "baseline_source": "app080-20261108T183259Z",
+  "baseline_freeze_sha256": "3dfc2738944f1a5fa3ab3087080f716c92d72f98cef819d7761d1118384f5fcf",
+  "verified_static_chains": [
+    "Pure canonical validator preserves exactly former Store type/membership predicate and error, with no coercion, inference or IO; Store defaults and remaining task policy are unchanged.",
+    "Output validation checks only task with explicit metadata.state after JSON schema checks; initial invalid state enters existing one repair before transaction, second invalid state fails invalid_output with task_state_invalid.",
+    "Description/system guidance comes from canonical TASK_STATES; schema adds no unsupported conditional keywords and non-task state metadata remains unrestricted.",
+    "Budgets120/125/210, monotonic/cancellation/freshness/transaction/rollback guards are unchanged.",
+    "Twenty tests cover repaired batch without prior writes, seven invalid types twice, omitted/six valid states, and five non-task kinds.",
+    "Old persistence-failure test injects bad state at real Store boundary after first real record write, retaining atomic rollback assertions for records/revisions/nodes/edges."
+  ],
+  "planned_UX_cases": 377,
+  "preparation_sha256": "f60b9cc069c8b3b5c20152a8405b6810b3a8004c0a41dfbb1df3ee3389a9c374",
+  "runtime_pass_claim": false,
+  "existing_app_files_compared": 198,
+  "findings": [],
+  "schema_version": 1,
+  "new_cases_authored": 20,
+  "private_data_or_production_accessed": false,
+  "application_or_release_qualified": false,
+  "reviewed_file_sha256": {
+    "devbrain/tests/test_extraction_safety.py": "51f298a4e898e924048ffbb3110497134e293474e9ad308466cf7b2b02d7ae66",
+    "devbrain/src/devbrain/agent.py": "f957d77fb6dfc941a057596595d14ca7a19b6f915a4113cc01933583de4c4b15",
+    "devbrain/src/devbrain/store.py": "a5651d818c7671786b8119a7d982e7a2884d4e96259def36e3b820ad8db85811"
+  },
+  "planned_backend_cases": 1537,
+  "preparation": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-extraction-task-state-preparation-20261108.json",
+  "app_helpers_or_frozen_source_modified_by_reviewer": false,
+  "unchanged_app_files": 195,
+  "status": "static_ack_pending_fresh_source_and_runtime_qualification",
+  "created_utc": "2026-11-08T19:17:37.3622935Z",
+  "Store_reverse_transform_exact": true
+}

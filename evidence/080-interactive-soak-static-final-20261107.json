@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-11-07T20:10:45.7820417Z",
+  "source_sha256": {
+    "test_stability_080_guards.py": "c07109924ee8b344f93381bf34c7e72e8edacfd467a8e488e9940a14e3d68c59",
+    "run-supervised-080.ps1": "7342caab17c0395d2ddb9111e2209707c443c0e2e7a96f6bdf4618054e93b6e3",
+    "test_full_suite_080_guards.py": "060c9b19de95f6dfb7c2d16df7456efc958c185ac6e787afdcf641abb24712d0",
+    "attest-full-suite-080.py": "b6c411ad4d1ff4228eb6dc5dbb989d8a8129ae3abd2539d51a00b228043c142a",
+    "FULL_SUITE_ATTESTATION_080.md": "5e62c000443a605141b7f2ab636a260d7b0fd520e1b6a3bfc8786a14d3172e7b",
+    "soak-workload-080.py": "5cc8bfe59e7b928fc20c7e419eb15eba1f198c1d98f243f936f49d334923e13f",
+    "open-interactive-ux080.ps1": "0b575ba17e23117c98ed0dc3cb726adee3bc68f14745ffdd5557ae4a9b8d160f",
+    "test_interactive_ux080_guards.py": "a37f22b03b8f078f50d294ce1ad6f9b25e846d1ff999779f94a8b6a64300c472",
+    "supervise-080.py": "83e734a05906797f0d75ac9ea1c0d96e92c87331318092174b823450bccfe454",
+    "run-baseline-ux072.py": "a0e1eadf2b7a6f8b5bd23477dc84875ebfcdec5939775279295508b3a99a7744",
+    "run-interactive-ux080.py": "c0b3e155fcbcc1f215e5c8cdf950aa2d03787fb911a69d4ec78d48e5bb74cc68",
+    "INTERACTIVE_UX_080.md": "4ade79c6d8cb7552bdbcdc38ef554f37d5139779796cdf747eae4c73885331fb"
+  },
+  "runtime_processes_started": false,
+  "status": "static_prepared_not_executed",
+  "baseline": {
+    "archive_sha256": "6b65e7315895b8c44b84bafc9146dfcdae732c3890f959d0e5e58cbf4fd9aa2c",
+    "live_visual_comparison_run": false,
+    "oauth_copied": false,
+    "qualified_backup_wheel_required": true,
+    "model_calls_allowed": false,
+    "separate_entrypoint": "run-baseline-ux072.py",
+    "human080_acceptance": false
+  },
+  "app_sources_changed": false,
+  "interactive": {
+    "human_tasks": 5,
+    "native_auth_policy": "private OAuth-only copies; originals unchanged; no copyback",
+    "task_size": "120x36",
+    "default_language": "en",
+    "production_database_opened": false,
+    "new_pure_guard_cases": 7,
+    "visual_sizes": [
+      "80x24",
+      "120x36",
+      "180x55"
+    ]
+  },
+  "powershell_ast_files": 2,
+  "syntax_errors": 0,
+  "scope": "interactive_and_soak_preparation_checkpoint",
+  "guard_cases_executed": false,
+  "next": "Serial guards and controlled external-wrapper fixtures under root coordination before workloads",
+  "soak": {
+    "committed_source_record_readback_authored": true,
+    "peer_review": "release_review static ACK of both corrected blockers; no runtime execution",
+    "cadence_seconds": 900,
+    "new_pure_guard_cases": 18,
+    "jvm_cleanup": "retained pidfd plus cgroup/process identity; actual graceful exit required",
+    "qualification_seconds": 28800,
+    "actual_terminal_detach_exit_and_fresh_attach_authored": true
+  },
+  "runtime_gate": {
+    "reported_status": "pass",
+    "owner": "copilot_adapter",
+    "sha256": "a6bd365cea68986ed6795990272c766679bbd29fd9407e904a12c2956bcdf7fb",
+    "not_a_full_suite_or_soak_pass": true
+  },
+  "python_ast_files": 8
+}

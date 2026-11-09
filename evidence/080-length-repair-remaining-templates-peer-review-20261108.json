@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "status": "static_ack_not_run",
+  "master_sha256": "c9576982a7b550b0991dd6edfccf98cc87abd3c776ad572da4f4730e1c3b0a0c",
+  "verified_frozen_inputs": 24,
+  "verified_helper_map": 38,
+  "spec_count": 6,
+  "exact_spec_transform": "Only current source/venv and V7 candidate physical root; runtime/argv/env/artifacts otherwise unchanged",
+  "backend_expected_cases": 1557,
+  "current_application_proofs_pending": true,
+  "old_results_pooled": false,
+  "Linux_executed": false,
+  "credentials_read": false,
+  "blockers": []
+}

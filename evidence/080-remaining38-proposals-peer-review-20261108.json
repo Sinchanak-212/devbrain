@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_remaining38_proposals_peer_review",
+  "status": "readonly_ack_not_execution_qualified",
+  "master": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-remaining-final-gate-proposals-38-assistantpref-v2-20261108.json",
+  "master_sha256": "7f29db095ad343363548481db4ac7d39bd179aa3b0687c4f826fd3d19cbf2eef",
+  "input_hashes_verified": 155,
+  "helper_hashes_verified": 38,
+  "proposal_count": 5,
+  "checks": [
+    "Exact current160614 source/runtime and actual594 map",
+    "Fresh proposal roots and CreateNew input freezes",
+    "Queue-copy backup is a path reference, no backup read",
+    "Smoke immutable072 and currentv4 output bindings",
+    "Standalone attestation requires actual current backend root and canonical output under same root",
+    "Soak28800/900,32chat+32embed and GPUartifact; finalfullsuite remains absent",
+    "Deployment eleven admission refs and finalsmoke072 interpreter remain pending",
+    "Every proposal omits --execute and keeps launch=false"
+  ],
+  "concrete_blockers": [],
+  "linux_workload_started": false,
+  "private_backup_or_credentials_read": false,
+  "application_or_helpers_modified": false,
+  "created_utc": "2026-11-08T17:16:09.2576912Z"
+}

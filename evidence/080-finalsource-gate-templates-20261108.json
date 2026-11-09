@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_final_source_gate_templates",
+  "status": "templates_only_pending_actual_final_461",
+  "created_utc": "2026-11-08T14:07:01.0952676Z",
+  "source_snapshot": "app080-20261108T134240Z",
+  "source_freeze_sha256": "86ceb039990ab2c46966e5d4e412f83a6876f2a99b8a2112d08ddddac1ad92ab",
+  "app_prepare_receipt_sha256": "48880bebbc94a8806b42b9bf2b17ee26d92526bc0870d9c0e08a55cf56643180",
+  "source_file_count": 198,
+  "source_finalized": false,
+  "launch_permitted": false,
+  "linux_started": false,
+  "network_or_account_queries": false,
+  "app_or_helpers_edited": false,
+  "templates": {
+    "fullbackend": {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\finalsource-gate-templates-20261108\\fullbackend.template.json",
+      "sha256": "6cbc1ad753e46834a3536150d4e3b58251a8d8f42df36768be40d2e8c4dfa584",
+      "status": "template_not_run_pending_final_461",
+      "controller_basename": "run-full-suite-080.py",
+      "timeout_seconds": 7200
+    },
+    "native": {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\finalsource-gate-templates-20261108\\native.template.json",
+      "sha256": "c53b1a1ea298ad9dd8a803a2a1eb27c05ecfb10b0e730954ef349f0ab513c29b",
+      "status": "template_not_run_pending_final_461",
+      "controller_basename": "validate-native-account080.py",
+      "timeout_seconds": 1200
+    },
+    "copilot": {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\finalsource-gate-templates-20261108\\copilot.template.json",
+      "sha256": "a3c78514c81b722d4799b3c9607130f041ab14418080b6ceda58c301deacde9f",
+      "status": "template_not_run_pending_final_461",
+      "controller_basename": "validate-copilot-account080.py",
+      "timeout_seconds": 420
+    },
+    "ollama20": {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\finalsource-gate-templates-20261108\\ollama20.template.json",
+      "sha256": "828779a8d34805e4d18e65c336fbcd72d160c76d10dc22e41c9b785653ef772f",
+      "status": "template_not_run_pending_final_461",
+      "controller_basename": "run-regressions-080.py",
+      "timeout_seconds": 3600
+    },
+    "frontend": {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\finalsource-gate-templates-20261108\\frontend.template.json",
+      "sha256": "f8ea48575b6cd8221fbd67bcfba07d01c4b91f03574ffff11b219871a6136e4e",
+      "status": "template_not_run_pending_final_461",
+      "controller_basename": "run-regressions-080.py",
+      "timeout_seconds": 2100
+    }
+  },
+  "guard_design_review": {
+    "expected_tests": 461,
+    "sha256": "151b35ea67085326bb88ea72ca53423c46d608bbec1989ddf4c219440ee267d9",
+    "not_runtime_proof": true,
+    "expected_helpers": 34,
+    "expected_modules": 10,
+    "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-production-retry-registration-addendum-peer-review-20261108.json"
+  },
+  "final_guard_context": null,
+  "final_guard_receipt": null,
+  "final_guard_receipt_sha256": null,
+  "next_sequence": [
+    "ActualUI controllerexit/scopequiet/OAuthrelease.",
+    "Mechanical candidate build observation.",
+    "Whole461 finalcandidate guards actualPASS+externalcleanup.",
+    "Materialize these five templates once against passed461; real validations run serially by root.",
+    "Fullbackend actualreceipt then independent attestation on original qualified source.",
+    "8h stage only after every required realgate and source-bound fullsuite attestation.",
+    "8h28800 active seconds and postcleanup externalwatch then attest_soak; final restore/upgradesmoke/deployment follow root."
+  ],
+  "historical_contexts_preserved": true,
+  "repeated_full_staging_avoided": true,
+  "runtime_pass_claimed": false
+}

@@ -1,0 +1,302 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_actual_entire_six_private_queue_copy_final",
+  "status": "passed_focused_queue_copy_only",
+  "passed": true,
+  "created_utc": "2026-11-09T10:16:11.8711006Z",
+  "run_id": "queue-copy-sidebar-resize080-20261109T100447Z-c1dacc95",
+  "actual_windows_exec_session": 61090,
+  "actual_windows_exit_code": 0,
+  "cleanup_complete": true,
+  "safe_next_workload": true,
+  "source_snapshot": "app080-20261108T222731Z",
+  "source_freeze_sha256": "ad77e00450537294fd26200d0713915689d82ff5a90e65f6c8fb1285fcbb4703",
+  "app_prepare_receipt_sha256": "4cba08753a5d44463687271f5e695ccddac4d2284ca348b66630f480facde918",
+  "guard_context_sha256": "9e9d865acea676f9fab11225c54e49095610e44feb37d9a0b0cd6e882633e6d6",
+  "guard_receipt_sha256": "9dca1fd31a494fd015d3ba198af5a7ea453211f93c484bdf5b0d931f33865f84",
+  "guard_cases": 604,
+  "app_files_rehashed": 198,
+  "source_bundle_files_rehashed": 209,
+  "actual_controller_code_manifest_files": 153,
+  "helper_map_files_rehashed": 38,
+  "frozen_inputs_rehashed": 15,
+  "backup_sha256": "698591d33252a1f0e802a01fac78feb90f56ef37fc0c5f717ed26667f635ac70",
+  "all_six_replayed": true,
+  "selected_job_count": 6,
+  "selected_jobs": [
+    {
+      "id": "034d96bc-0e0f-45fc-9a29-7dc2470b8bd2",
+      "kind": "import",
+      "state": "completed",
+      "attempts": 2,
+      "retry_count": 1,
+      "error_code": null,
+      "diagnostics": {},
+      "previous_attempts": 1
+    },
+    {
+      "id": "1584c210-6c34-439c-a325-2de7104ea1e6",
+      "kind": "import",
+      "state": "completed",
+      "attempts": 2,
+      "retry_count": 1,
+      "error_code": null,
+      "diagnostics": {},
+      "previous_attempts": 1
+    },
+    {
+      "id": "30bee886-18cb-4a1b-89db-8edc314e1aec",
+      "kind": "extract",
+      "state": "completed",
+      "attempts": 2,
+      "retry_count": 1,
+      "error_code": null,
+      "diagnostics": {
+        "stage": "extract",
+        "code": "ok",
+        "repair_outcome": "not_needed",
+        "persistence_stage": "save_diagnostics",
+        "repair_attempted": false,
+        "validation_codes": [],
+        "budget": {
+          "timeout_seconds": 120.0,
+          "elapsed_seconds": 17.602
+        },
+        "counts": {
+          "candidate_records": 6,
+          "accepted_records": 6,
+          "skipped_records": 0,
+          "written_records": 6
+        },
+        "rejection_counts": {
+          "blank_content": 0,
+          "blank_evidence": 0,
+          "quote_absent_source": 0,
+          "reserved_metadata": 0
+        },
+        "model_calls": [
+          {
+            "phase": "initial",
+            "done_reason": "stop",
+            "prompt_eval_count": 832,
+            "eval_count": 1118,
+            "total_duration": 17369379724
+          }
+        ]
+      },
+      "previous_attempts": 1
+    },
+    {
+      "id": "4cae21d0-463d-4bce-ab43-dda2fedd8264",
+      "kind": "import",
+      "state": "completed",
+      "attempts": 2,
+      "retry_count": 1,
+      "error_code": null,
+      "diagnostics": {},
+      "previous_attempts": 1
+    },
+    {
+      "id": "a6d7f6ae-10f6-4388-8086-8f80cfa107d4",
+      "kind": "extract",
+      "state": "completed",
+      "attempts": 3,
+      "retry_count": 1,
+      "error_code": null,
+      "diagnostics": {
+        "stage": "extract",
+        "code": "ok",
+        "repair_outcome": "succeeded",
+        "persistence_stage": "save_diagnostics",
+        "repair_attempted": true,
+        "validation_codes": [
+          "output_truncated"
+        ],
+        "budget": {
+          "timeout_seconds": 120.0,
+          "elapsed_seconds": 29.402
+        },
+        "counts": {
+          "candidate_records": 6,
+          "accepted_records": 6,
+          "skipped_records": 0,
+          "written_records": 6
+        },
+        "rejection_counts": {
+          "blank_content": 0,
+          "blank_evidence": 0,
+          "quote_absent_source": 0,
+          "reserved_metadata": 0
+        },
+        "model_calls": [
+          {
+            "phase": "initial",
+            "done_reason": "length",
+            "prompt_eval_count": 678,
+            "eval_count": 1200,
+            "total_duration": 14319015736
+          },
+          {
+            "phase": "repair",
+            "done_reason": "stop",
+            "prompt_eval_count": 1291,
+            "eval_count": 1275,
+            "total_duration": 14907070339
+          }
+        ]
+      },
+      "previous_attempts": 2
+    },
+    {
+      "id": "bb9187d3-85f8-42ba-8439-be42acc42c1d",
+      "kind": "extract",
+      "state": "completed",
+      "attempts": 2,
+      "retry_count": 1,
+      "error_code": null,
+      "diagnostics": {
+        "stage": "extract",
+        "code": "completed_with_omissions",
+        "repair_outcome": "succeeded",
+        "persistence_stage": "save_diagnostics",
+        "repair_attempted": true,
+        "validation_codes": [
+          "output_truncated"
+        ],
+        "budget": {
+          "timeout_seconds": 120.0,
+          "elapsed_seconds": 32.589
+        },
+        "counts": {
+          "candidate_records": 6,
+          "accepted_records": 6,
+          "skipped_records": 2,
+          "written_records": 4
+        },
+        "rejection_counts": {
+          "blank_content": 0,
+          "blank_evidence": 0,
+          "quote_absent_source": 0,
+          "reserved_metadata": 0
+        },
+        "model_calls": [
+          {
+            "phase": "initial",
+            "done_reason": "length",
+            "prompt_eval_count": 676,
+            "eval_count": 1200,
+            "total_duration": 14251547413
+          },
+          {
+            "phase": "repair",
+            "done_reason": "stop",
+            "prompt_eval_count": 1290,
+            "eval_count": 1521,
+            "total_duration": 18169048911
+          }
+        ]
+      },
+      "previous_attempts": 1
+    }
+  ],
+  "functional_error_codes": [],
+  "unrelated_jobs_unchanged": true,
+  "counts_before": {
+    "sources": 1287,
+    "chunks": 2529,
+    "records": 39,
+    "nodes": 132,
+    "edges": 116,
+    "embeddings": 1931,
+    "projects": 1,
+    "jobs": {
+      "pending": 1221,
+      "running": 0,
+      "completed": 3610,
+      "failed": 6
+    },
+    "archived": 1287,
+    "indexed": 1277,
+    "processed": 117,
+    "unassigned_sources": 0,
+    "inbox": 0,
+    "plans": 1,
+    "sessions": 18,
+    "check_runs": 3
+  },
+  "counts_after": {
+    "sources": 1287,
+    "chunks": 2529,
+    "records": 55,
+    "nodes": 151,
+    "edges": 132,
+    "embeddings": 1931,
+    "projects": 1,
+    "jobs": {
+      "pending": 1221,
+      "running": 0,
+      "completed": 3616,
+      "failed": 0
+    },
+    "archived": 1287,
+    "indexed": 1277,
+    "processed": 120,
+    "unassigned_sources": 0,
+    "inbox": 0,
+    "plans": 1,
+    "sessions": 18,
+    "check_runs": 3
+  },
+  "duplicate_counts_before": {
+    "jobs": 0,
+    "sources": 0
+  },
+  "duplicate_counts_after": {
+    "jobs": 0,
+    "sources": 0
+  },
+  "scope_empty_verified": true,
+  "scope_unit": "devbrain-q-073fad8cb5a64a368e60d6f9b848ae1a.scope",
+  "scope_cgroup_identity": "25:2961",
+  "scope_quiet_seconds": 32.8743867,
+  "outer_post_exit_seconds": 36,
+  "own_engine_actual_exit_verified": true,
+  "own_engine_returncode": 143,
+  "native_boot_power_sleep_clean": true,
+  "power_sample_count": 7,
+  "raw_forced_cleanup": false,
+  "raw_receipt_passed": true,
+  "receipt": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\queue-copy-sidebar-resize080-20261109T100447Z-c1dacc95\\artifacts\\receipt.json",
+  "receipt_sha256": "ffc1eab7c6d973de8810e57b5f0f620536fdfdbe16501d538e14c062c7a81b13",
+  "raw_artifact_sha256": {
+    "controller.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "probe-scope.stdout.log": "9794b199a87b0e8d50f9dade5fad18e97c18574b75162681d07b281f3d519ce6",
+    "controller-report.json": "91d069eb6a78e3e2b3fe54ffc195186449b89610da7acbd2e6353295b9556f86",
+    "probe-kernel.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gate.json": "a6bd365cea68986ed6795990272c766679bbd29fd9407e904a12c2956bcdf7fb",
+    "probe-boot.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "mapping-proof.json": "70956772b9e9c29ebbd39ea7a9a72b4a2b0d85441f598d22e204abbec0fd1c3e",
+    "probe-boot.stdout.log": "9e7c22b4c771852744de5bb1e11ea1f8f20ed7418bfbff3b1c75c7a839ad3c15",
+    "supervisor-exit.json": "c8cb6d3b83985997b8e11ee7986bff8793b21ac6fadebde032e8667a272c3ad9",
+    "probe-scope.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "spec.json": "01783dcd89a2d3c75e51bdcbef66d13d4572132f0aea7bf545b2fa4c723cc90f",
+    "supervisor.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "receipt.json": "ffc1eab7c6d973de8810e57b5f0f620536fdfdbe16501d538e14c062c7a81b13",
+    "controller.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "supervisor-report.json": "fd42dcf4088e615c177fab59035e863a3e4bba0d1ffbc42a582f37c7d58ab2c8",
+    "supervisor.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "probe-kernel.stdout.log": "c0af40ec57174857cbfb60d51ba46694c990b8198b8092f51b8adfb4f88e4e79",
+    "power-samples.jsonl": "825506140340a13861dcec013c5614aaf807e79a4ac08d92b43480d328089f67"
+  },
+  "raw_PASS_and_cleanup_flags_unmodified": true,
+  "historical_results_pooled": false,
+  "fresh_original_backup_copy": true,
+  "production_modified": false,
+  "production_retry_permitted": false,
+  "application_qualified": false,
+  "release_qualified": false,
+  "parallel_execution_authorized_by_user": true,
+  "Linux_executed_by_reviewer": false,
+  "backup_or_production_database_read_by_reviewer": false,
+  "raw_model_source_error_SQL_credentials_or_private_source_digests_exported": false
+}

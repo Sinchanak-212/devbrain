@@ -1,0 +1,71 @@
+{
+  "linux_workload_started": false,
+  "eight_hour_included": false,
+  "scope": "devbrain_independent_diagnostic_staging_observation",
+  "comparisons": {
+    "native": {
+      "exact_formal_spec_except_run_root_placeholders": true,
+      "context_sha256": "3d599b7ecae0417c45c1edb898d0ac24b1e920c1ecbb8ea3eb50dac9f05b94e9",
+      "release_qualified": false,
+      "UI_pass_claimed": false,
+      "argv_count": 19,
+      "error_inventory_only": true,
+      "context": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-native-diagnostic-active-context-20261109T100750Z.json"
+    },
+    "upgrade_smoke": {
+      "exact_formal_spec_except_run_root_placeholders": true,
+      "context_sha256": "2f83d59faf33f31a5d94d1c47f0e3639674b8fcfcf1c63d6cf0535a32f2a2729",
+      "release_qualified": false,
+      "UI_pass_claimed": false,
+      "argv_count": 25,
+      "error_inventory_only": true,
+      "context": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-upgrade-smoke-diagnostic-active-context-20261109T100750Z.json"
+    },
+    "ollama20": {
+      "exact_formal_spec_except_run_root_placeholders": true,
+      "context_sha256": "a47220e3204135f7b646732c3f04960577e114fc7ca77ab89f5e632a96c51088",
+      "release_qualified": false,
+      "UI_pass_claimed": false,
+      "argv_count": 21,
+      "error_inventory_only": true,
+      "context": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-ollama20-diagnostic-active-context-20261109T100750Z.json"
+    },
+    "frontend": {
+      "exact_formal_spec_except_run_root_placeholders": true,
+      "context_sha256": "0a5fc6ea9788527cfdc294c60a7a14f7b5b5f5504bea1a5f1c8ad93964587119",
+      "release_qualified": false,
+      "UI_pass_claimed": false,
+      "argv_count": 17,
+      "error_inventory_only": true,
+      "context": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-frontend-diagnostic-active-context-20261109T100750Z.json"
+    },
+    "copilot": {
+      "exact_formal_spec_except_run_root_placeholders": true,
+      "context_sha256": "8ad09992226d5241d8878c52f28b78c57e2dafc482743151cdba06a5afc04ae8",
+      "release_qualified": false,
+      "UI_pass_claimed": false,
+      "argv_count": 13,
+      "error_inventory_only": true,
+      "context": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-copilot-diagnostic-active-context-20261109T100750Z.json"
+    }
+  },
+  "actual_windows_exit_code": 0,
+  "native_and_copilot_require_separate_account_lease_coordination": true,
+  "frozen_helpers_modified": false,
+  "formal_release_admission_modified": false,
+  "source_freeze_sha256": "ad77e00450537294fd26200d0713915689d82ff5a90e65f6c8fb1285fcbb4703",
+  "stager_sha256": "efe71813a5de7e3e8ea02f7db26b9b6e83246d3a7cd8dae014202cf9fb9099f3",
+  "created_utc": "2026-11-09T10:08:40.4071570Z",
+  "master": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-independent-diagnostic-contexts-20261109T100750Z.json",
+  "actual_final_chunk_id": "63db59",
+  "all_five_contexts_prepared_only": true,
+  "application_source_modified": false,
+  "requires_root_HOST_GO_and_heavy_workload_slot": true,
+  "stager": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-independent-error-inventory-080-20261109.ps1",
+  "schema_version": 1,
+  "PS_parse_errors": 0,
+  "status": "windows_stage_completed_not_run",
+  "actual_windows_exec_session": 4843,
+  "test_or_model_or_account_requests_started": false,
+  "master_sha256": "b8e36237eb2cfedf4c45f0f79c6ce480bac24c1eaa96976c95ba0c82d11da093"
+}

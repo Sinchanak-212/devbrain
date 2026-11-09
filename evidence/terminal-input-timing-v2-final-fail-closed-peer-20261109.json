@@ -1,0 +1,20 @@
+{
+  "App_changed": false,
+  "superseded_context_status_retained": "prepared_not_run",
+  "schema_version": 1,
+  "superseded_run_will_not_execute": true,
+  "superseded_stage_actual_exit_code": 0,
+  "superseded_stage_actual_session": 42125,
+  "final_static24_peer": "evidence/terminal-input-timing-v2-final-independent-static-peer-20261109.json",
+  "superseded_prepared_context_sha256": "b8f1de0f78031e22798528c207cf994c150aec9ba7f9c46bc2708945ddc08b69",
+  "eight_hour_started": false,
+  "source_delta": "        # Fail closed BEFORE the observed cleanup interval: neither a late\n        # Windows waiter nor an unadmitted viewer may join a stale ready arm.\n        report.update(status=\"failed\", phase=\"cleanup_after_failure\")\n        for manifest, state in states:\n            state[\"status\"] = \"closed\"\n            try:\n                atomic(manifest, state)\n            except OSError:\n                report[\"errors\"].append(\"private_manifest_close_failed\")\n        publish()\n",
+  "final_static24_peer_sha256": "c882730ed6067035fa7dc950c7939832123f4dbc0f20dd146db4ad8d570aee02",
+  "Linux_started": false,
+  "superseded_prepared_context": "evidence/080-terminal-input-timing-probe-prepared-context-20261109T120059Z.json",
+  "all_other_source_text_identical": true,
+  "scope": "devbrain_terminal_timing_v2_final_fail_closed_delta",
+  "final_source_sha256": "8ddea268fa6da47fadb0fb7607b3ebe260777a3bae69817093320acda325c3d8",
+  "previous_source_sha256": "f4f20fc7ffe82b5eba5995f5109819b604892e0f350749767cd5489980ce46ee",
+  "status": "static_peer_passed_not_run"
+}

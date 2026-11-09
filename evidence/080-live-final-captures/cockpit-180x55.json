@@ -1,0 +1,37 @@
+{
+  "sidebar": {
+    "pane": "%0",
+    "width": 24,
+    "height": 54,
+    "dead": false,
+    "sha256": "7febeea1c700b4789c2e0143141e20a8f3e3383ed8d559ec6aa88d7317aafb08"
+  },
+  "client1": {
+    "pane": "%1",
+    "width": 77,
+    "height": 30,
+    "dead": false,
+    "sha256": "34ca7a96423174c9d1d31d61f6d0e882f4d91105d218f31a7bf033e4d3ad872f"
+  },
+  "client2": {
+    "pane": "%3",
+    "width": 77,
+    "height": 30,
+    "dead": false,
+    "sha256": "34ca7a96423174c9d1d31d61f6d0e882f4d91105d218f31a7bf033e4d3ad872f"
+  },
+  "inspector": {
+    "pane": "%2",
+    "width": 92,
+    "height": 23,
+    "dead": false,
+    "sha256": "d10f1c381cf8b59eefa5a76d75bb4bfa916605e04f7611451b63744ae8324c07"
+  },
+  "graph": {
+    "pane": "%4",
+    "width": 62,
+    "height": 23,
+    "dead": false,
+    "sha256": "5a9f0678cb1f069c5b7ebf9561ec291d5e32c3e31ca684b0e1f0d9c8b60048e5"
+  }
+}

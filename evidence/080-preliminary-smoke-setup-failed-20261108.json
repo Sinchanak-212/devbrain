@@ -1,0 +1,13 @@
+{
+  "passed": false,
+  "run_id": "smoke-preliminary080-20261108T085408Z",
+  "observed_exec_session": 69752,
+  "reason": "Required private parent directory was absent; controller rejected setup before JVM/install/data",
+  "frozen_helpers_changed": false,
+  "fixture_engine_started": false,
+  "actual_windows_exit": 1,
+  "scope": "devbrain_preliminary_smoke_failed_setup",
+  "receipt_sha256": "0f62b5d299e005a2cf88151e6d222addd1c57ddee9e2ee4c862bd258b3e0251e",
+  "post_empty_seconds": 30.4963604,
+  "scope_empty_verified": true
+}

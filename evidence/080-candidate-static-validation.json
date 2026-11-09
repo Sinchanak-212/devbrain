@@ -1,0 +1,27 @@
+{
+  "status": "candidate_built_static_checks_only",
+  "checked_at": "2026-11-07T11:36:23.943853+00:00",
+  "ast": "passed",
+  "ruff": "passed_before_final_smoke_native_watch_and_pidfd_changes",
+  "final_helper_ruff": "not_run_after_runtime_stop",
+  "guard_tests": "not_run",
+  "guard_cases_authored": 9,
+  "upgrade_smoke": "not_run",
+  "production_install": "not_run",
+  "read_only_review": "No remaining concrete foreign-process signal or false-PASS blocker found by test_suite; not execution evidence.",
+  "candidate_manifest_sha256": "02091d81edf9f5821b4746181acb53859bc758c8241ad703caa11a7d74ef4eb1",
+  "candidate_updater_sha256": "86830acbf91ad329447d0f6d5bf9a50c47e1e3fdc91564cd4e60b2441ce76504",
+  "candidate_zip_sha256": "0b5a72669653aabc527d9b45d79e9e45f3154073db4cf4f0f5dce2f2cd9858a3",
+  "candidate_matches_current_source": false,
+  "candidate_stale_reason": "Source and release contract changed after historical candidate build: test_terminal_latency080.py, release docs and qualified backup-python/runtime-gate/data-dir implementation. No rebuild or qualification performed.",
+  "current_updater_static_reference": "080-updater-qualified-backup-static.json",
+  "source_files": 193,
+  "changed_files": 40,
+  "helper_sha256": {
+    "build-devbrain-update-080.py": "704924eb3933316e2261f291844ff5c504798b56b1e4c8056ec16f0464eb5c81",
+    "devbrain-update080-template.py": "a8098f3892da38215884505bc4139301f281dbd904e2b7a124664149798b0a14",
+    "test_devbrain_update080_smoke.py": "9ed6ce2ea585cedece4e9d1a53fe987f9f775aa8fbdecdfa8cce842e0fcf4d49",
+    "test_devbrain_update080_guards.py": "ec405b7e7fd073cccfd3a106403ed36a8dff04eb0c1a66a7799eb39113a2603e"
+  },
+  "reason_runtime_tests_not_run": "Runtime qualification remains blocked after Python 3.13.18 SIGABRT; no new WSL runtime processes started by this agent."
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_user_pre8h_completion_and_shutdown_override",
+  "recorded_utc": "2026-11-08T21:34:39.6544887+00:00",
+  "authority": "Latest explicit user instruction relayed by root",
+  "eight_hour_run_authorized_this_session": false,
+  "required_sequence": [
+    "Finish actual current UI and its cleanup without assuming PASS",
+    "Run native then Copilot then Ollama20 then frontend then updater smoke, serially after actual preceding cleanup",
+    "Save final hashes, raw verdicts, outstanding work and a durable handoff",
+    "Root shuts down the whole Windows computer"
+  ],
+  "current_ui": {
+    "no_pass_inferred": true,
+    "operator_recovery_active": true,
+    "known_codex_exit_cause": "unknown",
+    "actual_final_verdict": null,
+    "root_exec_session": 77868,
+    "known_codex_exit_code": 1,
+    "codex_retry_authorized": false
+  },
+  "next_five_stager": {
+    "peer_report": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-five-length-final-gate-materializer-peer-review-20261108.json",
+    "requires_actual_ui_pass": true,
+    "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-five-length-final-gates-after-ui-20261108.ps1",
+    "peer_sha256": "85f91e13201b59676bee0ad6ac8f9cf27b9813327dedb0c8519cbd34cfdec8bc",
+    "sha256": "c425ff23a007291c581ad15d29ac0304788ffeaf355f17b2141661022ef67f2c"
+  },
+  "early_quota_stop": {
+    "trigger": "Either first-party known five-hour or weekly remaining <=5%",
+    "unknown_metric_is_not_zero": true,
+    "steps": [
+      "Save durable handoff",
+      "Cancel only the verified owned active workload via its control contract",
+      "Wait actual exits and required scope/native/power tail, restore sleep inhibition",
+      "Preserve aborted/failed verdicts; never convert interruption to PASS",
+      "Root whole-Windows shutdown"
+    ]
+  },
+  "next_session": {
+    "production_gates_follow_successful_fresh_eight_hours": true,
+    "resume_interrupted_soak": false,
+    "prerequisites": [
+      "Verify actual reboot identity and fresh runtime/source hashes",
+      "Verify active power scheme and settings",
+      "Verify production072 and private DB remain stopped",
+      "Verify retained current-source pre8h proofs and any failures",
+      "Run a new uninterrupted8h qualification only after the resumed user-authorized sequence admits it"
+    ],
+    "fresh_continuous_eight_hour_run_only": true
+  },
+  "production072_remains_stopped": true,
+  "private_database_remains_stopped": true,
+  "linux_started_by_this_agent": false,
+  "shutdown_executed_by_this_agent": false,
+  "previous_handoff": {
+    "sha256": "18f1d05c9254a3cd5afeb6d33fff10bca738ef31a42303728737eda4fb59b89f",
+    "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-length-repair-durable-handoff-20261108.md"
+  },
+  "old_files_preserved": true
+}

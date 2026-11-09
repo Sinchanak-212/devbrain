@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "/home/piotr/.cache/devbrain-runtime-080/c2-final/runtimes/jdk-21.0.13+9/bin/jcmd",
+    "9052",
+    "Compiler.codecache"
+  ],
+  "returncode": 0,
+  "stdout": "9052:\nCodeHeap 'non-profiled nmethods': size=118880Kb used=12359Kb max_used=12359Kb free=106520Kb\n bounds [0x00007aa9543e8000, 0x00007aa955008000, 0x00007aa95b800000]\nCodeHeap 'profiled nmethods': size=118876Kb used=13595Kb max_used=19149Kb free=105280Kb\n bounds [0x00007aa94c800000, 0x00007aa94db00000, 0x00007aa953c17000]\nCodeHeap 'non-nmethods': size=8004Kb used=2396Kb max_used=4086Kb free=5607Kb\n bounds [0x00007aa953c17000, 0x00007aa954077000, 0x00007aa9543e8000]\nCodeCache: size=245760Kb, used=28350Kb, max_used=35594Kb, free=217407Kb\n total_blobs=8404, nmethods=7560, adapters=746, full_count=0\nCompilation: enabled, stopped_count=0, restarted_count=0\n",
+  "stderr": "Picked up JAVA_TOOL_OPTIONS: -XX:+UnlockDiagnosticVMOptions -XX:+LogCompilation -XX:LogFile=/home/piotr/.cache/devbrain-runtime-080/c2-final/evidence/c2-final-0-compilation.xml\n"
+}

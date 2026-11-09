@@ -1,0 +1,24 @@
+{
+  "scope": "native_worker_TERM_consistency_independent_static_peer",
+  "proposal_patch_sha256": "61927180e1743f44b40dfbc86323d641f68539792c34f18b0be6970f198f8d50",
+  "review_result": "approved_consistency_change_only",
+  "working_source_changed": false,
+  "root_cause_of_Codex_timeout_established": false,
+  "runtime_model_or_auth_tested": false,
+  "actual_copies_and_baselines_rehashed": 2,
+  "AST_parsed_baseline_and_copies": 4,
+  "static_exec_actual_exit_code": 0,
+  "static_exec_chunk": "f19e9e",
+  "facts": [
+    "NativeRuntime launches native_worker via actual inner tmux new-session and configures default-terminal tmux-256color.",
+    "Serialized launch environment may reflect the terminal which prepared the launch; existing rebinding already replaces TMUX and TMUX_PANE with actual worker environment.",
+    "Rebinding TERM in the same loop uses actual inner-terminal capabilities and removes stale serialized TERM if actual worker TERM is absent.",
+    "CODEX_HOME and all other launch environment entries retain exact previous behavior.",
+    "Strengthened existing test compares the entire final environment for actual tmux-256color and absent TERM, preserving all previous TMUX/CODEX_HOME assertions."
+  ],
+  "limitations": [
+    "A TERM consistency fix is not evidence that TERM caused the buffered-input timeout.",
+    "Actual child TERM/default-terminal observation and supervised runtime regressions remain required."
+  ],
+  "merge_note": "Native-worker source is disjoint from the UX proposal; the edited old test function precedes UX appended tests in test_terminal_bridge.py. Preserve both changes when combining proposals."
+}

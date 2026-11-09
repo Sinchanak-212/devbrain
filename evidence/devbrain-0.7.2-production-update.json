@@ -1,0 +1,17 @@
+{
+  "installed_version": "0.7.2",
+  "source_version": "0.7.2",
+  "protected_files_unchanged": {
+    ".local/share/devbrain/config.json": true,
+    ".local/share/devbrain/cockpit/preferences.json": true,
+    ".local/share/devbrain/credentials/api-keys.json": true,
+    ".local/share/devbrain/runtime/copilot/config.json": true,
+    ".local/share/devbrain/models.lock.json": true,
+    ".codex/auth.json": true,
+    ".claude/.credentials.json": true
+  },
+  "installed_files_verified": 64,
+  "mismatched_files": [],
+  "backup": "/home/piotr/.local/state/devbrain-updates/20261107T093838Z-bbfafb96",
+  "updater_sha256": "61c4da4c2fcbbb80abcbc091c4ca83eaaebb34584e28e06e527b8b62a251560e"
+}

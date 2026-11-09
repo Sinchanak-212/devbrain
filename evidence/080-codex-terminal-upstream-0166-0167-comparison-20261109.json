@@ -1,0 +1,202 @@
+{
+  "schema_version": 1,
+  "scope": "read_only_official_Codex_0166_to_0167_terminal_source_comparison",
+  "status": "narrow_source_comparison_complete_upgrade_fix_unproven",
+  "source_manifest_sha256": "d87d18821aea1a69185d05a33f977e888c261d913e4bbcd38ce3a616601bfb50",
+  "official_repository": "https://github.com/openai/codex",
+  "comparison_groups": [
+    {
+      "group": "Crossterm_dependency_pin_lock_and_TUI_features",
+      "workspace_dependency_equal": true,
+      "patch_equal": true,
+      "patch": {
+        "git": "https://github.com/openai-oss-forks/crossterm",
+        "rev": "ed1cdab335221515706178d68495bba2aed1924f"
+      },
+      "lock_Crossterm_package_equal": true,
+      "lock_Crossterm_package": [
+        {
+          "name": "crossterm",
+          "version": "0.29.0",
+          "source": "git+https://github.com/openai-oss-forks/crossterm?rev=ed1cdab335221515706178d68495bba2aed1924f#ed1cdab335221515706178d68495bba2aed1924f",
+          "dependencies": [
+            "bitflags 2.13.1",
+            "crossterm_winapi",
+            "derive_more 2.1.1",
+            "futures-core",
+            "mio",
+            "parking_lot",
+            "rustix 1.1.4",
+            "signal-hook",
+            "signal-hook-mio",
+            "winapi"
+          ]
+        }
+      ],
+      "TUI_Cargo_toml_entire_bytes_identical": true
+    },
+    {
+      "group": "startup_probe_and_replay",
+      "files": [
+        {
+          "new": {
+            "url": "https://raw.githubusercontent.com/openai/codex/rust-v0.167.0/codex-rs/tui/src/terminal_probe.rs",
+            "version": "0.167.0",
+            "cached_file": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\codex-terminal-upstream-0166-0167-20261109\\0.167.0-codex-rs__tui__src__terminal_probe.rs",
+            "sha256": "3a83c7b42fb4132329d8dbf8cae742d430f97fa24918e1cc3029e090ca890abe",
+            "source_path": "codex-rs/tui/src/terminal_probe.rs",
+            "bytes": 36398,
+            "git_blob": "08118acd484916d477f447b805a64991a59a77ea"
+          },
+          "path": "codex-rs/tui/src/terminal_probe.rs",
+          "identical": true,
+          "old": {
+            "url": "https://raw.githubusercontent.com/openai/codex/rust-v0.166.0/codex-rs/tui/src/terminal_probe.rs",
+            "version": "0.166.0",
+            "cached_file": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\codex-terminal-upstream-0166-0167-20261109\\0.166.0-codex-rs__tui__src__terminal_probe.rs",
+            "sha256": "3a83c7b42fb4132329d8dbf8cae742d430f97fa24918e1cc3029e090ca890abe",
+            "source_path": "codex-rs/tui/src/terminal_probe.rs",
+            "bytes": 36398,
+            "git_blob": "08118acd484916d477f447b805a64991a59a77ea"
+          }
+        },
+        {
+          "new": {
+            "url": "https://raw.githubusercontent.com/openai/codex/rust-v0.167.0/codex-rs/tui/src/terminal_probe/startup_replay.rs",
+            "version": "0.167.0",
+            "cached_file": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\codex-terminal-upstream-0166-0167-20261109\\0.167.0-codex-rs__tui__src__terminal_probe__startup_replay.rs",
+            "sha256": "357fc27b7c08085d8466ea3d3e048ee8dcc99db091d6a30ea3127f360257e3f9",
+            "source_path": "codex-rs/tui/src/terminal_probe/startup_replay.rs",
+            "bytes": 2430,
+            "git_blob": "51ef26813e49b0a3b8b068f1be357ae3b78abd03"
+          },
+          "path": "codex-rs/tui/src/terminal_probe/startup_replay.rs",
+          "identical": true,
+          "old": {
+            "url": "https://raw.githubusercontent.com/openai/codex/rust-v0.166.0/codex-rs/tui/src/terminal_probe/startup_replay.rs",
+            "version": "0.166.0",
+            "cached_file": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\codex-terminal-upstream-0166-0167-20261109\\0.166.0-codex-rs__tui__src__terminal_probe__startup_replay.rs",
+            "sha256": "357fc27b7c08085d8466ea3d3e048ee8dcc99db091d6a30ea3127f360257e3f9",
+            "source_path": "codex-rs/tui/src/terminal_probe/startup_replay.rs",
+            "bytes": 2430,
+            "git_blob": "51ef26813e49b0a3b8b068f1be357ae3b78abd03"
+          }
+        }
+      ]
+    },
+    {
+      "group": "onboarding_fatal_discard_calls",
+      "entire_file_identical": false,
+      "all_discard_call_contexts_identical": true,
+      "old_call_contexts": [
+        {
+          "line": 635,
+          "context_sha256": "d129094ea10020862b5b7b8ab9fc07f2681775458c3e030a382673c29347effb"
+        },
+        {
+          "line": 781,
+          "context_sha256": "ed7cea39a85b85aa42f8b173e150149fc54ecd92a5480b8eca32501e95e4213a"
+        },
+        {
+          "line": 788,
+          "context_sha256": "9a926763d05a13362dfc97bf27280dc1f32927947c29f3d2dddfc8a0885579ef"
+        },
+        {
+          "line": 802,
+          "context_sha256": "8ccf9f8f7d44da4ad0adfde26498de1565c684c2fb6c7ed003e10b89423cdb33"
+        },
+        {
+          "line": 805,
+          "context_sha256": "adbf118fb8b6d68dd00e29079c9bebf98049098e7ab60cb7d0a06e3b88265765"
+        },
+        {
+          "line": 809,
+          "context_sha256": "700ccbb7ba18a8b345fde44caf670e3e947ff1c62a65b6ae3a01c4c72377f2ae"
+        },
+        {
+          "line": 894,
+          "context_sha256": "27603187efe77f924960a469ea12b8071c06a48234d872271f9d77d9f785cd51"
+        },
+        {
+          "line": 956,
+          "context_sha256": "bf0a76cfd4b12eda066b24891d08c008b7f3435c61a7b5dd3005acc59c11c883"
+        },
+        {
+          "line": 979,
+          "context_sha256": "2ff1cf5fd032f2fd1ad70b0e675ead58946b85a1434b81baa259b832a2b8a6f5"
+        },
+        {
+          "line": 988,
+          "context_sha256": "9e663bf11a6e825858c37c028b0f6f9c5172bacceec398462d4a4f9e8b0e78a9"
+        },
+        {
+          "line": 1001,
+          "context_sha256": "d06e904676265300ffc136f6861cd3639c85fbf9fecffbcb840547d2ad22b5bb"
+        }
+      ],
+      "new_call_contexts": [
+        {
+          "line": 642,
+          "context_sha256": "d129094ea10020862b5b7b8ab9fc07f2681775458c3e030a382673c29347effb"
+        },
+        {
+          "line": 788,
+          "context_sha256": "ed7cea39a85b85aa42f8b173e150149fc54ecd92a5480b8eca32501e95e4213a"
+        },
+        {
+          "line": 795,
+          "context_sha256": "9a926763d05a13362dfc97bf27280dc1f32927947c29f3d2dddfc8a0885579ef"
+        },
+        {
+          "line": 809,
+          "context_sha256": "8ccf9f8f7d44da4ad0adfde26498de1565c684c2fb6c7ed003e10b89423cdb33"
+        },
+        {
+          "line": 812,
+          "context_sha256": "adbf118fb8b6d68dd00e29079c9bebf98049098e7ab60cb7d0a06e3b88265765"
+        },
+        {
+          "line": 816,
+          "context_sha256": "700ccbb7ba18a8b345fde44caf670e3e947ff1c62a65b6ae3a01c4c72377f2ae"
+        },
+        {
+          "line": 901,
+          "context_sha256": "27603187efe77f924960a469ea12b8071c06a48234d872271f9d77d9f785cd51"
+        },
+        {
+          "line": 963,
+          "context_sha256": "bf0a76cfd4b12eda066b24891d08c008b7f3435c61a7b5dd3005acc59c11c883"
+        },
+        {
+          "line": 986,
+          "context_sha256": "2ff1cf5fd032f2fd1ad70b0e675ead58946b85a1434b81baa259b832a2b8a6f5"
+        },
+        {
+          "line": 995,
+          "context_sha256": "9e663bf11a6e825858c37c028b0f6f9c5172bacceec398462d4a4f9e8b0e78a9"
+        },
+        {
+          "line": 1008,
+          "context_sha256": "d06e904676265300ffc136f6861cd3639c85fbf9fecffbcb840547d2ad22b5bb"
+        }
+      ],
+      "other_changes_summary": "GCP setup/auth-choice fields, activation_key_guard initialization and key-release routing changed. These changes do not establish a fix for the observed buffered-input timeout."
+    }
+  ],
+  "conclusions": [
+    "The checked Crossterm fork pin and locked package, TUI dependency declaration, startup probe and replay source do not provide an upgrade fix delta.",
+    "Onboarding is not entirely identical; its auth/key routing changed, while both discard-call contexts are identical. Other upstream behavior is not excluded.",
+    "No evidence justifies automatically upgrading the managed binary to fix this particular failure. The real same-account UI trial on the DevBrain prototype remains necessary."
+  ],
+  "nonclaims": [
+    "not a full repository comparison",
+    "not a compiled feature-unification proof",
+    "no new binary/runtime or exact Crossterm-parser execution",
+    "not causal proof for the original failure"
+  ],
+  "new_CLI_installed_or_executed": false,
+  "Linux_started": false,
+  "model_or_auth_requests": 0,
+  "App_files_changed": false,
+  "eight_hour_started": false
+}

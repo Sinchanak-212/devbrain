@@ -1,0 +1,31 @@
+{
+  "captured_at_utc": "2026-11-07T09:37:25.8390350Z",
+  "investigation_scope": "read-only; no update, restart, driver, BIOS, registry or memory changes",
+  "windows_version": "10.0.26300.9818",
+  "windows_boot_local": "2026-11-07T08:21:41.5+01:00",
+  "installed_wsl": "2.6.1.0",
+  "packaged_kernel": "6.6.87.2-1",
+  "running_kernel": "6.6.87.2-microsoft-standard-WSL2",
+  "wslg": "1.0.66",
+  "latest_stable_wsl": "3.0.3",
+  "latest_stable_prerelease": false,
+  "latest_stable_published_at": "2026-10-09T18:21:40Z",
+  "latest_stable_kernel": "6.18.54.1",
+  "latest_stable_url": "https://github.com/microsoft/WSL/releases/tag/3.0.3",
+  "exact_kernel_panic_fix_verified": false,
+  "panic_local_time": "2026-11-07T10:18:52.0967018+01:00",
+  "panic_vm": "C74E3BE2-BE7B-4A34-84A9-B1275CA8DC01",
+  "post_panic_vm": "C1044371-BCBD-47F5-B7EC-966BF70C7B31",
+  "panic_signature": "Kernel panic - not syncing: Fatal exception; idle_cpu+0x13/0x60; scheduler/do_coredump stack",
+  "initiating_cause": "unconfirmed",
+  "cpu": "Intel Core i9-14900K",
+  "bios": "ASUS4101,2024-12-03",
+  "windows_microcode_revision_bytes": "2B 01 00 00",
+  "windows_microcode_revision_interpreted": "0x12B",
+  "evidence": [
+    "wsl-kernel-panic-20261107T091852Z.txt",
+    "wsl-restart-events-20261107.json",
+    "wsl-stable-release-notes-20261107.json",
+    "wsl-restart-diagnosis-20261107.md"
+  ]
+}

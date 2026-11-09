@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_sidebar_current_resize_proposal",
+  "status": "prepared_only_waiting_root_actual_cleanup_and_apply_go",
+  "created_utc": "2026-11-08T22:21:36.137672+00:00",
+  "source_snapshot": "app080-20261108T202627Z",
+  "source_freeze_sha256": "1f35dae9f2b3f894bb67535a215e29cba3c1235120ff30daa387bd5450f03e14",
+  "base_files": {
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\devbrain\\src\\devbrain\\terminal_panels.py": "4f5a522837642c224f7226db585bec5f5b263adbc969af63464ee4e84fb60028",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\devbrain\\tests\\test_terminal_panels.py": "b3675bff777c4f2b5ca026cb5073cf48280219f021ac12fbbe290e407765faf3"
+  },
+  "proposed_files": {
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\sidebar-resize-080-proposal-20261108\\terminal_panels.py": "5202c07f1298aa2720ae0612707aba4864f58b31b3a5014f05dc044f30b48cc1",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\sidebar-resize-080-proposal-20261108\\test_terminal_panels.py": "66df50d81349530c18833fe7b3990bb42d334c4f6a02f5e64cffa776401967a8",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\sidebar-resize-080-proposal-20261108\\proposed.patch": "d723cf32ed87ee899de41a209fcaa70b5bcd6e1b3283abdc1008319236bbfcb8"
+  },
+  "production_delta": [
+    "Use typed Resize event.size.width instead of previous self.size.width",
+    "Permit existing sidebar-main to scroll vertically only when its content exceeds available height"
+  ],
+  "canonical_textual_version": "8.2.8",
+  "pinned_textual_readonly_windows_source_checked": [
+    "pilot.py:86 resize_terminal posts real Resize and pauses",
+    "app.py:4345 _on_resize updates _size",
+    "screen.py:1138 focus requests scroll_to_center if not fully visible",
+    "screen.py:2109 can_view_entire"
+  ],
+  "new_authored_cases": 4,
+  "expected_backend_cases": 1561,
+  "expected_ux_cases": 381,
+  "expected_ux_modules": 28,
+  "actual_collection_authoritative": true,
+  "new_regression_chain": "EN/PL x projects/project, real24x33->80x21->24x21->120x33->80x21, currentclass/rowgeometry/full labels/Tab focus autoscroll/no client launch",
+  "all_old_test_functions_and_assertions_ast_preserved": true,
+  "windows_ast_files_passed": 2,
+  "tests_executed": false,
+  "linux_processes_started": false,
+  "workspace_app_files_modified": false,
+  "frozen_helpers_modified": false,
+  "apply_authorized_yet": false,
+  "peer_review_pending": true
+}

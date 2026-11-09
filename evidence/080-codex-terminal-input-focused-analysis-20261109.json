@@ -1,0 +1,120 @@
+{
+  "schema_version": 1,
+  "scope": "readonly_Codex_0166_terminal_input_failure_focused_analysis",
+  "status": "cause_unresolved_bounded_no_model_probe_prepared",
+  "problem_statement": "One explicit Start work launches Codex 0.166.0 in the owned native tmux pane, then exits1 with 'Error: timed out discarding buffered terminal input', without a memory ACK. The same literal was reproduced with an actual Windows Terminal sole writer attached before Start.",
+  "known_facts": [
+    "The real-Windows-Terminal-first observation disproves a relay-only explanation. It does not identify the input bytes, exact fatal caller or underlying component.",
+    "Managed binary metadata identifies 0.166.0; binary SHA b8a11fedf24b2dfb59a70c9e52b030f9a508dcd49cd2dd0d41956f4c785156b8. No new Codex version command or model process was started during this analysis.",
+    "The 0.166.0 and 0.167.0 input_boundary.rs source files have identical Git blob c9a16e579d0681588d2595def5df056ea01052cb. An upgrade has no demonstrated fix for this failure.",
+    "A timeout can mean input keeps arriving OR an incomplete control sequence remains quarantined. The error alone does not distinguish these mechanisms."
+  ],
+  "primary_source_evidence": [
+    {
+      "url": "https://github.com/openai/codex/blob/rust-v0.166.0/codex-rs/tui/src/tui/input_boundary.rs",
+      "git_blob": "c9a16e579d0681588d2595def5df056ea01052cb",
+      "lines": "27-62",
+      "finding": "The drain has a one-second deadline, polls and consumes events, then requires complete buffered-input framing and a non-readable terminal input descriptor."
+    },
+    {
+      "url": "https://github.com/openai/codex/blob/rust-v0.167.0/codex-rs/tui/src/tui/input_boundary.rs",
+      "git_blob": "c9a16e579d0681588d2595def5df056ea01052cb",
+      "finding": "Same implementation as 0.166.0."
+    },
+    {
+      "url": "https://github.com/openai/codex/blob/rust-v0.166.0/codex-rs/tui/src/app/startup.rs",
+      "git_blob": "f1e83e5a5fc6c5aeb6490314de65a4c1ad3fe686",
+      "lines": "184-196",
+      "finding": "The app's startup modal drain catches TimedOut and keeps the modal quarantined. This does not establish that every startup caller catches this error."
+    },
+    {
+      "url": "https://github.com/openai/codex/blob/rust-v0.166.0/codex-rs/tui/src/onboarding/onboarding_screen.rs",
+      "git_blob": "aaf45b2356fa067b0de676bb05a569ecb234da3c",
+      "lines": "631-637,781-791",
+      "finding": "Onboarding draws then invokes the drain with propagation; a trust-screen transition also propagates it. These are concrete possible fatal callers, not a proven stack for the observed process."
+    },
+    {
+      "url": "https://github.com/openai/codex/blob/rust-v0.166.0/codex-rs/tui/src/terminal_probe.rs",
+      "git_blob": "08118acd484916d477f447b805a64991a59a77ea",
+      "lines": "27,294-328",
+      "finding": "The Unix startup probe has a250ms shared deadline. It emits keyboard/DA1/cursor/OSC10/OSC11 queries and replays retained input through the Crossterm parser."
+    },
+    {
+      "url": "https://github.com/openai/codex/blob/rust-v0.166.0/codex-rs/tui/src/terminal_probe/startup_replay.rs",
+      "git_blob": "51ef26813e49b0a3b8b068f1be357ae3b78abd03",
+      "finding": "Completed OSC replies are filtered; incomplete prefixes remain framed for later input."
+    },
+    {
+      "url": "https://github.com/openai-oss-forks/crossterm/blob/ed1cdab335221515706178d68495bba2aed1924f/src/event/source/unix/tty.rs",
+      "git_blob": "f67feee0d48768cb4ec627d6118c2299ee33e472",
+      "lines": "291-325",
+      "finding": "The exact Codex Cargo patch distinguishes incomplete bracketed paste, OSC, CSI and other control sequences; discard does not bypass an unresolved boundary."
+    }
+  ],
+  "local_code_evidence": [
+    {
+      "path": "devbrain/src/devbrain/client_runtime.py",
+      "lines": "359-392,450-471,479-520,577-581",
+      "finding": "NativeRuntime launches a detached native session at120x40 before a later subscribe creates _Channel. _Channel attaches a real private tmux client on a PTY initially120x40; subscribe issues refresh-client. Resize changes that PTY dimensions."
+    },
+    {
+      "path": "devbrain/src/devbrain/terminal_bridge.py",
+      "lines": "168-210,262-280",
+      "finding": "The raw bridge forwards bytes only under control, flushes its own outer input when first gaining control, and deduplicates dimension-based resize frames except an explicit pending request. It does not emulate VT."
+    },
+    {
+      "path": "devbrain/src/devbrain/workspace.py",
+      "lines": "418-512,527-551,728-733",
+      "finding": "The workspace daemon refreshes on a500ms cadence; it respawns the bridge only when run/generation binding changes. A real outer Windows Terminal before Start does not ensure the inner native client is attached before the native program begins its startup probe."
+    },
+    {
+      "path": "devbrain/src/devbrain/cockpit.py",
+      "lines": "683-706,715-746",
+      "finding": "Initial control is sent before queued output; controller changes are deduplicated. The input/output path uses base64 without intentionally adding bytes. No static infinite controller/resize loop is demonstrated."
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "H1",
+      "status": "open",
+      "condition": "Nested renderer/control-query responses leave a partial CSI or OSC sequence at the protected input drain.",
+      "prediction": "The synthetic query collector reports an incomplete control tail or differing complete control classes in the bridge arm."
+    },
+    {
+      "id": "H2",
+      "status": "open",
+      "condition": "The detached native program emits its250ms startup query before its inner renderer client exists; attachment arrives later.",
+      "prediction": "A later controlled timing variant reproduces an incomplete or delayed boundary only when queries precede the inner attach. The currently approved attached-before-query probe does not test this ordering."
+    },
+    {
+      "id": "H3",
+      "status": "open_static_evidence_not_supportive",
+      "condition": "Repeated refresh, resize or focus reports keep input readable for the whole one-second drain.",
+      "prediction": "Counters or event timings show repeated operations/events rather than one initial attach/resize and one controlled resize. Static code deduplicates several of these paths, so no storm is established."
+    },
+    {
+      "id": "H4",
+      "status": "open",
+      "condition": "An upstream Crossterm framing/startup defect preserves an incomplete state even when the transport supplies complete replies.",
+      "prediction": "Transport collection is clean but an exact pinned-Crossterm parser-only reproducer fails on the same synthetic reply framing. No parser-only reproducer has been run."
+    }
+  ],
+  "prepared_probe": {
+    "source": "evidence/terminal-input-probe-20261109.py",
+    "sha256": "7043d4a3beb8ef99aad68f3c681e1f13f61c27cee5f34fc948d1cf7a6aa46c06",
+    "private_controller_basename": "probe-native-terminal-input080.py",
+    "trial_definition": "One five-query burst with3s total capture per arm; not five individual3s trials.",
+    "arms": ["direct_inner_tmux_to_actual_Windows_Terminal", "actual_NativeRuntime_Channel_RawTerminalBridge_to_actual_Windows_Terminal"],
+    "transport_test_double": "Only the broker WebSocket transport is replaced by an in-process protocol adapter; actual NativeRuntime.subscribe, _Channel, TerminalAttachment and RawTerminalBridge are used.",
+    "geometry": "Actual Windows Terminal client remains120x40; each tmux viewport has one controlled120x40_to120x33 resize. The child records actual dimensions independently.",
+    "input_export": "Control classes/counts/timing, total byte counts and incomplete-tail class/length only. No raw or printable input strings exported.",
+    "nonclaims": ["not an exact Crossterm parser test", "does not reproduce detached-before-inner-attach timing", "does not reproduce the entire Codex input-mode setup", "no full stability or release qualification"],
+    "owned_cleanup": "Retained child, bridge, tmux-server and admitted viewer pidfds; actual exits; owned scope quiet30s; separate external observer.",
+    "actual_probe_started_by_this_agent": false
+  },
+  "analysis_confidence": "exploring",
+  "new_model_or_auth_requests": 0,
+  "App_or_frozen38_edits": false,
+  "automatic_retry_or_security_boundary_bypass": false,
+  "eight_hour_test_started": false
+}

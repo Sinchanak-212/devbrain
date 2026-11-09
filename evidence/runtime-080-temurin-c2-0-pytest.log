@@ -1,0 +1,89 @@
+.........................F
+=================================== FAILURES ===================================
+_ test_attached_outer_terminal_prefix_unicode_paste_compact_resize_and_detach __
+
+terminal_stack = <test_terminal_workspace_e2e.TerminalStack object at 0x7e354253c6e0>
+outer_workspace = <devbrain.workspace.WorkspaceManager object at 0x7e3540a57a40>
+
+    @pytest.mark.asyncio
+    async def test_attached_outer_terminal_prefix_unicode_paste_compact_resize_and_detach(terminal_stack, outer_workspace):
+        stack, manager = terminal_stack, outer_workspace
+        master, slave = os.openpty()
+        os.set_blocking(master, False)
+        fcntl.ioctl(slave, termios.TIOCSWINSZ, struct.pack("HHHH", 55, 180, 0, 0))
+        attributes = termios.tcgetattr(slave)
+        environment = {**os.environ, "TERM": "xterm-256color"}
+        process = subprocess.Popen([sys.executable, "-I", "-m", "devbrain.native_worker", "--attach",
+            "--tmux-bin", stack.tmux, "--socket", str(manager.socket), "--session", "devbrain-ui"],
+            stdin=slave, stdout=slave, stderr=slave, env=environment, start_new_session=True)
+        drain = None
+        try:
+            await read_pty_until(master, "DevBrain")
+    
+            async def discard_screen_output():
+                while True:
+                    try:
+                        os.read(master, 65536)
+                    except BlockingIOError:
+                        await asyncio.sleep(.02)
+                    except OSError:
+                        return
+            drain = asyncio.create_task(discard_screen_output())
+            manager.refresh()
+            wait_pane(manager, manager.panes()["sidebar"], "terminal-alpha")
+            assert stack.trace("coding") == []
+            manager.state.select_project(stack.projects[0], intent="work", requested_slot_ids=["codex", "claude"])
+            manager.refresh()
+            panes = manager.panes()
+            for role, client in (("client1", "codex"), ("client2", "claude")):
+                wait_pane(manager, panes[role], "NATIVE_READY " + client)
+    
+            async def select(key, role):
+                os.write(master, b"\x02" + key.encode())
+                await wait_async(lambda: manager.tmux("display-message", "-p", "-t", panes[role], "#{pane_active}").stdout.strip() == "1")
+    
+            await select("1", "client1")
+            os.write(master, "OUTER_UTF8_zażółć λ\r".encode())
+            wait_pane(manager, panes["client1"], 'ECHO "OUTER_UTF8_zażółć λ"')
+            os.write(master, b"\x02\x02\r")
+            await wait_async(lambda: any(row.get("text") == "\x02" for row in stack.trace("input")))
+            await select("2", "client2")
+            os.write(master, "\x1b[200~OUTER_PASTE_你好\x1b[201~\r".encode())
+            await wait_async(lambda: any("OUTER_PASTE_你好" in row.get("text", "") for row in stack.trace("input")))
+            os.write(master, b"\x03")
+            wait_pane(manager, panes["client2"], "INTERRUPTED claude")
+            before = {row["id"]: (row["pid"], row["session_id"]) for row in stack.runtime.list_runs()}
+            fcntl.ioctl(slave, termios.TIOCSWINSZ, struct.pack("HHHH", 35, 115, 0, 0))
+            os.kill(process.pid, signal.SIGWINCH)
+            await asyncio.sleep(.3)
+            manager.refresh()
+            assert manager.state.read()["layout"] == "compact"
+            assert manager.tmux("display-message", "-p", "-t", panes["client2"], "#{window_zoomed_flag}").stdout.strip() == "1"
+            await asyncio.sleep(.4)
+            cols, rows = manager.tmux("display-message", "-p", "-t", panes["client2"], "#{pane_width} #{pane_height}").stdout.split()
+            os.write(master, b"size\r")
+            wait_pane(manager, panes["client2"], f"SIZE {cols}x{rows}")
+            fcntl.ioctl(slave, termios.TIOCSWINSZ, struct.pack("HHHH", 55, 180, 0, 0))
+            os.kill(process.pid, signal.SIGWINCH)
+            await asyncio.sleep(.3)
+            manager.refresh()
+>           assert manager.state.read()["layout"] == "wide"
+E           AssertionError: assert 'compact' == 'wide'
+E             
+E             - wide
+E             + compact
+
+tests/test_terminal_workspace_e2e.py:679: AssertionError
+----------------------------- Captured stderr call -----------------------------
+DevBrain: Native project/MCP/hook trust must be reviewed in the clients; no trust is bypassed.
+DevBrain: Native project/MCP/hook trust must be reviewed in the clients; no trust is bypassed.
+=============================== warnings summary ===============================
+../venv/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /home/piotr/.cache/devbrain-runtime-080/venv/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_terminal_workspace_e2e.py::test_attached_outer_terminal_prefix_unicode_paste_compact_resize_and_detach
+!!!!!!!!!!!!!!!!!!!!!!!!!! stopping after 1 failures !!!!!!!!!!!!!!!!!!!!!!!!!!!
+1 failed, 25 passed, 1 warning in 28.53s

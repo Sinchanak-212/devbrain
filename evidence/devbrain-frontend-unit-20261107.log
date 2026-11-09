@@ -1,0 +1,16 @@
+
+> devbrain-cockpit@0.5.0 test
+> vitest run
+
+
+[1m[30m[46m RUN [49m[39m[22m [36mv4.1.12 [39m[90m/home/piotr/.cache/devbrain-validation-20261107/frontend[39m
+
+ [32m✓[39m tests/api.test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 25[2mms[22m[39m
+ [32m✓[39m tests/terminal.test.ts [2m([22m[2m3 tests[22m[2m)[22m[32m 2[2mms[22m[39m
+ [32m✓[39m tests/inspector.test.tsx [2m([22m[2m4 tests[22m[2m)[22m[32m 143[2mms[22m[39m
+
+[2m Test Files [22m [1m[32m3 passed[39m[22m[90m (3)[39m
+[2m      Tests [22m [1m[32m10 passed[39m[22m[90m (10)[39m
+[2m   Start at [22m 10:20:39
+[2m   Duration [22m 634ms[2m (transform 173ms, setup 0ms, import 366ms, tests 171ms, environment 685ms)[22m
+

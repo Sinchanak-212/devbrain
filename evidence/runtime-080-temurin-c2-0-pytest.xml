@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="26" time="28.536" timestamp="2026-11-07T11:52:12.261207+01:00" hostname="SuperComputer"><testcase classname="tests.test_session_lifecycle" name="test_new_action_cannot_merge_away_an_overwritten_captured_partial_tail" time="2.326" /><testcase classname="tests.test_session_lifecycle" name="test_real_native_lifecycle_invalidates_ack_after_state_refresh[fork]" time="1.200" /><testcase classname="tests.test_session_lifecycle" name="test_shorter_rewritten_generation_keeps_its_own_unproved_horizon" time="1.009" /><testcase classname="tests.test_sessions" name="test_archive_barrier_is_actual_eof_not_just_current_cursor" time="1.091" /><testcase classname="tests.test_sessions" name="test_empty_exception_rejects_other_native_config_and_substring_impersonation[codex_model]" time="0.797" /><testcase classname="tests.test_sessions" name="test_empty_exception_rejects_other_native_config_and_substring_impersonation[instructions]" time="0.814" /><testcase classname="tests.test_sessions" name="test_empty_exception_rejects_other_native_config_and_substring_impersonation[other_mcp]" time="1.029" /><testcase classname="tests.test_sessions" name="test_first_empty_scope_may_start_without_claiming_verified_code" time="1.070" /><testcase classname="tests.test_sessions" name="test_incomplete_unparsed_or_missing_ranges_are_never_ready[deleted_unproved]" time="0.907" /><testcase classname="tests.test_sessions" name="test_incomplete_unparsed_or_missing_ranges_are_never_ready[partial_tail]" time="0.792" /><testcase classname="tests.test_sessions" name="test_native_binding_scope_and_worktree_plan_selection_are_isolated" time="1.177" /><testcase classname="tests.test_sessions" name="test_pending_hook_horizon_and_rotation_cannot_disappear_from_scope" time="0.978" /><testcase classname="tests.test_sessions" name="test_real_install_into_empty_project_then_prepare_handles_index_race[claude]" time="0.921" /><testcase classname="tests.test_sessions" name="test_technical_tail_preserves_ack_but_compaction_invalidates_exactly_once" time="1.049" /><testcase classname="tests.test_sessions" name="test_unknown_code_state_is_unavailable_and_readback_versions_are_typed" time="0.952" /><testcase classname="tests.test_store" name="test_backup_checksum_rejected_before_any_database_mutation" time="0.813" /><testcase classname="tests.test_store" name="test_backup_restore_sources_queue_cursors_and_revisions" time="1.137" /><testcase classname="tests.test_store" name="test_completion_worktree_is_transient_and_does_not_borrow_other_root_runs" time="0.873" /><testcase classname="tests.test_store" name="test_cross_project_sources_and_empty_evidence_rejected" time="0.701" /><testcase classname="tests.test_store" name="test_jobs_deduplicate_and_claim_once_across_process_like_connections" time="0.749" /><testcase classname="tests.test_store" name="test_project_roots_resolve_longest_and_aliases" time="0.718" /><testcase classname="tests.test_store" name="test_record_graph_has_evidence_dependencies_and_replacements" time="0.832" /><testcase classname="tests.test_store" name="test_snapshot_dedup_preserves_historical_content" time="0.668" /><testcase classname="tests.test_store" name="test_snapshot_invalidates_native_ann_and_lexical_current_flags" time="0.798" /><testcase classname="tests.test_store" name="test_two_models_cannot_overwrite_same_version" time="0.736" /><testcase classname="tests.test_terminal_workspace_e2e" name="test_attached_outer_terminal_prefix_unicode_paste_compact_resize_and_detach" time="3.950"><failure message="AssertionError: assert 'compact' == 'wide'&#10;  &#10;  - wide&#10;  + compact">terminal_stack = &lt;test_terminal_workspace_e2e.TerminalStack object at 0x7e354253c6e0&gt;
+outer_workspace = &lt;devbrain.workspace.WorkspaceManager object at 0x7e3540a57a40&gt;
+
+    @pytest.mark.asyncio
+    async def test_attached_outer_terminal_prefix_unicode_paste_compact_resize_and_detach(terminal_stack, outer_workspace):
+        stack, manager = terminal_stack, outer_workspace
+        master, slave = os.openpty()
+        os.set_blocking(master, False)
+        fcntl.ioctl(slave, termios.TIOCSWINSZ, struct.pack("HHHH", 55, 180, 0, 0))
+        attributes = termios.tcgetattr(slave)
+        environment = {**os.environ, "TERM": "xterm-256color"}
+        process = subprocess.Popen([sys.executable, "-I", "-m", "devbrain.native_worker", "--attach",
+            "--tmux-bin", stack.tmux, "--socket", str(manager.socket), "--session", "devbrain-ui"],
+            stdin=slave, stdout=slave, stderr=slave, env=environment, start_new_session=True)
+        drain = None
+        try:
+            await read_pty_until(master, "DevBrain")
+    
+            async def discard_screen_output():
+                while True:
+                    try:
+                        os.read(master, 65536)
+                    except BlockingIOError:
+                        await asyncio.sleep(.02)
+                    except OSError:
+                        return
+            drain = asyncio.create_task(discard_screen_output())
+            manager.refresh()
+            wait_pane(manager, manager.panes()["sidebar"], "terminal-alpha")
+            assert stack.trace("coding") == []
+            manager.state.select_project(stack.projects[0], intent="work", requested_slot_ids=["codex", "claude"])
+            manager.refresh()
+            panes = manager.panes()
+            for role, client in (("client1", "codex"), ("client2", "claude")):
+                wait_pane(manager, panes[role], "NATIVE_READY " + client)
+    
+            async def select(key, role):
+                os.write(master, b"\x02" + key.encode())
+                await wait_async(lambda: manager.tmux("display-message", "-p", "-t", panes[role], "#{pane_active}").stdout.strip() == "1")
+    
+            await select("1", "client1")
+            os.write(master, "OUTER_UTF8_zażółć λ\r".encode())
+            wait_pane(manager, panes["client1"], 'ECHO "OUTER_UTF8_zażółć λ"')
+            os.write(master, b"\x02\x02\r")
+            await wait_async(lambda: any(row.get("text") == "\x02" for row in stack.trace("input")))
+            await select("2", "client2")
+            os.write(master, "\x1b[200~OUTER_PASTE_你好\x1b[201~\r".encode())
+            await wait_async(lambda: any("OUTER_PASTE_你好" in row.get("text", "") for row in stack.trace("input")))
+            os.write(master, b"\x03")
+            wait_pane(manager, panes["client2"], "INTERRUPTED claude")
+            before = {row["id"]: (row["pid"], row["session_id"]) for row in stack.runtime.list_runs()}
+            fcntl.ioctl(slave, termios.TIOCSWINSZ, struct.pack("HHHH", 35, 115, 0, 0))
+            os.kill(process.pid, signal.SIGWINCH)
+            await asyncio.sleep(.3)
+            manager.refresh()
+            assert manager.state.read()["layout"] == "compact"
+            assert manager.tmux("display-message", "-p", "-t", panes["client2"], "#{window_zoomed_flag}").stdout.strip() == "1"
+            await asyncio.sleep(.4)
+            cols, rows = manager.tmux("display-message", "-p", "-t", panes["client2"], "#{pane_width} #{pane_height}").stdout.split()
+            os.write(master, b"size\r")
+            wait_pane(manager, panes["client2"], f"SIZE {cols}x{rows}")
+            fcntl.ioctl(slave, termios.TIOCSWINSZ, struct.pack("HHHH", 55, 180, 0, 0))
+            os.kill(process.pid, signal.SIGWINCH)
+            await asyncio.sleep(.3)
+            manager.refresh()
+&gt;           assert manager.state.read()["layout"] == "wide"
+E           AssertionError: assert 'compact' == 'wide'
+E             
+E             - wide
+E             + compact
+
+tests/test_terminal_workspace_e2e.py:679: AssertionError</failure></testcase></testsuite></testsuites>

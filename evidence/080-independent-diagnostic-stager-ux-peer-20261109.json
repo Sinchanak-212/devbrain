@@ -1,0 +1,56 @@
+{
+  "stager_sha256": "efe71813a5de7e3e8ea02f7db26b9b6e83246d3a7cd8dae014202cf9fb9099f3",
+  "verdict": "static_ack_diagnostic_only_not_release_qualification",
+  "imported_reviewed_functions": 9,
+  "rows": [
+    {
+      "formal_spec_equal_except_namespace_and_required_smoke_execute": true,
+      "name": "native",
+      "helpers_verified": 38,
+      "argv_count": 19,
+      "input_files_verified": 15,
+      "diagnostic_flags_correct": true
+    },
+    {
+      "formal_spec_equal_except_namespace_and_required_smoke_execute": true,
+      "name": "upgrade_smoke",
+      "helpers_verified": 38,
+      "argv_count": 25,
+      "input_files_verified": 20,
+      "diagnostic_flags_correct": true
+    },
+    {
+      "formal_spec_equal_except_namespace_and_required_smoke_execute": true,
+      "name": "ollama20",
+      "helpers_verified": 38,
+      "argv_count": 21,
+      "input_files_verified": 15,
+      "diagnostic_flags_correct": true
+    },
+    {
+      "formal_spec_equal_except_namespace_and_required_smoke_execute": true,
+      "name": "frontend",
+      "helpers_verified": 38,
+      "argv_count": 17,
+      "input_files_verified": 15,
+      "diagnostic_flags_correct": true
+    },
+    {
+      "formal_spec_equal_except_namespace_and_required_smoke_execute": true,
+      "name": "copilot",
+      "helpers_verified": 38,
+      "argv_count": 13,
+      "input_files_verified": 15,
+      "diagnostic_flags_correct": true
+    }
+  ],
+  "test_or_model_requests": false,
+  "PS_parse_errors": 0,
+  "findings": [],
+  "scope": "independent_diagnostic_stager_readonly_peer",
+  "formal_materializer_sha256": "37293adac1ea634fc9da250c80fd88bebaf0491bc1369c4c997d157818bd0c84",
+  "observation_sha256": "e9a87a2468d4b13e225a5639a14fab49b2e0990163d438709ab5fc012697f6c2",
+  "schema_version": 1,
+  "linux_started": false,
+  "created_utc": "2026-11-09T10:10:10.2398594Z"
+}

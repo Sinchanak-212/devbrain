@@ -1,0 +1,11 @@
+{
+  "core_name": "wsl-crash-1794048979-10985-_home_piotr_.cache_devbrain-runtime-080_runtimes_python_bin_python3.12-11.dmp",
+  "bytes": 9322496,
+  "windows_time": "2026-11-07T11:56:19.0170463+01:00",
+  "sha256": "cc35259c3f2d915fa9066d11526b640644bf631bbfa9dd734cf54220ce07118c",
+  "signal": 11,
+  "namespace_pid": 10985,
+  "kernel_pid": 18767,
+  "instruction_pointer": "0x1614ff1",
+  "note": "GDB warns core may not match executable; runtime binary is checked against SHA-verified upstream archive separately."
+}

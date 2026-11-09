@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_queue_extraction_budget_preparation",
+  "created_utc": "2026-11-08T18:30:01.344094+00:00",
+  "status": "static_prepared_pending_peer_and_runtime",
+  "runtime_executed": false,
+  "acceptance_passed": false,
+  "linux_started": false,
+  "app_edits_by_this_agent": false,
+  "frozen_history_mutated": false,
+  "prior_guard_run": "guards-deploy-final080-20261108T165834Z",
+  "prior_guard_case_count": 594,
+  "authored_new_guard_cases": 10,
+  "expected_next_guard_case_count": 604,
+  "actual_collection_authoritative": true,
+  "required_new_app_before_guard_run": true,
+  "policy": {
+    "module": "devbrain.agent",
+    "work_seconds": 120.0,
+    "outer_seconds": 125.0,
+    "lease_seconds": 210.0,
+    "outer_function": "extraction_outer_timeout",
+    "lease_function": "inference_lease_seconds"
+  },
+  "scope_unchanged": [
+    "AttemptJournal",
+    "unknown_outcome_retry_refusal",
+    "exact_selected_job_CAS",
+    "stop_after_first_failed_job",
+    "engine_pidfd_cleanup",
+    "all_registry_maps",
+    "supervisor",
+    "Windows_observer",
+    "power_observation"
+  ],
+  "synthetic_runtime_tests_authored": [
+    "actual KnowledgeAgent.extract inner timeout remains timeout not cancelled",
+    "separate shortened outer watchdog records cancellation and remains failed",
+    "both controller paths settle owned model before finish_job and close it",
+    "no following attempt and no diagnostics/model/persistence writes after completion",
+    "production readback still refuses selected_job_failed",
+    "both claims derive current lease default, changed work budget and floor"
+  ],
+  "files": {
+    "replay-failed-queue-080.py": {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\release-tools\\replay-failed-queue-080.py",
+      "sha256": "e8513a36aa5d7443db76935f4a6a01c62b547a7c92341ac5b05d9a3710a70d1b",
+      "frozen_baseline": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\guards-deploy-final080-20261108T165834Z\\tools\\replay-failed-queue-080.py",
+      "frozen_baseline_sha256": "79848f52c4cb9acdb0276b5821a1ebbc85c7ae5d5b72d5c4ebb6813ac866eaaf",
+      "windows_ast_passed": true,
+      "prior_assertions_preserved": 0,
+      "changed_existing_nodes": [
+        "claim_selected",
+        "replay"
+      ],
+      "new_tests": [],
+      "authored_new_cases": 0,
+      "controller_reverse_transform_matches_frozen": true
+    },
+    "retry-production-queue-080.py": {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\release-tools\\retry-production-queue-080.py",
+      "sha256": "f24c3cf721dbdbcc9b810f09c4e688c04a5682ea502853b084cdba593429d90e",
+      "frozen_baseline": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\guards-deploy-final080-20261108T165834Z\\tools\\retry-production-queue-080.py",
+      "frozen_baseline_sha256": "973b47040012a099480c9c9e2a08772cd065e1daafc375b7df9c04384351180d",
+      "windows_ast_passed": true,
+      "prior_assertions_preserved": 0,
+      "changed_existing_nodes": [
+        "claim_failed_selected",
+        "execute_selected"
+      ],
+      "new_tests": [],
+      "authored_new_cases": 0,
+      "controller_reverse_transform_matches_frozen": true
+    },
+    "test_queue_replay080_guards.py": {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\release-tools\\test_queue_replay080_guards.py",
+      "sha256": "0423ae6e131ddfa40f6adf1d7e7dd48fd7ad15536bd4d9b55563bfa5332075ab",
+      "frozen_baseline": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\guards-deploy-final080-20261108T165834Z\\tools\\test_queue_replay080_guards.py",
+      "frozen_baseline_sha256": "22fb32105304adc5e48361fe3d10dd614501c543d4cc3553a6391747a0bdd1e4",
+      "windows_ast_passed": true,
+      "prior_assertions_preserved": 9,
+      "changed_existing_nodes": [
+        "test_selected_claim_does_not_overwrite_stale_or_owned_attempt"
+      ],
+      "new_tests": [
+        {
+          "test": "test_real_extraction_deadline_settles_before_finish_without_following_job_or_late_writes",
+          "authored_cases": 4
+        },
+        {
+          "test": "test_selected_claim_uses_current_shared_inference_lease",
+          "authored_cases": 3
+        }
+      ],
+      "authored_new_cases": 7,
+      "controller_reverse_transform_matches_frozen": null
+    },
+    "test_production_queue080_guards.py": {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\release-tools\\test_production_queue080_guards.py",
+      "sha256": "cede3a01a8d3e6f982142ceda64aff3313d3eaaf2a0bd5c2b86b1855b315ad9a",
+      "frozen_baseline": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\guards-deploy-final080-20261108T165834Z\\tools\\test_production_queue080_guards.py",
+      "frozen_baseline_sha256": "982e28c1d78efd19d044b6537a63e797531f807c0d726b984937b2b99daee836",
+      "windows_ast_passed": true,
+      "prior_assertions_preserved": 56,
+      "changed_existing_nodes": [
+        "fake_store"
+      ],
+      "new_tests": [
+        {
+          "test": "test_atomic_production_claim_uses_current_shared_inference_lease",
+          "authored_cases": 3
+        }
+      ],
+      "authored_new_cases": 3,
+      "controller_reverse_transform_matches_frozen": null
+    }
+  }
+}

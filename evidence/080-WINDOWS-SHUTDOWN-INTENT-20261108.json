@@ -1,0 +1,16 @@
+{
+  "production_resumed": false,
+  "physical_poweroff_observed": false,
+  "all_subagents_stopped": true,
+  "action": "whole_windows_shutdown",
+  "handoff_manifest_sha256": "11181e7185b8e1db4d37b82a18bf2772968bb3001e8d957cd2b930eae2178ac7",
+  "command": "shutdown.exe /s /t 0",
+  "authorized_by": "explicit latest user request",
+  "owned_qualification_processes": 0,
+  "created_utc": "2026-11-08T22:45:33.3848999Z",
+  "forced": false,
+  "schema_version": 1,
+  "cleanup_verified": true,
+  "shutdown_request_result": "pending",
+  "eight_hours_started": false
+}

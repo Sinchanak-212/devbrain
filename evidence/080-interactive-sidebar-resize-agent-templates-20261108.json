@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_fresh_interactive_sidebar_resize_templates",
+  "status": "prepared_not_run_pending_current_prerequisites",
+  "created_utc": "2026-11-08T22:36:10.3693486Z",
+  "files": {
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\interactive-sidebar-resize-agent-templates-20261108\\interactive.spec.template.json": "071ef39fc99f5d0cc218858a73b8429c924c714653c1c9ad33636c3b039e7401",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\interactive-sidebar-resize-agent-templates-20261108\\interactive.context.template.json": "72527f082eb5527dfcf4e7e97ce7437636485a6d218de92f351de46cb867a48e",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\interactive-sidebar-resize-agent-templates-20261108\\operator-protocol.json": "30ce307dd23913c752daeb4db15f7b862e56131d11138cffd40ae8dc17a9b9ee"
+  },
+  "source_snapshot": "app080-20261108T222731Z",
+  "source_freeze_sha256": "ad77e00450537294fd26200d0713915689d82ff5a90e65f6c8fb1285fcbb4703",
+  "app_prepare_receipt_sha256": "4cba08753a5d44463687271f5e695ccddac4d2284ca348b66630f480facde918",
+  "actual604_context_sha256": null,
+  "actual604_receipt_sha256": null,
+  "actual_v8_context_sha256": "6d6ce8780c9c4fa9d04d3bfbfca3f2fe1852c1390122605dc5513a82eb2a118b",
+  "operator": "agent",
+  "human_reported": false,
+  "preferred_native_client": "codex",
+  "required_tasks": 5,
+  "required_sizes": 3,
+  "required_observations": 8,
+  "current_backend_passed": false,
+  "current_queue_passed": false,
+  "current_UX_passed": false,
+  "visual_acceptance_passed": false,
+  "strict_visual_literal_true_required": true,
+  "launch_permitted": false,
+  "application_qualified": false,
+  "Linux_executed": false,
+  "credentials_read": false
+}

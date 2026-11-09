@@ -1,0 +1,18 @@
+{
+  "signal": "SIGSEGV",
+  "build_id": "39edac644c02bf3dcf99215562a9643cb7a33511",
+  "binary": "/usr/bin/perl",
+  "binary_sha256": "47bdc8a342556c1d140084417ef6cacd79a3362e4b6cc1e4754df55bdf1e3683",
+  "core": "/mnt/c/Users/piotr/AppData/Local/Temp/wsl-crashes/wsl-crash-1794051625-107923-_usr_bin_perl-11.dmp",
+  "core_sha256": "0c1e1d765458edbf5480ee18bb3db8e3800ce47eb9d8914707b56e5c58db62c5",
+  "core_bytes": 23687168,
+  "dpkg_versions": [
+    "libperl5.38t64:amd64\t5.38.2-3.2ubuntu0.6",
+    "perl\t5.38.2-3.2ubuntu0.6",
+    "perl-base\t5.38.2-3.2ubuntu0.6"
+  ],
+  "dpkg_verify_returncode": 0,
+  "dpkg_verify_output": "",
+  "own_stage_pid_exists": false,
+  "boot_id": "19058685-ffde-45e1-a471-b0912f9b4bd8"
+}

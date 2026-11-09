@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_workspace_machine_locale_static_review_docs_addendum",
+  "created_utc": "2026-11-08T11:36:47.5176890Z",
+  "status": "static_ack",
+  "application_review_report": "evidence/080-workspace-machine-locale-peer-review-20261108.json",
+  "application_review_sha256": "f460d3ee4d1a4ae509e8b241dbcd2a1d68c08bcc0afaacde2fc49451c5e651c2",
+  "baseline_run": "app080-20261108T104630Z",
+  "reviewed_documents": {
+    "devbrain/docs/ROADMAP.md": "b8f003af10c93d12d7d40ce5d2cf58fc360a5845fb247d365f610a29fd8a045c",
+    "devbrain/README.md": "6b2557692bf0578d7b8849b8a8aee25c93010f21ab40107fffe26cadcb7c6e88"
+  },
+  "checks": {
+    "approved_inventory": "Parent confirmed preserve both concurrent documentation files:198app/209total candidate, five app deltas vs104630",
+    "code_change": "Documentation references existing source, but does not itself change application behavior",
+    "roadmap_scope": "Explicit proposals awaiting discussion, coordinator not implemented, no implementation or release assignment implied; stabilization report statuses unchanged",
+    "readme_delta": "Exactly a blank line and link to docs/ROADMAP.md immediately below the existing title; rest unchanged",
+    "review_limit": "This is binding and scope review, not a separate verification of every existing-feature statement in roadmap"
+  },
+  "runtime_tested": false,
+  "linux_started": false,
+  "documents_modified_by_reviewer": false,
+  "implementation_authorized_by_document": false,
+  "findings": []
+}

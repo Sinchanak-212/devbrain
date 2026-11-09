@@ -1,0 +1,145 @@
+{
+  "finished_utc": "2026-11-07T19:40:54.5317688Z",
+  "errors": [],
+  "filesystem_contract": {
+    "primary_source": "https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-fscc/1d2673a8-8fb9-4868-920a-775ccaa30cf8",
+    "parent_lease_seconds": 15,
+    "replacement_of_open_target_may_be_denied": true,
+    "heartbeat_payload_timestamp_refreshed": false,
+    "retry_deadline_ms": 1000,
+    "reader_delete_share_is_not_immediate_overwrite_guarantee": true,
+    "wall_clock_assertion_ceiling_ms": 1500
+  },
+  "cleanup_complete": true,
+  "scope": "windows_atomic_io_regression",
+  "cases": [
+    {
+      "metadata": {
+        "historical_error_code_inferred": false,
+        "observed_win32_code": 5
+      },
+      "name": "final_single_move_collision",
+      "passed": true
+    },
+    {
+      "metadata": {
+        "elapsed_ms": 282.7213
+      },
+      "name": "final_short_collision_preserves_payload",
+      "passed": true
+    },
+    {
+      "metadata": {},
+      "name": "final_successful_retry_removes_temp",
+      "passed": true
+    },
+    {
+      "metadata": {
+        "elapsed_ms": 1015.3904,
+        "observed_win32_code": 5
+      },
+      "name": "final_permanent_collision_is_bounded_failure",
+      "passed": true
+    },
+    {
+      "metadata": {},
+      "name": "final_failed_publish_keeps_previous_heartbeat",
+      "passed": true
+    },
+    {
+      "metadata": {},
+      "name": "final_failed_retry_removes_temp",
+      "passed": true
+    },
+    {
+      "metadata": {
+        "elapsed_ms": 257.2542,
+        "immediate_overwrite_guaranteed": false
+      },
+      "name": "final_actual_reader_short_collision_preserves_lease",
+      "passed": true
+    },
+    {
+      "metadata": {
+        "elapsed_ms": 1014.1624,
+        "observed_win32_code": 5
+      },
+      "name": "final_actual_reader_permanent_collision_fails_closed",
+      "passed": true
+    },
+    {
+      "metadata": {},
+      "name": "final_reader_delete_share_and_complete_old_snapshot",
+      "passed": true
+    },
+    {
+      "metadata": {
+        "historical_error_code_inferred": false,
+        "observed_win32_code": 5
+      },
+      "name": "diagnostic_single_move_collision",
+      "passed": true
+    },
+    {
+      "metadata": {
+        "elapsed_ms": 262.8166
+      },
+      "name": "diagnostic_short_collision_preserves_payload",
+      "passed": true
+    },
+    {
+      "metadata": {},
+      "name": "diagnostic_successful_retry_removes_temp",
+      "passed": true
+    },
+    {
+      "metadata": {
+        "elapsed_ms": 1013.0212,
+        "observed_win32_code": 5
+      },
+      "name": "diagnostic_permanent_collision_is_bounded_failure",
+      "passed": true
+    },
+    {
+      "metadata": {},
+      "name": "diagnostic_failed_publish_keeps_previous_heartbeat",
+      "passed": true
+    },
+    {
+      "metadata": {},
+      "name": "diagnostic_failed_retry_removes_temp",
+      "passed": true
+    },
+    {
+      "metadata": {
+        "elapsed_ms": 258.5363,
+        "immediate_overwrite_guaranteed": false
+      },
+      "name": "diagnostic_actual_reader_short_collision_preserves_lease",
+      "passed": true
+    },
+    {
+      "metadata": {
+        "elapsed_ms": 1005.903,
+        "observed_win32_code": 5
+      },
+      "name": "diagnostic_actual_reader_permanent_collision_fails_closed",
+      "passed": true
+    },
+    {
+      "metadata": {},
+      "name": "diagnostic_reader_delete_share_and_complete_old_snapshot",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "linux_started": false,
+  "schema_version": 1,
+  "runtime_gate_qualification": false,
+  "source_sha256": {
+    "run-postbios-diagnostic-080.ps1": "47f20a48b95ef3f2f1e6f16651b3f5dd189e62070a8cddee883bee1d36b5281f",
+    "run-supervised-080.ps1": "b7e9b1888e693faaac870fe66627b2ee005d0364d008afe059687905c0ed3039"
+  },
+  "test_data_root": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\atomic-io-20261107T194048Z-7253e925",
+  "powershell": "7.6.9"
+}

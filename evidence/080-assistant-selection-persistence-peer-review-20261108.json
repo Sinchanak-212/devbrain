@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_assistant_selection_persistence_static_review",
+  "reviewed_utc": "2026-11-08T15:33:28.049982+00:00",
+  "status": "static_ack_pending_runtime_validation",
+  "verdict": "ACK",
+  "baseline_app_run_id": "app080-20261108T145550Z",
+  "baseline_freeze_sha256": "0fa3de9de99966b92aeea416417e97a0dca718e114fb8812ff6fc0662d2805de",
+  "files": {
+    "src/devbrain/terminal_panels.py": "d530b62dfd63c661a08cb867fcf0a1b83b1b24acfc109d745976ff99b74288c1",
+    "src/devbrain/workspace_state.py": "9049b85a71892e4097deb3c7c35d6e76069ade33f8df51768e4f503a78fa5dc2",
+    "tests/test_terminal_ux080.py": "447efd2e3d3787bdda91e7573ba98124fb778da141507e9abe6c49a7d90351db",
+    "tests/test_workspace_state.py": "008c02c2b2f1cebb865dedef3457f1d49441ccd5c5a4b18ec25fe5aa8590ef09"
+  },
+  "windows_ast_parse_passed": true,
+  "old_top_level_function_asts_unchanged": {
+    "tests/test_terminal_ux080.py": 22,
+    "tests/test_workspace_state.py": 3
+  },
+  "unchanged_critical_methods": {
+    "SidebarApp.reusable_run": "byte-AST unchanged",
+    "SidebarApp.select_project": "byte-AST unchanged",
+    "SidebarApp.action_work": "byte-AST unchanged",
+    "SidebarApp.action_prepare_work": "byte-AST unchanged",
+    "SidebarApp.load_state": "byte-AST unchanged",
+    "SidebarApp.save_slots": "byte-AST unchanged",
+    "WorkspaceState.read": "byte-AST unchanged",
+    "WorkspaceState.update": "byte-AST unchanged",
+    "WorkspaceState._commit": "byte-AST unchanged",
+    "WorkspaceState.merge_ids": "byte-AST unchanged",
+    "WorkspaceState.claim_work_request": "byte-AST unchanged",
+    "WorkspaceState.select_project": "byte-AST unchanged"
+  },
+  "reviewed_boundaries": [
+    "Preference is keyed by project_id and worktree, independent of slot ordering.",
+    "Only explicit chooser/add/manage-choice writes assistant_selections; renderer, polling and load paths perform no preference writes.",
+    "Modal scope epoch and current persistent scope are checked before fresh revision CAS; concurrent navigation causes refusal, not a start request.",
+    "Only assistant_selections is committed; intent, work_request, requested_slot_ids, focus, run_ids and profile assignments are not mutated by remembering.",
+    "Missing slot/profile falls back to valid assignments; a matching LIVE run is preferred only within the existing strict reusable_native_run contract.",
+    "Version1 legacy state gets empty preference defaults; records require exact keys, unique scopes, normalized absolute paths and at most1000 entries.",
+    "Existing state private file, atomic write and lock/CAS code is unchanged.",
+    "Synthetic real-native fixture retains original stop and kill-server teardown; no real account or model is invoked by authored preference regressions."
+  ],
+  "new_authored_cases": 20,
+  "new_cases_executed": false,
+  "remaining_blockers": [],
+  "linux_workload_started": false,
+  "real_account_or_production_io": false,
+  "limitations": [
+    "Static review and Windows AST only; full UX/backend and actual keyboard validation on a new frozen source remain required.",
+    "The raw functional results for older source snapshots are not reused as validation of this delta."
+  ]
+}

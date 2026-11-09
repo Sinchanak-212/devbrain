@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "utc": "2026-11-09T10:15:05.219Z",
+  "user_scope": "Continue all pre8h work, parallel isolated instances allowed, continue independent functional tests and collect all errors; NO8h.",
+  "host_go": "evidence/080-RESUME-HOST-GO-20261109.json",
+  "host_go_sha256": "1f193a494465f6cc7f8418d62939043f31442ee62e44d1ee14cbab9cbbfb456d",
+  "current_source": "app080-20261108T222731Z",
+  "source_freeze_sha256": "ad77e00450537294fd26200d0713915689d82ff5a90e65f6c8fb1285fcbb4703",
+  "production": "0.7.2/privateDB STOPPED",
+  "eight_hours_started": false,
+  "eight_hour_authorized": false,
+  "ordinary_functional_failure_stops_other_tests": false,
+  "native_or_platform_failure_stops_affected_series": true,
+  "workloads": [
+    {
+      "owner": "root",
+      "kind": "complete_backend1561",
+      "session": 56737,
+      "context": "evidence/080-fullbackend-sidebar-resize-active-context-20261108.json"
+    },
+    {
+      "owner": "ux381_resume",
+      "kind": "collect_all_UX381_diagnostic_private_one_byte_controller",
+      "session": 51765,
+      "context": "evidence/080-ux381-diagnostic-active-context-20261109.json"
+    },
+    {
+      "owner": "copy6_resume",
+      "kind": "whole6_copy_only",
+      "session": 61090,
+      "context": "evidence/080-queue-copy-sidebar-resize-active-context-20261108.json",
+      "progress": "all6completed, cleanup_tail_pending"
+    },
+    {
+      "owner": "independent_gates",
+      "kind": "frontend_error_inventory",
+      "session": 68778
+    }
+  ],
+  "pending": [
+    "remainingindependentnative/Copilot/Ollama20/updatercopy",
+    "genuineinteractiveCodex+fivekeyboardtasks+threeOSphotos",
+    "batchfixobservedbugs",
+    "affectedformalregressions/currentproofs before future8h"
+  ],
+  "quota_monitor": {
+    "readUtc": "2026-11-09T10:04:44.467Z",
+    "windows": [
+      {
+        "durationMinutes": 10080,
+        "remainingPercent": 20
+      }
+    ],
+    "thresholdReached": false
+  },
+  "quota_stop_threshold_percent": 5,
+  "automatic_shutdown_now": false
+}

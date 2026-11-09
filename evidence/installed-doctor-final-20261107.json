@@ -1,0 +1,119 @@
+{
+  "python": "3.12.3",
+  "platform": "Linux",
+  "wsl": true,
+  "data_dir": "/home/piotr/.local/share/devbrain",
+  "clients": {
+    "codex": {
+      "installed": true,
+      "path": "/home/piotr/.local/bin/codex",
+      "version": "codex-cli 0.166.0",
+      "mcp": true,
+      "hooks": true,
+      "packet_passing": true,
+      "session_binding": true,
+      "isolated_process": true,
+      "verified_resume": true,
+      "notes": [
+        "Review project/MCP trust and /hooks in Codex; DevBrain never bypasses trust."
+      ]
+    },
+    "claude": {
+      "installed": true,
+      "path": "/home/piotr/.local/bin/claude",
+      "version": "2.1.319 (Claude Code)",
+      "mcp": true,
+      "hooks": true,
+      "packet_passing": true,
+      "session_binding": true,
+      "isolated_process": true,
+      "verified_resume": true,
+      "notes": [
+        "Approve the project MCP server using Claude Code's native consent flow."
+      ]
+    }
+  },
+  "ollama": {
+    "available": true,
+    "models": [
+      {
+        "name": "qwen3-embedding:0.6b",
+        "digest": "ac6da0dfba84a81fdbfbaf330198c33cd77c4cdfc53e8bc50eb581914a15621d"
+      },
+      {
+        "name": "qwen3.5:9b",
+        "digest": "56671c2ab9385f9cfcb404638e32cd62d88e3501d44822208363c010179a3c90"
+      }
+    ],
+    "chat_model_installed": true,
+    "embedding_model_installed": true,
+    "running": []
+  },
+  "service": {
+    "available": false,
+    "error": "ConnectError"
+  },
+  "arcadedb": {
+    "available": false,
+    "database": "devbrain_de6f5dafba398145",
+    "configured_version": "26.11.1",
+    "error": "ConnectError"
+  },
+  "java": {
+    "on_path": true,
+    "minimum_major": 21,
+    "version": "openjdk version \"21.0.12.1\" 2026-08-18",
+    "major": 21,
+    "compatible": true
+  },
+  "gpu": {
+    "available": true,
+    "devices": [
+      "NVIDIA GeForce RTX 4080 SUPER, 16376 MiB, 610.88"
+    ]
+  },
+  "service_running": false,
+  "models_lock_present": true,
+  "coding_profiles": {
+    "profiles": [
+      {
+        "id": "codex",
+        "client": "codex",
+        "label": "Codex",
+        "status": {
+          "code": "native_client_status",
+          "client": "codex"
+        }
+      },
+      {
+        "id": "claude",
+        "client": "claude",
+        "label": "Claude",
+        "status": {
+          "code": "native_client_status",
+          "client": "claude"
+        }
+      },
+      {
+        "id": "copilot",
+        "client": "copilot",
+        "label": "GitHub Copilot",
+        "model": "auto",
+        "status": {
+          "configured": true,
+          "storage": "none",
+          "code": "not_required"
+        },
+        "runtime": {
+          "available": true,
+          "code": "ready",
+          "sdk_version": "1.0.29",
+          "required_sdk_version": "1.0.29",
+          "runtime_version": "1.0.107",
+          "auth": "unchecked"
+        }
+      }
+    ],
+    "observed_only": true
+  }
+}

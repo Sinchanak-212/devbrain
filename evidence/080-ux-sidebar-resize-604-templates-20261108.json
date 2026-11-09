@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_sidebar_resize_ux_templates",
+  "status": "prepared_not_run",
+  "created_utc": "2026-11-08T22:33:15.825900+00:00",
+  "source_snapshot": "app080-20261108T222731Z",
+  "source_freeze_sha256": "ad77e00450537294fd26200d0713915689d82ff5a90e65f6c8fb1285fcbb4703",
+  "app_prepare_receipt_sha256": "4cba08753a5d44463687271f5e695ccddac4d2284ca348b66630f480facde918",
+  "verified_source_file_count": 198,
+  "verified_total_source_files": 209,
+  "verified_unchanged_helper_count": 38,
+  "expected_cases": 381,
+  "expected_modules": 28,
+  "files": {
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\ux-sidebar-resize-604-templates-20261108\\ux.context.template.json": "4b1a41641e336a58cd6cdeb59fa3b3d90433afc90deb6962b2522a8e583346c6",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\ux-sidebar-resize-604-templates-20261108\\ux.spec.template.json": "4f0265ae6480a604397ac657027e3fded80c2c7e7c167829c352ea3f3744241e"
+  },
+  "guard_receipt_sha256": null,
+  "candidate_build_context_sha256": null,
+  "source_final": false,
+  "application_qualified": false,
+  "launch_permitted": false,
+  "linux_started": false
+}

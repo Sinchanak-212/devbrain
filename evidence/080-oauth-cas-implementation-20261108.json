@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "status": "synthetic_guards_passed_real_accounts_not_run",
+  "date": "2026-11-08",
+  "real_accounts_accessed": false,
+  "credentials_read_or_changed": false,
+  "linux_workloads_executed_by_author": true,
+  "application_source_changed": false,
+  "windows_ast_parse_passed": true,
+  "guard_tests_executed": true,
+  "native_account_e2e_executed": false,
+  "interactive_account_e2e_executed": false,
+  "helper_sha256": {
+    "release-tools/validate-native-account080.py": "7832a239fcaa67bb7cec63d9409e4cc06281f2bb0bdc8a10ad33e68fae8a25dd",
+    "release-tools/test_account080_guards.py": "4b9f84ee6e5c096baf4f87db61c8d406ae613151dc0df01f311fbb4fe770eb60",
+    "release-tools/OAUTH_RECOVERY_080.md": "8d212ad32483c420555cf64a4bb223d5f691984068355e60a5ad94179ceb589a",
+    "release-tools/run-interactive-ux080.py": "6e5f7c2e5c3b072fe027d77f92f6be4951a1b18471ac9c44083541e9e57dc192",
+    "release-tools/test_interactive_ux080_guards.py": "1d463db2659830d12b0bb713fe2eb104115983261625d71a00c1a4180ee0a3fb"
+  },
+  "static_peer_review": {
+    "reviewer": "copilot_adapter",
+    "result": "no_remaining_concrete_blocker_identified",
+    "fixed_finding": "A released controller lease alone did not prove its previous native client had exited; recovery now checks the previous UUID cgroup and Linux boot identity."
+  },
+  "interactive_integration_review": {
+    "reviewer": "release_review",
+    "result": "no_concrete_blocker_identified",
+    "safe_final_sync_and_release_verdicts_required": true,
+    "private_auth_rows_not_published": true
+  },
+  "implemented": [
+    "Private durable journal and immutable baseline/candidate snapshots, file 0600 and directories 0700",
+    "Official auth.lock plus per-source lifetime lease; no lock replacement or existing account chmod",
+    "Prepared, commit_pending and committed states with fsync before and after account replacement",
+    "Exact old/candidate/other digest recovery, without client launch, network refresh or inference retry",
+    "Previous boot or empty/removed original UUID cgroup required before abandoned transaction recovery",
+    "Nonempty same Codex workspace and user; existing optional owner/provenance and non-token fields preserved",
+    "Independent final sync and release even when workload or cleanup fails",
+    "Pinned Claude official secure-storage override with private HOME/config; no Claude credential copy",
+    "Synthetic account, conflict, lock, failed-phase, fsync failure, power-cut and scope-liveness guards authored"
+  ],
+  "qualification_limit": "Current frozen account guards56/56 and interactive guards18/18 passed inside the new316-case supervised run. This does not claim any real account refresh or live account E2E result.",
+  "supervised_guard_receipt": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\guards080-20261108T085245Z\\artifacts\\receipt.json",
+  "supervised_guard_receipt_sha256": "2272b8a2a585f979f0d681acc766bf3f558b946ec722c8648c330ad51763d18f",
+  "account_guards_passed": 56,
+  "interactive_guards_passed": 18
+}

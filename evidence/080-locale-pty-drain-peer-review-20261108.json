@@ -1,0 +1,28 @@
+{
+  "successful_checks_in_failed_trial": [
+    "Unicode and TAB",
+    "actual client claim",
+    "exact TTY",
+    "writable and no ignore-size",
+    "wrong PID refusal",
+    "wrong TTY refusal"
+  ],
+  "status": "static_peer_ack_runtime_pending",
+  "claim_timeout_seconds": 8,
+  "sha256": "bfb6f54b6dcdc854cb8f5b33be5f6ecd2297077f075e1dfd6f9a541b1594e288",
+  "exit_timeout_seconds": 5,
+  "reviewer": "root",
+  "cleanup_admission_sha256": "be4e1115cff72a30d83fed5700e9749e1dee7bcf0aafc1033c56d6c7c7226842",
+  "author": "queue_review",
+  "schema_version": 1,
+  "failed_ux_run": "ux-locale080-20261108T114245Z",
+  "tmux_timeout_seconds": 8,
+  "assertions_and_timeouts_unchanged": true,
+  "file": "devbrain/tests/test_workspace_locale.py",
+  "failed_primary": "process.wait(timeout5) after successful detach",
+  "delta": "Read PTY continuously in bounded select thread through detach and actual child exit; keep128KiB tail, join thread and close FDs after childcleanup; preserve primary exception when cleanup also fails.",
+  "runtime_followup": "Repeat complete305testUX on fresh198source; no pooling",
+  "app_snapshot": "app080-20261108T113710Z",
+  "linux_executed_by_author": false,
+  "application_code_changed": false
+}

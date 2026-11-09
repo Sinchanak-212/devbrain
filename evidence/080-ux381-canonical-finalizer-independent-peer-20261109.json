@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "scope": "ux381_finalizer_independent_static_review",
+  "status": "acknowledged_prepared_only",
+  "finalizer": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\finalize-ux-sidebar-resize-20261109.py",
+  "finalizer_sha256": "ecfc580857ceab5747f4f06eab3dedb142bf437d16ebf5242552ab1e41a045c1",
+  "baseline_sha256": "8db41ad0fc023debcd2a6360d52a7977477701bbcef7afceea7240d577c37577",
+  "exact_simultaneous_reversible_metadata_only": true,
+  "metadata_substitutions": 10,
+  "all_other_hash_literals_unchanged": true,
+  "AST_valid": true,
+  "actual_context_run_source_spec_freeze_matches": true,
+  "acceptance_predicates_unchanged_except_expected381_and_current_bindings": true,
+  "root_actual_exit_still_required": true,
+  "finalizer_executed": false,
+  "Linux_started": false,
+  "findings": []
+}

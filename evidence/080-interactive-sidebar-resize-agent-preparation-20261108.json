@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_genuine_codex_sidebar_resize_UI_conditional_preparation",
+  "status": "prepared_not_run_pending_current604_backend1561_copy6_UX381",
+  "source_snapshot": "app080-20261108T222731Z",
+  "source_freeze_sha256": "ad77e00450537294fd26200d0713915689d82ff5a90e65f6c8fb1285fcbb4703",
+  "actual_prepare_receipt_sha256": "4cba08753a5d44463687271f5e695ccddac4d2284ca348b66630f480facde918",
+  "actual_v8_context_sha256": "6d6ce8780c9c4fa9d04d3bfbfca3f2fe1852c1390122605dc5513a82eb2a118b",
+  "master": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-interactive-sidebar-resize-agent-templates-20261108.json",
+  "master_sha256": "4d5597f51bc8ebb0da7b286a1a8b167a0bf088f150649726e39078edc325ceb3",
+  "stager": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-interactive-sidebar-resize-agent-dom-604-20261108.ps1",
+  "stager_sha256": "37e11f8c2b08537b7147f2c131c0ca5b85a17870b1e1a9bcedf4bc121a2abd0c",
+  "base_stager_sha256": "c8aa4e8d470976b26b34e2b71285a1f382af77accda5b3577767ebbde0192e5c",
+  "PS_parse_errors": 0,
+  "official_argv_count": 23,
+  "official_argv_source_only_transform": true,
+  "both_canonical_native_clients_auth_paths_preserved": true,
+  "duration_seconds": 1800,
+  "outer_timeout_seconds": 1980,
+  "helper_count": 38,
+  "expected_guard_cases": 604,
+  "expected_backend_cases": 1561,
+  "expected_UX_cases": 381,
+  "expected_UX_modules": 28,
+  "future_guard_context_sha256": null,
+  "future_guard_receipt_sha256": null,
+  "future_backend_context_sha256": null,
+  "future_queue_context_sha256": null,
+  "future_UX_context_sha256": null,
+  "required_agent_observations": 8,
+  "required_fresh_root_PrintWindow_photos": 3,
+  "visual_acceptance_requires_literal_true": true,
+  "operator": "agent",
+  "human_reported": false,
+  "preferred_native_client": "codex",
+  "default_model_overrides_introduced": false,
+  "Stage_invoked": false,
+  "physical_runtime_root_created": false,
+  "Linux_executed": false,
+  "app_or_helpers_modified": false,
+  "previous_results_pooled": false,
+  "old_raw_fail_and_visual_fail_reports_preserved": true,
+  "current_UI_passed": false,
+  "application_qualified": false,
+  "release_qualified": false,
+  "production_stopped": true,
+  "eight_hour_started": false,
+  "eight_hour_authorized": false,
+  "transform": {
+    "base_sha256": "c8aa4e8d470976b26b34e2b71285a1f382af77accda5b3577767ebbde0192e5c",
+    "replacements": [
+      {
+        "old": "param([switch]$Stage,[string]$BackendContextSha256,[string]$QueueContextSha256,[string]$UxContextPath,[string]$UxContextSha256)",
+        "new": "param([switch]$Stage,[string]$GuardContextSha256,[string]$GuardReceiptSha256,[string]$BackendContextSha256,[string]$QueueContextSha256,[string]$UxContextPath,[string]$UxContextSha256)",
+        "count": 1
+      },
+      {
+        "old": "interactive-length-repair-agent-templates-20261108",
+        "new": "interactive-sidebar-resize-agent-templates-20261108",
+        "count": 3
+      },
+      {
+        "old": "5f7a9ffe5467eaa2f203986a7385fe60243da249dd6e3b023792f0b72f0c45a4",
+        "new": "4d5597f51bc8ebb0da7b286a1a8b167a0bf088f150649726e39078edc325ceb3",
+        "count": 1
+      },
+      {
+        "old": "app080-20261108T202627Z",
+        "new": "app080-20261108T222731Z",
+        "count": 1
+      },
+      {
+        "old": "1f35dae9f2b3f894bb67535a215e29cba3c1235120ff30daa387bd5450f03e14",
+        "new": "ad77e00450537294fd26200d0713915689d82ff5a90e65f6c8fb1285fcbb4703",
+        "count": 1
+      },
+      {
+        "old": "4e18e967ea94bbe43c807e86c65c9d46a2d7205241a9713a7b6406dc8a97526e",
+        "new": "4cba08753a5d44463687271f5e695ccddac4d2284ca348b66630f480facde918",
+        "count": 1
+      },
+      {
+        "old": "Verify $context.guard_context '0d47b2ea314be36b18749076196693227d91d8395645ad1779a412894582565d'",
+        "new": "Verify $context.guard_context $GuardContextSha256",
+        "count": 1
+      },
+      {
+        "old": "Verify $g.receipt 'c2469d14d080ecdf96d42d6dc4c887207a706898ea3681fa5b10749a26113b82'",
+        "new": "Verify $g.receipt $GuardReceiptSha256",
+        "count": 1
+      },
+      {
+        "old": "$g.actual_test_count-eq604-and$g.app_run_id",
+        "new": "$g.actual_test_count-eq604-and$g.actual_windows_exec_session-gt0-and$g.app_run_id",
+        "count": 1
+      },
+      {
+        "old": "SameMap $freeze.helper_files $g.helper_sha256",
+        "new": "SameMap $freeze.helper_files $g.helper_sha256\nSameMap $freeze.helper_files $context.helper_sha256",
+        "count": 1
+      },
+      {
+        "old": "Verify $g.candidate_build_context $g.candidate_build_context_sha256",
+        "new": "Verify $g.candidate_build_context $g.candidate_build_context_sha256\nRequire ($g.candidate_build_context_sha256-ceq$context.candidate_build_context_sha256) 'Exact actual v8 candidate changed'",
+        "count": 1
+      },
+      {
+        "old": "1557",
+        "new": "1561",
+        "count": 2
+      },
+      {
+        "old": "377",
+        "new": "381",
+        "count": 5
+      },
+      {
+        "old": "080-interactive-length-repair-rerun-agent-active-context-20261108.json",
+        "new": "080-interactive-sidebar-resize-agent-active-context-20261108.json",
+        "count": 1
+      },
+      {
+        "old": "'interactive-length-repair-rerun080-'",
+        "new": "'interactive-sidebar-resize080-'",
+        "count": 1
+      }
+    ],
+    "insert_after": "Verify $context.reviewed_agent_driver $context.reviewed_agent_driver_sha256",
+    "inserted_block": "$context.guard_context_sha256=$GuardContextSha256;$context.guard_receipt=$g.receipt;$context.guard_receipt_sha256=$GuardReceiptSha256\n$context.guard_run_id=$g.run_id;$context.guard_passed=$true;$context.guard_actual_windows_exit_code=0\n$context.toolbundle_freeze=$g.freeze_manifest;$context.toolbundle_freeze_sha256=$g.freeze_sha256\n$context.candidate_build_context=$g.candidate_build_context;$context.candidate_build_context_sha256=$g.candidate_build_context_sha256\n$context.candidate_updater_sha256=$g.updater_sha256;$context.candidate_zip_sha256=$g.candidate_zip_sha256"
+  },
+  "created_utc": "2026-11-08T22:37:51.2562504Z"
+}

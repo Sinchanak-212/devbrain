@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_readonly_production_source_comparison_independent_static_peer",
+  "status": "static_ack_pending_standalone_observer_review_and_actual_execution",
+  "created_utc": "2026-11-08T20:10:00.9954897Z",
+  "verdict": "PASS",
+  "standards": "Explicit read-only procedural scope and PRODUCTION_SOURCE_PREFLIGHT_080.md; no AGENTS.md or .Codex conventions found",
+  "script": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\release-tools\\check-production-source080.py",
+  "script_sha256": "90bc047d2d166c5a6814b01c663313199a4e4591c6b135629c7be04f45e99409",
+  "preparation": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-production-source-preflight-preparation-v2-20261108.json",
+  "preparation_sha256": "7bfd8cd9d88048c74296d11447091dcef37df006ef4e6581352cbad5f35d0a15",
+  "findings": [],
+  "previous_publication_parent_reopen_finding_closed": true,
+  "verified_properties": [
+    "Retained O_NOFOLLOW directory chain for source root, public inputs and output parent",
+    "ZIP and gate parsed from the exact immutable bytes whose digest is checked",
+    "Output leaf opened relative to retained parent with O_EXCL and O_NOFOLLOW",
+    "Source expected bytes hashed with fd identity and two-pass metadata stability",
+    "Unknown source entries counted without content read; public report omits actual names, bytes and digests",
+    "Default inert; exact fixed source and pinned public ZIP inventories; no app imports or process starts",
+    "Result remains matched_pending_external_observation and cannot authorize deployment"
+  ],
+  "Windows_static_only": true,
+  "script_executed": false,
+  "Linux_executed": false,
+  "production_read": false,
+  "production_modified": false,
+  "frozen_38_helpers_modified": false,
+  "app_modified": false,
+  "runtime_PASS_claimed": false,
+  "application_qualified": false
+}

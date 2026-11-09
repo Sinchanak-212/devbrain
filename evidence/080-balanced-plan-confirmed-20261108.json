@@ -1,0 +1,12 @@
+{
+  "cortex_process_count": 0,
+  "schema_version": 1,
+  "future_changes_still_invalidate_trial": true,
+  "recorded_utc": "2026-11-08T09:40:53.6278077Z",
+  "balanced_profile_matches_qualification": true,
+  "cortex_pids": [],
+  "user_confirmed_cortex_closed": true,
+  "active_guid": "381b4222-f694-41f0-9685-ff5bb260df2e",
+  "settings_sha256": "6bac59f1660b69c8c9e8d83728cbb7cf2fd184458181fa05a351b72c4c2d9dc1",
+  "setting_count": 183
+}

@@ -1,0 +1,19 @@
+{
+  "status": "ready",
+  "code": "ready",
+  "tool_call_verified": true,
+  "usage": {
+    "input_tokens": 323,
+    "output_tokens": 41,
+    "cache_read_tokens": 0,
+    "cache_write_tokens": 0,
+    "cost": 2.0,
+    "copilot": {
+      "total_nano_aiu": 11380000.0,
+      "unit": "nano_aiu",
+      "observed_calls": 2,
+      "reported_calls": 2,
+      "status": "complete"
+    }
+  }
+}

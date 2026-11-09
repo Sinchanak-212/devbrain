@@ -1,0 +1,9 @@
+{
+  "src/devbrain/workspace.py": "210c645c5c0fae522beb4bc2e5f71570feb798dadcbf1599100c8fde6903e917",
+  "src/devbrain/terminal_bridge.py": "e5fd740590cb7c32ff877fa89079c92a921bd230193e7c1869d16d58091a4330",
+  "tests/test_terminal_bridge.py": "041eed0f3391544edfdc5ffbafdf96f73328927439e63842d92a1a8e5546fa0f",
+  "src/devbrain/terminal_panels.py": "5202c07f1298aa2720ae0612707aba4864f58b31b3a5014f05dc044f30b48cc1",
+  "tests/test_workspace_ux080.py": "ec941b5043b757a2646d61c2339a66755a4a9767c46e36ffe3f4d90e02181668",
+  "tests/test_terminal_ux080.py": "d41d975488ad8cf3672deeea4e0eced47479973ec1b98623505ac7bfa85277a3",
+  "src/devbrain/terminal_i18n.py": "40eb2f5f5d68e987331c44a6fc27a2245ccb05b1c0952e00fce89f5d6f39869f"
+}

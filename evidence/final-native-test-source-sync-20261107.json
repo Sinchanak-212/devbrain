@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "path": "/home/piotr/src/devbrain/tests/test_native_evaluation.py",
+  "only_test_changed": true,
+  "database_opened": false,
+  "installed_application_changed": false,
+  "updater_receipt_changed": false,
+  "backup": "/home/piotr/.local/state/devbrain-updates/20261107T101931Z-final-test-sync",
+  "sha256": "c1a1d9d58b0f9d4bb78f25dd91bdd05b871c57b02bb78a4d82a737111c334916"
+}

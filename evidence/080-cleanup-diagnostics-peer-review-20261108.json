@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_cleanup_diagnostics_peer_review",
+  "status": "static_review_ack_runtime_not_run",
+  "reviewer": "test_suite",
+  "recorded_utc": "2026-11-08T10:32:03.9508310Z",
+  "files_sha256": {
+    "validate-native-account080.py": "a9d36ab4806ce2499ba57f0293edf516125d23d5804802ed6b4396bea1064765",
+    "run-regressions-080.py": "b5c936e29d81cc9d7fcf2ffe40aa88b495e5b8ed94b6cacb935bcc19c3ded68d",
+    "test_account080_guards.py": "860d7311f0f1b0564227ad4666fd325c04f05b25162f9ce645883a76aada35c9",
+    "test_regressions080_guards.py": "0e96dc40574ce678f54c7ed5229afe745cabcbceb1dbf827c7fb83cb5f638c2b"
+  },
+  "baseline_bundle": "guards080-20261108T092750Z",
+  "findings": [],
+  "linux_started": false,
+  "runtime_tests_executed": false,
+  "checks": {
+    "existing_cleanup_rejection_predicate_unchanged": true,
+    "deadline_and_poll_period_unchanged": true,
+    "no_new_signal_or_cleanup_action": true,
+    "oauth_cas_outside_quiet_scope_unchanged": true,
+    "process_metadata_only_after_owned_cgroup_and_birth_rechecks": true,
+    "allowed_metadata_only": true,
+    "no_cmdline_environment_cwd_or_exception_details_serialized": true,
+    "unobservable_identity_still_fails": true,
+    "runner_preserves_error_and_failed_verdict": true,
+    "controller_report_already_digest_bound": true,
+    "runner_other_code_identical": true
+  },
+  "new_guard_cases": 6,
+  "expected_total_guard_cases": 362,
+  "limits": [
+    "Snapshot identifies the first observed remaining owned member only.",
+    "Stale or unreadable identity records no process and preserves the same cleanup failure.",
+    "This diagnostic addition does not resolve the underlying leftover process or qualify the failed UX run."
+  ]
+}

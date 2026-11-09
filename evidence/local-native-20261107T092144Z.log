@@ -1,0 +1,2 @@
+{"phase": "starting", "client": "codex"}
+{"phase": "finished", "client": "codex", "status": "failed", "error_code": "native_process_error"}

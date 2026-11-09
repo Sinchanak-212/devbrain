@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_production_retry_attestor_registration_peer_review",
+  "status": "ack_no_static_blocker",
+  "files": {
+    "supervise-080.py": "2a1552f7da447122b20db7251925ce75aee435a62cce1ccbe546ea0f005c29f1",
+    "run-supervised-080.ps1": "afb5da7c74fad65507cc73cc062b0b2cadfd438ad5ea04c0977f405186c03621",
+    "run-regressions-080.py": "69179a95977ac49c5fa57e3cf0efbcb4232345eaba6292736f2201186a484f61",
+    "test_regressions080_guards.py": "d09b8bdcb1593fef5494156142c04653c5f15dc5311de9021e75499eff89fbd8",
+    "retry-production-queue-080.py": "a6bea3d2e5dd067aba419d8221a5fc88cd85b962093d0a472ebd6e6db259c414",
+    "test_production_queue080_guards.py": "4dfae78a92b533769878baa67a0def103d230e7a6146df743d6799aa545c496c",
+    "attest-full-suite-080.py": "1dfda81aa8db69a9b43ed3d7223ca27c3163a3dbe2fe8414c589a79ac985a2af"
+  },
+  "previous_review_sha256": "703a1a8a82e0c2d9b7db0d1b3f2acd768708965ab512a03f6a85663a8726972e",
+  "reviewed_utc": "2026-11-08T14:05:52.5202196Z",
+  "exact_attestor_delta_vs403": "Only one controller dependency mapping: retry-production-queue-080.py requires validate-native-account080.py; all other bytes unchanged.",
+  "semantic_regressions": "Windows and Linux receipt branches both reject missing common hashes, accept identical complete map, and reject actual common digest drift.",
+  "windows_ast": "2_pass",
+  "new_authored_cases": 58,
+  "expected_total_guards": 461,
+  "expected_modules": 10,
+  "expected_helpers": 34,
+  "runtime_tests": "not_run",
+  "actual_collection_authoritative": true,
+  "linux_started": false,
+  "frozen403_modified": false,
+  "app_modified": false,
+  "static_blockers": [],
+  "qualification_claimed": false
+}

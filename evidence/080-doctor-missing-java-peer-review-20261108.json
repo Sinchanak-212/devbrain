@@ -1,0 +1,41 @@
+{
+  "next_required": "Bind the actual immutable-run traceback before preparing a fresh source freeze and complete qualification.",
+  "created_utc": "2026-11-08T14:51:57.0055077Z",
+  "call_chain": [
+    "run-full-suite-080.py:167",
+    "test_integrations.py:25-33",
+    "config.py:68-75",
+    "engine.py:26-39",
+    "integrations.py:116-136"
+  ],
+  "linux_execution": false,
+  "test_file": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\devbrain\\tests\\test_integrations.py",
+  "app_source_changed_by_reviewer": false,
+  "actual_trace_confirmed": false,
+  "status": "static_ack_pending_actual_trace_not_run",
+  "tests_run": false,
+  "schema_version": 1,
+  "unchanged_related_file_sha256": {
+    "devbrain/src/devbrain/engine.py": "112ac5832113fa1125020e898d97572ece5932e890e41b4a151c311ef9f08407",
+    "devbrain/src/devbrain/config.py": "1dbdcf998e0e188c7d609706d5446f6f3d753dbf19006c2b945f465437afcc42",
+    "devbrain/tests/test_runtime_selection.py": "51b3719e4ac24c6d116fc3912337ad3eaf8ba491e13783259e64935826a13ddc",
+    "devbrain/src/devbrain/integrations.py": "ad9a8b7d309f77d7ea70560be8c1acb916eb2082eff35e715d08d211b53d2941"
+  },
+  "preparation_report_sha256": "c7cd0cc03b82a1df075b481fbd76a53f24ed76c40ad5512e44deb7b5c41ca3ca",
+  "acceptance_claimed": false,
+  "exact_one_line_delta_verified": true,
+  "frozen_file": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\app080-20261108T134240Z\\bundle\\devbrain\\tests\\test_integrations.py",
+  "reviewer": "/root/queue_review",
+  "verdict": "ACK",
+  "original_assertions_unchanged": 241,
+  "runtime_helpers_changed": false,
+  "scope": "devbrain_doctor_missing_java_fixture_peer_review",
+  "test_sha256": "02e3c6d92e4b370f2b4f431c664c9013e69eaedeb37b3a6b3fd708f323fed571",
+  "preparation_report": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-doctor-missing-java-preparation-20261108.json",
+  "frozen_sha256": "e2485e4f86c83ac7506ad5883046338f69da6bc10f1dbef94a0a80620c10b199",
+  "qualification_passed": false,
+  "reason": "The full-suite runner exports an explicit Java executable. The local Settings.load fixture inherits it; mocked shutil.which(None) cannot override explicit selection. Resetting only this scenario settings.java_executable to empty restores its intended missing-Java branch while preserving the exact result assertion and explicit-runtime tests.",
+  "reviewer_file_edits": [
+    "peer report only"
+  ]
+}

@@ -1,0 +1,90 @@
+DevBrain 0.7.2 — walidacja zakończona z ograniczeniami środowiska
+Stan: 7 listopada 2026. Raport: DEVBRAIN_0.7.2_VALIDATION.md.
+Aktualny punkt wejścia: ../START_HERE_0.7.2.txt.
+Zbiorczy JSON: devbrain-0.7.2-validation.json,
+status updated_with_unresolved_host_instability.
+
+WDROŻENIE ZAKOŃCZONE
+Ubuntu: /home/piotr/src/devbrain; /home/piotr/.local/bin/devbrain.
+Potwierdzone 0.7.2, 182 pliki źródeł i 64 pliki instalacji zgodne z finalnym
+ZIP, 7 chronionych plików konfiguracji/profili/modeli/logowań niezmienionych.
+Dowód: devbrain-0.7.2-production-final.json.
+Backup źródeł i bazy:
+/home/piotr/.local/state/devbrain-updates/20261107T093838Z-bbfafb96
+Ostatnia różnica finalnej paczki była zmianą asercji jednego testu. Plik
+zsynchronizowano z kontrolą zawartości i oddzielnym backupem:
+/home/piotr/.local/state/devbrain-updates/20261107T101931Z-final-test-sync
+Nie otwierano przy tej operacji bazy, nie zmieniano zainstalowanej aplikacji
+ani receiptu aktualizatora. Dowód: final-native-test-source-sync-20261107.json.
+
+PRODUKCYJNE USŁUGI ZATRZYMANE
+Nie wznowiono zapisów do bazy przy powtarzających się awariach środowiska.
+Nie wykonano końcowego realnego recall 20 przypadków, produkcyjnego TUI/grafu
+ani powtórzeń 6 historycznych błędów kolejki. Nie są oznaczone jako PASS.
+
+RZECZYWISTE POŁĄCZENIA — PASS
+Copilot: OAuth kontem GitHub, bez klucza API, profil copilot/model auto.
+Status konta, lista modeli, tool probe oraz pełny agent:
+resume_context -> ack_resume -> read_file, ACK w osobnej bazie ArcadeDB.
+Syntetyczny projekt pozostał bez zmian. Konto działało także po restarcie
+WSL; kontrola po restarcie nie wykonywała inferencji.
+Codex -> Claude Code -> świeży Codex: 3 etapy przekazania wspólnej pamięci
+PASS przed aktualizacją WSL, z wersjami zadania i unieważnieniem starego ACK.
+
+POPRAWKI 0.7.2
+Zgoda Copilota allow/deny, usunięcie ambient BYOK/offline, pełny hash runtime,
+dokładny schemat readback plan/task, approval_policy Codexa i usunięcie
+CODEX_API_KEY z ewaluatora, bezpieczna diagnostyka błędów zapisu ekstrakcji,
+aktualizacje Vite/Vitest.
+
+TESTY — LICZENIE BEZ POWTÓRZEŃ
+1275 unikalnych przypadków backendu ma dowód PASS, ale nie w jednym pełnym
+nieprzerwanym przebiegu: 1219 bez ograniczenia JIT do C1 i 56 tylko z C1.
+Ostatnia diagnostyczna próba 56/56 PASS, 309,92 s, exit 0, własny engine
+posprzątany. Flaga -XX:TieredStopAtLevel=1 wyłącznie w izolowanej próbie;
+nie ustawiono jej globalnie ani dla produkcji. Nie dowodzi to naprawy C2.
+Dowód: devbrain-c1-diagnostic-validation-20261107.xml; pełna deduplikacja
+w devbrain-test-coverage-20261107.json.
+Nie zaliczać log-only fragmentów, awarii, skipów ani PASS z ERROR teardown.
+Podzbiory już ujęte w coverage: 153 integracje ACK (152+1 powtórzenie tego
+samego przypadku), 34 Copilot, regresje ekstrakcji i diagnostyki.
+Frontend: build, 10 unit, 8 browser PASS; npm audit 0.
+Najnowszy updater: 5 guardów PASS oraz smoke aktualizacji 0.7.1 -> 0.7.2,
+backup i idempotencja PASS dla bf1bd272…/ZIP 6b65e731… w izolowanym C1,
+max heap 1 GiB, bez retry/model inference/produkcji; exit 0, własny engine
+zatrzymany. Dowody: devbrain-0.7.2-upgrade-smoke.json oraz
+devbrain-0.7.2-upgrade-smoke-c1.json. Do produkcji zastosowano wcześniejszy
+updater 61c4da4c… i osobno zsynchronizowano test. Kod aplikacji obu paczek
+identyczny; nie mylić hasha faktycznego wdrożenia z hashem finalnego smoke.
+
+STABILNOŚĆ NIEPOTWIERDZONA
+Potwierdzony kernel panic starego WSL; pierwotna przyczyna nieustalona.
+Za zgodą użytkownika zakończono update i restart: WSL 3.0.3, kernel 6.18.54.1.
+Dowód: wsl-after-update-20261107.json. Historyczne wzmianki o oczekującym UAC
+nie opisują już obecnego stanu.
+Po aktualizacji wystąpił SIGSEGV JVM w C2CompilerThread0/PhaseIFG, bez zmiany
+boot ID WSL. Diagnostyczny retry ograniczał JIT do C1 tylko w silniku testowym.
+Niezależny proces testów ewaluacji/natywnych klientów przerwał Python
+SIGABRT (-6) podczas ssl.create_default_context, przy działającym procesie
+Java, bez model inference i bez GPU. Jego 27 kropek postępu nie jest dowodem
+przejścia testów. BIOS i sterowniki bez zmian.
+Dowody: arcade-jvm-post-update-fatal-20261107.log,
+native-evaluation-post-update-20261107.json,
+native-evaluation-python-abort-20261107.log.
+Ostatni doctor tylko do odczytu: Ollama, oba modele, GPU RTX 4080 SUPER oraz
+Codex 0.166.0 i Claude Code 2.1.319 dostępne; DevBrain i ArcadeDB celowo
+zatrzymane. Dostępność modeli nie jest wynikiem realnej ewaluacji.
+Dowód: installed-doctor-final-20261107.json.
+
+PAMIĘĆ I KOLEJKA
+6 historycznych failures: 3 import unknown_transcript_schema, 2 extract
+(timeout/invalid JSON), 1 persistence_failed. Nie przeprowadzono retry.
+Stary persistence_failed: 6 accepted, 0 written; pierwotny wyjątek utracony.
+Nowe regresje i diagnostyka nie dowodzą przyczyny tego konkretnego zdarzenia.
+
+FINALNE ARTEFAKTY
+updater SHA256: bf1bd27200108e8e0da5bbbe42d44e7b3eb2736ae74e2886508c8cc5bb097e67
+ZIP SHA256: 6b65e7315895b8c44b84bafc9146dfcdae732c3890f959d0e5e58cbf4fd9aa2c
+Faktycznie zastosowany updater:
+61c4da4c2fcbbb80abcbc091c4ca83eaaebb34584e28e06e527b8b62a251560e
+Archiwalne paczki 0.7.0 i 0.7.1 pozostają niezmienione.

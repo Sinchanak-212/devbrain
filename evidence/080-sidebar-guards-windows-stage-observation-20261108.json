@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "scope": "sidebar_guard_windows_stage_observation",
+  "status": "stage_completed_no_linux",
+  "stager_sha256": "49ac94ac8803a2058e739c7866db8fe2f630fb10a1b6539bd5869f76c1196d0f",
+  "actual_stage_session": 75118,
+  "initial_exec_result": {
+    "chunk_id": "b0d213",
+    "wall_time_seconds": 10.0158881,
+    "session_id": 75118,
+    "original_token_count": 0,
+    "output": ""
+  },
+  "final_exec_result": {
+    "chunk_id": "998311",
+    "wall_time_seconds": 0.0000088,
+    "exit_code": 0,
+    "original_token_count": 154,
+    "output": "{\r\n  \"helpers\": 38,\r\n  \"specification_sha256\": \"d6a45e2f81b67a3a973462db01f9d11825c44fdc1c81f96dd72b30a649aadbae\",\r\n  \"linux_started\": false,\r\n  \"expected_cases\": 604,\r\n  \"freeze_sha256\": \"7e3a840ac8b6d230cc9831bdd9a28a0e7ae604ee02d34481650915ca09513f5d\",\r\n  \"application_qualified\": false,\r\n  \"run_id\": \"guards-sidebar-resize080-20261108T223449Z\",\r\n  \"inputs\": 56,\r\n  \"context\": \"C:\\\\Users\\\\piotr\\\\OneDrive\\\\Dokumenty\\\\ChatGPT\\\\devbrain\\\\evidence\\\\080-guards-queue-budget-active-context-20261108.json\",\r\n  \"context_sha256\": \"d4a6d302ae94ce775c81f7d212e01cfa661ac745a52d3abbb6d9e58f02206ed6\",\r\n  \"modules\": 12\r\n}\r\n"
+  },
+  "actual_windows_exit_code": 0,
+  "context_sha256": "d4a6d302ae94ce775c81f7d212e01cfa661ac745a52d3abbb6d9e58f02206ed6",
+  "linux_started": false,
+  "application_qualified": false
+}

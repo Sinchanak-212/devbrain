@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_taskstate_remaining_templates_independent_peer_review",
+  "status": "static_ack_not_run",
+  "reviewed_utc": "2026-11-08T19:37:40.790175+00:00",
+  "master": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-taskstate-remaining-gate-templates-604-20261108.json",
+  "master_sha256": "2bca65e979e4a7990a9c7f4c5044263b3b5ae96fefc3e78f3becbc4831ac7910",
+  "input_freeze_sha256": "be837169561ab6d20729ba3aa9faf75810be0497dc85a8d4dc2cee5df8457b85",
+  "verified_input_count": 24,
+  "verified_helper_count": 38,
+  "verified_source_files": 198,
+  "verified_total_source_files": 209,
+  "source_snapshot": "app080-20261108T192100Z",
+  "source_freeze_sha256": "0f46007731a08309644cc46a7bb28a3d57b6d6693e7f470593d87e5cfa773613",
+  "app_prepare_receipt_sha256": "c9034ec96e53b320e2ec6fc29a7f1bcb492a35b9c8fc8353b6047891c2649f63",
+  "template_sha256": {
+    "native": "f2eebda5a565adc41a34b9cdfc7228b6c5358edb9323ceb2ec0adeb8f3c76e4f",
+    "copilot": "99bcf572097d8dcdabc5528ece693748edf0f806f9e2a9c490f54906bed92d6c",
+    "ollama20": "4721846375f6bca4177b78f99b77d056f597ce072ed6a5ebcccffef2d721c085",
+    "frontend": "a9c9c86c9462e4186a638419b5f1e577d62711830342fdbb4ae7481d66a43fcb",
+    "upgrade_smoke": "4532b6523d533146edc138018aed19c721af9d9b90a403520068790a39f43316",
+    "soak": "3f2a375407f4191f66e37b949d8ab8451318251b920f1c0a485c905d6c2e538b"
+  },
+  "checks": {
+    "four_existing_spec_transforms_only_source_and_literal_venv": true,
+    "smoke_only_fresh_run_root_v6_release_and_same_072_baseline": true,
+    "soak_only_fresh_run_root_and_source": true,
+    "env_required_artifacts_and_timeouts_preserved": true,
+    "candidate_v6_outputs_hash_verified": true,
+    "no_current604_or_application_result_claim": true,
+    "old594_fixtures_runtime_only": true,
+    "smoke_own_engine_and_backup_contract_unchanged": true,
+    "soak_duration_28800_cycle900_gpu_and_fullsuite_required": true
+  },
+  "findings": [],
+  "launch_permitted": false,
+  "linux_started": false,
+  "credentials_read": false,
+  "production_read": false,
+  "source_qualified": false,
+  "application_qualified": false,
+  "release_qualified": false
+}

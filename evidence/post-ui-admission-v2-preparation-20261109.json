@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "scope": "post_UI_admission_V2_native_and_suite_order_preparation",
+  "status": "prepared_only_no_publication",
+  "original_V1_helper": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\post-ui-admission-finalize-080-20261109.ps1",
+  "original_V1_helper_sha256": "473ab431b96c24981aec07eb2d3f1387fa925ef51ba1a300341c7ded38f1cd6f",
+  "new_helper": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\post-ui-admission-finalize-v2-080-20261109.ps1",
+  "new_helper_sha256": "f99e80c1c5094edd9cd3d9378cb399f9945293330a64ca7980dadf03cb5442b1",
+  "new_inputs_sha256": "d015ca0b063c5858545df2293243ce3ed293163fa2f03d28c816141dd27fc888",
+  "metadata_and_scope_changes": {
+    "param([switch]$Finalize,[switch]$FinalizeStandalone,": {
+      "replacement": "param([switch]$Finalize,[switch]$FinalizeStandalone,[switch]$ValidatePreparedInputs,",
+      "occurrences": 1
+    },
+    "if(-not($Finalize-or$FinalizeStandalone))": {
+      "replacement": "if(-not($Finalize-or$FinalizeStandalone-or$ValidatePreparedInputs))",
+      "occurrences": 1
+    },
+    "if($Finalize-and$FinalizeStandalone){throw 'Choose one separately reviewed metadata publication'}": {
+      "replacement": "if($Finalize-and$FinalizeStandalone){throw 'Choose one separately reviewed metadata publication'}\nif($ValidatePreparedInputs-and($Finalize-or$FinalizeStandalone)){throw 'Readonly prepared-input validation cannot publish admission records'}",
+      "occurrences": 1
+    },
+    "post-ui-admission-inputs-20261109.json": {
+      "replacement": "post-ui-admission-inputs-v2-20261109.json",
+      "occurrences": 1
+    },
+    "18e5efea6f21815370b4e86c5aa93a503a61d2fa8861eb0d6d967e5ec610c355": {
+      "replacement": "d015ca0b063c5858545df2293243ce3ed293163fa2f03d28c816141dd27fc888",
+      "occurrences": 1
+    },
+    ";CleanReceipt $guard $g.run_id": {
+      "replacement": "",
+      "occurrences": 1
+    },
+    ";CleanReceipt $receipt $backend.run_id": {
+      "replacement": "",
+      "occurrences": 1
+    },
+    "Counts $suite.counts 1561;Artifacts $suite.artifact_sha256 $backend.artifact_root;SameMap $suite.runtime $master.runtime": {
+      "replacement": "Counts $suite.counts 1561;Artifacts $suite.artifact_sha256 $backend.artifact_root;SameMap $suite.runtime $master.runtime\n# Pure CleanReceipt reads suite.runtime; actual canonical is verified above, never a dummy.\nCleanReceipt $guard $g.run_id;CleanReceipt $receipt $backend.run_id",
+      "occurrences": 1
+    },
+    "if($FinalizeStandalone){": {
+      "replacement": "if($ValidatePreparedInputs){@{status='prepared_inputs_validated_not_admitted';functional_diagnostic_inputs=5;models_requested=0;records_published=$false;eight_hour_started=$false}|ConvertTo-Json;return}\nif($FinalizeStandalone){",
+      "occurrences": 1
+    },
+    "post-ui-admission-standalone-compatible-20261109.json": {
+      "replacement": "post-ui-admission-standalone-compatible-v2-20261109.json",
+      "occurrences": 1
+    },
+    "@('frontend','recall','copilot','upgrade_smoke')": {
+      "replacement": "@('frontend','recall','copilot','upgrade_smoke','native')",
+      "occurrences": 2
+    },
+    "$expectedDiag=@{frontend=$expected;recall=$expected;copilot=@{helper_count=38;scope='devbrain_copilot_account_validation';status='copilot_account_completed_pending_attestation'};upgrade_smoke=@{helper_count=38;scope='devbrain_upgrade_smoke_controller';status='upgrade_smoke_completed_pending_attestation'}}": {
+      "replacement": "$expectedDiag=@{frontend=$expected;recall=$expected;copilot=@{helper_count=38;scope='devbrain_copilot_account_validation';status='copilot_account_completed_pending_attestation'};upgrade_smoke=@{helper_count=38;scope='devbrain_upgrade_smoke_controller';status='upgrade_smoke_completed_pending_attestation'};native=@{helper_count=38;scope='devbrain_native_account_validation';status='native_account_completed_pending_attestation'}}",
+      "occurrences": 1
+    },
+    "$copilot=BoundResult $gates.copilot 'copilot-results.json'": {
+      "replacement": "$native=BoundResult $gates.native 'native-results.json'\nRequire ($native.status-ceq'passed'-and$native.phases.Count-eq3-and$native.exact_packet_ack_verified-eq$true-and$native.owned_database_removed-eq$true-and$native.previous_ack_invalidated[1]-eq$true-and$native.previous_ack_invalidated[2]-eq$true-and$native.oauth_phase_sync.Count-eq3) 'Native three-phase ACK/invalidation incomplete'\n$clients=@('codex','claude','codex');for($i=0;$i-lt3;$i++){Require ($native.phases[$i].client-ceq$clients[$i]-and$native.phases[$i].status-ceq'passed'-and$native.phases[$i].fresh_process-eq$true-and$native.phases[$i].answer_matches_expected-eq$true-and$native.oauth_phase_sync[$i].passed-eq$true) 'Native phase or phase OAuth sync failed'}\nRequire ($gates.native.controller.oauth_cache_sync.passed-eq$true-and$gates.native.controller.oauth_lease_release.passed-eq$true) 'Final native OAuth sync/release failed'\nRequire ($native.real_native_compaction_tested-eq$false-and$native.synthetic_precompact_event-eq$true-and$native.local_model_inference-eq$false) 'Native real compaction scope misrepresented'\n$copilot=BoundResult $gates.copilot 'copilot-results.json'",
+      "occurrences": 1
+    },
+    "post-ui-admission-final-20261109": {
+      "replacement": "post-ui-admission-final-v2-20261109",
+      "occurrences": 1
+    },
+    " NewJson $reportPath $report": {
+      "replacement": " if($name-ceq'native'){$report.real_native_compaction_tested=$false;$report.synthetic_precompact_event=$true;$report.exact_packet_ACK_and_invalidation_verified=$true;$report.phase_and_final_OAuth_sync_release_verified=$true}\n NewJson $reportPath $report",
+      "occurrences": 1
+    }
+  },
+  "original_V1_immutable": true,
+  "pure_validation_functions_unchanged": true,
+  "suite_ordering_blocker_fixed_without_dummy": true,
+  "original_four_specific_checks_preserved": true,
+  "native_added_from_original_consumer": true,
+  "new_models_started": false,
+  "Finalize_invoked": false,
+  "new_passed_admissions_or_standalone_adapter_published": false
+}

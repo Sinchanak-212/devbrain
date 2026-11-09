@@ -1,0 +1,51 @@
+{
+  "status": "prepared_static_only_runtime_blocked",
+  "generated_utc": "2026-11-07T11:58:10.125162+00:00",
+  "source_hashes": {
+    "release-tools/attest-full-suite-080.py": "7242f9eaa15a2cc0c14139a72f09a2b978c8ae83b46d55f36832b21bf3028297",
+    "release-tools/run-full-suite-080.py": "b2ca5f87bffd8644c66cb82c7696d549f27758bb0a5527bc5c49f22726fbb621",
+    "release-tools/soak-workload-080.py": "6c89d5e64c389d547fe8fb2c12ea59ee7154835cccdefb87c422f3ec33826ab3",
+    "release-tools/validate-stability-080.py": "5717c26217ef392340d86a8726fae90c8384d0001ba808f5c83a7bdab32fe143",
+    "release-tools/test_full_suite_080_guards.py": "c2e88adfa51665653efdaa522bf86fb9640311a8d53ad3c55c55f5d980b61ce2",
+    "release-tools/test_stability_080_guards.py": "45b3cedd2c5ded4700e98c7b3f5e866225b4d39de7233dabdda44edfdaba6da9",
+    "release-tools/FULL_SUITE_ATTESTATION_080.md": "dca578437142bf67179f9fb57022bc7e1c0fbe723e9f2dc97a622032cf5c9a35",
+    "release-tools/TERMINAL_PREVIEW_080.md": "e32ca15ed7a3c0a6617bfc254ea7d78a446ad2ec6cee159224a864e8526cb771"
+  },
+  "syntax_validation": {
+    "kind": "ast.parse only",
+    "platform": "Windows",
+    "python": "3.11",
+    "files": 6,
+    "passed": true,
+    "helpers_imported": false
+  },
+  "test_execution": {
+    "new_guard_tests_run": false,
+    "full_suite_run": false,
+    "soak_run": false,
+    "jvm_started": false,
+    "gpu_used": false
+  },
+  "contract": "release-tools/FULL_SUITE_ATTESTATION_080.md",
+  "controls": [
+    "Complete frozen src/tests/package-data/optional-data manifest",
+    "Exact full nodeid collection versus JUnit with no duplicates/missing/error/failure/unexpected-skip",
+    "Actual Python -I installed origin/hash/prefix; no PYTHONPATH substitution",
+    "Qualified Java/tmux paths including DEVBRAIN_TEST_TMUX and Linux PATH",
+    "Literal venv launcher bound to canonical base interpreter SHA",
+    "Independent Linux/Windows receipt required after controller and supervisor exits",
+    "Start/end helper hashes and raw artifact hashes",
+    "Own marked fixture shutdown observed before controller cleanup verdict"
+  ],
+  "review": {
+    "release_smoke": "pidfd and marker identity races addressed statically",
+    "wrappers": "No further concrete foreign-kill/false-PASS blocker found after venv and hash fixes; never executed",
+    "terminal_latency": "Root revised sampling windows, visible project rows and request completion after readonly findings"
+  },
+  "limitations": [
+    "No runtime or regression-test qualification of these latest helpers",
+    "Existing runtime gates remain blocked; historical 32 pure guard passes apply to an earlier source revision",
+    "New independent native crashes, including Python 3.13 and Perl, remain unexplained",
+    "No frontend rerun after the new crash; 25 current frontend files matched previously tested 0.7.2 bytes"
+  ]
+}

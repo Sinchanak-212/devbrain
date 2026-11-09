@@ -1,0 +1,54 @@
+{
+  "status": "prepared_pending_runtime_gate",
+  "pending": [
+    "Fresh post-BIOS runtime gate PASS",
+    "Latest pure guards including seven PowerShell synthetic cases",
+    "Controlled normal/nonzero/timeout/parent-loss external wrapper fixtures",
+    "Full final source collection and suite",
+    "Separate eight-hour active workload"
+  ],
+  "scope": "postbios_final_wrapper_static_preparation",
+  "schema_version": 1,
+  "power_contract": {
+    "matches_gate": true,
+    "changes_power_plan": false,
+    "balanced_guid": "381b4222-f694-41f0-9685-ff5bb260df2e",
+    "restore_previous_thread_flags": true,
+    "observe_after_supervisor_exit_seconds": 30,
+    "samples_seconds": 30,
+    "canonical_format": "powercfg-qh-acdc-v1",
+    "maximum_gap_seconds": 45
+  },
+  "runtime_execution": {
+    "pytest": false,
+    "linux": false,
+    "full_suite": false,
+    "soak": false,
+    "java": false
+  },
+  "syntax": {
+    "helper_imports": false,
+    "python_ast_files": 3,
+    "powershell_parse_files": 3,
+    "errors": 0,
+    "test_execution": false
+  },
+  "source_hashes": {
+    "release-tools/supervise-080.py": "117f482d1d9c14ec9168da69e974cec90a9d0578c1980182c94cd032cba40241",
+    "release-tools/run-supervised-080.ps1": "674c232f3fd5f00250c5765148e5f8e349813fc5c170ba2dbc42834fc8e0700f",
+    "release-tools/test_full_suite_080_guards.py": "7047d08fec1bb9ceb94e453e693a8a2137b8855a51b472bc6a480ba7ae9a11d5",
+    "release-tools/qualification-power-080.ps1": "0a46c1d6a2abca8a4be4dfc79daaff33332e91f95d4c627fe7c301523ba9e8a9",
+    "release-tools/test_qualification_power080.ps1": "dd2b9e0e5e7ad9f0a4f1c00c9cd703ca454a3ac8b4ba347f923512f3121ab94a",
+    "release-tools/FULL_SUITE_ATTESTATION_080.md": "11a1adbe915371028d70c3ad35885d2f80b47522e22d8927e0fbf51d9738d4e0",
+    "release-tools/attest-full-suite-080.py": "83c67944f9957e4bbc8e94ea357e4af3ef6d0863a67c4f459dbf7cf898b0e7a1"
+  },
+  "generated_utc": "2026-11-07T18:46:00.0463535Z",
+  "peer_review": {
+    "findings_addressed": [
+      "Actual Python and runtime start/end SHA bindings plus external post-cleanup hash probe",
+      "Nested finally restores sleep state despite proxy cleanup exceptions"
+    ],
+    "scope": "three postbios diagnostic helpers",
+    "verdict": "No further concrete blocker found statically; not runtime qualification"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "instructions": [
+    {
+      "offset": 0,
+      "source_opcode": "RESUME",
+      "core_opcode": "RESUME_CHECK",
+      "deoptimized_opcode_matches": true,
+      "oparg_matches": true
+    },
+    {
+      "offset": 2,
+      "source_opcode": "LOAD_FAST_LOAD_FAST",
+      "core_opcode": "LOAD_FAST_LOAD_FAST",
+      "deoptimized_opcode_matches": true,
+      "oparg_matches": true
+    },
+    {
+      "offset": 4,
+      "source_opcode": "LOAD_ATTR",
+      "core_opcode": "LOAD_ATTR_INSTANCE_VALUE",
+      "deoptimized_opcode_matches": true,
+      "oparg_matches": true
+    },
+    {
+      "offset": 24,
+      "source_opcode": "COMPARE_OP",
+      "core_opcode": "COMPARE_OP_STR",
+      "deoptimized_opcode_matches": true,
+      "oparg_matches": true
+    },
+    {
+      "offset": 28,
+      "source_opcode": "POP_JUMP_IF_FALSE",
+      "core_opcode": "POP_JUMP_IF_FALSE",
+      "deoptimized_opcode_matches": true,
+      "oparg_matches": true
+    },
+    {
+      "offset": 32,
+      "source_opcode": "LOAD_FAST",
+      "core_opcode": "LOAD_FAST",
+      "deoptimized_opcode_matches": true,
+      "oparg_matches": true
+    },
+    {
+      "offset": 34,
+      "source_opcode": "LOAD_ATTR",
+      "core_opcode": "LOAD_ATTR_METHOD_WITH_VALUES",
+      "deoptimized_opcode_matches": true,
+      "oparg_matches": true
+    },
+    {
+      "offset": 54,
+      "source_opcode": "CALL",
+      "core_opcode": "CALL_PY_EXACT_ARGS",
+      "deoptimized_opcode_matches": true,
+      "oparg_matches": true
+    },
+    {
+      "offset": 62,
+      "source_opcode": "POP_TOP",
+      "core_opcode": "POP_TOP",
+      "deoptimized_opcode_matches": true,
+      "oparg_matches": true
+    },
+    {
+      "offset": 64,
+      "source_opcode": "RETURN_CONST",
+      "core_opcode": "RETURN_CONST",
+      "deoptimized_opcode_matches": true,
+      "oparg_matches": true
+    },
+    {
+      "offset": 66,
+      "source_opcode": "RETURN_CONST",
+      "core_opcode": "RETURN_CONST",
+      "deoptimized_opcode_matches": true,
+      "oparg_matches": true
+    }
+  ],
+  "same_length": true,
+  "all_opcodes_match": true,
+  "all_opargs_match": true,
+  "instruction_pointer_outside_bytecode": true
+}

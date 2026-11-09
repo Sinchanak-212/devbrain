@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "status": "prepared_not_applied",
+  "phase": "post_bios_serial_runtime_qualification",
+  "ast_modules": 4,
+  "ast_embedded_probes": 2,
+  "ast_result": "passed",
+  "authored_guard_cases": 40,
+  "guard_tests_executed": false,
+  "real_backup_restore_smoke_executed": false,
+  "candidate_rebuilt": false,
+  "candidate_stale": true,
+  "production_services_started": false,
+  "production_database_opened": false,
+  "production_install_performed": false,
+  "production_status_independently_rechecked": false,
+  "production_context_reference": "080-postbios-active-context.json",
+  "production_protected_baseline_reference": "080-postbios-production-baseline.json",
+  "apply_required_arguments": ["--python", "--backup-python", "--runtime-gate", "--data-dir"],
+  "check_only": "file-only; no subprocess or data access",
+  "backup_identity": [
+    "passed runtime gate with mandatory checks",
+    "qualified base Python path and binary SHA for updater and both selected interpreters",
+    "noneditable isolated 0.7.2 wheel origin inside its venv",
+    "complete package manifest from immutable baseline ZIP",
+    "dependency versions and mandatory direct dependencies from immutable uv.lock/pyproject",
+    "backup venv independent of source, data and replaced uv tool venv"
+  ],
+  "legacy_java_static_review": {
+    "baseline_engine_sha256": "b8386bd7cb184e6f0b3d9351b303a9f928cc9b6f6f3a99458f184349a5a19568",
+    "baseline_resolver": "shutil.which('java') in engine_status and start_engine; no alternative JDK selector",
+    "per_process_path_first": "gate.java_executable parent",
+    "java_home": "gate.java_executable parent.parent",
+    "removed_environment": ["JAVA_TOOL_OPTIONS", "JDK_JAVA_OPTIONS", "_JAVA_OPTIONS"],
+    "verified_without_execution": ["resolved which('java') equals gated executable", "binary SHA matches gate"],
+    "smoke_change": "Removed redundant JAVA_TOOL_OPTIONS=-Xmx1g; the baseline engine already supplies -Xmx1024m. Every smoke child, including restore and cleanup, receives the gated Java environment.",
+    "scope_limit": "Selects the JDK for newly launched processes; identity of an already running shared engine is a separate fixture/qualification precondition."
+  },
+  "smoke_prepared_checks": [
+    "separate immutable 0.7.2 wheel venv",
+    "trap proving old console script is never invoked by updater",
+    "real updater backup with recorded runtime identity",
+    "real 0.7.2 CLI restore to a second owned database",
+    "restored export equals backup and 0.8.0 can read it",
+    "accounts/profiles/models/preferences bytes and modes preserved",
+    "both owned databases cleaned up"
+  ],
+  "peer_review": {
+    "reviewer": "test_suite",
+    "mode": "read_only_static",
+    "finding": "Backup venv could alias the replaced uv tool venv",
+    "resolution": "Resolved target prefix is checked for equality and ancestor/descendant overlap before data commands; two regression cases authored",
+    "remaining_concrete_blockers_reported": []
+  },
+  "helper_sha256": {
+    "devbrain-update080-template.py": "56e33ddc4f810f72ab2c250b5e7b2c5e04886753700854ce874348d9feb5f17b",
+    "build-devbrain-update-080.py": "b3783bbd0a193d92e9ff9b24c2abd4926ffbb7aaf10a8edeaa1ebf3485c0d5e9",
+    "test_devbrain_update080_smoke.py": "166910ba4db0c4f2935661f0db4e592374584cf43adc1313f89a54f5e46e93c0",
+    "test_devbrain_update080_guards.py": "826f1822441d0f51a183467c0532eb67b1a833bb346110344a2443fb51351a8d"
+  }
+}

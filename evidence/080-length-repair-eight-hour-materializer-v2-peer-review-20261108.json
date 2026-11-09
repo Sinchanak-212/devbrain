@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_eight_hour_metadata_contract_v2_peer_review",
+  "status": "readonly_ack_not_staged",
+  "reviewer": "/root/test_suite",
+  "created_utc": "2026-11-08T21:25:22.3884618+00:00",
+  "stager": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-final-eight-hour-length-repair-604-v2-20261108.ps1",
+  "stager_sha256": "5a94acfd267fcdfaf92a91f174fcd5589e46366db242e9e39a539aebe635a7a0",
+  "parent_sha256": "529efc490787d9b454395bcbcc39d31d06928ef6aaa6b042c6c392e68d26278d",
+  "preparation_sha256": "72628fe52fbcb61a8380422f3999165c747a839b673675cc542863cb0bba1cfd",
+  "exact_changed_regions": 3,
+  "all_other_bytes_identical": true,
+  "ps_ast_errors": 0,
+  "actual_ast_predicates_verified": 3,
+  "actual_standalone_context_sha256": "96b4bb44c957d906c45f94a19ebf21a437fa53ca919efc66a35a12ebe4962857",
+  "actual_standalone_final_report_sha256": "a69ed84567d15e9f364794e1bdb07c5d7428bcbb56bbbb9937793ad617e7b80a",
+  "actual_backend_context_sha256": "1c101b5e4f9c56226d7bf4a3a979e2f5b34f4c4cdae7d33349048a3bece36133",
+  "actual_queue_final_report_sha256": "19338e5db7779609154bdd0633e3dcdcc99ca9b7d25f824116302e85ff4e411b",
+  "actual_queue_status": "passed_focused_queue_copy_only",
+  "findings": [],
+  "conclusions": [
+    "Standalone report is explicitly path+SHA bound and compared against exact envelope/process/source/backend/canonical/observation identities.",
+    "Only queue_copy accepts its truthful focused status; other gates still require passed.",
+    "Frozen copied standalone final report uses the same verified explicit path and SHA.",
+    "Eight-gate results/cleanup/count/duplicate acceptance and28800/900/GPU/argv remain unchanged."
+  ],
+  "pending_gates": [
+    "interactive",
+    "native",
+    "copilot",
+    "recall",
+    "frontend",
+    "upgrade_smoke"
+  ],
+  "stage_executed": false,
+  "linux_executed": false,
+  "qualification_claimed": false,
+  "source_or_helpers_modified": false
+}

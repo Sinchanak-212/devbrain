@@ -1,0 +1,94 @@
+[
+  {
+    "tag_name": "3.0.3",
+    "published_at": "2026-10-09T18:21:40Z",
+    "prerelease": false,
+    "html_url": "https://github.com/microsoft/WSL/releases/tag/3.0.3",
+    "scan_pattern": "panic|scheduler|null.pointer|idle_cpu|do_coredump|kernel",
+    "matching_lines": [
+      "* Update Microsoft.WSL.Kernel to 6.18.54.1 by @chessturo in https://github.com/microsoft/WSL/pull/41822"
+    ]
+  },
+  {
+    "tag_name": "3.0.1",
+    "published_at": "2026-09-29T17:18:57Z",
+    "prerelease": false,
+    "html_url": "https://github.com/microsoft/WSL/releases/tag/3.0.1",
+    "scan_pattern": "panic|scheduler|null.pointer|idle_cpu|do_coredump|kernel",
+    "matching_lines": []
+  },
+  {
+    "tag_name": "2.7.14",
+    "published_at": "2026-09-11T22:09:23Z",
+    "prerelease": false,
+    "html_url": "https://github.com/microsoft/WSL/releases/tag/2.7.14",
+    "scan_pattern": "panic|scheduler|null.pointer|idle_cpu|do_coredump|kernel",
+    "matching_lines": []
+  },
+  {
+    "tag_name": "2.7.13",
+    "published_at": "2026-09-04T15:41:02Z",
+    "prerelease": false,
+    "html_url": "https://github.com/microsoft/WSL/releases/tag/2.7.13",
+    "scan_pattern": "panic|scheduler|null.pointer|idle_cpu|do_coredump|kernel",
+    "matching_lines": []
+  },
+  {
+    "tag_name": "2.7.12",
+    "published_at": "2026-08-18T21:12:01Z",
+    "prerelease": false,
+    "html_url": "https://github.com/microsoft/WSL/releases/tag/2.7.12",
+    "scan_pattern": "panic|scheduler|null.pointer|idle_cpu|do_coredump|kernel",
+    "matching_lines": []
+  },
+  {
+    "tag_name": "2.7.11",
+    "published_at": "2026-07-24T16:59:19Z",
+    "prerelease": false,
+    "html_url": "https://github.com/microsoft/WSL/releases/tag/2.7.11",
+    "scan_pattern": "panic|scheduler|null.pointer|idle_cpu|do_coredump|kernel",
+    "matching_lines": []
+  },
+  {
+    "tag_name": "2.7.10",
+    "published_at": "2026-06-26T01:59:58Z",
+    "prerelease": false,
+    "html_url": "https://github.com/microsoft/WSL/releases/tag/2.7.10",
+    "scan_pattern": "panic|scheduler|null.pointer|idle_cpu|do_coredump|kernel",
+    "matching_lines": []
+  },
+  {
+    "tag_name": "2.7.8",
+    "published_at": "2026-06-06T16:27:02Z",
+    "prerelease": false,
+    "html_url": "https://github.com/microsoft/WSL/releases/tag/2.7.8",
+    "scan_pattern": "panic|scheduler|null.pointer|idle_cpu|do_coredump|kernel",
+    "matching_lines": [
+      "* Update kernel to 6.18.33.1-1 by @chessturo in https://github.com/microsoft/WSL/pull/40728"
+    ]
+  },
+  {
+    "tag_name": "2.7.3",
+    "published_at": "2026-04-25T00:50:11Z",
+    "prerelease": false,
+    "html_url": "https://github.com/microsoft/WSL/releases/tag/2.7.3",
+    "scan_pattern": "panic|scheduler|null.pointer|idle_cpu|do_coredump|kernel",
+    "matching_lines": []
+  },
+  {
+    "tag_name": "2.6.3",
+    "published_at": "2025-12-12T23:34:01Z",
+    "prerelease": false,
+    "html_url": "https://github.com/microsoft/WSL/releases/tag/2.6.3",
+    "scan_pattern": "panic|scheduler|null.pointer|idle_cpu|do_coredump|kernel",
+    "matching_lines": []
+  },
+  {
+    "tag_name": "2.6.2",
+    "published_at": "2025-10-13T20:56:40Z",
+    "prerelease": false,
+    "html_url": "https://github.com/microsoft/WSL/releases/tag/2.6.2",
+    "scan_pattern": "panic|scheduler|null.pointer|idle_cpu|do_coredump|kernel",
+    "matching_lines": []
+  }
+]

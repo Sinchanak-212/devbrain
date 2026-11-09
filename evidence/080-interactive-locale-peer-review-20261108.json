@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "status": "static_review_passed",
+  "reviewer": "release_review",
+  "source_sha256": {
+    "run-interactive-ux080.py": "0c0bb05b2165f509b77026a5ffefd39d0aabccd5e9f45682a2371df065b9c1bc",
+    "validate-native-account080.py": "b093d5a6aa9bfb39a769ff9184fc08db6210f00535d4439db0cffc07bd221e27",
+    "test_interactive_ux080_guards.py": "15127894b67fcd65d78e377c63a27e6362417e5253086ed9ad72621faad218e5",
+    "test_account080_guards.py": "cb6053946249551aba79ba22676040f5823b484f535e21e34fcf330bed1a7ca5"
+  },
+  "baseline_bundle": "guards-cleanup080-20261108T103318Z",
+  "exact_production_delta_verified": true,
+  "interactive_delta": "Two entrypoints construct clean allowlist environment before clearing and replacing os.environ",
+  "common_delta": "Only LC_CTYPE added to existing locale/certificate allowlist",
+  "auth_cas_and_lifecycle_bytes_unchanged": true,
+  "private_environment_omissions_preserved": true,
+  "guard_cases_added": 5,
+  "guard_review": "Four parametrized cases execute real AST boundary statements for attach/workload and success/cleaner failure with isolated fake environment; one exercises actual cleaner allowlist and omission of unrelated synthetic private value",
+  "windows_ast_files_passed": 4,
+  "tests_executed": false,
+  "linux_executed": false,
+  "blockers": [],
+  "preexisting_scope_note": "The native account controller main still clears environment before its own clean_environment call; this interactive-only delta does not claim to repair that separate callsite."
+}

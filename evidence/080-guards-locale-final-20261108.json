@@ -1,0 +1,29 @@
+{
+  "power_changed": false,
+  "sleep_restored": true,
+  "actual_windows_exit_code": 0,
+  "receipt_sha256": "2fbef0e1a9a72fe391515e6abaedec117868eec332b6d418223b6d5545fa896f",
+  "full_backend_pass": false,
+  "toolbundle_freeze_sha256": "1d586e749751e7512f56adc6c151a10e91707678b55db99185b2690024f5ff2f",
+  "run_id": "guards-locale080-20261108T113607Z",
+  "post_exit_seconds": 34,
+  "count": {
+    "collected": 369,
+    "passed": 369,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0,
+    "unexpected_skips": 0,
+    "duplicates": 0,
+    "missing": 0,
+    "expected_skips": {},
+    "observed_skips": {}
+  },
+  "eight_hour_pass": false,
+  "native_failure": false,
+  "scope_empty_seconds": 30.315497000000008,
+  "status": "passed",
+  "schema_version": 1,
+  "actual_windows_exec_session": 94746,
+  "runtime_gate_unchanged": true
+}

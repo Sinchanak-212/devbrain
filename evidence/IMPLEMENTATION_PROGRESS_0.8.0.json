@@ -1,0 +1,79 @@
+{
+  "status": "postbios_qualification_active_after_closed_pane_fix",
+  "updated_at": "2026-11-07T20:15:40.4305263+01:00",
+  "target": "0.8.0",
+  "production_installed": "0.7.2",
+  "production_services": "stopped",
+  "user_constraint": "User approved post-BIOS plan and Balanced power scheme; Inteldefaults/noXMP/OC confirmed. No further firmware or no-boost changes. Production0.7.2 staysstopped.",
+  "ui_decisions": [
+    "EN default; PL optional",
+    "Focus default; Cockpit optional",
+    "Enter opens project; explicit Start only chosen slot",
+    "Ctrl+B Space commands; ? help; Tab next",
+    "8-hour continuous test required; manual five-task UX check required"
+  ],
+  "source_root": "C:/Users/piotr/OneDrive/Dokumenty/ChatGPT/devbrain/devbrain",
+  "owners": {
+    "root": "workspace.py/workspace_state.py/cockpit_state.py/terminal_commands.py/terminal_graph.py + workspace tests",
+    "release_review": "UI common/panels/inspector/i18n, docs, now release080 builder/template/smoke/guards staging",
+    "test_suite": "terminal_preview/api_worker/agent_i18n + tests and soak-workload-080.py/validate-stability-080.py",
+    "copilot_adapter": "arcade/config/engine/doctor/runtime_selection/NativeRuntime, private Python/Java/tmux qualification"
+  },
+  "verified": {
+    "ruff": "all src/tests pass project config",
+    "workspace_earlier_tests": 14,
+    "workspace_and_palette_initial": 13,
+    "root_latest_regressions": 30,
+    "ui_tests": "31+3+1 PASS",
+    "api_worker_unique": 20,
+    "preview_baseline_tests": 28,
+    "captures": "10 focus/cockpit configurations, true TUI ANSI/SVG; PNGs inspected",
+    "evaluation_native_full": "32/32 on Python3.12.16+Temurin C2"
+  },
+  "limitations": [
+    "Those PASS counts overlap and do not establish a full final suite",
+    "Python3.12.16 child SIGSEGV at11:56:19 invalidated old runtime gate despite parent pytest0",
+    "tmux3.4 cores during teardown repeated options_tree_RB_MINMAX/options_free/window_destroy/notify_callback; upstream PR3860 fix exists",
+    "WindowsTerminal launched and MainWindow exists, but both CUA inventories omit it; no OS screenshot claimed; inspected real panel ANSI/SVG raster exports instead",
+    "8h not started; Ollama20 not completed; production upgrade not applied",
+    "Python3.13.18 classic-GIL child SIGABRT Executing a cache during Textual regex import; archive/source/pyc intact. Minimal15 warm/cold imports passed; cause unresolved.",
+    "System Perl5.38.2 Configure SIGSEGV at65MB peak with2GiB cap; dpkg-V clean, compiler not started. Reason unresolved, no hardware failure diagnosis."
+  ],
+  "runtime_next": "Fresh full bounded sequence on run191300Z: preparePASS, Perl ongoing, unit76 includes25new PID/ownership regressions;3C2runs/fullsuite/Ollama20/8h stillrequired.",
+  "runtime_cache": "/home/piotr/.cache/devbrain-runtime-080",
+  "root_fixes": [
+    "Atomic WorkspaceState.claim_work_request prevents delayed start after navigation/cancel",
+    "select_project clears pending command_request",
+    "Palette Start work opens review screen, never directly launches",
+    "Popup exact client_pid/client_tty validated writer + display-popup -c; no8s interactive timeout",
+    "JoinWorkspaceApp defaults Observe; Take control explicit through existing attach lock",
+    "Graph [/] select nodes; Tab focuses toolbar; reduced_motion persisted",
+    "WorkspaceManager and Graph now use resolve_tmux helper"
+  ],
+  "next_steps": [
+    "Finish private runtime qualification including WSLcore watcher THROUGH cleanup",
+    "Freeze final source and run one complete backend JUnit with exact qualified runtimes, no unexpected skips",
+    "Run frontend build/tests/audit appropriate final source",
+    "Ollama one embed/chat then unchanged real20-case >=90% +critical all",
+    "Run true 8-hour workload bound to full-suite/source/runtime hashes and check all cores, bootID and cleanup",
+    "Validate updater candidate 0.7.2->0.8.0 (staging only before gates)",
+    "Manual five-task UX test, actual installed UI, backup/restore then production upgrade; six oldfailedjobs on clone before retries",
+    "Final truthful report, do not end merely after starting8h"
+  ],
+  "post_bios": {
+    "bios": "4601",
+    "microcode": "0x133",
+    "intel_defaults_confirmed": true,
+    "xmp_manual_oc": false,
+    "power": "Windows Balanced",
+    "context_file": "evidence/080-postbios-active-context.json",
+    "active_run_id": "postbios4601-20261107T191300Z",
+    "physical_windows_root": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\postbios4601-20261107T191300Z",
+    "prior_run_result": "No new nativefatal; jvm1 stopped on ValueError empty tmux pane_pid after operational login",
+    "app_fix": "client_runtime._pane handles confirmed dead empty PID asNone; invalid live PID rejected",
+    "regression_cases_authored": 25,
+    "new_source_files": 195,
+    "production_database_opened": false,
+    "soak_started": false
+  }
+}

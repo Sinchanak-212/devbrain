@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_extraction_length_repair_independent_static_peer",
+  "status": "static_ack_pending_current_source_runtime",
+  "created_utc": "2026-11-08T20:25:11.153223+00:00",
+  "findings": [],
+  "baseline_source_run": "app080-20261108T192100Z",
+  "baseline_freeze_sha256": "0f46007731a08309644cc46a7bb28a3d57b6d6693e7f470593d87e5cfa773613",
+  "files": {
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\devbrain\\src\\devbrain\\agent.py": "a734cc2d16df403dd94c1f97648267d152ef0caba7ceb08dda0de32a5c8931dd",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\devbrain\\tests\\test_extraction_safety.py": "b3d90caa95382e9e90d7a85aa57f801db30f7ec5af45e03aecd97dadcb1801aa"
+  },
+  "preparation": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-extraction-length-repair-preparation-20261108.json",
+  "preparation_sha256": "5eab009d4cdeccbf47f9f96da19d52c0aefbb9631c3314c3ec49d2ccfe677560",
+  "app_files": 198,
+  "unchanged_app_files": 196,
+  "changed_existing_files": 2,
+  "new_app_files": 0,
+  "ast_validation": {
+    "devbrain/src/devbrain/agent.py": {
+      "old_functions": 28,
+      "changed_existing_functions": [
+        "KnowledgeAgent.extract"
+      ],
+      "added_functions": [
+        "_extraction_response"
+      ]
+    },
+    "devbrain/tests/test_extraction_safety.py": {
+      "old_functions": 21,
+      "changed_existing_functions": [],
+      "added_functions": [
+        "CompletionReplies.__init__",
+        "CompletionReplies.chat",
+        "truncated_record_json",
+        "test_length_repair_grows_once_and_never_parses_or_commits_the_valid_prefix",
+        "test_second_length_is_invalid_output_before_parse_or_any_transaction",
+        "test_invalid_extraction_generation_budget_never_reaches_model_or_memory",
+        "test_length_repair_keeps_existing_deadline_and_cancel_without_late_writes"
+      ]
+    }
+  },
+  "original_assertions_preserved": 79,
+  "existing_417_test_module_sha256": "adc5d4a036bc8ce4c2feda5f43b96e7aebd2ea13ba61dad886bb539784f4e253",
+  "existing_417_test_module_byte_identical": true,
+  "new_parameterized_cases": {
+    "test_length_repair_grows_once_and_never_parses_or_commits_the_valid_prefix": 4,
+    "test_second_length_is_invalid_output_before_parse_or_any_transaction": 4,
+    "test_invalid_extraction_generation_budget_never_reaches_model_or_memory": 10,
+    "test_length_repair_keeps_existing_deadline_and_cancel_without_late_writes": 2
+  },
+  "new_case_count": 20,
+  "planned_backend_count": 1557,
+  "planned_ux_count": 377,
+  "actual_collection_authoritative": true,
+  "reviewed_invariants": [
+    "Explicit done_reason length rejects even syntactically valid prefixes before parsing and persistence",
+    "Initial positive integer min(1800,answer_tokens) unchanged; only length repair min(2*initial,3600)",
+    "One repair maximum; ordinary malformed-output repair still uses the original cap, including417",
+    "Second length produces invalid_output/output_truncated before transaction and zero extracted-record writes",
+    "No third model request; job attempt/lease/state identity preserved by existing ownership checks",
+    "Existing120s work deadline125s outer210s lease and60s HTTP timeout unchanged",
+    "Schema maximum6, task-state validator, grounding, source stability, transaction and cancellation paths unchanged",
+    "New tests use real Store with synthetic model metadata and verify no parse of valid truncated prefixes, commit privacy, malformed budget refusal, timeout and cancellation"
+  ],
+  "windows_ast_passed": true,
+  "tests_executed": false,
+  "linux_started": false,
+  "model_called": false,
+  "production_read": false,
+  "production_modified": false,
+  "application_qualified": false,
+  "historical_results_pooled": false,
+  "universal_context_fit_claimed": false
+}

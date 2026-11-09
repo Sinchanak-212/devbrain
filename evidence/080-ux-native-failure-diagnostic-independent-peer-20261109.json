@@ -1,0 +1,13 @@
+{
+  "status": "passed_for_diagnostic_run_pending_root_GO",
+  "context_sha256": "1133f98d4c2a8fd97daa3fa8164e90148b5542f140d5006fb0b8a0d83c4286ad",
+  "frozen_inputs_verified": 50,
+  "whole_canonical_module_discovery": 28,
+  "argv_count": 13,
+  "helper_count": 38,
+  "unchanged_helpers": 37,
+  "only_private_one_ASCII_maxfail_1_to_0": true,
+  "fresh_actual_App43687_binding_verified": true,
+  "count_not_assumed_or_formal_acceptance_inferred": true,
+  "Linux_models_auth_started": false
+}

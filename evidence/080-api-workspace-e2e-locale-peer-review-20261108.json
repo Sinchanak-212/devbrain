@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_api_workspace_e2e_locale_test_peer_review",
+  "status": "static_review_ack_runtime_not_run",
+  "reviewer": "test_suite",
+  "recorded_utc": "2026-11-08T09:46:32.6405426Z",
+  "linux_started": false,
+  "runtime_tests_executed": false,
+  "application_source_edited": false,
+  "findings": [],
+  "reviewed_file": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\devbrain\\tests\\test_api_workspace_e2e.py",
+  "reviewed_sha256": "b186ddfea25dd68b647c09a7127e503c3027b54f4630692b104c432c0c50ae1c",
+  "baseline_file": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\app080-20261108T090709Z\\bundle\\devbrain\\tests\\test_api_workspace_e2e.py",
+  "baseline_sha256": "d7c65f0d49b2cd7cb7a5b369ddee4033b24889afe996137aecfdcbc59891a319",
+  "baseline_snapshot": "app080-20261108T090709Z",
+  "checks": {
+    "fixture_prefix_unchanged": true,
+    "all_assertions_after_ready_unchanged": true,
+    "en_persisted_language_absent_asserted": true,
+    "en_load_default_asserted": true,
+    "pl_explicit_preference_asserted": true,
+    "exact_en_and_pl_readiness_matches_production": true,
+    "preference_change_before_worker_start": true,
+    "real_worker_start_and_full_e2e_retained": true,
+    "model_ack_archive_retention_reattach_assertions_retained": true,
+    "synthetic_fixture_only": true
+  },
+  "rationale": [
+    "Profile initialization persists EN defaults, so removing only the synthetic language key exercises the real missing-key EN default.",
+    "PL uses the production preference update API; both cases assert loaded language before launching the real worker.",
+    "Readiness strings exactly match AgentApp status and terminal_agent_i18n; initial 120-column pane accommodates both full messages.",
+    "No fixture lifecycle or post-readiness assertion was removed or weakened."
+  ],
+  "test_count_delta": 1,
+  "required_next_step": "Fresh source snapshot and full 26-module UX run under external supervision; this report is not runtime qualification."
+}

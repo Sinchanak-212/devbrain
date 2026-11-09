@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_extraction_task_state_validation_preparation",
+  "status": "prepared_not_run",
+  "source_baseline_run_id": "app080-20261108T183259Z",
+  "source_baseline_freeze_sha256": "3dfc2738944f1a5fa3ab3087080f716c92d72f98cef819d7761d1118384f5fcf",
+  "files_sha256": {
+    "devbrain/src/devbrain/agent.py": "f957d77fb6dfc941a057596595d14ca7a19b6f915a4113cc01933583de4c4b15",
+    "devbrain/src/devbrain/store.py": "a5651d818c7671786b8119a7d982e7a2884d4e96259def36e3b820ad8db85811",
+    "devbrain/tests/test_extraction_safety.py": "51f298a4e898e924048ffbb3110497134e293474e9ad308466cf7b2b02d7ae66"
+  },
+  "changed_app_files": [
+    "devbrain/src/devbrain/agent.py",
+    "devbrain/tests/test_extraction_safety.py",
+    "devbrain/src/devbrain/store.py"
+  ],
+  "unchanged_app_files": 195,
+  "app_file_count": 198,
+  "canonical_state_source": "devbrain.store.TASK_STATES",
+  "pure_validator": "devbrain.store.validate_task_state",
+  "model_output_validation_scope": "kind=task and metadata.state present only",
+  "repair_policy": "existing single repair before record transaction; second invalid state => invalid_output/task_state_invalid",
+  "schema_change": "description only; state vocabulary generated from canonical set; no conditional schema keywords",
+  "unknown_state_coerced": false,
+  "non_task_state_restricted": false,
+  "new_config_or_module": false,
+  "extraction_budget_work_outer_lease": [
+    120,
+    125,
+    210
+  ],
+  "budget_functions_ast_unchanged": true,
+  "agent_other_functions_ast_unchanged": true,
+  "store_other_methods_ast_unchanged": true,
+  "existing_test_functions_changed": [
+    "test_grounded_proposals_with_invalid_task_metadata_report_safe_reason_and_roll_back"
+  ],
+  "original_assertions_preserved": 43,
+  "existing_invalid_state_store_rollback_case": "valid model state; injected invalid value at real Store.remember boundary after first real write; all original assertions kept",
+  "new_test_functions": [
+    "test_invalid_task_state_uses_one_repair_before_any_record_write",
+    "test_twice_invalid_task_state_fails_one_attempt_without_record_revision_or_graph_writes",
+    "test_canonical_task_states_and_omission_keep_existing_store_policy_without_repair",
+    "test_non_task_state_metadata_remains_open_in_generation_schema_and_output_validation"
+  ],
+  "authored_new_cases": 20,
+  "new_cases_breakdown": {
+    "repair_before_write": 1,
+    "twice_invalid_types": 7,
+    "canonical_or_omitted_state": 7,
+    "non_task_open_metadata": 5
+  },
+  "expected_backend_cases": 1537,
+  "expected_ux_cases": 377,
+  "actual_collection_authoritative": true,
+  "windows_ast_files_passed": 3,
+  "tests_executed": false,
+  "linux_started": false,
+  "production_modified": false,
+  "private_data_read": false,
+  "historical_snapshot_candidate_guard_results_modified": false,
+  "created_utc": "2026-11-08T19:14:35.556194+00:00"
+}

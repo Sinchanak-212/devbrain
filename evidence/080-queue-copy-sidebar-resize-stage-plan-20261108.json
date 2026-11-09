@@ -1,0 +1,173 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_fresh_entire_six_queue_copy_sidebar_resize_stage_plan",
+  "status": "prepared_not_run_pending_actual_new_guard_and_v8",
+  "stager": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-queue-copy-sidebar-resize-604-20261108.ps1",
+  "stager_sha256": "85a8c697f814bcd2380e98be0eb5ddd787f921986373d66f3c1a6eb323408152",
+  "reviewed_parent_sha256": "a7c1b5a3a5235efd8cdc84cb7cbdaf1c10a1f8929a11b1a1f883c4cf591c3d81",
+  "source_run_id": "app080-20261108T222731Z",
+  "source_freeze_sha256": "ad77e00450537294fd26200d0713915689d82ff5a90e65f6c8fb1285fcbb4703",
+  "actual_prepare_receipt_sha256": "4cba08753a5d44463687271f5e695ccddac4d2284ca348b66630f480facde918",
+  "guard_context_sha256": null,
+  "guard_receipt_sha256": null,
+  "guard_final_report_sha256": null,
+  "guard_exec_session": null,
+  "candidate_v8_actual_context_sha256": null,
+  "required_actual_guard_cases": 604,
+  "helper_count": 38,
+  "guard_module_count": 12,
+  "expected_input_count": 15,
+  "expected_controller_argv_count": 15,
+  "timeout_seconds": 1800,
+  "cleanup_grace_seconds": 30,
+  "expected_jobs": 6,
+  "expected_kinds": {
+    "import": 3,
+    "extract": 3
+  },
+  "backup_sha256": "698591d33252a1f0e802a01fac78feb90f56ef37fc0c5f717ed26667f635ac70",
+  "same_original_backup_and_deterministic_six_selection_required": true,
+  "fresh_private_namespace_required": true,
+  "all_six_must_start_again_from_original_copy": true,
+  "prior_passed_exec_session": 55674,
+  "prior_passed_context_sha256": "7285aa2a59c5c27356954df208d03e3dbfbb7c210e35978d384b9628cd63f96b",
+  "prior_passed_report_sha256": "19338e5db7779609154bdd0633e3dcdcc99ca9b7d25f824116302e85ff4e411b",
+  "prior_passed_receipt_sha256": "612fe7ff7b542dc687d8f76a3f890fdd474631dfd5f5694a7db51c6a459f4644",
+  "prior_copy_used_only_as_immutable_specification_and_cleanup_metadata": true,
+  "historical_results_pooled": false,
+  "work_outer_lease_seconds": [
+    120,
+    125,
+    210
+  ],
+  "focused_regression_may_precede_backend1561": true,
+  "backend1561_current_pass": false,
+  "current_UI_or_UX_claimed": false,
+  "frozen_helper_logic_changed": false,
+  "physical_runtime_root_created": false,
+  "Stage_invoked": false,
+  "Linux_executed": false,
+  "private_backup_or_production_read": false,
+  "production_retry_permitted": false,
+  "application_qualified": false,
+  "launch_permitted": false,
+  "requires_root_serial_handoff": true,
+  "transform": {
+    "replacements": [
+      {
+        "old": "080-queue-copy-task-state-restaged-active-context-20261108.json",
+        "new": "080-queue-copy-length-repair-active-context-20261108.json",
+        "count": 1
+      },
+      {
+        "old": "080-queue-copy-taskstate-failed-diagnosis-20261108.json",
+        "new": "080-queue-copy-length-repair-final-20261108.json",
+        "count": 1
+      },
+      {
+        "old": "a19b268be75def4e3dfd6ae1dc1babb738ac50d18dd7cf28cd6b5d133e3f3307",
+        "new": "7285aa2a59c5c27356954df208d03e3dbfbb7c210e35978d384b9628cd63f96b",
+        "count": 1
+      },
+      {
+        "old": "46ef06c29aece8a796cc8a9984170daaab6ea6e563ce0448459be65589fbb671",
+        "new": "19338e5db7779609154bdd0633e3dcdcc99ca9b7d25f824116302e85ff4e411b",
+        "count": 1
+      },
+      {
+        "old": "$diagnosisPath",
+        "new": "$previousReportPath",
+        "count": 5
+      },
+      {
+        "old": "$diagnosisSHA",
+        "new": "$previousReportSHA",
+        "count": 4
+      },
+      {
+        "old": "$diagnosis=ReadMap $previousReportPath",
+        "new": "$previous=ReadMap $previousReportPath",
+        "count": 1
+      },
+      {
+        "old": "^guards-length-repair080-",
+        "new": "^guards-sidebar-resize080-",
+        "count": 1
+      },
+      {
+        "old": "app080-20261108T202627Z",
+        "new": "app080-20261108T222731Z",
+        "count": 1
+      },
+      {
+        "old": "1f35dae9f2b3f894bb67535a215e29cba3c1235120ff30daa387bd5450f03e14",
+        "new": "ad77e00450537294fd26200d0713915689d82ff5a90e65f6c8fb1285fcbb4703",
+        "count": 1
+      },
+      {
+        "old": "4e18e967ea94bbe43c807e86c65c9d46a2d7205241a9713a7b6406dc8a97526e",
+        "new": "4cba08753a5d44463687271f5e695ccddac4d2284ca348b66630f480facde918",
+        "count": 1
+      },
+      {
+        "old": "080-queue-copy-length-repair-active-context-20261108.json'\nRequire (-not",
+        "new": "080-queue-copy-sidebar-resize-active-context-20261108.json'\nRequire (-not",
+        "count": 1
+      },
+      {
+        "old": "'queue-copy-length-repair080-'",
+        "new": "'queue-copy-sidebar-resize080-'",
+        "count": 1
+      },
+      {
+        "old": "historical-failed-context.json",
+        "new": "prior-passed-context.json",
+        "count": 1
+      },
+      {
+        "old": "historical-failed-spec.json",
+        "new": "prior-passed-spec.json",
+        "count": 1
+      },
+      {
+        "old": "historical-failed-cleanup-admission.json",
+        "new": "prior-passed-final-report.json",
+        "count": 1
+      },
+      {
+        "old": "candidate-v7-context.json",
+        "new": "candidate-v8-context.json",
+        "count": 1
+      },
+      {
+        "old": "candidate-v7-observation.json",
+        "new": "candidate-v8-observation.json",
+        "count": 1
+      },
+      {
+        "old": "previous_failed_context",
+        "new": "previous_passed_context",
+        "count": 2
+      },
+      {
+        "old": "previous_failed_specification_sha256",
+        "new": "previous_passed_specification_sha256",
+        "count": 1
+      },
+      {
+        "old": "previous_failed_exec_session=3122",
+        "new": "previous_passed_exec_session=55674",
+        "count": 1
+      },
+      {
+        "old": "previous_failed_cleanup_admission",
+        "new": "previous_passed_final_report",
+        "count": 2
+      }
+    ],
+    "old_admission": "Require ($diagnosis.run_id-ceq$old.run_id-and$diagnosis.root_actual_exit-eq1-and$diagnosis.root_actual_exec_session-eq3122-and$diagnosis.safe_next_workload-eq$true-and$diagnosis.scope_empty_verified-eq$true-and$diagnosis.scope_quiet_seconds-ge30-and$diagnosis.outer_post_exit_seconds-ge30-and$diagnosis.functional_passed-eq$false-and$diagnosis.raw_outputs_or_contexts_modified-eq$false) 'Old failed replay cleanup admission incomplete'",
+    "new_admission": "Require ($previous.run_id-ceq$old.run_id-and$previous.status-ceq'passed_focused_queue_copy_only'-and$previous.passed-eq$true-and$previous.actual_windows_exit_code-eq0-and$previous.actual_windows_exec_session-eq55674-and$previous.safe_next_workload-eq$true-and$previous.cleanup_complete-eq$true-and$previous.scope_empty_verified-eq$true-and$previous.scope_quiet_seconds-ge30-and$previous.outer_post_exit_seconds-ge30-and$previous.all_six_replayed-eq$true-and$previous.production_modified-eq$false-and$previous.application_qualified-eq$false) 'Prior focused copy proof differs'\nRequire ($old.status-ceq'passed'-and$old.actual_windows_exit_code-eq0-and$old.actual_windows_exec_session-eq55674-and$old.cleanup_complete-eq$true-and$old.receipt_sha256-ceq'612fe7ff7b542dc687d8f76a3f890fdd474631dfd5f5694a7db51c6a459f4644') 'Prior copy context incomplete'\nVerify $old.receipt $old.receipt_sha256\n$priorRaw=ReadMap $old.receipt\nRequire ($priorRaw.run_id-ceq$old.run_id-and$priorRaw.passed-eq$true-and$priorRaw.child_returncode-eq0-and$priorRaw.supervisor_returncode-eq0-and$priorRaw.controller_exit_verified-eq$true-and$priorRaw.supervisor_exit_verified-eq$true-and$priorRaw.cleanup_complete-eq$true-and$priorRaw.forced_cleanup-eq$false-and$priorRaw.native_failure-eq$false-and$priorRaw.scope_empty_verified-eq$true-and$priorRaw.scope_cleanup_grace_seconds-ge30-and$priorRaw.cleanup_grace_seconds-ge30-and@($priorRaw.errors).Count-eq0-and$priorRaw.sleep_inhibition.restored-eq$true) 'Prior copy raw cleanup differs'\nArtifacts $priorRaw.artifact_sha256 $old.artifact_root",
+    "base_sha256": "a7c1b5a3a5235efd8cdc84cb7cbdaf1c10a1f8929a11b1a1f883c4cf591c3d81"
+  },
+  "created_utc": "2026-11-08T22:34:17.6409954Z"
+}

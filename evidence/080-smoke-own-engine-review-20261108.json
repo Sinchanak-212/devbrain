@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "scope": "upgrade_smoke_owned_engine_static_delta",
+  "status": "frozen_static_review_passed_runtime_not_run",
+  "utc": "2026-11-08T08:37:16.6436590Z",
+  "files": {
+    "test_devbrain_update080_smoke.py": "2f6619a934a30aa7421ce553f3d2a2162edf8c54f0acae93546b410e1bce5c3c",
+    "test_devbrain_update080_guards.py": "2de5e2e2391b8b6dd2ddd7d0681f22daaf24a37e15db7816eacecaaad22f372f",
+    "validate-native-account080.py": "7832a239fcaa67bb7cec63d9409e4cc06281f2bb0bdc8a10ad33e68fae8a25dd",
+    "test_devbrain_update071_smoke.py": "6ac95888f8930f8b41a1e55facae119f26c489a536a67691c5d17e8e7b34b4fa"
+  },
+  "new_pure_cases_authored": 21,
+  "windows_ast_passed": true,
+  "runtime_tests_executed": false,
+  "reviewer": "release_review",
+  "blocker_review": "no concrete blocker in own-engine delta",
+  "preliminary_plan_sha256": "e6d26ce31da5b30a0de953e027cb07a632ffb0de47d7f9a8db06f2ccc3032753",
+  "required_next": "All process fixtures and new frozen guards must pass before preliminary smoke. External Windows receipt remains required for controller exit and entire UUID scope cleanup."
+}

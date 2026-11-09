@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_extraction_budget_source_freeze_handoff",
+  "status": "reviewed_frozen_pending_new_snapshot_and_runtime_tests",
+  "created_utc": "2026-11-08T18:32:22.703805+00:00",
+  "files_sha256": {
+    "devbrain/src/devbrain/service.py": "278e92667cc74181936b7f3fd9fee5b3ff11d699833aa219a13fb010320d7913",
+    "devbrain/tests/test_extraction_safety.py": "6012b9f2f7630ab9972cd91c39334d9c297278ed49b4ecd879bc2f8a455b44f3",
+    "devbrain/src/devbrain/agent.py": "8a9d46638d70ab1141d1f3d6856ee23b2583756ba2e401241baefffe30e969fa",
+    "devbrain/tests/test_memory_stabilization.py": "adc5d4a036bc8ce4c2feda5f43b96e7aebd2ea13ba61dad886bb539784f4e253",
+    "release-tools/replay-failed-queue-080.py": "e8513a36aa5d7443db76935f4a6a01c62b547a7c92341ac5b05d9a3710a70d1b",
+    "release-tools/retry-production-queue-080.py": "f24c3cf721dbdbcc9b810f09c4e688c04a5682ea502853b084cdba593429d90e",
+    "release-tools/test_queue_replay080_guards.py": "0423ae6e131ddfa40f6adf1d7e7dd48fd7ad15536bd4d9b55563bfa5332075ab",
+    "release-tools/test_production_queue080_guards.py": "cede3a01a8d3e6f982142ceda64aff3313d3eaaf2a0bd5c2b86b1855b315ad9a"
+  },
+  "evidence": {
+    "application_preparation": {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-extraction-budget-preparation-20261108.json",
+      "sha256": "8f0f342befeac6415cd4de882144c1e191be04725e3421a6b6512e7ab9485866"
+    },
+    "application_independent_review": {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-extraction-budget-qr-peer-review-20261108.json",
+      "sha256": "329e3853f782401a57a864dd8b6178e1842a0a805efd27b3997dced3448997c1"
+    },
+    "helper_preparation": {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-queue-extraction-budget-preparation-20261108.json",
+      "sha256": "16f9316cbc38132125282a58547618f2cd13c238c99dfa4940223141d92caf8f"
+    },
+    "helper_independent_review": {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-queue-extraction-budget-peer-review-20261108.json",
+      "sha256": "f24720660d26800872753a67026c0a17c83b739401b1a406a4a09b950980d7ab"
+    }
+  },
+  "application_file_count": 198,
+  "modified_application_files": 4,
+  "new_application_files": 0,
+  "release_helper_files_modified": 4,
+  "new_authored_application_cases": 9,
+  "expected_full_backend_cases": 1517,
+  "new_authored_guard_cases": 10,
+  "expected_whole_guard_cases": 604,
+  "actual_collection_authoritative": true,
+  "default_budget_seconds": 120,
+  "default_outer_watchdog_seconds": 125,
+  "default_inference_lease_seconds": 210,
+  "embedding_processing_timeout_seconds": 30,
+  "inner_monotonic_transaction_cancellation_safety_unchanged": true,
+  "new_source_required_for_guard_agent_imports": true,
+  "new_snapshot_candidate_and_all_qualification_required": true,
+  "old_source160614_and_guard594_evidence_preserved": true,
+  "runtime_tests_started": false,
+  "linux_workload_started": false,
+  "model_calls": false,
+  "production_data_or_credentials_read": false,
+  "production_modified": false
+}

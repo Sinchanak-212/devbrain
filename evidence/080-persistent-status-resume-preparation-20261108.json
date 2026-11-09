@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_persistent_status_and_live_resume_preparation",
+  "created_utc": "2026-11-08T13:18:54.852925+00:00",
+  "status": "authored_pending_runtime",
+  "windows_ast": "6_pass",
+  "runtime_tests": "not_run",
+  "linux_processes_started": false,
+  "frozen_prior_bundles_modified": false,
+  "source_file_count_change": 0,
+  "source_baseline": "app080-20261108T115211Z",
+  "files": [
+    {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\devbrain\\src\\devbrain\\workspace.py",
+      "sha256": "210c645c5c0fae522beb4bc2e5f71570feb798dadcbf1599100c8fde6903e917",
+      "baseline_sha256": "526909953ec356469dab5043b61e1ec3b2c6889a855a1834bddcc0b3b5b6a994"
+    },
+    {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\devbrain\\src\\devbrain\\terminal_panels.py",
+      "sha256": "daf342508b38ec695445a11f5bd1c063896be79b45ab8caf72adab7d46fbe8fe",
+      "baseline_sha256": "f7c1e8663d0d946ae24fba4386e0c0073a3bbfe5a322a193f5303a6f3a55c927"
+    },
+    {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\devbrain\\src\\devbrain\\terminal_i18n.py",
+      "sha256": "bb3f7a801a1bd5ed78424d7a456f0e93246559800b8c7a9ead54f72117644c52",
+      "baseline_sha256": "d8b92ee2a4978f4bc85aaac90e9cc963469ec34afce49bd141a46bb3257457bc"
+    },
+    {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\devbrain\\tests\\test_workspace_ux080.py",
+      "sha256": "ec941b5043b757a2646d61c2339a66755a4a9767c46e36ffe3f4d90e02181668",
+      "baseline_sha256": "54867aa00808199cef72e7153ead1dd87b57611c9187fdbfe96c4a1326646436",
+      "static_cases_before": 14,
+      "static_cases_after": 31,
+      "old_assertions_unchanged": true
+    },
+    {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\devbrain\\tests\\test_terminal_ux080.py",
+      "sha256": "f7caa5ad9fd23d3af3c51fc2ee56030c6ba58459198ddc9fe0021a6d08e84661",
+      "baseline_sha256": "941455735d7bf4aee00d042fa4fd47156d2a71e6fca706a106a8599590c6923d",
+      "static_cases_before": 20,
+      "static_cases_after": 36,
+      "old_assertions_unchanged": true
+    },
+    {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\devbrain\\tests\\test_workspace.py",
+      "sha256": "28e94a147abbeca825773b40d1c762bcac56d1a25c25828551ee32041504fb88",
+      "baseline_sha256": "9297003b38e9a5992b3af5aad043c3a94b5a8e6c4dd2001aed15fa92a86e2b9f",
+      "static_cases_before": 11,
+      "static_cases_after": 11,
+      "old_assertions_unchanged": true
+    }
+  ],
+  "added_test_cases_static": 33,
+  "expected_full_ux_cases": 338,
+  "collection_authoritative": true,
+  "behavior": [
+    "Persistent two-row five-state tmux strip, 80-column EN/PL bounds and literal Unicode user text.",
+    "Cached local auth readiness only; no added provider/auth/model request.",
+    "Per-client spectator override; selected native/web control checked against run-generation pane binding.",
+    "Resume session is inspect/focus-only; no launch or processing enable, including ended-session races.",
+    "Initial and final cached process identity plus project/worktree/client/slot/purpose/lifecycle are checked.",
+    "Strict purpose=coding adoption excludes operational login; only three existing fake metadata rows completed.",
+    "140x42 minimum counts both status rows; no key or ownership guard changes."
+  ],
+  "required_next": [
+    "Independent static peer review of these exact hashes.",
+    "Fresh isolated source installation and full affected UX regressions including actual tmux and synthetic native CLI.",
+    "Final real UI capture before final backend/8h qualification."
+  ]
+}

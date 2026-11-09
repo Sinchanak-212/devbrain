@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "scope": "windows_stdlib_AST_only_terminal_timing_controller_peer",
+  "status": "static_review_passed_not_runtime_qualification",
+  "source": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\terminal-input-timing-probe-v2-20261109.py",
+  "source_sha256": "8ddea268fa6da47fadb0fb7607b3ebe260777a3bae69817093320acda325c3d8",
+  "checks": [
+    {
+      "name": "unchanged_ownership_or_framing_primitive_load",
+      "passed": true
+    },
+    {
+      "name": "unchanged_ownership_or_framing_primitive_require",
+      "passed": true
+    },
+    {
+      "name": "unchanged_ownership_or_framing_primitive_atomic",
+      "passed": true
+    },
+    {
+      "name": "unchanged_ownership_or_framing_primitive_private_json",
+      "passed": true
+    },
+    {
+      "name": "unchanged_ownership_or_framing_primitive_dimensions",
+      "passed": true
+    },
+    {
+      "name": "unchanged_ownership_or_framing_primitive_ControlClassifier",
+      "passed": true
+    },
+    {
+      "name": "unchanged_ownership_or_framing_primitive_verified_state",
+      "passed": true
+    },
+    {
+      "name": "unchanged_ownership_or_framing_primitive_attach",
+      "passed": true
+    },
+    {
+      "name": "snapshot_is_not_mutated_by_later_control_reply",
+      "passed": true
+    },
+    {
+      "name": "snapshot_events_are_copied",
+      "passed": true
+    },
+    {
+      "name": "no_attempt_is_not_actual_Channel",
+      "passed": true
+    },
+    {
+      "name": "failed_subscribe_is_not_actual_Channel",
+      "passed": true
+    },
+    {
+      "name": "successful_subscribe_is_actual_Channel",
+      "passed": true
+    },
+    {
+      "name": "attached_before_query_is_ordered",
+      "passed": true
+    },
+    {
+      "name": "attached_after_query_is_not_ordered",
+      "passed": true
+    },
+    {
+      "name": "delayed_release_and_client_after_query_is_ordered",
+      "passed": true
+    },
+    {
+      "name": "delayed_prequery_client_is_not_ordered",
+      "passed": true
+    },
+    {
+      "name": "delayed_early_subscribe_is_not_ordered",
+      "passed": true
+    },
+    {
+      "name": "absent_inner_client_is_not_ordered",
+      "passed": true
+    },
+    {
+      "name": "late_inner_client_is_uninterpretable_data",
+      "passed": true
+    },
+    {
+      "name": "absent_client_short_circuits_without_fabricated_identity",
+      "passed": true
+    },
+    {
+      "name": "no_inner_manual_resize_or_size_override",
+      "passed": true
+    },
+    {
+      "name": "effective_inherited_inner_size_is_queried",
+      "passed": true
+    },
+    {
+      "name": "fixed_five_query_burst_unchanged",
+      "passed": true
+    }
+  ],
+  "check_count": 24,
+  "probe_module_body_executed": false,
+  "child_bridge_controller_functions_executed": false,
+  "Linux_started": false,
+  "models_or_auth_requested": false,
+  "App_files_changed": false,
+  "eight_hour_started": false,
+  "manual_review": [
+    "Actual WT outer is independently bound and verified before synthetic native _spawn",
+    "Bootstrap waits native-created before loading App runtime; shared subscribe-waiting barrier normalizes both arms",
+    "Attached inner PID/birth/scope/pidfd is observed before query-go; delayed subscribe released at query+500ms",
+    "Release and first-positive-attachment are observation intervals; actual jitter and invalid ordering stay data",
+    "Late/absent channel never claims actual _Channel or application fault",
+    "Original known scope/parent/native runtime checks, owned pidfds and quiet30 cleanup retained",
+    "Canonical38 and App are not edited; actual execution still needs root reviewed staged-context GO"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "run_id": "restart080-20261109T101037Z",
+  "freeze_sha256": "21f234f45cbcfe4ddb7f6eebc23f5a7000c42bd6f8168218481602fde826a191",
+  "application_started": false,
+  "root": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\restart080-20261109T101037Z",
+  "status": "metadata_pass_pending_root_review",
+  "eight_hours_started": false,
+  "actual_windows_exit_code": 0
+}

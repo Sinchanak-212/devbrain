@@ -1,0 +1,112 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.2.0, pluggy-1.7.0 -- /home/piotr/.cache/devbrain-validation-20261107/.venv/bin/python
+cachedir: .pytest_cache/shard-2
+rootdir: /home/piotr/.cache/devbrain-validation-20261107
+configfile: pyproject.toml
+plugins: asyncio-1.4.1.post1, platformdirs-4.14.5, anyio-4.16.0
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=function, asyncio_default_test_loop_scope=function
+collecting ... collected 255 items
+
+tests/test_knowledge.py::test_lexical_search_is_scoped_current_and_fts_safe PASSED [  0%]
+tests/test_knowledge.py::test_graph_walk_follows_four_hop_evidence_chain PASSED [  0%]
+tests/test_knowledge.py::test_agent_uses_tools_then_returns_validated_citation PASSED [  1%]
+tests/test_knowledge.py::test_agent_rejects_unread_or_malformed_citations[citation1] PASSED [  1%]
+tests/test_knowledge.py::test_agent_rejects_invented_quote_and_plain_prose PASSED [  1%]
+tests/test_knowledge.py::test_final_protocol_repairs_once_with_inspected_source_schema[record_id] PASSED [  2%]
+tests/test_knowledge.py::test_final_protocol_repair_still_rejects_invalid_evidence[source_id] PASSED [  2%]
+tests/test_knowledge.py::test_final_repair_does_not_import_foreign_project_source PASSED [  3%]
+tests/test_knowledge.py::test_final_repair_never_accepts_code_changed_during_generation[False] PASSED [  3%]
+tests/test_knowledge.py::test_current_read_clears_earlier_historical_intent_before_final_freshness_check PASSED [  3%]
+tests/test_knowledge.py::test_final_repair_compacts_previous_state_within_total_context_budget PASSED [  4%]
+tests/test_knowledge.py::test_final_repair_outage_preserves_original_partial_result PASSED [  4%]
+tests/test_knowledge.py::test_valid_final_still_uses_one_model_call PASSED [  5%]
+tests/test_knowledge.py::test_typed_answer_retains_public_string_and_uses_one_call[True] PASSED [  5%]
+tests/test_knowledge.py::test_typed_nested_unknown_repairs_contract_and_citations_together[True] PASSED [  5%]
+tests/test_knowledge.py::test_typed_missing_required_fact_is_not_filled_from_contract PASSED [  6%]
+tests/test_knowledge.py::test_typed_contract_repair_keeps_current_source_freshness_guard PASSED [  6%]
+tests/test_knowledge.py::test_typed_answer_json_is_never_silently_truncated[False] PASSED [  7%]
+tests/test_knowledge.py::test_invalid_answer_schema_is_rejected_before_inference PASSED [  7%]
+tests/test_knowledge.py::test_typed_root_values_are_returned_as_encoded_public_strings[schema1-A literal string] PASSED [  7%]
+tests/test_knowledge.py::test_typed_root_values_are_returned_as_encoded_public_strings[schema3-"quoted JSON string"] PASSED [  8%]
+tests/test_knowledge.py::test_typed_root_values_are_returned_as_encoded_public_strings[schema5-1] PASSED [  8%]
+tests/test_knowledge.py::test_typed_root_values_are_returned_as_encoded_public_strings[schema7-2] PASSED [  9%]
+tests/test_knowledge.py::test_typed_root_values_are_returned_as_encoded_public_strings[schema9-False] PASSED [  9%]
+tests/test_knowledge.py::test_model_outage_returns_unavailable_with_retrieved_evidence PASSED [  9%]
+tests/test_knowledge.py::test_project_scope_blocks_source_read_from_other_project PASSED [ 10%]
+tests/test_knowledge.py::test_extraction_requires_quote_and_keeps_records_proposed PASSED [ 10%]
+tests/test_knowledge.py::test_ollama_http_protocol_and_invalid_vectors PASSED [ 10%]
+tests/test_knowledge.py::test_records_pagination_and_state_filters_include_last_plan_step PASSED [ 11%]
+tests/test_knowledge.py::test_graph_reports_node_budget_truncation PASSED [ 11%]
+tests/test_knowledge.py::test_model_digest_change_reembeds_but_old_sources_are_skipped PASSED [ 12%]
+tests/test_knowledge.py::test_missing_current_code_is_not_reported_complete_but_history_is_readable PASSED [ 12%]
+tests/test_knowledge.py::test_task_metadata_is_bounded_with_explicit_totals PASSED [ 12%]
+tests/test_knowledge.py::test_native_ann_source_replacement_and_project_isolation PASSED [ 13%]
+tests/test_knowledge.py::test_embedding_cancels_when_project_is_forgotten_during_inference PASSED [ 13%]
+tests/test_knowledge.py::test_reported_test_flags_and_done_progress_are_never_fresh_machine_proof PASSED [ 14%]
+tests/test_knowledge.py::test_workflow_projects_managed_metadata_with_explicit_bounds PASSED [ 14%]
+tests/test_knowledge.py::test_current_worktree_filters_native_fts_ann_graph_and_direct_source_reads_before_limits PASSED [ 14%]
+tests/test_memory_adversarial.py::test_valid_checksum_fast_forward_cannot_rewrite_or_omit_history[omitted_plan] PASSED [ 15%]
+tests/test_memory_adversarial.py::test_valid_checksum_fast_forward_cannot_rewrite_or_omit_history[reused_source] PASSED [ 15%]
+tests/test_memory_adversarial.py::test_valid_checksum_invalid_graph_references_reject_before_import[missing_endpoint] PASSED [ 16%]
+tests/test_memory_adversarial.py::test_valid_checksum_task_metadata_cannot_poison_restored_workflow[invalid_state] PASSED [ 16%]
+tests/test_memory_adversarial.py::test_repeat_snapshot_cannot_silently_ignore_a_different_target_root PASSED [ 16%]
+tests/test_memory_adversarial.py::test_fast_forward_removes_obsolete_dependency_and_source_edges PASSED [ 17%]
+tests/test_memory_adversarial.py::test_automatic_publication_stops_at_external_valid_manifest PASSED [ 17%]
+tests/test_memory_adversarial.py::test_published_snapshot_without_receipt_requires_explicit_safe_adoption PASSED [ 18%]
+tests/test_memory_adversarial.py::test_local_active_plan_focus_change_blocks_remote_focus_overwrite PASSED [ 18%]
+tests/test_memory_bindings.py::test_managed_snapshot_writes_do_not_change_code_inputs PASSED [ 18%]
+tests/test_memory_bindings.py::test_reserved_snapshot_is_not_ingested_or_refreshed PASSED [ 19%]
+tests/test_memory_bindings.py::test_bindings_reject_unregistered_targets_and_leave_other_scopes_historical PASSED [ 19%]
+tests/test_memory_bindings.py::test_imported_file_is_historical_until_local_index[True] PASSED [ 20%]
+tests/test_memory_bindings.py::test_imported_check_is_historical_even_with_matching_code[True] PASSED [ 20%]
+tests/test_memory_cli_service.py::test_memory_help_is_noninitializing[args0] PASSED [ 20%]
+tests/test_memory_cli_service.py::test_memory_help_is_noninitializing[args2] PASSED [ 21%]
+tests/test_memory_cli_service.py::test_memory_help_is_noninitializing[args4] PASSED [ 21%]
+tests/test_memory_cli_service.py::test_memory_help_is_noninitializing[args6] PASSED [ 21%]
+tests/test_memory_cli_service.py::test_memory_status_requires_explicit_existing_configuration PASSED [ 22%]
+tests/test_memory_cli_service.py::test_cli_dry_run_uses_readonly_existing_service PASSED [ 22%]
+tests/test_memory_cli_service.py::test_cli_memory_operations_forward_current_actor_without_stale_environment_packet[args1-POST-/memory/preview-fields1] PASSED [ 23%]
+tests/test_memory_cli_service.py::test_invalid_auto_options_do_not_initialize[args0] PASSED [ 23%]
+tests/test_memory_cli_service.py::test_invalid_auto_options_do_not_initialize[args2] PASSED [ 23%]
+tests/test_memory_cli_service.py::test_all_memory_endpoints_require_authentication[POST-/memory/snapshot-body1] PASSED [ 24%]
+tests/test_memory_cli_service.py::test_all_memory_endpoints_require_authentication[POST-/memory/import-body3] PASSED [ 24%]
+tests/test_memory_cli_service.py::test_all_memory_endpoints_require_authentication[GET-/memory/status?project=transport-None] PASSED [ 25%]
+tests/test_memory_cli_service.py::test_invalid_memory_packages_return_structured_errors_without_writes PASSED [ 25%]
+tests/test_memory_cli_service.py::test_snapshot_and_settings_require_current_actor_ack_and_worktree PASSED [ 25%]
+tests/test_memory_cli_service.py::test_http_import_is_atomic_project_scoped_and_dry_run_noop PASSED [ 26%]
+tests/test_memory_cli_service.py::test_memory_settings_reject_coerced_or_invalid_values[body0] PASSED [ 26%]
+tests/test_memory_cli_service.py::test_memory_settings_reject_coerced_or_invalid_values[body2] PASSED [ 27%]
+tests/test_memory_cli_service.py::test_memory_evaluation_cli_preserves_exit_contract[failed-1] PASSED [ 27%]
+tests/test_memory_evaluation.py::test_positive_extraction_then_portable_recall_preserves_user_data_and_uses_separate_namespaces PASSED [ 27%]
+tests/test_memory_evaluation.py::test_valid_empty_or_all_rejected_jobs_fail_a_positive_extraction_fixture[rejected] PASSED [ 28%]
+tests/test_memory_evaluation.py::test_runtime_unavailable_after_extraction_is_failed_not_not_run PASSED [ 28%]
+tests/test_memory_evaluation.py::test_missing_models_are_not_run_without_creating_fixture_databases PASSED [ 29%]
+tests/test_memory_migration.py::test_interrupted_schema_two_upgrade_keeps_original_rows PASSED [ 29%]
+tests/test_memory_session_resume.py::test_imported_scoped_decision_and_checkpoint_are_in_fresh_native_resume PASSED [ 29%]
+tests/test_memory_stabilization.py::test_answer_diagnostics_normalize_untrusted_runtime_counters PASSED [ 30%]
+tests/test_memory_stabilization.py::test_answer_repair_catalog_contains_only_scoped_inspected_sources PASSED [ 30%]
+tests/test_memory_stabilization.py::test_extraction_structured_generation_repairs_once_and_preserves_job_lease PASSED [ 30%]
+tests/test_memory_stabilization.py::test_twice_invalid_extraction_raises_without_any_memory_write[{"records": {"kind": "decision"}}] PASSED [ 31%]
+tests/test_memory_stabilization.py::test_cancelled_extraction_has_no_late_commit_and_keeps_safe_diagnostics[repair] PASSED [ 31%]
+tests/test_memory_stabilization.py::test_extraction_skips_nonliteral_evidence_without_repairing_facts PASSED [ 32%]
+tests/test_memory_stabilization.py::test_extraction_storage_failure_rolls_back_the_entire_batch[second_record] PASSED [ 32%]
+tests/test_memory_stabilization.py::test_repeated_valid_extraction_is_idempotent PASSED [ 32%]
+tests/test_memory_tui.py::test_detecting_snapshot_only_offers_import_and_shows_status object address  : 0x7c5dc31836a0
+object refcount : 3
+object type     : 0xa32960
+object type name: ValueError
+object repr     : ValueError('I/O operation on closed file.')
+lost sys.stderr
+
+
+=============================== warnings summary ===============================
+.venv/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /home/piotr/.cache/devbrain-validation-20261107/.venv/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /mnt/c/Users/piotr/OneDrive/Dokumenty/ChatGPT/devbrain/evidence/devbrain-backend-baseline-shard-2-20261107.xml -
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! KeyboardInterrupt !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+/usr/lib/python3.12/asyncio/runners.py:123: KeyboardInterrupt
+(to show a full traceback on KeyboardInterrupt use --full-trace)
+================== 84 passed, 1 warning in 405.20s (0:06:45) ===================

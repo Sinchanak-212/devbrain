@@ -1,0 +1,51 @@
+--- a/src/devbrain/native_worker.py
++++ b/src/devbrain/native_worker.py
+@@ -57,9 +57,9 @@
+             or not all(isinstance(k, str) and isinstance(v, str) for k, v in environment.items())):
+         raise SystemExit("Invalid native exec specification")
+     environment = dict(environment)
+-    for key in ("TMUX", "TMUX_PANE"):
+-        # These identify this actual inner native pane, never the terminal
+-        # workspace which happened to start the broker or prepare the launch.
++    for key in ("TERM", "TMUX", "TMUX_PANE"):
++        # Capabilities and identity belong to this actual inner native pane,
++        # never the terminal which happened to prepare the broker launch.
+         if key in os.environ:
+             environment[key] = os.environ[key]
+         else:
+--- a/tests/test_terminal_bridge.py
++++ b/tests/test_terminal_bridge.py
+@@ -263,14 +263,19 @@
+     assert calls[-1] == ("set-option", "-p", "-t", "%7", "@devbrain_control", "readonly")
+ 
+ 
+-def test_native_worker_rebinds_actual_inner_tmux_identity(tmp_path, monkeypatch):
++@pytest.mark.parametrize("inner_term", ["tmux-256color", None])
++def test_native_worker_rebinds_actual_inner_tmux_identity(tmp_path, monkeypatch, inner_term):
+     spec = tmp_path / "fixture.launch.json"
+     spec.write_text(json.dumps({"run_id": "run-fixture", "generation": 1, "cwd": str(tmp_path),
+         "command": ["/fixture/native"], "environment": {"TMUX": "/outer/socket,1,0", "TMUX_PANE": "%8",
+-                                                       "CODEX_HOME": "/fixture/config"}}))
++                                                       "TERM": "xterm-256color", "CODEX_HOME": "/fixture/config"}}))
+     spec.chmod(0o600)
+     monkeypatch.setenv("TMUX", "/inner/socket,2,0")
+     monkeypatch.setenv("TMUX_PANE", "%3")
++    if inner_term is None:
++        monkeypatch.delenv("TERM", raising=False)
++    else:
++        monkeypatch.setenv("TERM", inner_term)
+     monkeypatch.setattr("sys.argv", ["worker", "--spec", str(spec)])
+     monkeypatch.setattr(native_worker.os, "chdir", lambda path: None)
+     seen = []
+@@ -280,7 +285,10 @@
+     monkeypatch.setattr(native_worker.os, "execve", executed)
+     with pytest.raises(SystemExit):
+         native_worker.main()
+-    assert seen[0] == {"TMUX": "/inner/socket,2,0", "TMUX_PANE": "%3", "CODEX_HOME": "/fixture/config"}
++    expected = {"TMUX": "/inner/socket,2,0", "TMUX_PANE": "%3", "CODEX_HOME": "/fixture/config"}
++    if inner_term is not None:
++        expected["TERM"] = inner_term
++    assert seen[0] == expected
+     assert not spec.exists()
+ 
+ 

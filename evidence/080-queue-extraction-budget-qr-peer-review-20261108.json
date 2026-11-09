@@ -1,0 +1,59 @@
+{
+  "prior_RR_peer_sha256": "f24720660d26800872753a67026c0a17c83b739401b1a406a4a09b950980d7ab",
+  "prior_RR_peer": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-queue-extraction-budget-peer-review-20261108.json",
+  "new_prepared_source_venv_required": true,
+  "required_new_app_functions": [
+    "extraction_work_budget",
+    "extraction_outer_timeout",
+    "inference_lease_seconds"
+  ],
+  "linux_workload_started": false,
+  "actual_collection_required": true,
+  "existing38_helpers_compared": 38,
+  "release_qualified": false,
+  "production_accessed": false,
+  "preparation_sha256": "16f9316cbc38132125282a58547618f2cd13c238c99dfa4940223141d92caf8f",
+  "runtime_pass_claim": false,
+  "work_budget_seconds": 120,
+  "old160614_venv_not_compatible_with_new_guard_tests": true,
+  "outer_watchdog_seconds": 125,
+  "controller_reverse_transforms": {
+    "replay-failed-queue-080.py": {
+      "reversed_sha256": "79848f52c4cb9acdb0276b5821a1ebbc85c7ae5d5b72d5c4ebb6813ac866eaaf",
+      "reverse_transform_byte_exact": true
+    },
+    "retry-production-queue-080.py": {
+      "reversed_sha256": "973b47040012a099480c9c9e2a08772cd065e1daafc375b7df9c04384351180d",
+      "reverse_transform_byte_exact": true
+    }
+  },
+  "frozen594_modified": false,
+  "scope": "devbrain_queue_extraction_budget_independent_static_peer",
+  "planned_guard_cases": 604,
+  "reviewed_file_sha256": {
+    "test_production_queue080_guards.py": "cede3a01a8d3e6f982142ceda64aff3313d3eaaf2a0bd5c2b86b1855b315ad9a",
+    "replay-failed-queue-080.py": "e8513a36aa5d7443db76935f4a6a01c62b547a7c92341ac5b05d9a3710a70d1b",
+    "retry-production-queue-080.py": "f24c3cf721dbdbcc9b810f09c4e688c04a5682ea502853b084cdba593429d90e",
+    "test_queue_replay080_guards.py": "0423ae6e131ddfa40f6adf1d7e7dd48fd7ad15536bd4d9b55563bfa5332075ab"
+  },
+  "changed_owned_helpers": 4,
+  "status": "static_ack_pending_new_source_and_actual604_qualification",
+  "verdict": "PASS",
+  "unchanged_helpers": 34,
+  "findings": [],
+  "created_utc": "2026-11-08T18:38:56.3732917Z",
+  "preparation": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-queue-extraction-budget-preparation-20261108.json",
+  "app_or_helpers_edited_by_reviewer": false,
+  "new_cases_authored": 10,
+  "schema_version": 1,
+  "reviewer_Python_CLI_or_tests_executed": false,
+  "verified_static_chains": [
+    "Both helper claims use shared inference lease inside the original exact-selection transaction; original state/attempt/retry/worker/CAS guards are byte-identical beyond budget substitution.",
+    "Copy and production extraction await real KnowledgeAgent.extract under shared outer watchdog; finish/readback/stop-on-failed job and owned-engine cleanup are unchanged.",
+    "Six lease cases vary the actual shared work constant and assert floor/headroom, exact attempts/retry bookkeeping and no unrelated mutation.",
+    "Four copy/production inner/outer cases execute actual extraction and controller async paths with synthetic model/Store IO, assert inference settles before finish, one claim/finish, no following job, no late response/diagnostic/write and closed model.",
+    "Inner timeout and outer cancellation are separately asserted; former records timeout, latter cancelled, with written_records0.",
+    "Old assertions remain in place; eager real-agent import only precedes old Store-only shims. AttemptJournal, admission/refusal, unknown-outcome rule, privacy, registries, supervisor and power code are unchanged."
+  ],
+  "lease_seconds": 210
+}

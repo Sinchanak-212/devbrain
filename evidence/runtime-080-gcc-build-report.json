@@ -1,0 +1,269 @@
+{
+  "status": "stopped_on_native_fatal",
+  "boot_id": "19058685-ffde-45e1-a471-b0912f9b4bd8",
+  "stages": [
+    {
+      "label": "apt-signature-0",
+      "argv": [
+        "gpgv",
+        "--keyring",
+        "/usr/share/keyrings/ubuntu-archive-keyring.gpg",
+        "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_noble-backports_InRelease"
+      ],
+      "cwd": "/home/piotr/.cache/devbrain-runtime-080/gcc31318",
+      "log": "/home/piotr/.cache/devbrain-runtime-080/gcc31318/logs/apt-signature-0.log",
+      "scoped_memory_limit": false,
+      "returncode": 0,
+      "seconds": 0.10280239499979871
+    },
+    {
+      "label": "apt-signature-1",
+      "argv": [
+        "gpgv",
+        "--keyring",
+        "/usr/share/keyrings/ubuntu-archive-keyring.gpg",
+        "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_noble-updates_InRelease"
+      ],
+      "cwd": "/home/piotr/.cache/devbrain-runtime-080/gcc31318",
+      "log": "/home/piotr/.cache/devbrain-runtime-080/gcc31318/logs/apt-signature-1.log",
+      "scoped_memory_limit": false,
+      "returncode": 0,
+      "seconds": 0.10231633400007922
+    },
+    {
+      "label": "apt-signature-2",
+      "argv": [
+        "gpgv",
+        "--keyring",
+        "/usr/share/keyrings/ubuntu-archive-keyring.gpg",
+        "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_noble-security_InRelease"
+      ],
+      "cwd": "/home/piotr/.cache/devbrain-runtime-080/gcc31318",
+      "log": "/home/piotr/.cache/devbrain-runtime-080/gcc31318/logs/apt-signature-2.log",
+      "scoped_memory_limit": false,
+      "returncode": 0,
+      "seconds": 0.10182196799996746
+    },
+    {
+      "label": "apt-signature-3",
+      "argv": [
+        "gpgv",
+        "--keyring",
+        "/usr/share/keyrings/ubuntu-archive-keyring.gpg",
+        "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_noble_InRelease"
+      ],
+      "cwd": "/home/piotr/.cache/devbrain-runtime-080/gcc31318",
+      "log": "/home/piotr/.cache/devbrain-runtime-080/gcc31318/logs/apt-signature-3.log",
+      "scoped_memory_limit": false,
+      "returncode": 0,
+      "seconds": 0.10175070699960997
+    },
+    {
+      "label": "headers-download",
+      "argv": [
+        "apt-get",
+        "download",
+        "libffi-dev",
+        "libbz2-dev",
+        "liblzma-dev",
+        "libsqlite3-dev",
+        "libreadline-dev",
+        "libncurses-dev",
+        "uuid-dev"
+      ],
+      "cwd": "/home/piotr/.cache/devbrain-runtime-080/gcc31318/deps",
+      "log": "/home/piotr/.cache/devbrain-runtime-080/gcc31318/logs/headers-download.log",
+      "scoped_memory_limit": false,
+      "returncode": 0,
+      "seconds": 0.5098978899995927
+    },
+    {
+      "label": "headers-extract-0",
+      "argv": [
+        "dpkg-deb",
+        "-x",
+        "/home/piotr/.cache/devbrain-runtime-080/gcc31318/deps/uuid-dev_2.39.3-9ubuntu6.6_amd64.deb",
+        "/home/piotr/.cache/devbrain-runtime-080/gcc31318/deps/root"
+      ],
+      "cwd": "/home/piotr/.cache/devbrain-runtime-080/gcc31318",
+      "log": "/home/piotr/.cache/devbrain-runtime-080/gcc31318/logs/headers-extract-0.log",
+      "scoped_memory_limit": false,
+      "returncode": 0,
+      "seconds": 0.10280202200010535
+    },
+    {
+      "label": "headers-extract-1",
+      "argv": [
+        "dpkg-deb",
+        "-x",
+        "/home/piotr/.cache/devbrain-runtime-080/gcc31318/deps/libreadline-dev_8.2-4build1_amd64.deb",
+        "/home/piotr/.cache/devbrain-runtime-080/gcc31318/deps/root"
+      ],
+      "cwd": "/home/piotr/.cache/devbrain-runtime-080/gcc31318",
+      "log": "/home/piotr/.cache/devbrain-runtime-080/gcc31318/logs/headers-extract-1.log",
+      "scoped_memory_limit": false,
+      "returncode": 0,
+      "seconds": 0.102967138999702
+    },
+    {
+      "label": "headers-extract-2",
+      "argv": [
+        "dpkg-deb",
+        "-x",
+        "/home/piotr/.cache/devbrain-runtime-080/gcc31318/deps/libncurses-dev_6.4+20240113-1ubuntu2.2_amd64.deb",
+        "/home/piotr/.cache/devbrain-runtime-080/gcc31318/deps/root"
+      ],
+      "cwd": "/home/piotr/.cache/devbrain-runtime-080/gcc31318",
+      "log": "/home/piotr/.cache/devbrain-runtime-080/gcc31318/logs/headers-extract-2.log",
+      "scoped_memory_limit": false,
+      "returncode": 0,
+      "seconds": 0.10280629799990493
+    },
+    {
+      "label": "headers-extract-3",
+      "argv": [
+        "dpkg-deb",
+        "-x",
+        "/home/piotr/.cache/devbrain-runtime-080/gcc31318/deps/libbz2-dev_1.0.8-5.1ubuntu0.1_amd64.deb",
+        "/home/piotr/.cache/devbrain-runtime-080/gcc31318/deps/root"
+      ],
+      "cwd": "/home/piotr/.cache/devbrain-runtime-080/gcc31318",
+      "log": "/home/piotr/.cache/devbrain-runtime-080/gcc31318/logs/headers-extract-3.log",
+      "scoped_memory_limit": false,
+      "returncode": 0,
+      "seconds": 0.10329555899988918
+    },
+    {
+      "label": "headers-extract-4",
+      "argv": [
+        "dpkg-deb",
+        "-x",
+        "/home/piotr/.cache/devbrain-runtime-080/gcc31318/deps/libffi-dev_3.4.6-1build1_amd64.deb",
+        "/home/piotr/.cache/devbrain-runtime-080/gcc31318/deps/root"
+      ],
+      "cwd": "/home/piotr/.cache/devbrain-runtime-080/gcc31318",
+      "log": "/home/piotr/.cache/devbrain-runtime-080/gcc31318/logs/headers-extract-4.log",
+      "scoped_memory_limit": false,
+      "returncode": 0,
+      "seconds": 0.10287268599995514
+    },
+    {
+      "label": "headers-extract-5",
+      "argv": [
+        "dpkg-deb",
+        "-x",
+        "/home/piotr/.cache/devbrain-runtime-080/gcc31318/deps/libsqlite3-dev_3.45.1-1ubuntu2.9_amd64.deb",
+        "/home/piotr/.cache/devbrain-runtime-080/gcc31318/deps/root"
+      ],
+      "cwd": "/home/piotr/.cache/devbrain-runtime-080/gcc31318",
+      "log": "/home/piotr/.cache/devbrain-runtime-080/gcc31318/logs/headers-extract-5.log",
+      "scoped_memory_limit": false,
+      "returncode": 0,
+      "seconds": 0.10249516300018513
+    },
+    {
+      "label": "headers-extract-6",
+      "argv": [
+        "dpkg-deb",
+        "-x",
+        "/home/piotr/.cache/devbrain-runtime-080/gcc31318/deps/liblzma-dev_5.6.1+really5.4.5-1ubuntu0.4_amd64.deb",
+        "/home/piotr/.cache/devbrain-runtime-080/gcc31318/deps/root"
+      ],
+      "cwd": "/home/piotr/.cache/devbrain-runtime-080/gcc31318",
+      "log": "/home/piotr/.cache/devbrain-runtime-080/gcc31318/logs/headers-extract-6.log",
+      "scoped_memory_limit": false,
+      "returncode": 0,
+      "seconds": 0.1021375899999839
+    },
+    {
+      "label": "download-Python-3.13.18.tar.xz",
+      "argv": [
+        "curl",
+        "--fail",
+        "--location",
+        "--proto",
+        "=https",
+        "--max-time",
+        "120",
+        "--output",
+        "/home/piotr/.cache/devbrain-runtime-080/gcc31318/downloads/Python-3.13.18.tar.xz",
+        "https://www.python.org/ftp/python/3.13.18/Python-3.13.18.tar.xz"
+      ],
+      "cwd": "/home/piotr/.cache/devbrain-runtime-080/gcc31318",
+      "log": "/home/piotr/.cache/devbrain-runtime-080/gcc31318/logs/download-Python-3.13.18.tar.xz.log",
+      "scoped_memory_limit": false,
+      "returncode": 0,
+      "seconds": 0.40826342900027157
+    },
+    {
+      "label": "download-openssl-3.5.9.tar.gz",
+      "argv": [
+        "curl",
+        "--fail",
+        "--location",
+        "--proto",
+        "=https",
+        "--max-time",
+        "120",
+        "--output",
+        "/home/piotr/.cache/devbrain-runtime-080/gcc31318/downloads/openssl-3.5.9.tar.gz",
+        "https://github.com/openssl/openssl/releases/download/openssl-3.5.9/openssl-3.5.9.tar.gz"
+      ],
+      "cwd": "/home/piotr/.cache/devbrain-runtime-080/gcc31318",
+      "log": "/home/piotr/.cache/devbrain-runtime-080/gcc31318/logs/download-openssl-3.5.9.tar.gz.log",
+      "scoped_memory_limit": false,
+      "returncode": 0,
+      "seconds": 1.0277172030000656
+    },
+    {
+      "label": "openssl-configure",
+      "argv": [
+        "./Configure",
+        "linux-x86_64",
+        "shared",
+        "no-tests",
+        "--prefix=/home/piotr/.cache/devbrain-runtime-080/gcc31318/openssl",
+        "--openssldir=/home/piotr/.cache/devbrain-runtime-080/gcc31318/openssl/ssl",
+        "--libdir=lib",
+        "-O2",
+        "-g"
+      ],
+      "cwd": "/home/piotr/.cache/devbrain-runtime-080/gcc31318/openssl-3.5.9",
+      "log": "/home/piotr/.cache/devbrain-runtime-080/gcc31318/logs/openssl-configure.log",
+      "scoped_memory_limit": true,
+      "control_group": "/user.slice/user-1000.slice/user@1000.service/app.slice/devbrain-gcc080-14-1794051624270968647.scope",
+      "memory_max": "2147483648",
+      "memory_peak": 65130496,
+      "returncode": -11,
+      "seconds": 1.6454416249998758
+    }
+  ],
+  "sources": {
+    "Python-3.13.18.tar.xz": {
+      "url": "https://www.python.org/ftp/python/3.13.18/Python-3.13.18.tar.xz",
+      "sha256": "abb0102e6d4ae027509bcb82327d9dd85515b44a3ba8ad538cfc5e9847029f68"
+    },
+    "openssl-3.5.9.tar.gz": {
+      "url": "https://github.com/openssl/openssl/releases/download/openssl-3.5.9/openssl-3.5.9.tar.gz",
+      "sha256": "603f5602e2eef00d77fbd429d34dcd5822bb301757a1bc9cdb24c670f1eb859a"
+    }
+  },
+  "time_utc": "2026-11-07T11:40:19Z",
+  "memory_limit_bytes": 2147483648,
+  "make_jobs": 2,
+  "bytecode_install_jobs": 1,
+  "global_changes": false,
+  "dependency_debs": {
+    "uuid-dev_2.39.3-9ubuntu6.6_amd64.deb": "266115cc3bcecef70b9f75c0cf8ca4daccd40958bf7872f8ccebec50502d2a13",
+    "libreadline-dev_8.2-4build1_amd64.deb": "7298fb8ba3b779cead0c908c8c7a572ff6e271239527d2de5e0f59786f136613",
+    "libncurses-dev_6.4+20240113-1ubuntu2.2_amd64.deb": "2c32ce182e90e6636ddb037ba2810cace9e1f076b13fac89034277d8ba943c38",
+    "libbz2-dev_1.0.8-5.1ubuntu0.1_amd64.deb": "f055bb5cb47117020a76dc40fcdb8164f4fa529df2b7f485faacc0b0f5083614",
+    "libffi-dev_3.4.6-1build1_amd64.deb": "7009959b8a3b77206325026917fb45150ac81bf6139468abc0841d5a29c8619d",
+    "libsqlite3-dev_3.45.1-1ubuntu2.9_amd64.deb": "f5d920c94cd4729145547eeefb07e6269f78dc68f9a83e1a087baba47dd33429",
+    "liblzma-dev_5.6.1+really5.4.5-1ubuntu0.4_amd64.deb": "a6af1ee2bd2d5c532465734f474d03d8e08977c881f10898eda0c88b70ff2e5d"
+  },
+  "fatal_artifacts": [
+    "/mnt/c/Users/piotr/AppData/Local/Temp/wsl-crashes/wsl-crash-1794051625-107923-_usr_bin_perl-11.dmp"
+  ],
+  "error": "New native core; entire build series stopped"
+}

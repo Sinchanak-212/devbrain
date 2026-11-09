@@ -1,0 +1,87 @@
+{
+  "available": false,
+  "workspace_id": "default",
+  "socket": "/tmp/devbrain-ui-1000-c6890c82173a47cd/tmux.sock",
+  "state": {
+    "version": 1,
+    "workspace_id": "default",
+    "revision": 71,
+    "project_id": "e63baca1-ac5f-4f59-8e91-58963f26eea7",
+    "project_name": "devbrain-pilot",
+    "worktree": "/home/piotr/src/devbrain-pilot",
+    "intent": "work",
+    "work_request": "a30185c3-59e8-4a0d-9b28-63ec808a47bf",
+    "handled_work_request": "a30185c3-59e8-4a0d-9b28-63ec808a47bf",
+    "selected_entity": null,
+    "slots": [
+      {
+        "client": "codex",
+        "generation": 3,
+        "id": "codex",
+        "lifecycle": "running",
+        "memory": {
+          "acknowledged": false,
+          "stale": true,
+          "status": "ready"
+        },
+        "profile_id": "codex",
+        "run_id": "1b25cba80086404495de620eda676280"
+      },
+      {
+        "client": "claude",
+        "generation": 4,
+        "id": "claude",
+        "lifecycle": "running",
+        "memory": {
+          "acknowledged": false,
+          "stale": true,
+          "status": "ready"
+        },
+        "profile_id": "claude",
+        "run_id": "35a1fc3fbea44443bbbdaf7a75d017a9"
+      }
+    ],
+    "visible_slot_ids": [
+      "codex",
+      "claude"
+    ],
+    "run_ids": [
+      "e5ad2c24e151480e8d7970dd68bde913",
+      "551aa650f585468694434ba7176d9c88",
+      "bf1b230e8c804f77aa4c8e911b8ab01f",
+      "3391c203b656492ab8696432e76abe5c",
+      "1b25cba80086404495de620eda676280",
+      "35a1fc3fbea44443bbbdaf7a75d017a9"
+    ],
+    "focus": "inspector",
+    "layout": "compact",
+    "zoom": false,
+    "pane_ids": {
+      "client1": "%1",
+      "client2": "%3",
+      "graph": "%4",
+      "inspector": "%2",
+      "sidebar": "%0"
+    },
+    "cached_projects": [
+      {
+        "created_at": "2026-11-05T19:27:15.124013+00:00",
+        "graph_edges": 67,
+        "graph_fingerprint": "5f43db9cd4bef23b45e6a3dfb92e574b384669ee4e58d2c629f34a65d50ffc22",
+        "graph_nodes": 60,
+        "id": "e63baca1-ac5f-4f59-8e91-58963f26eea7",
+        "memory_snapshot": "/home/piotr/src/devbrain-pilot/.memory/devbrain",
+        "name": "devbrain-pilot",
+        "root": "/home/piotr/src/devbrain-pilot",
+        "roots": [
+          "/home/piotr/src/devbrain-pilot"
+        ]
+      }
+    ],
+    "launch_errors": [],
+    "last_error": null,
+    "broker_available": true,
+    "auth_runs": [],
+    "updated_at": "2026-11-07T09:05:54.716514+00:00"
+  }
+}

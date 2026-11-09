@@ -1,0 +1,10 @@
+{
+  "kernel": "6.18.54.1-microsoft-standard-WSL2",
+  "boot_id": "44a44f82-70ad-4cc5-b703-6f6572e2dc3a",
+  "expected": 56,
+  "source_version": "0.7.2",
+  "diagnosticC1workaround": true,
+  "JAVA_TOOL_OPTIONS": "-XX:TieredStopAtLevel=1",
+  "scope": "Only isolated test engine inherited environment; not a root cause fix",
+  "engine_startup_confirmation": "Picked up JAVA_TOOL_OPTIONS: -XX:TieredStopAtLevel=1"
+}

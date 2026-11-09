@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_extraction_budget_fix_preparation",
+  "status": "prepared_pending_independent_review_and_runtime_qualification",
+  "created_utc": "2026-11-08T18:29:01.237852+00:00",
+  "files": {
+    "devbrain/src/devbrain/service.py": {
+      "sha256": "278e92667cc74181936b7f3fd9fee5b3ff11d699833aa219a13fb010320d7913",
+      "baseline_sha256": "e0c0f73efa50ddbbb4e0a5d6da209df98712cf780247ab09c64ce64d4e9c04c4"
+    },
+    "devbrain/tests/test_extraction_safety.py": {
+      "sha256": "6012b9f2f7630ab9972cd91c39334d9c297278ed49b4ecd879bc2f8a455b44f3",
+      "baseline_sha256": "9f1c58636f0502f625e6e76e5a467328f7c9e17a57f6ae31474d3cbdb9b42cbf"
+    },
+    "devbrain/src/devbrain/agent.py": {
+      "sha256": "8a9d46638d70ab1141d1f3d6856ee23b2583756ba2e401241baefffe30e969fa",
+      "baseline_sha256": "9b6097317eb4182af5ec1792f70d22400e6fd2d71911520f34f45997a29d3430"
+    },
+    "devbrain/tests/test_memory_stabilization.py": {
+      "sha256": "adc5d4a036bc8ce4c2feda5f43b96e7aebd2ea13ba61dad886bb539784f4e253",
+      "baseline_sha256": "bc07f6fecf82b8eff4a14b08a8421d5962c7a35fa415a5f896b7c38d76b3de30"
+    }
+  },
+  "baseline_source_snapshot": "app080-20261108T160614Z",
+  "baseline_source_freeze_sha256": "5ea43988e1943c783e802acbe5a39fdfcc3318d41655ed244716a69a0d71b28f",
+  "application_file_count": 198,
+  "new_application_files": 0,
+  "unchanged_application_files": 194,
+  "modified_application_files": 4,
+  "contract": {
+    "module": "devbrain.agent",
+    "extraction_work_budget": "no args; float(EXTRACTION_TIMEOUT), default120",
+    "extraction_outer_timeout": "no args; work+5, default125",
+    "inference_lease_seconds": "no args; max120,work+90, default210",
+    "constant_monkeypatch_retained": true,
+    "embedding_processing_budget_seconds": 30,
+    "configuration_schema_changed": false,
+    "transaction_deadline_cancellation_checks_changed": false
+  },
+  "validation": {
+    "windows_ast_files_passed": 4,
+    "service_exact_narrow_transform": true,
+    "old_test_assertions_preserved": true,
+    "existing_deadline_rollback_test_explicit_budget": 30,
+    "new_authored_cases": 9,
+    "expected_full_backend_cases": 1517,
+    "actual_collection_authoritative": true,
+    "runtime_tests_started": false,
+    "models_called": false,
+    "production_modified": false,
+    "frozen_bundles_changed": false
+  },
+  "new_cases": {
+    "default_budget_and_lease": 1,
+    "short_budget_separate_watchdog_and_lease": 2,
+    "real_service_initial_repair_deadline_and_swallowed_cancellation": 4,
+    "real_service_outer_watchdog_and_embedding_budget": 2
+  },
+  "independent_review": null
+}

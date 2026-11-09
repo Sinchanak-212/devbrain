@@ -1,0 +1,77 @@
+{
+  "scope": "devbrain_pure_windows_bootstrap_guards",
+  "actual_process_exit_tested": false,
+  "checks": [
+    {
+      "passed": true,
+      "name": "failed_bootstrap_finishes_only_after_full_absence_grace"
+    },
+    {
+      "passed": true,
+      "name": "refuse_actual_exit_False"
+    },
+    {
+      "passed": true,
+      "name": "refuse_returncode_"
+    },
+    {
+      "passed": true,
+      "name": "refuse_returncode_0"
+    },
+    {
+      "passed": true,
+      "name": "refuse_scope_seen_True"
+    },
+    {
+      "passed": true,
+      "name": "refuse_initially_absent_False"
+    },
+    {
+      "passed": true,
+      "name": "refuse_load_state_loaded"
+    },
+    {
+      "passed": true,
+      "name": "refuse_population_1"
+    },
+    {
+      "passed": true,
+      "name": "refuse_population_unknown"
+    },
+    {
+      "passed": true,
+      "name": "refuse_group_/user.slice/foreign.scope"
+    },
+    {
+      "passed": true,
+      "name": "refuse_identity_1:2"
+    },
+    {
+      "passed": true,
+      "name": "refuse_absent_since_"
+    },
+    {
+      "passed": true,
+      "name": "refuse_last_scope_33.99"
+    },
+    {
+      "passed": true,
+      "name": "refuse_last_probe_33.99"
+    },
+    {
+      "passed": true,
+      "name": "live_process_cannot_close_logs_as_complete"
+    },
+    {
+      "passed": true,
+      "name": "completed_logs_are_flushed_closed_and_retained"
+    },
+    {
+      "passed": true,
+      "name": "repeated_final_close_is_idempotent"
+    }
+  ],
+  "linux_processes_started": false,
+  "source_sha256": "f806b8a45887892a491bf7e878b1c090eeb2c12c44e42369235fe07e80d79a2b",
+  "passed": true
+}

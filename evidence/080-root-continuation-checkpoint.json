@@ -1,0 +1,35 @@
+{
+  "last_run_outcome": "failed_windows_heartbeat_replace",
+  "scope": "root_080_continuation_checkpoint",
+  "ollama20_complete": false,
+  "eight_hour_soak_complete": false,
+  "native_failures_new": 0,
+  "last_diagnostic_run": "postbios4601-20261107T191300Z",
+  "final_full_suite_complete": false,
+  "production_remains_stopped": true,
+  "atomic_windows_fixture": {
+    "cases": 18,
+    "runtime_qualification": false,
+    "passed": true,
+    "report": "atomic-io-20261107T194048Z-7253e925/report.json"
+  },
+  "new_runtime_sequence": "being_prepared_after_atomic_fix",
+  "runtime_gate_status": "not_passed",
+  "schema_version": 1,
+  "real_account_tests_080_complete": false,
+  "human_five_tasks_complete": false,
+  "completed_c2_runs_in_failed_series": 2,
+  "root_changes": {
+    "queue_copy_helper": "authored_AST_only_not_executed",
+    "source_sha256": {
+      "devbrain/frontend/package.json": "5f9ed6484c5f6e90bb86932a240d33fe60ed4572345d761cfbb0373f0ca5898a",
+      "devbrain/frontend/package-lock.json": "a5f21cc9b2921530128071466176cfb25877a6e337a4546eec06d576bc49f9d4",
+      "release-tools/test_queue_replay080_guards.py": "22fb32105304adc5e48361fe3d10dd614501c543d4cc3553a6391747a0bdd1e4",
+      "release-tools/replay-failed-queue-080.py": "79848f52c4cb9acdb0276b5821a1ebbc85c7ae5d5b72d5c4ebb6813ac866eaaf"
+    },
+    "frontend_version": "0.8.0_metadata_only_no_dependency_change_or_build",
+    "queue_copy_peer_review": "two_blockers_fixed_python_launcher_and_pidfd_shutdown"
+  },
+  "created_utc": "2026-11-07T19:43:01.1629750Z",
+  "partial_results_do_not_qualify": true
+}

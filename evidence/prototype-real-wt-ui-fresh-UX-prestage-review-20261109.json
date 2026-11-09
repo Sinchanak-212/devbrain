@@ -1,0 +1,18 @@
+{
+  "UX_inventory_sha256": "f9ea14b78aecf5c871413a55136984bf772c6d25d8bc50a70452352a0ae0cbc2",
+  "tests": 425,
+  "UX_final_report_sha256": "15af1360b7f29c161a8576a9a284750356cb2a06fc3e48a4407d558c88ca4d23",
+  "UX_context_sha256": "b591093fcf4e14187f6338138d4af7bfcb2591d0c2101e8e3437dd9bc802d1bb",
+  "stager_sha256": "0a25773542c72d9043bc05742c62878360e19beabcea43199cdb55c3245e0c26",
+  "actual_UX_exit": 0,
+  "source_freeze_sha256": "9e5168bece45cf3c06bd0abded7e1573b51cf55778570fdc49c8e0a8872e81b9",
+  "eight_hour_started": false,
+  "App_or_Linux_or_auth_or_models_or_DB_started": false,
+  "original_latency_thresholds_passed": true,
+  "actual_UX_root": 69901,
+  "scope": "readonly_actual_prototype_UI_prerequisites",
+  "modules": 28,
+  "App_context_sha256": "387f9f0075a89195e52164c1e83a15261afc7847508ec3462f5f094d9404fd92",
+  "raw_counts_and_source_map_exact": true,
+  "status": "passed_for_diagnostic_Stage_only"
+}

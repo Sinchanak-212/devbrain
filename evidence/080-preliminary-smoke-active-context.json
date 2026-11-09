@@ -1,0 +1,29 @@
+{
+  "final_release_qualification": false,
+  "linux_artifact_root": "/mnt/c/Users/piotr/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/DevBrain/qualification/smoke-preliminary080-20261108T090024Z/artifacts",
+  "specification_sha256": "f495447676bd013a8fbc4b40685bb7a274a91d4a4175aad56b61266a176341b8",
+  "previous_setup_failure": "smoke-preliminary080-20261108T085408Z",
+  "scope": "devbrain_preliminary_smoke_admission",
+  "guard_receipt_sha256": "2272b8a2a585f979f0d681acc766bf3f558b946ec722c8648c330ad51763d18f",
+  "started_utc": "2026-11-08T09:00:24.4202112Z",
+  "run_id": "smoke-preliminary080-20261108T090024Z",
+  "helper_sha256": {
+    "run-supervised-080.ps1": "4cab90d8ee3b0febb6aaf10bc424b76b9b0b7f14a39a5a2df97b978492ba3a74",
+    "qualification-power-080.ps1": "0a46c1d6a2abca8a4be4dfc79daaff33332e91f95d4c627fe7c301523ba9e8a9",
+    "attest-full-suite-080.py": "06b945c95c1b6f16f351b2ecf47dfdf5bc664ae9599ab00e5284454f3a14af79",
+    "test_devbrain_update080_smoke.py": "2f6619a934a30aa7421ce553f3d2a2162edf8c54f0acae93546b410e1bce5c3c",
+    "test_devbrain_update071_smoke.py": "6ac95888f8930f8b41a1e55facae119f26c489a536a67691c5d17e8e7b34b4fa",
+    "supervise-080.py": "86fd71e75bbf0635287e24d3248fcee450d17f5504349675bed8b1a31163cf87",
+    "validate-stability-080.py": "5717c26217ef392340d86a8726fae90c8384d0001ba808f5c83a7bdab32fe143",
+    "validate-native-account080.py": "7832a239fcaa67bb7cec63d9409e4cc06281f2bb0bdc8a10ad33e68fae8a25dd"
+  },
+  "gate_sha256": "a6bd365cea68986ed6795990272c766679bbd29fd9407e904a12c2956bcdf7fb",
+  "parent_preparation_sha256": "1a6786d533c422b07f1297adad9c393dfd103c3f96329b0add7d98f41f9f7f96",
+  "artifact_root": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\smoke-preliminary080-20261108T090024Z\\artifacts",
+  "application_qualification": false,
+  "parent_preparation_proof": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\smoke-parent-prep-20261108T085939Z\\parent-proof.json",
+  "toolbundle": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\guards080-20261108T085245Z\\tools",
+  "status": "failed_restore_probe_actual_exit_and_cleanup_complete",
+  "actual_windows_exit": 1,
+  "receipt_sha256": "b4b27e805a080b726358b76a4ae3b103b1cb839b2093add41a4fb2280af45d42"
+}

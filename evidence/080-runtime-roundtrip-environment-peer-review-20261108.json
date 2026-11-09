@@ -1,0 +1,49 @@
+{
+  "reviewer": "/root/queue_review",
+  "exact_two_line_delta_verified": true,
+  "created_utc": "2026-11-08T14:53:59.5104126Z",
+  "qualification_passed": false,
+  "verdict": "ACK",
+  "scope": "devbrain_runtime_roundtrip_environment_fixture_peer_review",
+  "test_sha256": "03aa92c3c3d076460f383861f796c9390af86a59e557a8981cb9d493ed8a82ef",
+  "tests_run": false,
+  "status": "static_ack_pending_actual_trace_not_run",
+  "app_source_changed_by_reviewer": false,
+  "frozen_file": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\app080-20261108T134240Z\\bundle\\devbrain\\tests\\test_runtime_selection.py",
+  "unchanged_product_sha256": {
+    "devbrain/src/devbrain/config.py": "1dbdcf998e0e188c7d609706d5446f6f3d753dbf19006c2b945f465437afcc42",
+    "devbrain/src/devbrain/runtime_selection.py": "f92688cc74babcdf99e3ec5e6bce31d905d7daedab0f1cf27092a25bf9024538",
+    "devbrain/src/devbrain/engine.py": "112ac5832113fa1125020e898d97572ece5932e890e41b4a151c311ef9f08407"
+  },
+  "next_required": "Bind actual immutable-run tracebacks before fresh source freeze and complete qualification.",
+  "reason": "The qualified runner exports explicit Java/tmux environment paths. Each initial roundtrip assertion intends to read its saved fixture config, before explicitly testing an environment override. Per-test deletion restores that baseline without changing later setenv assertions or persisted-byte checks; pytest monkeypatch restores inherited environment after each case.",
+  "schema_version": 1,
+  "test_file": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\devbrain\\tests\\test_runtime_selection.py",
+  "reviewer_file_edits": [
+    "peer report only"
+  ],
+  "cases": [
+    {
+      "line": 57,
+      "node": "test_java_config_roundtrip_and_environment_override_are_local",
+      "cleared_env": "DEVBRAIN_JAVA_EXECUTABLE"
+    },
+    {
+      "line": 161,
+      "node": "test_tmux_setting_roundtrip_and_environment_override",
+      "cleared_env": "DEVBRAIN_TMUX_EXECUTABLE"
+    }
+  ],
+  "runtime_helpers_changed": false,
+  "acceptance_claimed": false,
+  "original_assertions_unchanged": 31,
+  "linux_execution": false,
+  "call_chain": [
+    "run-full-suite-080.py:167",
+    "config.py:65-75",
+    "test_runtime_selection.py:56-64",
+    "test_runtime_selection.py:160-167"
+  ],
+  "actual_trace_confirmed": false,
+  "frozen_sha256": "51b3719e4ac24c6d116fc3912337ad3eaf8ba491e13783259e64935826a13ddc"
+}

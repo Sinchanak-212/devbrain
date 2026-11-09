@@ -1,0 +1,51 @@
+[
+  {
+    "project": "devbrain-pilot",
+    "counts": {
+      "sources": 1287,
+      "chunks": 2529,
+      "records": 39,
+      "nodes": 132,
+      "edges": 116,
+      "embeddings": 1931,
+      "projects": 1,
+      "jobs": {
+        "pending": 1219,
+        "running": 2,
+        "completed": 3610,
+        "failed": 6
+      },
+      "archived": 1287,
+      "indexed": 1277,
+      "processed": 117,
+      "unassigned_sources": 0,
+      "inbox": 0,
+      "plans": 1,
+      "sessions": 18,
+      "check_runs": 3
+    },
+    "recent_session_status": [
+      {
+        "client": "claude",
+        "status": "ready",
+        "acknowledged": false,
+        "stale": true,
+        "epoch": 1
+      },
+      {
+        "client": "codex",
+        "status": "ready",
+        "acknowledged": false,
+        "stale": true,
+        "epoch": 1
+      },
+      {
+        "client": "claude",
+        "status": "ready",
+        "acknowledged": false,
+        "stale": true,
+        "epoch": 1
+      }
+    ]
+  }
+]

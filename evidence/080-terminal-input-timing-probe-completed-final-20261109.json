@@ -1,0 +1,476 @@
+{
+  "controller_cleanup_seconds": 30.119,
+  "frozen_inputs_unchanged": 48,
+  "receipt_sha256": "af3923bc94904fd398290dbb48c69004be520a407eec4e70a7a626a4d1492c2f",
+  "scope": "devbrain_no_model_terminal_timing_probe_closing_audit",
+  "comparison_kind": "one_five_query_burst_then_three_seconds_capture_per_arm",
+  "source_files_unchanged": 209,
+  "prepared_context_sha256": "9789b0f9a2261df9e8f13d10aca49722f3cb434f7260316ef8aae4abce449048",
+  "cleanup_complete": true,
+  "run_id": "terminal-timing-probe080-20261109T120254Z-a021c477",
+  "supervisor_sha256": "87b3463cdc221a0cb1d96cd22616495b99f9a6fb590069e11c74c0b283d5b4c3",
+  "actual_windows_exec_session": 64935,
+  "release_qualified": false,
+  "source_freeze_sha256": "ad77e00450537294fd26200d0713915689d82ff5a90e65f6c8fb1285fcbb4703",
+  "root_reported_renderer_observer_exit_code": 0,
+  "arms": {
+    "attached": {
+      "effective_TERM": "xterm-256color",
+      "actual_child_resize_observed": true,
+      "query_bursts": 1,
+      "capture_seconds": 3.0029289090000004,
+      "printable_byte_count": 0,
+      "comparison_interpretable": true,
+      "inner_client_first_observation_offset_interval_ms": [
+        -5.168,
+        -4.092
+      ],
+      "dimensions": [
+        {
+          "time_ms": 0,
+          "size": [
+            120,
+            40
+          ]
+        },
+        {
+          "time_ms": 2253.192,
+          "size": [
+            120,
+            33
+          ]
+        }
+      ],
+      "control_classes": {
+        "CSI_PRIMARY_DA": 1,
+        "CSI_CURSOR_POSITION": 1,
+        "OSC10_REPLY": 1,
+        "OSC11_REPLY": 1
+      },
+      "timing": {
+        "renderer_confirmed_offset_ms": -139.176,
+        "native_spawn_offset_interval_ms": [
+          -139.176,
+          -96.583
+        ],
+        "subscribe_release_publication_offset_interval_ms": [
+          -30.957,
+          -29.826
+        ],
+        "subscribe_release_lateness_interval_ms": null,
+        "subscribe_call_offset_ms": -29.56,
+        "subscribe_return_offset_ms": -26.554,
+        "outer_resize_offset_interval_ms": [
+          2005.051,
+          2006.369
+        ]
+      },
+      "comparison_ordering_valid": true,
+      "tmux_metadata": {
+        "inner_default_terminal": "tmux-256color",
+        "outer_default_terminal": "tmux-256color",
+        "inner_window_size": "latest",
+        "launch_TERM": "xterm-256color",
+        "inner_sizing_overridden": false,
+        "outer_fixture_manual": true
+      },
+      "total_input_bytes": 63,
+      "bridge_counts": {
+        "inner_channel_creations": 1,
+        "inner_subscribe_attempts": 1,
+        "inner_refresh_client_commands": 1,
+        "resize_frames": [
+          [
+            120,
+            40
+          ],
+          [
+            120,
+            33
+          ]
+        ],
+        "input_frames": 3,
+        "input_bytes": 201,
+        "broker_transport": "in_process_protocol_test_double",
+        "actual_HTTP_tested": false,
+        "subscribe_call_monotonic": 4.751682814,
+        "subscribe_return_monotonic": 4.754688824
+      },
+      "control_events": [
+        {
+          "class": "CSI_PRIMARY_DA",
+          "time_ms": 1.1,
+          "byte_count": 7
+        },
+        {
+          "class": "CSI_CURSOR_POSITION",
+          "time_ms": 1.1,
+          "byte_count": 6
+        },
+        {
+          "class": "OSC10_REPLY",
+          "time_ms": 1.1,
+          "byte_count": 25
+        },
+        {
+          "class": "OSC11_REPLY",
+          "time_ms": 1.1,
+          "byte_count": 25
+        }
+      ],
+      "snapshots": [
+        {
+          "target_ms": 250,
+          "actual_ms": 254.854,
+          "framing": {
+            "control_classes": {
+              "CSI_PRIMARY_DA": 1,
+              "CSI_CURSOR_POSITION": 1,
+              "OSC10_REPLY": 1,
+              "OSC11_REPLY": 1
+            },
+            "control_events": [
+              {
+                "class": "CSI_PRIMARY_DA",
+                "time_ms": 1.1,
+                "byte_count": 7
+              },
+              {
+                "class": "CSI_CURSOR_POSITION",
+                "time_ms": 1.1,
+                "byte_count": 6
+              },
+              {
+                "class": "OSC10_REPLY",
+                "time_ms": 1.1,
+                "byte_count": 25
+              },
+              {
+                "class": "OSC11_REPLY",
+                "time_ms": 1.1,
+                "byte_count": 25
+              }
+            ],
+            "total_input_bytes": 63,
+            "printable_input_byte_count": 0,
+            "other_control_byte_count": 0,
+            "incomplete_tail_class": "none",
+            "incomplete_tail_byte_count": 0,
+            "raw_input_exported": false,
+            "exact_crossterm_parser": false
+          }
+        },
+        {
+          "target_ms": 1250,
+          "actual_ms": 1250.001,
+          "framing": {
+            "control_classes": {
+              "CSI_PRIMARY_DA": 1,
+              "CSI_CURSOR_POSITION": 1,
+              "OSC10_REPLY": 1,
+              "OSC11_REPLY": 1
+            },
+            "control_events": [
+              {
+                "class": "CSI_PRIMARY_DA",
+                "time_ms": 1.1,
+                "byte_count": 7
+              },
+              {
+                "class": "CSI_CURSOR_POSITION",
+                "time_ms": 1.1,
+                "byte_count": 6
+              },
+              {
+                "class": "OSC10_REPLY",
+                "time_ms": 1.1,
+                "byte_count": 25
+              },
+              {
+                "class": "OSC11_REPLY",
+                "time_ms": 1.1,
+                "byte_count": 25
+              }
+            ],
+            "total_input_bytes": 63,
+            "printable_input_byte_count": 0,
+            "other_control_byte_count": 0,
+            "incomplete_tail_class": "none",
+            "incomplete_tail_byte_count": 0,
+            "raw_input_exported": false,
+            "exact_crossterm_parser": false
+          }
+        },
+        {
+          "target_ms": 3000,
+          "actual_ms": 3002.897,
+          "framing": {
+            "control_classes": {
+              "CSI_PRIMARY_DA": 1,
+              "CSI_CURSOR_POSITION": 1,
+              "OSC10_REPLY": 1,
+              "OSC11_REPLY": 1
+            },
+            "control_events": [
+              {
+                "class": "CSI_PRIMARY_DA",
+                "time_ms": 1.1,
+                "byte_count": 7
+              },
+              {
+                "class": "CSI_CURSOR_POSITION",
+                "time_ms": 1.1,
+                "byte_count": 6
+              },
+              {
+                "class": "OSC10_REPLY",
+                "time_ms": 1.1,
+                "byte_count": 25
+              },
+              {
+                "class": "OSC11_REPLY",
+                "time_ms": 1.1,
+                "byte_count": 25
+              }
+            ],
+            "total_input_bytes": 63,
+            "printable_input_byte_count": 0,
+            "other_control_byte_count": 0,
+            "incomplete_tail_class": "none",
+            "incomplete_tail_byte_count": 0,
+            "raw_input_exported": false,
+            "exact_crossterm_parser": false
+          }
+        }
+      ],
+      "input_framing_finding": false,
+      "incomplete_tail_bytes": 0,
+      "query_types": 5,
+      "incomplete_tail_class": "none"
+    },
+    "delayed": {
+      "incomplete_tail_bytes": 0,
+      "incomplete_tail_class": "none",
+      "input_framing_finding": false,
+      "bridge_counts": {
+        "inner_channel_creations": 1,
+        "inner_subscribe_attempts": 1,
+        "inner_refresh_client_commands": 1,
+        "resize_frames": [
+          [
+            120,
+            40
+          ],
+          [
+            120,
+            33
+          ]
+        ],
+        "input_frames": 3,
+        "input_bytes": 201,
+        "broker_transport": "in_process_protocol_test_double",
+        "actual_HTTP_tested": false,
+        "subscribe_call_monotonic": 10.308884914,
+        "subscribe_return_monotonic": 10.312324505
+      },
+      "query_bursts": 1,
+      "query_types": 5,
+      "control_events": [
+        {
+          "class": "CSI_PRIMARY_DA",
+          "time_ms": 1.088,
+          "byte_count": 7
+        },
+        {
+          "class": "CSI_CURSOR_POSITION",
+          "time_ms": 1.088,
+          "byte_count": 6
+        }
+      ],
+      "actual_child_resize_observed": true,
+      "total_input_bytes": 13,
+      "snapshots": [
+        {
+          "target_ms": 250,
+          "actual_ms": 254.368,
+          "framing": {
+            "control_classes": {
+              "CSI_PRIMARY_DA": 1,
+              "CSI_CURSOR_POSITION": 1
+            },
+            "control_events": [
+              {
+                "class": "CSI_PRIMARY_DA",
+                "time_ms": 1.088,
+                "byte_count": 7
+              },
+              {
+                "class": "CSI_CURSOR_POSITION",
+                "time_ms": 1.088,
+                "byte_count": 6
+              }
+            ],
+            "total_input_bytes": 13,
+            "printable_input_byte_count": 0,
+            "other_control_byte_count": 0,
+            "incomplete_tail_class": "none",
+            "incomplete_tail_byte_count": 0,
+            "raw_input_exported": false,
+            "exact_crossterm_parser": false
+          }
+        },
+        {
+          "target_ms": 1250,
+          "actual_ms": 1257.376,
+          "framing": {
+            "control_classes": {
+              "CSI_PRIMARY_DA": 1,
+              "CSI_CURSOR_POSITION": 1
+            },
+            "control_events": [
+              {
+                "class": "CSI_PRIMARY_DA",
+                "time_ms": 1.088,
+                "byte_count": 7
+              },
+              {
+                "class": "CSI_CURSOR_POSITION",
+                "time_ms": 1.088,
+                "byte_count": 6
+              }
+            ],
+            "total_input_bytes": 13,
+            "printable_input_byte_count": 0,
+            "other_control_byte_count": 0,
+            "incomplete_tail_class": "none",
+            "incomplete_tail_byte_count": 0,
+            "raw_input_exported": false,
+            "exact_crossterm_parser": false
+          }
+        },
+        {
+          "target_ms": 3000,
+          "actual_ms": 3009.869,
+          "framing": {
+            "control_classes": {
+              "CSI_PRIMARY_DA": 1,
+              "CSI_CURSOR_POSITION": 1
+            },
+            "control_events": [
+              {
+                "class": "CSI_PRIMARY_DA",
+                "time_ms": 1.088,
+                "byte_count": 7
+              },
+              {
+                "class": "CSI_CURSOR_POSITION",
+                "time_ms": 1.088,
+                "byte_count": 6
+              }
+            ],
+            "total_input_bytes": 13,
+            "printable_input_byte_count": 0,
+            "other_control_byte_count": 0,
+            "incomplete_tail_class": "none",
+            "incomplete_tail_byte_count": 0,
+            "raw_input_exported": false,
+            "exact_crossterm_parser": false
+          }
+        }
+      ],
+      "dimensions": [
+        {
+          "time_ms": 0,
+          "size": [
+            120,
+            40
+          ]
+        },
+        {
+          "time_ms": 2016.855,
+          "size": [
+            120,
+            33
+          ]
+        }
+      ],
+      "comparison_interpretable": true,
+      "inner_client_first_observation_offset_interval_ms": [
+        550.538,
+        551.816
+      ],
+      "capture_seconds": 3.0098972600000007,
+      "comparison_ordering_valid": true,
+      "tmux_metadata": {
+        "inner_default_terminal": "tmux-256color",
+        "outer_default_terminal": "tmux-256color",
+        "inner_window_size": "latest",
+        "launch_TERM": "xterm-256color",
+        "inner_sizing_overridden": false,
+        "outer_fixture_manual": true
+      },
+      "control_classes": {
+        "CSI_PRIMARY_DA": 1,
+        "CSI_CURSOR_POSITION": 1
+      },
+      "effective_TERM": "xterm-256color",
+      "printable_byte_count": 0,
+      "timing": {
+        "renderer_confirmed_offset_ms": -119.078,
+        "native_spawn_offset_interval_ms": [
+          -119.078,
+          -76.906
+        ],
+        "subscribe_release_publication_offset_interval_ms": [
+          500.067,
+          501.638
+        ],
+        "subscribe_release_lateness_interval_ms": [
+          0.06700000000000728,
+          1.6379999999999768
+        ],
+        "subscribe_call_offset_ms": 503.761,
+        "subscribe_return_offset_ms": 507.2,
+        "outer_resize_offset_interval_ms": [
+          2013.22,
+          2014.676
+        ]
+      }
+    }
+  },
+  "power_changed": false,
+  "support_artifact_sha256": {
+    "external-viewer-attached.json": "91788eb098f6e2d663e90239e58c6fac734700ec1a468f246e509b68429eb88b",
+    "terminal-renderer-attached.json": "1f55b40fe2b94a087976bdb5fea496e01bd082cd3bd0c46bd8965922f0c773c4",
+    "windows-renderer-launch-attached.json": "ff5d0edbc4491a81ac5a7e7b48df8d8372e0271a53d6455bacb627e3624ee7c8",
+    "external-viewer-delayed.json": "4a738a89f780d91c7cf33efa506033b3c1eb57a9f374510f67b167f7c6870c48",
+    "terminal-renderer-delayed.json": "ba70624d2f3d45aa69b4bc0932c7e31dfa5d254eef4d08dc622c13a518bf9ae3",
+    "windows-renderer-launch-delayed.json": "9935c5022218a4c9079cbb566cb63c46741749fcb9e3f783b2510dfb0ade5f0e"
+  },
+  "scope_empty_post_seconds": 32.9242993,
+  "boot_changed": false,
+  "active_context": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\terminal-timing-probe080-20261109T120254Z-a021c477\\probe-active-context.json",
+  "application_qualified": false,
+  "external_post_exit_seconds": 37,
+  "actual_broker_transport": "in_process_protocol_test_double",
+  "native_failure": false,
+  "Windows_renderer_observer_sha256": "111c74bcd51d935da5338d4d2341a7ad20b2c5a4f3fa6018d665e1f2d2926ed1",
+  "actual_windows_exit_code": 0,
+  "eight_hour_started": false,
+  "resize_finding_interpretation": "Both inner windows retain production automatic/default sizing. Only the private outer fixture is manual, resized once at query+2s; actual child geometry is recorded without an application fault claim.",
+  "causal_conclusion": "not_established",
+  "controller_sha256": "e7a516e0024301d37bc34bb76a46224a2efaa7ed5ac68d844f9bdeb7a97f9243",
+  "schema_version": 1,
+  "production_modified": false,
+  "terminal_input_stability_qualified": false,
+  "actual_Codex_or_Crossterm_tested": false,
+  "actual_root_renderer_observer_session": 47874,
+  "account_operations": 0,
+  "actual_HTTP_tested": false,
+  "model_requests": 0,
+  "database_started": false,
+  "active_context_sha256": "7c2d4b900990e8220b507f89b544dabe3be3c23b5e2fe10cc67f0e914136a6b2",
+  "sleep_restored": true,
+  "Windows_renderer_observer_peer_sha256": "964203507f31745bf832744de2cad639ede0e615431befa6f72b1b58852a2582",
+  "status": "diagnostic_timing_comparison_completed"
+}

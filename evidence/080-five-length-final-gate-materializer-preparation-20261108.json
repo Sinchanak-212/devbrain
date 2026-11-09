@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_current_source_five_gate_materializer_preparation",
+  "status": "prepared_pending_peer_and_actual_ui_pass",
+  "created_utc": "2026-11-08T21:31:29.674068+00:00",
+  "script": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-five-length-final-gates-after-ui-20261108.ps1",
+  "script_sha256": "c425ff23a007291c581ad15d29ac0304788ffeaf355f17b2141661022ef67f2c",
+  "template_master": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-length-repair-remaining-gate-templates-604-20261108.json",
+  "template_master_sha256": "c9576982a7b550b0991dd6edfccf98cc87abd3c776ad572da4f4730e1c3b0a0c",
+  "partial_proof_manifest": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-length-repair-eight-hour-proof-manifest-after-ux-20261108.json",
+  "partial_proof_manifest_sha256": "e494c73a75c42a658fdca6f66a02dfc38e6db43686cb27f9e0e46e2a3d37a4ed",
+  "source_snapshot": "app080-20261108T202627Z",
+  "source_freeze_sha256": "1f35dae9f2b3f894bb67535a215e29cba3c1235120ff30daa387bd5450f03e14",
+  "candidate_context_sha256": "cdd27ef8e5326c85ab4f85af562b2826c20f3b63cfd07c454441cb3fbf7766d6",
+  "qualified_helper_count": 38,
+  "qualified_guard_cases": 604,
+  "actual_backend_cases": 1557,
+  "actual_ux_cases": 377,
+  "actual_queue_copy_jobs": 6,
+  "new_ui_proof_parameters": [
+    "UiContext",
+    "UiContextSha256",
+    "UiReceiptSha256",
+    "UiFinalReportSha256"
+  ],
+  "future_ui_passed": false,
+  "future_ui_proof_sha256": null,
+  "execution_order": [
+    "native",
+    "copilot",
+    "ollama20",
+    "frontend",
+    "upgrade_smoke"
+  ],
+  "argv_counts_after_placeholder_materialization": {
+    "native": 19,
+    "copilot": 13,
+    "ollama20": 21,
+    "frontend": 17,
+    "upgrade_smoke": 25
+  },
+  "timeout_seconds": {
+    "native": 1200,
+    "copilot": 420,
+    "ollama20": 3600,
+    "frontend": 2100,
+    "upgrade_smoke": 1800
+  },
+  "required_artifact_counts": {
+    "native": 4,
+    "copilot": 4,
+    "ollama20": 9,
+    "frontend": 10,
+    "upgrade_smoke": 3
+  },
+  "spec_changes_allowed": [
+    "replace exact RUN_ID/LINUX_ARTIFACT_ROOT/LINUX_RUN_ROOT placeholders",
+    "prepend one --execute only for inert upgrade_smoke template"
+  ],
+  "environment_and_remaining_argv_unchanged": true,
+  "reused_unchanged_admission_and_filesystem_functions": 14,
+  "parent_admission_script": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-final-eight-hour-length-repair-604-v2-20261108.ps1",
+  "parent_admission_sha256": "5a94acfd267fcdfaf92a91f174fcd5589e46366db242e9e39a539aebe635a7a0",
+  "base_materialization_mechanisms": [
+    "stage-final-gates-594-20261108.ps1",
+    "stage-queue-smoke-after-attestation-594-v2-20261108.ps1"
+  ],
+  "windows_powershell_parse_errors": 0,
+  "default_inert_invocation_exit_code": 0,
+  "default_inert_invocation_created_roots": false,
+  "all_current_prerequisite_checks_before_first_directory_creation": true,
+  "stage_command": [
+    "pwsh",
+    "-NoProfile",
+    "-File",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-five-length-final-gates-after-ui-20261108.ps1",
+    "-Stage",
+    "-UiContext",
+    "<ACTUAL_CURRENT_UI_CONTEXT>",
+    "-UiContextSha256",
+    "<ACTUAL_SHA256>",
+    "-UiReceiptSha256",
+    "<ACTUAL_SHA256>",
+    "-UiFinalReportSha256",
+    "<ACTUAL_SHA256>"
+  ],
+  "new_context_paths": [
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-native-length-final-active-context-20261108.json",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-copilot-length-final-active-context-20261108.json",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-ollama20-length-final-active-context-20261108.json",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-frontend-length-final-active-context-20261108.json",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-upgrade-smoke-length-final-active-context-20261108.json"
+  ],
+  "output_master": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-five-length-final-gate-contexts-20261108.json",
+  "stage_executed": false,
+  "physical_execution_roots_created": false,
+  "linux_workload_started": false,
+  "production_modified": false,
+  "private_account_files_read": false,
+  "frozen_source_or_38helpers_modified": false,
+  "old_contexts_and_reports_modified": false
+}

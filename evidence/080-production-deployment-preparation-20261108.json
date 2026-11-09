@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "prepared_utc": "2026-11-08T16:52:29.283315+00:00",
+  "linux_workload_started": false,
+  "production_accessed": false,
+  "private_credentials_accessed": false,
+  "runtime_tests_executed": false,
+  "frozen_app_modified": false,
+  "immutable_529_modified": false,
+  "scope": "devbrain_production_deployment_preparation",
+  "status": "prepared_pending_independent_static_review_and_new_guard_qualification",
+  "files": {
+    "deploy-production080.py": "53eece60c4d177cbfc352c8293f5c5b3cbe3e7ca25d7656f2a10c74d1a9dceb0",
+    "test_production_deploy080_guards.py": "9fddad5f3aca8c4fb64ca5ad0593f7a1b49129e4b108a540f4e6e769bbdff216"
+  },
+  "authored_guard_cases": 65,
+  "expected_complete_guard_cases": 594,
+  "actual_collection_authoritative": true,
+  "helper_files_expected": 38,
+  "guard_modules_expected": 12,
+  "syntax_validation": "Windows ast.parse only; not pytest/runtime proof",
+  "controller_contract": {
+    "controller": "deploy-production080.py",
+    "scope": "devbrain_production_deployment",
+    "status": "production_deployment_completed_pending_external_watch",
+    "required_artifacts": [
+      "production-deployment-admission.json",
+      "production-deployment-results.json"
+    ],
+    "dependencies": [
+      "retry-production-queue-080.py",
+      "validate-native-account080.py"
+    ],
+    "qualified_literal_venv_is_editable_final_source": true,
+    "updater_runs_qualified_base_I_B": true,
+    "installed_target_verified_noneditable": true,
+    "explicit_flags": [
+      "--run-id",
+      "--artifact-root",
+      "--source-root",
+      "--install-source",
+      "--data-dir",
+      "--admission",
+      "--admission-sha256",
+      "--updater",
+      "--backup-python"
+    ],
+    "activation_flag": "--execute",
+    "default_no_execute": true
+  },
+  "admission_operation": "production_deployment",
+  "requires_exact_eleven_proofs": true,
+  "previous_update_or_post_update_backup_not_required": true,
+  "per_proof_own_frozen_verifier_preserved": true,
+  "all_current_tool_hashes_required_only_for_tooling_guards": true,
+  "new_controller_owned_JVM": true,
+  "engine_implementation_reused_unchanged": "retry-production-queue-080.py:ProductionEngine",
+  "service_and_engine_launch_locks_held": true,
+  "writer_lock_only_for_before_after_exports": true,
+  "persistent_payload_journal_before_new_JVM": true,
+  "automatic_replay_allowed": false,
+  "installed_engine_stop_numeric_PID_never_called": true,
+  "readonly_doctor_metadata_probes_in_unchanged_installer": true,
+  "config_write_keys": [
+    "java_executable",
+    "tmux_executable"
+  ],
+  "unknown_config_keys_preserved": true,
+  "config_lock_existing_0600_or_0644_empty_only": true,
+  "new_private_files_0600_directories_0700": true,
+  "whole_database_vector_and_journal_export_compared": true,
+  "public_report_contains_no_private_source_config_credentials_or_process_commands": true,
+  "source_snapshot": "app080-20261108T160614Z",
+  "source_freeze_sha256": "5ea43988e1943c783e802acbe5a39fdfcc3318d41655ed244716a69a0d71b28f",
+  "current_UI_receipt_sha256": "6ab41f349292691882e736aadbc8bfca02510a4d9483d6e522474e9bc4d8f23d",
+  "current_v4_updater_sha256": "c637fe52e9676aee8d43beeb721ca757a633cde41e8c115f085490ffd694d62d",
+  "current_v4_zip_sha256": "cd9798924042f6eb2abf5be57ad646654908a1e3b2dd8d1cdba51571381bd5be",
+  "new_guard_receipt_sha256": null,
+  "final_release_qualified": false,
+  "production_launch_permitted": false
+}

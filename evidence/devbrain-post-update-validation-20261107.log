@@ -1,0 +1,2460 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.2.0, pluggy-1.7.0 -- /home/piotr/.cache/devbrain-final-validation-20261107/.venv/bin/python
+cachedir: .pytest_cache/post-update
+rootdir: /home/piotr/.cache/devbrain-final-validation-20261107
+configfile: pyproject.toml
+plugins: asyncio-1.4.1.post1, platformdirs-4.14.5, anyio-4.16.0
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=function, asyncio_default_test_loop_scope=function
+collecting ... collected 113 items
+
+tests/test_migrations.py::test_backup_failure_prevents_additive_ddl_and_version_change PASSED [  0%]
+tests/test_native_evaluation.py::test_installed_codex_accepts_fixture_configuration_without_model_calls PASSED [  1%]
+tests/test_native_session_environment.py::test_native_codex_mcp_stdio_receives_only_explicit_launch_environment[False] PASSED [  2%]
+tests/test_native_session_environment.py::test_native_codex_mcp_stdio_receives_only_explicit_launch_environment[True] PASSED [  3%]
+tests/test_ollama.py::test_http_and_json_errors_have_safe_structured_diagnostics[302-redirect-http_error] PASSED [  4%]
+tests/test_ollama.py::test_http_and_json_errors_have_safe_structured_diagnostics[400-request validation failed-invalid_request] PASSED [  5%]
+tests/test_ollama.py::test_http_and_json_errors_have_safe_structured_diagnostics[500-model requires more system memory (10.5 GiB) than is available (9.0 GiB)-memory_exhausted] PASSED [  6%]
+tests/test_ollama.py::test_invalid_json_html_and_wrong_shapes_are_not_echoed[200-[]] PASSED [  7%]
+tests/test_ollama.py::test_server_error_never_echoes_prompts_credentials_urls_or_long_content[500-body2] PASSED [  7%]
+tests/test_ollama.py::test_transport_failures_are_distinguishable_without_private_exception_text[RemoteProtocolError-request_error] PASSED [  8%]
+tests/test_omitted_job_reprocess.py::test_empty_deduplicated_partial_success_or_malformed_diagnostics_are_ineligible[patch2] PASSED [  9%]
+tests/test_omitted_job_reprocess.py::test_empty_deduplicated_partial_success_or_malformed_diagnostics_are_ineligible[patch6] PASSED [ 10%]
+tests/test_omitted_job_reprocess.py::test_explicit_all_rejected_retry_preserves_job_identity_history_and_project_data PASSED [ 11%]
+tests/test_omitted_job_reprocess.py::test_other_job_kinds_and_nonboolean_opt_in_are_rejected PASSED [ 12%]
+tests/test_parsing.py::test_typescript_symbols_alias_import_and_arrow PASSED [ 13%]
+tests/test_plans.py::test_cross_plan_task_injection_and_external_dangling_dependencies_are_rejected PASSED [ 14%]
+tests/test_plans.py::test_idempotency_replays_original_even_after_progress_and_rejects_changed_payload PASSED [ 15%]
+tests/test_plans.py::test_invalid_final_plan_leaves_no_partial_state[steps3-todo] PASSED [ 15%]
+tests/test_plans.py::test_mid_batch_error_rolls_back_sources_records_graph_and_activation PASSED [ 16%]
+tests/test_plans.py::test_removed_step_is_archived_with_history_and_stale_plan_cannot_erase_progress PASSED [ 17%]
+tests/test_portable_memory.py::test_bad_snapshot_is_rejected_before_any_destination_knowledge_mutation[object_bytes] PASSED [ 18%]
+tests/test_portable_memory.py::test_bad_snapshot_is_rejected_before_any_destination_knowledge_mutation[revision_chain] PASSED [ 19%]
+tests/test_portable_memory.py::test_legitimate_large_memory_record_preserves_complete_content_and_evidence PASSED [ 20%]
+tests/test_service.py::test_cache_tracks_profiles_and_ignored_verification_inputs PASSED [ 21%]
+tests/test_service.py::test_private_endpoints_require_local_bearer PASSED [ 22%]
+tests/test_service.py::test_real_http_agent_retrieval_cache_and_uncommitted_change PASSED [ 23%]
+tests/test_service.py::test_shutdown_cancels_worker_and_active_consumer_without_hanging PASSED [ 23%]
+tests/test_service.py::test_wrong_expected_context_identity_cannot_replace_current_packet[body1] PASSED [ 24%]
+tests/test_session_lifecycle.py::test_archive_timeout_preserves_required_unknown_history_for_retry PASSED [ 25%]
+tests/test_session_lifecycle.py::test_exact_context_is_read_only_even_on_mismatch_or_changed_code[None] PASSED [ 26%]
+tests/test_session_lifecycle.py::test_known_historical_unknown_is_never_dropped_from_retry PASSED [ 27%]
+tests/test_session_lifecycle.py::test_legacy_live_horizon_migration_requires_original_action_proof[None] PASSED [ 28%]
+tests/test_session_lifecycle.py::test_new_action_cannot_merge_away_an_overwritten_captured_partial_tail FAILED [ 29%]
+tests/test_session_lifecycle.py::test_real_native_lifecycle_invalidates_ack_after_state_refresh[fork] ERROR [ 30%]
+tests/test_session_lifecycle.py::test_shorter_rewritten_generation_keeps_its_own_unproved_horizon ERROR [ 30%]
+tests/test_sessions.py::test_archive_barrier_is_actual_eof_not_just_current_cursor ERROR [ 31%]
+tests/test_sessions.py::test_empty_exception_rejects_other_native_config_and_substring_impersonation[codex_model] ERROR [ 32%]
+tests/test_sessions.py::test_empty_exception_rejects_other_native_config_and_substring_impersonation[instructions] ERROR [ 33%]
+tests/test_sessions.py::test_empty_exception_rejects_other_native_config_and_substring_impersonation[other_mcp] ERROR [ 34%]
+tests/test_sessions.py::test_first_empty_scope_may_start_without_claiming_verified_code ERROR [ 35%]
+tests/test_sessions.py::test_incomplete_unparsed_or_missing_ranges_are_never_ready[deleted_unproved] ERROR [ 36%]
+tests/test_sessions.py::test_incomplete_unparsed_or_missing_ranges_are_never_ready[partial_tail] ERROR [ 37%]
+tests/test_sessions.py::test_native_binding_scope_and_worktree_plan_selection_are_isolated ERROR [ 38%]
+tests/test_sessions.py::test_pending_hook_horizon_and_rotation_cannot_disappear_from_scope ERROR [ 38%]
+tests/test_sessions.py::test_real_install_into_empty_project_then_prepare_handles_index_race[claude] ERROR [ 39%]
+tests/test_sessions.py::test_technical_tail_preserves_ack_but_compaction_invalidates_exactly_once ERROR [ 40%]
+tests/test_sessions.py::test_unknown_code_state_is_unavailable_and_readback_versions_are_typed ERROR [ 41%]
+tests/test_store.py::test_backup_checksum_rejected_before_any_database_mutation ERROR [ 42%]
+tests/test_store.py::test_backup_restore_sources_queue_cursors_and_revisions ERROR [ 43%]
+tests/test_store.py::test_completion_worktree_is_transient_and_does_not_borrow_other_root_runs ERROR [ 44%]
+tests/test_store.py::test_cross_project_sources_and_empty_evidence_rejected ERROR [ 45%]
+tests/test_store.py::test_jobs_deduplicate_and_claim_once_across_process_like_connections ERROR [ 46%]
+tests/test_store.py::test_project_roots_resolve_longest_and_aliases ERROR [ 46%]
+tests/test_store.py::test_record_graph_has_evidence_dependencies_and_replacements ERROR [ 47%]
+tests/test_store.py::test_snapshot_dedup_preserves_historical_content ERROR [ 48%]
+tests/test_store.py::test_snapshot_invalidates_native_ann_and_lexical_current_flags ERROR [ 49%]
+tests/test_store.py::test_two_models_cannot_overwrite_same_version ERROR [ 50%]
+tests/test_terminal_bridge.py::test_observer_discards_input_and_only_fresh_explicit_nonce_takes_control PASSED [ 51%]
+tests/test_terminal_bridge.py::test_outer_pane_status_never_targets_unverified_workspace PASSED [ 52%]
+tests/test_terminal_bridge.py::test_resize_frames_always_fit_broker_bounds[10-2-expected0] PASSED [ 53%]
+tests/test_terminal_client.py::test_event_reconnect_keeps_durable_cursor_and_project PASSED [ 53%]
+tests/test_terminal_client.py::test_parallel_panel_reads_share_one_private_session PASSED [ 54%]
+tests/test_terminal_client.py::test_private_exchange_and_mutation_keep_credentials_out_of_urls PASSED [ 55%]
+tests/test_terminal_graph.py::test_braille_four_rows_two_columns_and_nearest_depth_win PASSED [ 56%]
+tests/test_terminal_graph.py::test_exact_revision_owner_and_inbox_identity PASSED [ 57%]
+tests/test_terminal_graph.py::test_global_project_and_exact_revision_selection_never_start_clients PASSED [ 58%]
+tests/test_terminal_panels.py::test_current_inspector_view_label_is_visible_in_actual_pane_render[size1] PASSED [ 59%]
+tests/test_terminal_panels.py::test_review_conflict_refreshes_without_resubmitting_intent PASSED [ 60%]
+tests/test_terminal_panels.py::test_sidebar_initial_restore_and_inspection_never_start_clients PASSED [ 61%]
+tests/test_terminal_panels.py::test_wide_dialog_zooms_real_pane_and_preserves_explicit_user_focus[True] PASSED [ 61%]
+tests/test_terminal_workspace_e2e.py::test_attached_outer_terminal_prefix_unicode_paste_compact_resize_and_detach ERROR [ 62%]
+tests/test_terminal_workspace_e2e.py::test_real_operational_login_has_no_project_identity_or_archived_output ERROR [ 63%]
+tests/test_terminal_workspace_e2e.py::test_real_outer_operational_login_destroys_only_its_secret_history ERROR [ 64%]
+tests/test_terminal_workspace_e2e.py::test_real_outer_workspace_project_switch_and_broker_restart_preserve_native_identity ERROR [ 65%]
+tests/test_terminal_workspace_e2e.py::test_real_websocket_observer_takeover_never_sends_unauthorized_input ERROR [ 66%]
+tests/test_terminal_workspace_e2e.py::test_two_real_outer_terminals_enforce_single_writer_takeover_and_resize_authority ERROR [ 67%]
+tests/test_transcript_compatibility.py::test_eof_import_reclassifies_legacy_unknowns_without_changing_archive_or_chunks ERROR [ 68%]
+tests/test_transcript_compatibility.py::test_known_technical_records_are_metadata_not_user_instructions[world_state] PASSED [ 69%]
+tests/test_transcript_compatibility.py::test_malformed_technical_records_are_not_promoted_to_metadata[overflow_counter] PASSED [ 69%]
+tests/test_transcript_compatibility.py::test_malformed_technical_records_are_not_promoted_to_metadata[turn_id_number] PASSED [ 70%]
+tests/test_transcript_compatibility.py::test_malformed_technical_records_are_not_promoted_to_metadata[world_required_missing] PASSED [ 71%]
+tests/test_transcript_compatibility.py::test_other_unknown_or_invalid_records_still_block_ready[[1,2,3]\n] ERROR [ 72%]
+tests/test_transcript_compatibility.py::test_other_unknown_or_invalid_records_still_block_ready[{"type":"world_state",broken}\n] ERROR [ 73%]
+tests/test_transcript_compatibility.py::test_prepare_repairs_the_real_seven_record_horizon_without_creating_ack ERROR [ 74%]
+tests/test_transcript_compatibility.py::test_reparse_never_clears_hash_scope_or_provenance_conflicts[cwd_wrong_project] ERROR [ 75%]
+tests/test_transcript_compatibility.py::test_reparse_never_clears_hash_scope_or_provenance_conflicts[other_warning] ERROR [ 76%]
+tests/test_transcript_compatibility.py::test_reparse_preserves_durable_records_when_original_is_missing_but_does_not_invent_archive_proof ERROR [ 76%]
+tests/test_tui.py::test_empty_launcher_registers_first_project FAILED    [ 77%]
+tests/test_tui.py::test_managed_task_update_sends_task_and_plan_versions FAILED [ 78%]
+tests/test_tui.py::test_native_launch_suspends_ui_without_changing_arguments FAILED [ 79%]
+tests/test_tui.py::test_plans_next_step_and_packet_readiness_are_scoped_to_registered_worktree FAILED [ 80%]
+tests/test_tui.py::test_project_selection_shows_tasks_and_sources FAILED [ 81%]
+tests/test_verification.py::test_all_required_profiles_and_definition_changes ERROR [ 82%]
+tests/test_verification.py::test_code_and_task_changes_during_check_prevent_success ERROR [ 83%]
+tests/test_verification.py::test_deleted_project_recovery_cleans_own_logs_without_killing_or_deleting_user_files ERROR [ 84%]
+tests/test_verification.py::test_final_insert_rejects_foreign_task_and_source_references[task] ERROR [ 84%]
+tests/test_verification.py::test_forget_after_last_output_source_cannot_resurrect_orphan_run ERROR [ 85%]
+tests/test_verification.py::test_internal_symlink_targets_and_commit_identity_are_hashed ERROR [ 86%]
+tests/test_verification.py::test_new_failed_attempt_cannot_reuse_old_success ERROR [ 87%]
+tests/test_verification.py::test_nonpassing_process_outcomes_and_bounded_output[nonzero] ERROR [ 88%]
+tests/test_verification.py::test_nonpassing_process_outcomes_and_bounded_output[timeout] ERROR [ 89%]
+tests/test_verification.py::test_timeout_terminates_process_group ERROR  [ 90%]
+tests/test_verification.py::test_unknown_external_symlink_submodule_missing_and_unstable_inputs ERROR [ 91%]
+tests/test_workflow.py::test_codex_claude_fresh_codex_restore_plan_check_and_compaction ERROR [ 92%]
+tests/test_workspace.py::test_native_border_ack_is_only_validated_broker_state PASSED [ 92%]
+tests/test_workspace.py::test_outer_keyboard_claim_requires_exact_identity_and_explicit_takeover PASSED [ 93%]
+tests/test_workspace.py::test_real_five_pane_geometry_private_socket_keys_and_reuse PASSED [ 94%]
+tests/test_workspace_cli.py::test_lifecycle_diagnostics_do_not_initialize[arguments3-stop] PASSED [ 95%]
+tests/test_workspace_cli.py::test_no_tty_is_actionable_and_does_not_initialize[arguments2] PASSED [ 96%]
+tests/test_workspace_cli.py::test_terminal_entry_is_global_from_any_directory_and_never_opens_browser[arguments1] PASSED [ 97%]
+tests/test_workspace_cli.py::test_terminal_help_does_not_initialize[arguments3] PASSED [ 98%]
+tests/test_workspace_cli.py::test_version_does_not_initialize_or_launch_anything PASSED [ 99%]
+tests/test_workspace_state.py::test_workspace_read_is_pure_and_updates_are_private_cas PASSED [100%]
+tests/test_workspace_state.py::test_workspace_read_is_pure_and_updates_are_private_cas ERROR [100%]
+
+==================================== ERRORS ====================================
+_ ERROR at setup of test_real_native_lifecycle_invalidates_ack_after_state_refresh[fork] _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_real_native_lifecycle_inv0')
+
+    @pytest.fixture
+    def lifecycle(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        for args in (("init", "-b", "main"), ("config", "user.email", "fixture@example.invalid"),
+                     ("config", "user.name", "Fixture")):
+            subprocess.run(["git", "-C", str(root), *args], check=True, capture_output=True)
+        (root / "app.py").write_text("VALUE = 1\n")
+        for args in (("add", "app.py"), ("commit", "-m", "initial")):
+            subprocess.run(["git", "-C", str(root), *args], check=True, capture_output=True)
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_session_lifecycle.py:51: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_re...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_93932216e87ecb8e', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_shorter_rewritten_generation_keeps_its_own_unproved_horizon _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_shorter_rewritten_generat0')
+
+    @pytest.fixture
+    def lifecycle(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        for args in (("init", "-b", "main"), ("config", "user.email", "fixture@example.invalid"),
+                     ("config", "user.name", "Fixture")):
+            subprocess.run(["git", "-C", str(root), *args], check=True, capture_output=True)
+        (root / "app.py").write_text("VALUE = 1\n")
+        for args in (("add", "app.py"), ("commit", "-m", "initial")):
+            subprocess.run(["git", "-C", str(root), *args], check=True, capture_output=True)
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_session_lifecycle.py:51: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_sh...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_8b25d5ae7c06fe24', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_archive_barrier_is_actual_eof_not_just_current_cursor _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_archive_barrier_is_actual0')
+
+    @pytest.fixture
+    def sessions(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        git(root, "init", "-b", "main")
+        git(root, "config", "user.email", "fixture@example.invalid")
+        git(root, "config", "user.name", "Fixture")
+        (root / "app.py").write_text("VALUE = 1\n")
+        git(root, "add", "app.py")
+        git(root, "commit", "-m", "initial")
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_sessions.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_ar...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_0e267373a6f00b6d', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_empty_exception_rejects_other_native_config_and_substring_impersonation[codex_model] _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_empty_exception_rejects_o0')
+
+    @pytest.fixture
+    def sessions(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        git(root, "init", "-b", "main")
+        git(root, "config", "user.email", "fixture@example.invalid")
+        git(root, "config", "user.name", "Fixture")
+        (root / "app.py").write_text("VALUE = 1\n")
+        git(root, "add", "app.py")
+        git(root, "commit", "-m", "initial")
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_sessions.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_em...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_23591a5d1e6e8513', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_empty_exception_rejects_other_native_config_and_substring_impersonation[instructions] _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_empty_exception_rejects_o1')
+
+    @pytest.fixture
+    def sessions(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        git(root, "init", "-b", "main")
+        git(root, "config", "user.email", "fixture@example.invalid")
+        git(root, "config", "user.name", "Fixture")
+        (root / "app.py").write_text("VALUE = 1\n")
+        git(root, "add", "app.py")
+        git(root, "commit", "-m", "initial")
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_sessions.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_em...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_4bfb22c2a910fefa', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_empty_exception_rejects_other_native_config_and_substring_impersonation[other_mcp] _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_empty_exception_rejects_o2')
+
+    @pytest.fixture
+    def sessions(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        git(root, "init", "-b", "main")
+        git(root, "config", "user.email", "fixture@example.invalid")
+        git(root, "config", "user.name", "Fixture")
+        (root / "app.py").write_text("VALUE = 1\n")
+        git(root, "add", "app.py")
+        git(root, "commit", "-m", "initial")
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_sessions.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_em...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_cad16b064eb7cbff', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_first_empty_scope_may_start_without_claiming_verified_code _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_first_empty_scope_may_sta0')
+
+    @pytest.fixture
+    def sessions(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        git(root, "init", "-b", "main")
+        git(root, "config", "user.email", "fixture@example.invalid")
+        git(root, "config", "user.name", "Fixture")
+        (root / "app.py").write_text("VALUE = 1\n")
+        git(root, "add", "app.py")
+        git(root, "commit", "-m", "initial")
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_sessions.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_fi...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_b0af16fedef51487', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_incomplete_unparsed_or_missing_ranges_are_never_ready[deleted_unproved] _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_incomplete_unparsed_or_mi0')
+
+    @pytest.fixture
+    def sessions(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        git(root, "init", "-b", "main")
+        git(root, "config", "user.email", "fixture@example.invalid")
+        git(root, "config", "user.name", "Fixture")
+        (root / "app.py").write_text("VALUE = 1\n")
+        git(root, "add", "app.py")
+        git(root, "commit", "-m", "initial")
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_sessions.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_in...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_1e668936c1fee469', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_incomplete_unparsed_or_missing_ranges_are_never_ready[partial_tail] _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_incomplete_unparsed_or_mi1')
+
+    @pytest.fixture
+    def sessions(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        git(root, "init", "-b", "main")
+        git(root, "config", "user.email", "fixture@example.invalid")
+        git(root, "config", "user.name", "Fixture")
+        (root / "app.py").write_text("VALUE = 1\n")
+        git(root, "add", "app.py")
+        git(root, "commit", "-m", "initial")
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_sessions.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_in...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_d3b3bb8d03c3c23d', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_native_binding_scope_and_worktree_plan_selection_are_isolated _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_native_binding_scope_and_0')
+
+    @pytest.fixture
+    def sessions(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        git(root, "init", "-b", "main")
+        git(root, "config", "user.email", "fixture@example.invalid")
+        git(root, "config", "user.name", "Fixture")
+        (root / "app.py").write_text("VALUE = 1\n")
+        git(root, "add", "app.py")
+        git(root, "commit", "-m", "initial")
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_sessions.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_na...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_f4439c61c9209dfe', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_pending_hook_horizon_and_rotation_cannot_disappear_from_scope _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_pending_hook_horizon_and_0')
+
+    @pytest.fixture
+    def sessions(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        git(root, "init", "-b", "main")
+        git(root, "config", "user.email", "fixture@example.invalid")
+        git(root, "config", "user.name", "Fixture")
+        (root / "app.py").write_text("VALUE = 1\n")
+        git(root, "add", "app.py")
+        git(root, "commit", "-m", "initial")
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_sessions.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_pe...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_86c8673c679651ef', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_real_install_into_empty_project_then_prepare_handles_index_race[claude] _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_real_install_into_empty_p0')
+
+    @pytest.fixture
+    def sessions(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        git(root, "init", "-b", "main")
+        git(root, "config", "user.email", "fixture@example.invalid")
+        git(root, "config", "user.name", "Fixture")
+        (root / "app.py").write_text("VALUE = 1\n")
+        git(root, "add", "app.py")
+        git(root, "commit", "-m", "initial")
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_sessions.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_re...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_ceb66a303cc74911', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_technical_tail_preserves_ack_but_compaction_invalidates_exactly_once _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_technical_tail_preserves_0')
+
+    @pytest.fixture
+    def sessions(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        git(root, "init", "-b", "main")
+        git(root, "config", "user.email", "fixture@example.invalid")
+        git(root, "config", "user.name", "Fixture")
+        (root / "app.py").write_text("VALUE = 1\n")
+        git(root, "add", "app.py")
+        git(root, "commit", "-m", "initial")
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_sessions.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_te...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_662e8c5b642988ab', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_unknown_code_state_is_unavailable_and_readback_versions_are_typed _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_unknown_code_state_is_una0')
+
+    @pytest.fixture
+    def sessions(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        git(root, "init", "-b", "main")
+        git(root, "config", "user.email", "fixture@example.invalid")
+        git(root, "config", "user.name", "Fixture")
+        (root / "app.py").write_text("VALUE = 1\n")
+        git(root, "add", "app.py")
+        git(root, "commit", "-m", "initial")
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_sessions.py:31: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_un...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_890109fd83de547c', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_backup_checksum_rejected_before_any_database_mutation _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_backup_checksum_rejected_0')
+
+    @pytest.fixture
+    def store(tmp_path):
+>       return Store(tmp_path / "memory")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_store.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_ba...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_a7ca9044b9844c64', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+__ ERROR at setup of test_backup_restore_sources_queue_cursors_and_revisions ___
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_backup_restore_sources_qu0')
+
+    @pytest.fixture
+    def store(tmp_path):
+>       return Store(tmp_path / "memory")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_store.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_ba...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_1694a4a33bf7d61e', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_completion_worktree_is_transient_and_does_not_borrow_other_root_runs _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_completion_worktree_is_tr0')
+
+    @pytest.fixture
+    def store(tmp_path):
+>       return Store(tmp_path / "memory")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_store.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_co...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_019ac393008b2435', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+___ ERROR at setup of test_cross_project_sources_and_empty_evidence_rejected ___
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_cross_project_sources_and0')
+
+    @pytest.fixture
+    def store(tmp_path):
+>       return Store(tmp_path / "memory")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_store.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_cr...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_e8da82ca4cf53d6a', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_jobs_deduplicate_and_claim_once_across_process_like_connections _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_jobs_deduplicate_and_clai0')
+
+    @pytest.fixture
+    def store(tmp_path):
+>       return Store(tmp_path / "memory")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_store.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_jo...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_8ac0eea286489382', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_______ ERROR at setup of test_project_roots_resolve_longest_and_aliases _______
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_project_roots_resolve_lon0')
+
+    @pytest.fixture
+    def store(tmp_path):
+>       return Store(tmp_path / "memory")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_store.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_pr...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_c07e15b426830fd6', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_record_graph_has_evidence_dependencies_and_replacements _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_record_graph_has_evidence0')
+
+    @pytest.fixture
+    def store(tmp_path):
+>       return Store(tmp_path / "memory")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_store.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_re...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_01bc1830dc2504d2', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+______ ERROR at setup of test_snapshot_dedup_preserves_historical_content ______
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_snapshot_dedup_preserves_0')
+
+    @pytest.fixture
+    def store(tmp_path):
+>       return Store(tmp_path / "memory")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_store.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_sn...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_f27c70321e8e2b94', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_snapshot_invalidates_native_ann_and_lexical_current_flags _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_snapshot_invalidates_nati0')
+
+    @pytest.fixture
+    def store(tmp_path):
+>       return Store(tmp_path / "memory")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_store.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_sn...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_a78c6ec660965598', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_______ ERROR at setup of test_two_models_cannot_overwrite_same_version ________
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_two_models_cannot_overwri0')
+
+    @pytest.fixture
+    def store(tmp_path):
+>       return Store(tmp_path / "memory")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_store.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_tw...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_577c470bedc9c268', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_attached_outer_terminal_prefix_unicode_paste_compact_resize_and_detach _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_attached_outer_terminal_p0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7d43aac0a000>
+
+    @pytest.fixture
+    def terminal_stack(tmp_path, monkeypatch):
+>       stack = TerminalStack(tmp_path, monkeypatch)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_terminal_workspace_e2e.py:243: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_terminal_workspace_e2e.py:158: in __init__
+    self.store = Store(self.settings.data_dir)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_at...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_5576797ebe8eac59', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_real_operational_login_has_no_project_identity_or_archived_output _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_real_operational_login_ha0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7d43a9942a20>
+
+    @pytest.fixture
+    def terminal_stack(tmp_path, monkeypatch):
+>       stack = TerminalStack(tmp_path, monkeypatch)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_terminal_workspace_e2e.py:243: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_terminal_workspace_e2e.py:158: in __init__
+    self.store = Store(self.settings.data_dir)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_re...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_8397e54ac58096ab', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_real_outer_operational_login_destroys_only_its_secret_history _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_real_outer_operational_lo0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7d43a9b2cb30>
+
+    @pytest.fixture
+    def terminal_stack(tmp_path, monkeypatch):
+>       stack = TerminalStack(tmp_path, monkeypatch)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_terminal_workspace_e2e.py:243: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_terminal_workspace_e2e.py:158: in __init__
+    self.store = Store(self.settings.data_dir)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_re...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_b52341f02fb9efc3', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_real_outer_workspace_project_switch_and_broker_restart_preserve_native_identity _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_real_outer_workspace_proj0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7d43a9864080>
+
+    @pytest.fixture
+    def terminal_stack(tmp_path, monkeypatch):
+>       stack = TerminalStack(tmp_path, monkeypatch)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_terminal_workspace_e2e.py:243: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_terminal_workspace_e2e.py:158: in __init__
+    self.store = Store(self.settings.data_dir)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_re...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_7ce5cd78f9a91e0c', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_real_websocket_observer_takeover_never_sends_unauthorized_input _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_real_websocket_observer_t0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7d43a98667e0>
+
+    @pytest.fixture
+    def terminal_stack(tmp_path, monkeypatch):
+>       stack = TerminalStack(tmp_path, monkeypatch)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_terminal_workspace_e2e.py:243: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_terminal_workspace_e2e.py:158: in __init__
+    self.store = Store(self.settings.data_dir)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_re...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_a1871cc4947fe3a7', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_two_real_outer_terminals_enforce_single_writer_takeover_and_resize_authority _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_two_real_outer_terminals_0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7d43a9865940>
+
+    @pytest.fixture
+    def terminal_stack(tmp_path, monkeypatch):
+>       stack = TerminalStack(tmp_path, monkeypatch)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_terminal_workspace_e2e.py:243: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_terminal_workspace_e2e.py:158: in __init__
+    self.store = Store(self.settings.data_dir)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_tw...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_dc289f0ea56288a9', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_eof_import_reclassifies_legacy_unknowns_without_changing_archive_or_chunks _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_eof_import_reclassifies_l0')
+
+    @pytest.fixture
+    def workspace(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        (root / "app.py").write_text("VALUE = 1\n")
+        for args in (("init", "-b", "main"), ("add", "."),
+                     ("-c", "user.name=Fixture", "-c", "user.email=fixture@localhost", "commit", "-m", "initial")):
+            subprocess.run(["git", "-C", str(root), *args], check=True, capture_output=True)
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_transcript_compatibility.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_eo...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_a2d4142a61938962', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_other_unknown_or_invalid_records_still_block_ready[[1,2,3]\n] _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_other_unknown_or_invalid_0')
+
+    @pytest.fixture
+    def workspace(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        (root / "app.py").write_text("VALUE = 1\n")
+        for args in (("init", "-b", "main"), ("add", "."),
+                     ("-c", "user.name=Fixture", "-c", "user.email=fixture@localhost", "commit", "-m", "initial")):
+            subprocess.run(["git", "-C", str(root), *args], check=True, capture_output=True)
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_transcript_compatibility.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_ot...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_715eebd240f7a1a9', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_other_unknown_or_invalid_records_still_block_ready[{"type":"world_state",broken}\n] _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_other_unknown_or_invalid_1')
+
+    @pytest.fixture
+    def workspace(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        (root / "app.py").write_text("VALUE = 1\n")
+        for args in (("init", "-b", "main"), ("add", "."),
+                     ("-c", "user.name=Fixture", "-c", "user.email=fixture@localhost", "commit", "-m", "initial")):
+            subprocess.run(["git", "-C", str(root), *args], check=True, capture_output=True)
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_transcript_compatibility.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_ot...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_f70bdde4631d2746', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_prepare_repairs_the_real_seven_record_horizon_without_creating_ack _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_prepare_repairs_the_real_0')
+
+    @pytest.fixture
+    def workspace(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        (root / "app.py").write_text("VALUE = 1\n")
+        for args in (("init", "-b", "main"), ("add", "."),
+                     ("-c", "user.name=Fixture", "-c", "user.email=fixture@localhost", "commit", "-m", "initial")):
+            subprocess.run(["git", "-C", str(root), *args], check=True, capture_output=True)
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_transcript_compatibility.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_pr...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_c3cdb3194da4d68e', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_reparse_never_clears_hash_scope_or_provenance_conflicts[cwd_wrong_project] _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_reparse_never_clears_hash0')
+
+    @pytest.fixture
+    def workspace(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        (root / "app.py").write_text("VALUE = 1\n")
+        for args in (("init", "-b", "main"), ("add", "."),
+                     ("-c", "user.name=Fixture", "-c", "user.email=fixture@localhost", "commit", "-m", "initial")):
+            subprocess.run(["git", "-C", str(root), *args], check=True, capture_output=True)
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_transcript_compatibility.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_re...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_24316bf190c0169f', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_reparse_never_clears_hash_scope_or_provenance_conflicts[other_warning] _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_reparse_never_clears_hash1')
+
+    @pytest.fixture
+    def workspace(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        (root / "app.py").write_text("VALUE = 1\n")
+        for args in (("init", "-b", "main"), ("add", "."),
+                     ("-c", "user.name=Fixture", "-c", "user.email=fixture@localhost", "commit", "-m", "initial")):
+            subprocess.run(["git", "-C", str(root), *args], check=True, capture_output=True)
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_transcript_compatibility.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_re...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_69dbec0e68a7213a', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_reparse_preserves_durable_records_when_original_is_missing_but_does_not_invent_archive_proof _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_reparse_preserves_durable0')
+
+    @pytest.fixture
+    def workspace(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        (root / "app.py").write_text("VALUE = 1\n")
+        for args in (("init", "-b", "main"), ("add", "."),
+                     ("-c", "user.name=Fixture", "-c", "user.email=fixture@localhost", "commit", "-m", "initial")):
+            subprocess.run(["git", "-C", str(root), *args], check=True, capture_output=True)
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_transcript_compatibility.py:43: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_re...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_7e7669c4b65e3915', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_____ ERROR at setup of test_all_required_profiles_and_definition_changes ______
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_all_required_profiles_and0')
+
+    @pytest.fixture
+    def workspace(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        git(root, "init", "-q")
+        git(root, "config", "user.name", "DevBrain fixture")
+        git(root, "config", "user.email", "fixture@example.invalid")
+        (root / ".gitignore").write_text("cache/\nignored/\n__pycache__/\n")
+        (root / "app.py").write_text("value = 1\n")
+        git(root, "add", ".")
+        git(root, "commit", "-qm", "fixture")
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_verification.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_al...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_d4ffc267096b0e94', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+__ ERROR at setup of test_code_and_task_changes_during_check_prevent_success ___
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_code_and_task_changes_dur0')
+
+    @pytest.fixture
+    def workspace(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        git(root, "init", "-q")
+        git(root, "config", "user.name", "DevBrain fixture")
+        git(root, "config", "user.email", "fixture@example.invalid")
+        (root / ".gitignore").write_text("cache/\nignored/\n__pycache__/\n")
+        (root / "app.py").write_text("value = 1\n")
+        git(root, "add", ".")
+        git(root, "commit", "-qm", "fixture")
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_verification.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_co...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_a90af701d3cac94c', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_deleted_project_recovery_cleans_own_logs_without_killing_or_deleting_user_files _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_deleted_project_recovery_0')
+
+    @pytest.fixture
+    def workspace(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        git(root, "init", "-q")
+        git(root, "config", "user.name", "DevBrain fixture")
+        git(root, "config", "user.email", "fixture@example.invalid")
+        (root / ".gitignore").write_text("cache/\nignored/\n__pycache__/\n")
+        (root / "app.py").write_text("value = 1\n")
+        git(root, "add", ".")
+        git(root, "commit", "-qm", "fixture")
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_verification.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_de...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_32d461b3a8e7fbc4', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_final_insert_rejects_foreign_task_and_source_references[task] _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_final_insert_rejects_fore0')
+
+    @pytest.fixture
+    def workspace(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        git(root, "init", "-q")
+        git(root, "config", "user.name", "DevBrain fixture")
+        git(root, "config", "user.email", "fixture@example.invalid")
+        (root / ".gitignore").write_text("cache/\nignored/\n__pycache__/\n")
+        (root / "app.py").write_text("value = 1\n")
+        git(root, "add", ".")
+        git(root, "commit", "-qm", "fixture")
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_verification.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_fi...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_70e453b25763a31e', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_forget_after_last_output_source_cannot_resurrect_orphan_run _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_forget_after_last_output_0')
+
+    @pytest.fixture
+    def workspace(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        git(root, "init", "-q")
+        git(root, "config", "user.name", "DevBrain fixture")
+        git(root, "config", "user.email", "fixture@example.invalid")
+        (root / ".gitignore").write_text("cache/\nignored/\n__pycache__/\n")
+        (root / "app.py").write_text("value = 1\n")
+        git(root, "add", ".")
+        git(root, "commit", "-qm", "fixture")
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_verification.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_fo...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_8608e57e3c6fa534', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_internal_symlink_targets_and_commit_identity_are_hashed _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_internal_symlink_targets_0')
+
+    @pytest.fixture
+    def workspace(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        git(root, "init", "-q")
+        git(root, "config", "user.name", "DevBrain fixture")
+        git(root, "config", "user.email", "fixture@example.invalid")
+        (root / ".gitignore").write_text("cache/\nignored/\n__pycache__/\n")
+        (root / "app.py").write_text("value = 1\n")
+        git(root, "add", ".")
+        git(root, "commit", "-qm", "fixture")
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_verification.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_in...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_c7bb561d7d399364', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+______ ERROR at setup of test_new_failed_attempt_cannot_reuse_old_success ______
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_new_failed_attempt_cannot0')
+
+    @pytest.fixture
+    def workspace(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        git(root, "init", "-q")
+        git(root, "config", "user.name", "DevBrain fixture")
+        git(root, "config", "user.email", "fixture@example.invalid")
+        (root / ".gitignore").write_text("cache/\nignored/\n__pycache__/\n")
+        (root / "app.py").write_text("value = 1\n")
+        git(root, "add", ".")
+        git(root, "commit", "-qm", "fixture")
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_verification.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_ne...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_a00fc41f265dd68d', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_nonpassing_process_outcomes_and_bounded_output[nonzero] _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_nonpassing_process_outcom0')
+
+    @pytest.fixture
+    def workspace(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        git(root, "init", "-q")
+        git(root, "config", "user.name", "DevBrain fixture")
+        git(root, "config", "user.email", "fixture@example.invalid")
+        (root / ".gitignore").write_text("cache/\nignored/\n__pycache__/\n")
+        (root / "app.py").write_text("value = 1\n")
+        git(root, "add", ".")
+        git(root, "commit", "-qm", "fixture")
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_verification.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_no...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_957f2be852b6bdef', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_nonpassing_process_outcomes_and_bounded_output[timeout] _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_nonpassing_process_outcom1')
+
+    @pytest.fixture
+    def workspace(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        git(root, "init", "-q")
+        git(root, "config", "user.name", "DevBrain fixture")
+        git(root, "config", "user.email", "fixture@example.invalid")
+        (root / ".gitignore").write_text("cache/\nignored/\n__pycache__/\n")
+        (root / "app.py").write_text("value = 1\n")
+        git(root, "add", ".")
+        git(root, "commit", "-qm", "fixture")
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_verification.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_no...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_2f18eaa517f87638', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+___________ ERROR at setup of test_timeout_terminates_process_group ____________
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_timeout_terminates_proces0')
+
+    @pytest.fixture
+    def workspace(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        git(root, "init", "-q")
+        git(root, "config", "user.name", "DevBrain fixture")
+        git(root, "config", "user.email", "fixture@example.invalid")
+        (root / ".gitignore").write_text("cache/\nignored/\n__pycache__/\n")
+        (root / "app.py").write_text("value = 1\n")
+        git(root, "add", ".")
+        git(root, "commit", "-qm", "fixture")
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_verification.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_ti...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_bd49b1c3ec3a1424', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_unknown_external_symlink_submodule_missing_and_unstable_inputs _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_unknown_external_symlink_0')
+
+    @pytest.fixture
+    def workspace(tmp_path):
+        root = tmp_path / "repo"
+        root.mkdir()
+        git(root, "init", "-q")
+        git(root, "config", "user.name", "DevBrain fixture")
+        git(root, "config", "user.email", "fixture@example.invalid")
+        (root / ".gitignore").write_text("cache/\nignored/\n__pycache__/\n")
+        (root / "app.py").write_text("value = 1\n")
+        git(root, "add", ".")
+        git(root, "commit", "-qm", "fixture")
+>       store = Store(tmp_path / "memory")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_verification.py:36: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_un...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_a3f20c19ff6cf788', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at setup of test_codex_claude_fresh_codex_restore_plan_check_and_compaction _
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_codex_claude_fresh_codex_0')
+
+    @pytest.fixture
+    def workspace(tmp_path):
+        root = tmp_path / "repo"
+        repository(root)
+        settings = Settings.load(tmp_path / "memory", create=True)
+>       store = Store(settings.data_dir)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_workflow.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_co...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_4fc12830436bfba5', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ ERROR at teardown of test_workspace_read_is_pure_and_updates_are_private_cas _
+
+tmp_path_factory = TempPathFactory(_given_basetemp=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20...r/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107'), _retention_count=3, _retention_policy='all')
+
+    @pytest.fixture(scope="session", autouse=True)
+    def arcade_test_engine(tmp_path_factory):
+        runtime_names = ("DEVBRAIN_ARCADE_URL", "DEVBRAIN_ARCADE_USER", "DEVBRAIN_ARCADE_PASSWORD",
+                         "DEVBRAIN_ARCADE_DATABASE", "DEVBRAIN_ARCADE_DB_PREFIX")
+        original = {name: os.environ.pop(name, None) for name in runtime_names}
+        existing = os.environ.get("DEVBRAIN_TEST_ARCADE_HOME")
+        owns = not existing
+        root = Path(existing) if existing else tmp_path_factory.mktemp("arcade-engine")
+        settings = Settings.load(root, create=True)
+        if owns:
+            with socket.socket() as sock:
+                sock.bind(("127.0.0.1", 0))
+                port = sock.getsockname()[1]
+            settings.arcade_url = f"http://127.0.0.1:{port}"
+            settings.save()
+            distribution = os.environ.get("DEVBRAIN_ARCADE_DIST")
+            install_engine(settings, Path(distribution) if distribution else None)
+        start_engine(settings)
+        prefix = "devbrain_test_" + uuid.uuid4().hex[:8]
+        changes = {"DEVBRAIN_ARCADE_URL": settings.arcade_url,
+                   "DEVBRAIN_ARCADE_USER": settings.arcade_user,
+                   "DEVBRAIN_ARCADE_PASSWORD": settings.arcade_password,
+                   "DEVBRAIN_ARCADE_DB_PREFIX": prefix}
+        os.environ.update(changes)
+        try:
+            yield settings, prefix
+        finally:
+            if owns:
+>               stop_engine(settings)
+
+tests/conftest.py:49: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/engine.py:165: in stop_engine
+    command = Path(f"/proc/{pid}/cmdline").read_bytes()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+/usr/lib/python3.12/pathlib.py:1021: in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = PosixPath('/proc/537/cmdline'), mode = 'rb', buffering = -1
+encoding = None, errors = None, newline = None
+
+    def open(self, mode='r', buffering=-1, encoding=None,
+             errors=None, newline=None):
+        """
+        Open the file pointed by this path and return a file object, as
+        the built-in open() function does.
+        """
+        if "b" not in mode:
+            encoding = io.text_encoding(encoding)
+>       return io.open(self, mode, buffering, encoding, errors, newline)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       FileNotFoundError: [Errno 2] No such file or directory: '/proc/537/cmdline'
+
+/usr/lib/python3.12/pathlib.py:1015: FileNotFoundError
+=================================== FAILURES ===================================
+____ test_new_action_cannot_merge_away_an_overwritten_captured_partial_tail ____
+
+lifecycle = (<devbrain.store.Store object at 0x7d43a9e6b3b0>, {'id': '426a90d5-0afe-4513-8c38-dd930309c6af', 'name': 'lifecycle', ...st-update-20261107/test_new_action_cannot_merge_a0/repo'), <devbrain.sessions.SessionManager object at 0x7d43abce7830>)
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_new_action_cannot_merge_a0')
+
+    def test_new_action_cannot_merge_away_an_overwritten_captured_partial_tail(lifecycle, tmp_path):
+        store, project, root, manager = lifecycle
+        history = tmp_path / "changed-partial-tail.jsonl"
+        first = _history(history, root)
+>       import_history(store, history, project["id"], "codex")
+
+tests/test_session_lifecycle.py:419: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/ingest.py:818: in import_history
+    return _import_history_locked(store, path, project_id, client)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/devbrain/ingest.py:943: in _import_history_locked
+    _save_cursor(store, path, project_id, detected, end)
+src/devbrain/ingest.py:540: in _save_cursor
+    tx.command(
+src/devbrain/journal.py:157: in command
+    before = self.native.query(selection, params) if operation in {"UPDATE", "DELETE FROM"} else []
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+src/devbrain/arcade.py:86: in query
+    return self._result(self._request("POST", f"/api/v1/query/{quote(self.database)}",
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <devbrain.arcade.ArcadeClient object at 0x7d43a9f91760>, method = 'POST'
+path = '/api/v1/query/devbrain_test_67a00c2f_aef931d4e6f30892', timeout = 30
+kwargs = {'json': {'language': 'sql', 'command': 'SELECT FROM `import_cursors` WHERE path=:path', 'params': {'id': 'c47fc107893.../changed-partial-tail.jsonl', 'project': '426a90d5-0afe-4513-8c38-dd930309c6af', 'client': 'codex', ...}, 'limit': -1}}
+
+    def _request(self, method: str, path: str, *, timeout: float = 30, **kwargs) -> httpx.Response:
+        headers = kwargs.pop("headers", {})
+        if self.session_id:
+            headers["arcadedb-session-id"] = self.session_id
+        try:
+            with httpx.Client(base_url=self.settings.arcade_url.rstrip("/"), timeout=timeout,
+                              auth=(self.settings.arcade_user, self.settings.arcade_password),
+                              trust_env=False, transport=self.transport) as client:
+                response = client.request(method, path, headers=headers, **kwargs)
+            if not response.is_success:
+                error = {}
+                try:
+                    error = response.json()
+                    if not isinstance(error, dict):
+                        error = {}
+                    message = error.get("detail") or error.get("error") or error.get("exception") or "query failed"
+                except ValueError:
+                    message = "invalid response"
+                safe_message = str(message)
+                if self.settings.arcade_password:
+                    safe_message = safe_message.replace(self.settings.arcade_password, "[redacted]")
+                raise ArcadeError(f"ArcadeDB HTTP {response.status_code}: {safe_message[:500]}",
+                                  status_code=response.status_code,
+                                  exception_name=str(error.get("exception", "")) if isinstance(error, dict) else "")
+            return response
+        except httpx.HTTPError as exc:
+>           raise ArcadeError(f"Local ArcadeDB is unavailable ({type(exc).__name__}); "
+                              "run devbrain engine status or devbrain engine start") from None
+E           devbrain.arcade.ArcadeError: Local ArcadeDB is unavailable (ReadError); run devbrain engine status or devbrain engine start
+
+src/devbrain/arcade.py:65: ArcadeError
+_________________ test_empty_launcher_registers_first_project __________________
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_empty_launcher_registers_0')
+
+    @pytest.mark.asyncio
+    async def test_empty_launcher_registers_first_project(tmp_path):
+        settings = Settings.load(tmp_path / "data", create=True)
+>       store = Store(settings.data_dir)
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_tui.py:142: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_em...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_4cdc0aacd98e9f43', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+____________ test_managed_task_update_sends_task_and_plan_versions _____________
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_managed_task_update_sends0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7d43a9d662a0>
+
+    @pytest.mark.asyncio
+    async def test_managed_task_update_sends_task_and_plan_versions(tmp_path, monkeypatch):
+        from devbrain.plans import PlanManager
+    
+>       settings, store, project, _, _ = seed(tmp_path)
+                                         ^^^^^^^^^^^^^^
+
+tests/test_tui.py:244: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_tui.py:25: in seed
+    store = Store(settings.data_dir)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_ma...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_7a64e9c9cae2222a', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+__________ test_native_launch_suspends_ui_without_changing_arguments ___________
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_native_launch_suspends_ui0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7d43a9d65220>
+
+    @pytest.mark.asyncio
+    async def test_native_launch_suspends_ui_without_changing_arguments(tmp_path, monkeypatch):
+>       settings, store, project, _, _ = seed(tmp_path)
+                                         ^^^^^^^^^^^^^^
+
+tests/test_tui.py:116: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_tui.py:25: in seed
+    store = Store(settings.data_dir)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_na...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_1154edf5610dc47c', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+_ test_plans_next_step_and_packet_readiness_are_scoped_to_registered_worktree __
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_plans_next_step_and_packe0')
+
+    @pytest.mark.asyncio
+    async def test_plans_next_step_and_packet_readiness_are_scoped_to_registered_worktree(tmp_path):
+        from devbrain.plans import PlanManager
+        from devbrain.sessions import SessionManager
+    
+>       settings, store, project, _, _ = seed(tmp_path)
+                                         ^^^^^^^^^^^^^^
+
+tests/test_tui.py:210: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_tui.py:25: in seed
+    store = Store(settings.data_dir)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_pl...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_873e7a468abc0288', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+________________ test_project_selection_shows_tasks_and_sources ________________
+
+tmp_path = PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_project_selection_shows_t0')
+
+    @pytest.mark.asyncio
+    async def test_project_selection_shows_tasks_and_sources(tmp_path):
+>       settings, store, project, source, task = seed(tmp_path)
+                                                 ^^^^^^^^^^^^^^
+
+tests/test_tui.py:39: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_tui.py:25: in seed
+    store = Store(settings.data_dir)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+src/devbrain/store.py:136: in __init__
+    ensure_engine(self.settings)
+src/devbrain/engine.py:152: in ensure_engine
+    start_engine(settings)
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+settings = Settings(data_dir=PosixPath('/home/piotr/.cache/devbrain-final-validation-20261107/pytest-post-update-20261107/test_pr...bOUegcmfBAdDSJrzh08eu713sonwkXqM', arcade_database='devbrain_test_67a00c2f_ae18c9d41528dc32', arcade_version='26.11.1')
+
+    def start_engine(settings: Settings) -> dict:
+        settings.data_dir.mkdir(parents=True, exist_ok=True, mode=0o700)
+        with (settings.data_dir / "engine.lock").open("a") as lock:
+            fcntl.flock(lock, fcntl.LOCK_EX)
+            existing = engine_status(settings)
+            if existing["available"]:
+                if not existing.get("version_matches"):
+                    raise ArcadeError(f"ArcadeDB release does not match the pinned {settings.arcade_version}")
+                return existing
+            home = runtime_dir(settings)
+            if not (home / "lib").is_dir():
+>               raise ArcadeError("ArcadeDB is not installed. Run devbrain engine install first.")
+E               devbrain.arcade.ArcadeError: ArcadeDB is not installed. Run devbrain engine install first.
+
+src/devbrain/engine.py:92: ArcadeError
+=============================== warnings summary ===============================
+.venv/lib/python3.12/site-packages/fastapi/testclient.py:1
+  /home/piotr/.cache/devbrain-final-validation-20261107/.venv/lib/python3.12/site-packages/fastapi/testclient.py:1: StarletteDeprecationWarning: Using `httpx` with `starlette.testclient` is deprecated; install `httpx2` instead.
+    from starlette.testclient import TestClient as TestClient  # noqa
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+- generated xml file: /mnt/c/Users/piotr/OneDrive/Dokumenty/ChatGPT/devbrain/evidence/devbrain-post-update-validation-20261107.xml -
+============================= slowest 10 durations =============================
+6.01s call     tests/test_migrations.py::test_backup_failure_prevents_additive_ddl_and_version_change
+5.92s call     tests/test_service.py::test_cache_tracks_profiles_and_ignored_verification_inputs
+5.91s call     tests/test_portable_memory.py::test_legitimate_large_memory_record_preserves_complete_content_and_evidence
+5.73s setup    tests/test_portable_memory.py::test_bad_snapshot_is_rejected_before_any_destination_knowledge_mutation[revision_chain]
+5.66s setup    tests/test_portable_memory.py::test_bad_snapshot_is_rejected_before_any_destination_knowledge_mutation[object_bytes]
+5.58s setup    tests/test_portable_memory.py::test_legitimate_large_memory_record_preserves_complete_content_and_evidence
+4.25s call     tests/test_plans.py::test_removed_step_is_archived_with_history_and_stale_plan_cannot_erase_progress
+4.14s call     tests/test_portable_memory.py::test_bad_snapshot_is_rejected_before_any_destination_knowledge_mutation[object_bytes]
+4.10s call     tests/test_service.py::test_real_http_agent_retrieval_cache_and_uncommitted_change
+3.71s call     tests/test_portable_memory.py::test_bad_snapshot_is_rejected_before_any_destination_knowledge_mutation[revision_chain]
+=========================== short test summary info ============================
+FAILED tests/test_session_lifecycle.py::test_new_action_cannot_merge_away_an_overwritten_captured_partial_tail
+FAILED tests/test_tui.py::test_empty_launcher_registers_first_project - devbr...
+FAILED tests/test_tui.py::test_managed_task_update_sends_task_and_plan_versions
+FAILED tests/test_tui.py::test_native_launch_suspends_ui_without_changing_arguments
+FAILED tests/test_tui.py::test_plans_next_step_and_packet_readiness_are_scoped_to_registered_worktree
+FAILED tests/test_tui.py::test_project_selection_shows_tasks_and_sources - de...
+ERROR tests/test_session_lifecycle.py::test_real_native_lifecycle_invalidates_ack_after_state_refresh[fork]
+ERROR tests/test_session_lifecycle.py::test_shorter_rewritten_generation_keeps_its_own_unproved_horizon
+ERROR tests/test_sessions.py::test_archive_barrier_is_actual_eof_not_just_current_cursor
+ERROR tests/test_sessions.py::test_empty_exception_rejects_other_native_config_and_substring_impersonation[codex_model]
+ERROR tests/test_sessions.py::test_empty_exception_rejects_other_native_config_and_substring_impersonation[instructions]
+ERROR tests/test_sessions.py::test_empty_exception_rejects_other_native_config_and_substring_impersonation[other_mcp]
+ERROR tests/test_sessions.py::test_first_empty_scope_may_start_without_claiming_verified_code
+ERROR tests/test_sessions.py::test_incomplete_unparsed_or_missing_ranges_are_never_ready[deleted_unproved]
+ERROR tests/test_sessions.py::test_incomplete_unparsed_or_missing_ranges_are_never_ready[partial_tail]
+ERROR tests/test_sessions.py::test_native_binding_scope_and_worktree_plan_selection_are_isolated
+ERROR tests/test_sessions.py::test_pending_hook_horizon_and_rotation_cannot_disappear_from_scope
+ERROR tests/test_sessions.py::test_real_install_into_empty_project_then_prepare_handles_index_race[claude]
+ERROR tests/test_sessions.py::test_technical_tail_preserves_ack_but_compaction_invalidates_exactly_once
+ERROR tests/test_sessions.py::test_unknown_code_state_is_unavailable_and_readback_versions_are_typed
+ERROR tests/test_store.py::test_backup_checksum_rejected_before_any_database_mutation
+ERROR tests/test_store.py::test_backup_restore_sources_queue_cursors_and_revisions
+ERROR tests/test_store.py::test_completion_worktree_is_transient_and_does_not_borrow_other_root_runs
+ERROR tests/test_store.py::test_cross_project_sources_and_empty_evidence_rejected
+ERROR tests/test_store.py::test_jobs_deduplicate_and_claim_once_across_process_like_connections
+ERROR tests/test_store.py::test_project_roots_resolve_longest_and_aliases - d...
+ERROR tests/test_store.py::test_record_graph_has_evidence_dependencies_and_replacements
+ERROR tests/test_store.py::test_snapshot_dedup_preserves_historical_content
+ERROR tests/test_store.py::test_snapshot_invalidates_native_ann_and_lexical_current_flags
+ERROR tests/test_store.py::test_two_models_cannot_overwrite_same_version - de...
+ERROR tests/test_terminal_workspace_e2e.py::test_attached_outer_terminal_prefix_unicode_paste_compact_resize_and_detach
+ERROR tests/test_terminal_workspace_e2e.py::test_real_operational_login_has_no_project_identity_or_archived_output
+ERROR tests/test_terminal_workspace_e2e.py::test_real_outer_operational_login_destroys_only_its_secret_history
+ERROR tests/test_terminal_workspace_e2e.py::test_real_outer_workspace_project_switch_and_broker_restart_preserve_native_identity
+ERROR tests/test_terminal_workspace_e2e.py::test_real_websocket_observer_takeover_never_sends_unauthorized_input
+ERROR tests/test_terminal_workspace_e2e.py::test_two_real_outer_terminals_enforce_single_writer_takeover_and_resize_authority
+ERROR tests/test_transcript_compatibility.py::test_eof_import_reclassifies_legacy_unknowns_without_changing_archive_or_chunks
+ERROR tests/test_transcript_compatibility.py::test_other_unknown_or_invalid_records_still_block_ready[[1,2,3]\n]
+ERROR tests/test_transcript_compatibility.py::test_other_unknown_or_invalid_records_still_block_ready[{"type":"world_state",broken}\n]
+ERROR tests/test_transcript_compatibility.py::test_prepare_repairs_the_real_seven_record_horizon_without_creating_ack
+ERROR tests/test_transcript_compatibility.py::test_reparse_never_clears_hash_scope_or_provenance_conflicts[cwd_wrong_project]
+ERROR tests/test_transcript_compatibility.py::test_reparse_never_clears_hash_scope_or_provenance_conflicts[other_warning]
+ERROR tests/test_transcript_compatibility.py::test_reparse_preserves_durable_records_when_original_is_missing_but_does_not_invent_archive_proof
+ERROR tests/test_verification.py::test_all_required_profiles_and_definition_changes
+ERROR tests/test_verification.py::test_code_and_task_changes_during_check_prevent_success
+ERROR tests/test_verification.py::test_deleted_project_recovery_cleans_own_logs_without_killing_or_deleting_user_files
+ERROR tests/test_verification.py::test_final_insert_rejects_foreign_task_and_source_references[task]
+ERROR tests/test_verification.py::test_forget_after_last_output_source_cannot_resurrect_orphan_run
+ERROR tests/test_verification.py::test_internal_symlink_targets_and_commit_identity_are_hashed
+ERROR tests/test_verification.py::test_new_failed_attempt_cannot_reuse_old_success
+ERROR tests/test_verification.py::test_nonpassing_process_outcomes_and_bounded_output[nonzero]
+ERROR tests/test_verification.py::test_nonpassing_process_outcomes_and_bounded_output[timeout]
+ERROR tests/test_verification.py::test_timeout_terminates_process_group - dev...
+ERROR tests/test_verification.py::test_unknown_external_symlink_submodule_missing_and_unstable_inputs
+ERROR tests/test_workflow.py::test_codex_claude_fresh_codex_restore_plan_check_and_compaction
+ERROR tests/test_workspace_state.py::test_workspace_read_is_pure_and_updates_are_private_cas
+======== 6 failed, 58 passed, 1 warning, 50 errors in 136.49s (0:02:16) ========

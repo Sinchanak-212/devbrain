@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_remaining_gate_current_backend_binding",
+  "status": "partial_actual_backend_pass_standalone_pending",
+  "created_utc": "2026-11-08T21:12:14.241704+00:00",
+  "template_master": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-length-repair-remaining-gate-templates-604-20261108.json",
+  "template_master_sha256": "c9576982a7b550b0991dd6edfccf98cc87abd3c776ad572da4f4730e1c3b0a0c",
+  "source_snapshot": "app080-20261108T202627Z",
+  "source_freeze_sha256": "1f35dae9f2b3f894bb67535a215e29cba3c1235120ff30daa387bd5450f03e14",
+  "helper_count": 38,
+  "helper_map_equal": true,
+  "backend": {
+    "context": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-fullbackend-length-repair-active-context-20261108.json",
+    "context_sha256": "1c101b5e4f9c56226d7bf4a3a979e2f5b34f4c4cdae7d33349048a3bece36133",
+    "receipt_sha256": "44fea7c912bda9bf128d96f80797b557217f531fcafda30181c59e00e3bc20af",
+    "final_report_sha256": "d9515cf5eb9ee4904039b5b8967ec845e690bd4986807e75d2e6dc7e266cb241"
+  },
+  "actual_backend_tests": 1557,
+  "actual_backend_exec_session": 5384,
+  "actual_backend_exit_code": 0,
+  "queue_copy": {
+    "context": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-queue-copy-length-repair-active-context-20261108.json",
+    "context_sha256": "7285aa2a59c5c27356954df208d03e3dbfbb7c210e35978d384b9628cd63f96b",
+    "receipt_sha256": "612fe7ff7b542dc687d8f76a3f890fdd474631dfd5f5694a7db51c6a459f4644",
+    "final_report_sha256": "19338e5db7779609154bdd0633e3dcdcc99ca9b7d25f824116302e85ff4e411b",
+    "run_id": "queue-copy-length-repair080-20261108T204333Z-d7f0e530"
+  },
+  "pending_standalone_context": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-standalone-length-repair-attestation-envelope-20261108.json",
+  "pending_standalone_context_sha256": null,
+  "canonical_output": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\fullbackend-length-repair080-20261108T204439Z-b2a1ac34\\artifacts\\final-full-suite.json",
+  "canonical_attestation_sha256": null,
+  "standalone_final_pass_proof": null,
+  "proof_manifest": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-length-repair-eight-hour-proof-manifest-after-backend-20261108.json",
+  "proof_manifest_sha256": "11e84fdf97632a22dada3ed530f75970f807497c7748998849a34a0b1d0bf0b0",
+  "previous_template": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-length-repair-eight-hour-proof-manifest-template-20261108.json",
+  "previous_template_sha256": "744565b9279dc31fe3cd7a0fd75db06704d1cfdb3205b546771c09fb893c22c9",
+  "remaining_actual_gate_proofs": [
+    "ux",
+    "interactive",
+    "native",
+    "copilot",
+    "recall",
+    "frontend",
+    "upgrade_smoke"
+  ],
+  "stage_executed": false,
+  "linux_workload_started": false,
+  "eight_hour_started": false,
+  "production_modified": false,
+  "old_templates_contexts_receipts_mutated": false,
+  "release_qualified": false
+}

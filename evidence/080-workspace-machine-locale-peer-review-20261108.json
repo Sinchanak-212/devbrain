@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_workspace_machine_locale_static_peer_review",
+  "created_utc": "2026-11-08T11:35:59.4327267Z",
+  "reviewer": "test_suite",
+  "status": "static_ack_no_concrete_code_blocker",
+  "runtime_tested": false,
+  "linux_started": false,
+  "application_files_modified_by_reviewer": false,
+  "baseline_run": "app080-20261108T104630Z",
+  "baseline_freeze_sha256": "0833d3c38a044b2df739c83fc4aaf9f330588b9859ee03f6f331d787a722b724",
+  "reviewed_files": {
+    "devbrain/src/devbrain/workspace.py": "526909953ec356469dab5043b61e1ec3b2c6889a855a1834bddcc0b3b5b6a994",
+    "devbrain/pyproject.toml": "f6d9437c3a0af9ec5ea234bfd29d5fc090ade758b7612cc1c2be2dcf2ca266d3",
+    "devbrain/tests/test_workspace_locale.py": "4957458794ec0398d0d30d8bfb660ed0454051320ab4aee8824a1dad94dd9d6c"
+  },
+  "checks": {
+    "positive_negative_lease": "Real PTY attach must become writable with exact terminal, bad PID and bad TTY remain rejected without changing clients.",
+    "pyproject_exact_byte_transform": "Only junit_family = xunit1 added",
+    "private_scope": "Fixture creates synthetic data under tmp_path; per-data-dir hashed private tmux socket. Existing runner supplies short TMPDIR and workspace rejects socket paths over100bytes.",
+    "pid_tty_identity_and_readonly_guards_unchanged": true,
+    "cleanup": "Success detaches exact TTY and waits actual child exit0, session remains and clients empty. Failure uses nested detach/retained-Popen terminate-wait-kill-wait/fd close; fixture then real private kill-server. No mocked tmux cleanup.",
+    "workspace_exact_byte_transform": "Only two comment lines and one -u argv element in captured WorkspaceManager.tmux subprocess.run; remainder byte-identical to 104630",
+    "interactive_attach_unchanged": true,
+    "windows_ast": {
+      "workspace": "passed",
+      "locale_test": "passed"
+    },
+    "no_actual_backend": "Mock Broker, idle Python pane commands, start_supervisor=False; child attach does not access BrokerClient. Test asserts no broker calls.",
+    "test_cases": "Two parameter cases: C and unset; child reapplies locale after Python startup coercion.",
+    "qualified_runtime": "Child uses same sys.executable -I; fixture uses DEVBRAIN_TEST_TMUX when set by qualified UX runner. This is not an independent runtime qualification."
+  },
+  "expected_ux_modules": 27,
+  "expected_ux_cases": 305,
+  "expected_counts_are_not_collected": true,
+  "inventory": {
+    "staging_note": "Current workspace has concurrent README.md and new docs/ROADMAP.md changes, outside this code review. A blanket197-file inventory claim is false; root must explicitly retain baseline documentation or include current documentation in a new198-file freeze.",
+    "code_candidate_count_if_baseline_docs_retained": 197,
+    "new_files": [
+      {
+        "sha256": "4957458794ec0398d0d30d8bfb660ed0454051320ab4aee8824a1dad94dd9d6c",
+        "path": "devbrain/tests/test_workspace_locale.py"
+      },
+      {
+        "sha256": "b8f003af10c93d12d7d40ce5d2cf58fc360a5845fb247d365f610a29fd8a045c",
+        "path": "devbrain/docs/ROADMAP.md"
+      }
+    ],
+    "baseline_app_count": 196,
+    "current_workspace_app_count": 198,
+    "changed_existing_files": [
+      {
+        "path": "devbrain/pyproject.toml",
+        "current_sha256": "f6d9437c3a0af9ec5ea234bfd29d5fc090ade758b7612cc1c2be2dcf2ca266d3",
+        "baseline_sha256": "e3b8ffd0bb7f69a902b0b551a95b559abb00f9143282c99197055d9b2b893813"
+      },
+      {
+        "path": "devbrain/src/devbrain/workspace.py",
+        "current_sha256": "526909953ec356469dab5043b61e1ec3b2c6889a855a1834bddcc0b3b5b6a994",
+        "baseline_sha256": "876e26d89bf788c3ceb63d04e951ac815888d562d9ffa4443dfac5b0f7f155d3"
+      },
+      {
+        "path": "devbrain/README.md",
+        "current_sha256": "6b2557692bf0578d7b8849b8a8aee25c93010f21ab40107fffe26cadcb7c6e88",
+        "baseline_sha256": "3c8e206e4a62424a300b53acdf51e1ccfd1c8c7ec8f0e4e1825a81b623bd2dce"
+      }
+    ]
+  },
+  "findings": [],
+  "runtime_followup": "Run fresh supervised collection and full UX on final frozen source; old303PASS does not cover this delta."
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_v7_readonly_source_preflight_unmanaged_root_output_independent_static_peer",
+  "created_utc": "2026-11-08T20:42:38.9626284Z",
+  "status": "static_ack_pending_explicit_serial_handoff_and_actual_observation",
+  "verdict": "PASS",
+  "findings": [],
+  "files": {
+    "evidence/stage-production-source-preflight-v7-080.ps1": "366e3c1d221f80d58d4cd6bd294f54cbb30e3f66160667c7b043d1a62a0860dc",
+    "release-tools/run-source-preflight080-v7.ps1": "f03ddf073f85636c3fc5ac53d892f695ec761f5674117c3b8d98afbdd3a819be",
+    "release-tools/check-production-source080-v7.py": "47838bbff07f73639563c43d0f37c5c92e3dc8ff7ab0529132e4d4fad570b8b3"
+  },
+  "policy": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-unmanaged-build-output-public-policy-20261108.json",
+  "policy_sha256": "dd4312ebed54b8aea60c9bfccad0317f8f12fcf2e7d6c173099d707c407f425d",
+  "public_baseline_files": 182,
+  "public_target_files": 198,
+  "package_counts": [
+    64,
+    69
+  ],
+  "public_ZIP_hashes_and_no_root_dist_collision_independently_checked": true,
+  "reviewed_delta": [
+    "Exact root dist owned normal directory only preserved without reading or listing child names/contents",
+    "Any manifest path collision rejected before source FD open",
+    "Wrong type, owner, symlink/reparse or retained FD identity change fail",
+    "Preserved root directory identity participates in two complete source passes",
+    "Every other unknown entry still blocks; existing frontend exclusions unchanged",
+    "Target pin updated to actual V7 ZIP4fb8",
+    "Observer only checker and target ZIP digest pins changed from typed6df version",
+    "Stager binds immutable copied historical observer proof7e1 and current actualV7 public release; no old app qualification claim"
+  ],
+  "PS_parse_errors": 0,
+  "Windows_synthetic_test_source_reviewed_methods": 8,
+  "synthetic_tests_not_executed_by_this_reviewer": true,
+  "old90bc_and_failed64776_evidence_unchanged": true,
+  "Stage_invoked": false,
+  "Execute_invoked": false,
+  "Linux_executed": false,
+  "production_or_private_output_read": false,
+  "production_modified": false,
+  "app_or_frozen38_helpers_modified": false,
+  "runtime_or_deployment_qualification_claimed": false
+}

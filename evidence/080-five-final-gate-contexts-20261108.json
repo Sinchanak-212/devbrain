@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_five_final_gate_preparation",
+  "status": "prepared_pending_new_controlled_fixtures",
+  "contexts": {
+    "fullbackend": {
+      "status": "prepared_pending_new_controlled_fixture_handoff",
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-full-backend-final-active-context-20261108.json",
+      "sha256": "f22c898e0c4071744ea8a7e4c826907a5ae02438c6ef722b9fd5de13e89e73a1",
+      "input_freeze_sha256": "ed856bfce2be48037f1983564eeedce25d66183913d73118f7fb29b828e46af8",
+      "specification_sha256": "bbe4cb1a82a5e837b06e7a41fab6d0dfa0fb193aa3e72905aa0371c8c60558cf",
+      "run_id": "full-backend-final080-20261108T141923Z"
+    },
+    "native": {
+      "status": "prepared_pending_new_controlled_fixture_handoff",
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-native-account-final-active-context-20261108.json",
+      "sha256": "d3658c0bd4abe5ca72c3acfb3cc710e9a4c2f68f277a0cc24b0637ce45a9f693",
+      "input_freeze_sha256": "e0b686f3309a5beb62ebbf6ca94101ac5c6f60f6ba1da3e75d8f9b9b2c394fcd",
+      "specification_sha256": "b8b9f1e6fa45c38938d54930bb944baa65ed38cab97db92c967167386f33641a",
+      "run_id": "native-account-final080-20261108T141923Z"
+    },
+    "copilot": {
+      "status": "prepared_pending_new_controlled_fixture_handoff",
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-copilot-account-final-active-context-20261108.json",
+      "sha256": "a6f0e87345b492195d96cd7b7bd2d9f2e63f70d522e74a6c17047f26ecc98ab5",
+      "input_freeze_sha256": "e78a5a5eb3f74eee4605871b99419216f52f1ee6b42bf16448f4750d63ad96a2",
+      "specification_sha256": "a5c6c8b527501a6f7b5126881381990d5ff4a9efc1c4f07a5828369daa47c61a",
+      "run_id": "copilot-account-final080-20261108T141923Z"
+    },
+    "ollama20": {
+      "status": "prepared_pending_new_controlled_fixture_handoff",
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-ollama20-final-active-context-20261108.json",
+      "sha256": "1414434e598f33d8c88f5ade561bb1c76d83f7051de043fbc03e47d9d1d904e0",
+      "input_freeze_sha256": "e88b897a55774606054872a005d0d0ef42dbdd1a238d82cf882e077d9f24fcd2",
+      "specification_sha256": "3582ab38fa8b78c0d08c4d5aee6b6e146b69b671635e8297f18026c6fd542e9c",
+      "run_id": "ollama20-final080-20261108T141923Z"
+    },
+    "frontend": {
+      "status": "prepared_pending_new_controlled_fixture_handoff",
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-frontend-final-active-context-20261108.json",
+      "sha256": "46c130d0770490ee915ec1bfefce0bf130b581fd821d3a0582e7dcf1823cbd73",
+      "input_freeze_sha256": "7941c33fd40c30ec7e67a8a4cb7f87c3d8fc5e94e278c2013356f25a35b5d69f",
+      "specification_sha256": "ff68c008e165f8e2b17710d2d2207b1a78d3de3aad400619b3d376463e92d7d9",
+      "run_id": "frontend-final080-20261108T141923Z"
+    }
+  },
+  "source_snapshot": "app080-20261108T134240Z",
+  "source_freeze_sha256": "86ceb039990ab2c46966e5d4e412f83a6876f2a99b8a2112d08ddddac1ad92ab",
+  "guard_receipt_sha256": "af09c4d53e25fd67910b9d02772eff4f8b89cfc0b2eb6b6c1fc1634fedc0f36e",
+  "guard_actual_windows_exit_code": 0,
+  "guard_tests": 474,
+  "final_ui_receipt_sha256": "404a3b747024a30fe43de7a18565df914b2521070e4ac329adc04baf7ce326c5",
+  "source_final": true,
+  "linux_started": false,
+  "new_controlled_fixtures_passed": false,
+  "historical_contexts_preserved": true,
+  "created_utc": "2026-11-08T14:19:30.9146513Z"
+}

@@ -1,0 +1,14 @@
+[Sat Nov  7 11:44:48 2026] tmux: server[2301]: segfault at 62161cc7741d ip 0000620fff96a6e3 sp 00007ffe1bf2ff20 error 4 in tmux[716e3,620fff916000+af000] likely on CPU 29 (core 14, socket 0)
+[Sat Nov  7 11:44:48 2026] WSL (2403 - CaptureCrash): Capturing crash for pid: 1171, executable: !usr!bin!tmux, signal: 11, port: 50005
+[Sat Nov  7 11:45:34 2026] tmux: server[3710]: segfault at 5b66a9b5ae5b ip 00005b630ee6f6e3 sp 00007ffca21d9450 error 4 in tmux[716e3,5b630ee1b000+af000] likely on CPU 2 (core 1, socket 0)
+[Sat Nov  7 11:45:34 2026] WSL (3818 - CaptureCrash): Capturing crash for pid: 747, executable: !usr!bin!tmux, signal: 11, port: 50005
+[Sat Nov  7 11:47:06 2026] WSL (4750 - CaptureCrash): Capturing crash for pid: 1508, executable: !usr!bin!python3.12, signal: 11, port: 50005
+[Sat Nov  7 11:49:46 2026] tmux: server[5941]: segfault at 58035a464df9 ip 00005806b414b6e3 sp 00007ffd0a29c480 error 4 in tmux[716e3,5806b40f7000+af000] likely on CPU 16 (core 8, socket 0)
+[Sat Nov  7 11:49:46 2026] WSL (6043 - CaptureCrash): Capturing crash for pid: 773, executable: !usr!bin!tmux, signal: 11, port: 50005
+[Sat Nov  7 11:50:50 2026] tmux: server[7416]: segfault at 56b41c29c8de ip 000056b172ead6e3 sp 00007fff68316fa0 error 4 in tmux[716e3,56b172e59000+af000] likely on CPU 7 (core 3, socket 0)
+[Sat Nov  7 11:50:50 2026] WSL (7575 - CaptureCrash): Capturing crash for pid: 1194, executable: !usr!bin!tmux, signal: 11, port: 50005
+[Sat Nov  7 11:53:00 2026] tmux: server[11237]: segfault at 5723ae330edf ip 00005726ca9636e3 sp 00007ffeb7dedee0 error 4 in tmux[716e3,5726ca90f000+af000] likely on CPU 30 (core 15, socket 0)
+[Sat Nov  7 11:53:00 2026] WSL (11642 - CaptureCrash): Capturing crash for pid: 3459, executable: !usr!bin!tmux, signal: 11, port: 50005
+[Sat Nov  7 11:56:38 2026] python[18767]: segfault at 0 ip 0000000001614ff1 sp 00007ffc40f456d0 error 4 in python3.12[13ebff1,1400000+8e3000] likely on CPU 1 (core 0, socket 0)
+[Sat Nov  7 11:56:38 2026] CPU: 1 UID: 1000 PID: 18767 Comm: python Not tainted 6.18.54.1-microsoft-standard-WSL2 #1 PREEMPT(none) 
+[Sat Nov  7 11:56:38 2026] WSL (18783 - CaptureCrash): Capturing crash for pid: 10985, executable: !home!piotr!.cache!devbrain-runtime-080!runtimes!python!bin!python3.12, signal: 11, port: 50005

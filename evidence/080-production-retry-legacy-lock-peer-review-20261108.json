@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_production_retry_legacy_lock_static_peer_review",
+  "status": "ack_no_static_blocker",
+  "files": {
+    "supervise-080.py": "2a1552f7da447122b20db7251925ce75aee435a62cce1ccbe546ea0f005c29f1",
+    "run-supervised-080.ps1": "afb5da7c74fad65507cc73cc062b0b2cadfd438ad5ea04c0977f405186c03621",
+    "run-regressions-080.py": "69179a95977ac49c5fa57e3cf0efbcb4232345eaba6292736f2201186a484f61",
+    "test_regressions080_guards.py": "d09b8bdcb1593fef5494156142c04653c5f15dc5311de9021e75499eff89fbd8",
+    "retry-production-queue-080.py": "973b47040012a099480c9c9e2a08772cd065e1daafc375b7df9c04384351180d",
+    "test_production_queue080_guards.py": "9fc687a39c4adb1d3cd910263f6119c43a02bb05bf232c4106d94af8da348cf3",
+    "attest-full-suite-080.py": "1dfda81aa8db69a9b43ed3d7223ca27c3163a3dbe2fe8414c589a79ac985a2af"
+  },
+  "previous_review_sha256": "151b35ea67085326bb88ea72ca53423c46d608bbec1989ddf4c219440ee267d9",
+  "reviewed_utc": "2026-11-08T14:10:40.7318537Z",
+  "reviewed_delta": [
+    "Only service.lock, engine.lock and database-writer.lock directly inside canonical owner0700 PRODUCTION may be0600 or0644; both accepted modes still require empty regular owner file, nlink1, O_NOFOLLOW and retained inode/dev lock proof.",
+    "All other lock names/roots still require0600. No chmod or existing contents rewrite was added.",
+    "Journal parent may be canonical owner755 but must have no group/world write bits. Only dedicated child is created0700 then directory-fsynced and canonical/private-checked; existing symlink or unsafe parent fails.",
+    "Main replaces only prior too-strict parent700 precondition/dedicatedchild creation with the reviewed helper; journal reservation, CAS, engine, quiescence, qualification and cleanup bodies unchanged.",
+    "Thirteen synthetic regression cases cover three legitimate0644 locks, six lock refusals and four safe/unsafe journal-parent paths."
+  ],
+  "new_delta_authored_cases": 13,
+  "new_module_authored_cases": 71,
+  "expected_whole_guards": 474,
+  "expected_modules": 10,
+  "expected_helpers": 34,
+  "actual_collection_authoritative": true,
+  "windows_ast": "2_pass",
+  "runtime_tests": "not_run",
+  "linux_started": false,
+  "production_data_read": false,
+  "production_data_changed": false,
+  "frozen_history_changed": false,
+  "static_blockers": [],
+  "qualification_claimed": false
+}

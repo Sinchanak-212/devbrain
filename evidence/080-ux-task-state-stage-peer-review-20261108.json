@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_taskstate_ux_stage_peer_review",
+  "status": "static_ack_not_run",
+  "reviewed_utc": "2026-11-08T19:48:00.516388+00:00",
+  "context": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-ux-task-state-active-context-20261108.json",
+  "context_sha256": "0264d1e87bf56214e67b5a39a733d8502a90ab082792b91b3f1dac1b8a1f8414",
+  "specification_sha256": "4a133e5cb2bd824b397e0a52df9e0e64d46f5bb9f1c3bd24fa18266331ebceed",
+  "input_freeze_sha256": "8a8058392d97325c5ca283a44ac239eb5561a9c473d218c872a8e5729fd3931d",
+  "verified_input_count": 16,
+  "verified_helper_count": 38,
+  "whole_ux_cases": 377,
+  "whole_modules": 28,
+  "exact_template_transform": true,
+  "source_snapshot": "app080-20261108T192100Z",
+  "source_freeze_sha256": "0f46007731a08309644cc46a7bb28a3d57b6d6693e7f470593d87e5cfa773613",
+  "current604_receipt_sha256": "4cd621cdeea918ca9f67c405f463fe1ac1be47546009e39c542b4ad1bbeb6e36",
+  "candidate_v6_context_sha256": "c0adf65d68f858b03b4c4b72979c7ab73a55d4e76a922034061ec59176acf3f4",
+  "findings": [],
+  "linux_started": false,
+  "application_qualified": false,
+  "launch_permitted": false
+}

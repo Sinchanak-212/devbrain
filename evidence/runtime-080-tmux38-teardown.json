@@ -1,0 +1,29 @@
+{
+  "status": "pass",
+  "binary": "/home/piotr/.cache/devbrain-runtime-080/runtimes/tmux-3.8/bin/tmux",
+  "trials": [
+    {
+      "index": 0,
+      "zoomed_windows_destroyed": 21,
+      "commands": 64,
+      "server_pid": 105319,
+      "server_stopped": true
+    },
+    {
+      "index": 1,
+      "zoomed_windows_destroyed": 21,
+      "commands": 64,
+      "server_pid": 105428,
+      "server_stopped": true
+    },
+    {
+      "index": 2,
+      "zoomed_windows_destroyed": 21,
+      "commands": 64,
+      "server_pid": 105537,
+      "server_stopped": true
+    }
+  ],
+  "cores": [],
+  "seconds": 10.28462323299982
+}

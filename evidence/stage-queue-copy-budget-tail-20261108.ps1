@@ -1,0 +1,95 @@
+
+$guardPath=Join-Path $workspace 'evidence/080-guards-queue-budget-active-context-20261108.json'
+$oldPath=Join-Path $workspace 'evidence/080-queue-copy-deploy-active-context-20261108.json'
+$diagnosisPath=Join-Path $workspace 'evidence/080-queue-copy-deploy-failed-diagnosis-20261108.json'
+$appPath=Join-Path $workspace 'evidence/080-app-ux-snapshot-active-context.json'
+$guardSHA='c994134f6dcab8b2edcf01413c18d8c3248994ad3a2a647ffe0052f43c31406c'
+$receiptSHA='0d766673ba80e2d65cb88450f355655d420374bc2875bd7f5998f7d8f7859021'
+$oldSHA='5994043502cd7e44585f17ffc5a252c24cf936d5a3ba1a624b13593fbc4fe565'
+$diagnosisSHA='050ecdc829cada2e4a278ced3fbe85e9998fb55e6da0848bb4fdf4ff65e6a25c'
+Verify $guardPath $guardSHA;Verify $oldPath $oldSHA;Verify $diagnosisPath $diagnosisSHA
+Verify $appPath '7f14edc423655eb90e0ced54d3ff05e55f17a6ee34bb05f2a3b29eaf9d282e39'
+$g=ReadMap $guardPath;$old=ReadMap $oldPath;$diagnosis=ReadMap $diagnosisPath;$app=ReadMap $appPath
+Require ($g.status-ceq'passed'-and$g.actual_windows_exit_code-eq0-and$g.actual_windows_exec_session-eq91986-and$g.actual_test_count-eq604-and$g.cleanup_complete-eq$true) 'Actual604 and cleanup required'
+Verify $g.receipt $receiptSHA;Verify $g.final_report '45f5b06ffd8c462dd449c7b6fcb9acd93ec3ac81da40d46585a519c7c15c9701'
+$r=ReadMap $g.receipt
+Require ($r.passed-eq$true-and$r.run_id-ceq$g.run_id-and$r.controller_exit_verified-eq$true-and$r.supervisor_exit_verified-eq$true-and$r.child_returncode-eq0-and$r.supervisor_returncode-eq0-and$r.cleanup_complete-eq$true-and$r.forced_cleanup-eq$false-and$r.native_failure-eq$false-and$r.scope_empty_verified-eq$true-and$r.scope_cleanup_grace_seconds-ge30-and$r.cleanup_grace_seconds-ge30-and@($r.errors).Count-eq0-and$r.sleep_inhibition.restored-eq$true) 'Actual guard receipt incomplete'
+Artifacts $r.artifact_sha256 $g.artifact_root
+Verify $g.freeze_manifest $g.freeze_sha256;$freeze=ReadMap $g.freeze_manifest
+Require ($freeze.files.Count-eq56-and$freeze.helper_files.Count-eq38-and$freeze.test_modules.Count-eq12) 'Wrong604 inventory'
+Artifacts $freeze.files $g.windows_root;SameMap $freeze.helper_files $g.helper_sha256;SameMap $freeze.helper_files $g.reviewed_helper_sha256
+Require ($diagnosis.run_id-ceq$old.run_id-and$diagnosis.root_actual_exit-eq1-and$diagnosis.root_actual_exec_session-eq54839-and$diagnosis.safe_next_workload-eq$true-and$diagnosis.scope_empty_verified-eq$true-and$diagnosis.scope_quiet_seconds-ge30-and$diagnosis.outer_post_exit_seconds-ge30-and$diagnosis.functional_passed-eq$false-and$diagnosis.raw_outputs_or_contexts_modified-eq$false) 'Old failed replay cleanup admission incomplete'
+Require ($app.run_id-ceq'app080-20261108T183259Z'-and$app.status-ceq'prepared_passed'-and$app.actual_windows_exit_code-eq0-and$app.freeze_sha256-ceq$g.app_freeze_sha256-and$app.python_launcher-ceq$g.python_launcher-and$app.source_root-ceq$g.source_root) 'New app preparation mismatch'
+Verify $app.freeze_manifest '3dfc2738944f1a5fa3ab3087080f716c92d72f98cef819d7761d1118384f5fcf'
+Verify $app.setup_receipt '2fc2fbf9c20d97674c67847f1039b1a9091f1f5239b0aa26c1c3857bc65bb336'
+$af=ReadMap $app.freeze_manifest;Require ($af.app_files-eq198-and$af.files.Count-eq209) 'New source inventory differs';Artifacts $af.files $app.bundle_root
+Verify $g.candidate_build_context $g.candidate_build_context_sha256
+$candidate=ReadMap $g.candidate_build_context
+Require ($candidate.status-ceq'candidate_built_observed_not_qualified'-and$candidate.actual_windows_exit_code-eq0-and$candidate.cleanup_complete-eq$true-and$candidate.source_freeze_sha256-ceq$app.freeze_sha256) 'New candidate build mismatch'
+Verify $candidate.observation $candidate.observation_sha256
+$fixturePath=Join-Path $workspace 'evidence/080-controlled-fixtures-deploy-final-20261108.json'
+$fixtureSHA='d466c012f3bbfa8134154c85d510b82d758f8422c4facdedf986482b26d3260c'
+Verify $fixturePath $fixtureSHA
+$fixture=ReadMap $fixturePath
+Require ($fixture.passed-eq$true-and$fixture.status-ceq'passed_runtime_supervision_only'-and$fixture.application_qualification-eq$false) 'Runtime-only proof boundary differs'
+Verify $old.specification $old.specification_sha256
+$spec=ReadMap $old.specification
+Require ($spec.argv.Count-eq15-and$spec.argv[0]-ceq'--execute'-and$spec.argv[9]-ceq'--backup'-and$spec.argv[10]-ceq'/home/piotr/.local/state/devbrain-updates/20261107T093838Z-bbfafb96/database.devbrain.json.gz'-and$old.acceptance.backup_sha256-ceq'698591d33252a1f0e802a01fac78feb90f56ef37fc0c5f717ed26667f635ac70'-and$old.timeout_seconds-eq1800) 'Original exact backup/controller argument contract differs'
+Require ($spec.argv[11]-ceq'--data-dir'-and$spec.argv[13]-ceq'--arcade-dist'-and$old.acceptance.expected_jobs-eq6-and$old.acceptance.expected_kinds.extract-eq3-and$old.acceptance.expected_kinds.import-eq3) 'Original whole-six replay contract differs'
+$contextPath=Join-Path $workspace 'evidence/080-queue-copy-budget-active-context-20261108.json'
+Require (-not(Test-Path -LiteralPath $contextPath)) 'Never overwrite prior trial'
+PathProof $physicalBase
+$runId='queue-copy-budget080-'+[DateTime]::UtcNow.ToString('yyyyMMddTHHmmssZ')+'-'+[Guid]::NewGuid().ToString('N').Substring(0,8)
+$root=Join-Path $physicalBase $runId
+Require (-not(Test-Path -LiteralPath $root)) 'Fresh root required';NoReparse $root
+foreach($sub in @('artifacts','inputs')){$null=[IO.Directory]::CreateDirectory((Join-Path $root $sub));PathProof (Join-Path $root $sub)}
+$linuxRoot='/mnt/c/'+$root.Substring(3).Replace('\','/')
+$art=Join-Path $root 'artifacts';$dataDir='/home/piotr/.cache/devbrain-qualification-080/'+$runId+'/queue-copy'
+$files=[ordered]@{}
+function CopyInput([string]$Source,[string]$Relative,[string]$Digest){CopyExact $Source (RelativeFile $root $Relative) $Digest;$files[$Relative]=$Digest}
+CopyInput (Join-Path $g.artifact_root 'gate.json') 'artifacts/gate.json' $g.gate_sha256
+$inputs=@(
+ @($guardPath,'guard-context.json',$guardSHA),@($g.receipt,'guard-receipt.json',$receiptSHA),
+ @($g.final_report,'guard-final-report.json',$g.final_report_sha256),@($g.freeze_manifest,'toolbundle-freeze.json',$g.freeze_sha256),
+ @($appPath,'app-context.json',(HashFile $appPath)),@($app.freeze_manifest,'source-freeze.json',$app.freeze_sha256),
+ @($app.setup_receipt,'app-prepare-receipt.json',$app.setup_receipt_sha256),@($oldPath,'historical-failed-context.json',$oldSHA),
+ @($old.specification,'historical-failed-spec.json',$old.specification_sha256),@($diagnosisPath,'historical-failed-cleanup-admission.json',$diagnosisSHA),
+ @($fixturePath,'runtime-only-fixtures594.json',$fixtureSHA),@($g.candidate_build_context,'candidate-v5-context.json',$g.candidate_build_context_sha256),
+ @($candidate.observation,'candidate-v5-observation.json',$candidate.observation_sha256)
+)
+foreach($row in $inputs){CopyInput $row[0] ('inputs/'+$row[1]) $row[2]}
+$spec.run_id=$runId;$spec.python_launcher=$app.python_launcher
+$spec.argv[2]=$runId;$spec.argv[4]=$linuxRoot+'/artifacts';$spec.argv[6]=$linuxRoot+'/artifacts/gate.json';$spec.argv[8]=$app.source_root;$spec.argv[12]=$dataDir
+$oldSpec=ReadMap $old.specification
+for($i=0;$i-lt15;$i++){if($i-notin@(2,4,6,8,12)){Require ($spec.argv[$i]-ceq$oldSpec.argv[$i]) 'Unexpected argument mutation'}}
+SameMap $spec.env $oldSpec.env
+Require (($spec.required_artifacts-join'|')-ceq($oldSpec.required_artifacts-join'|')) 'Required artifacts changed'
+$specPath=Join-Path $art 'spec.json';NewJson $specPath $spec;$files['artifacts/spec.json']=HashFile $specPath
+Artifacts $files $root
+$inputFreeze=Join-Path $root 'prepared-input-freeze.json'
+NewJson $inputFreeze ([ordered]@{schema_version=1;run_id=$runId;status='prepared_not_run';files=$files;helper_sha256=$freeze.helper_files;source_freeze_sha256=$app.freeze_sha256;guard_receipt_sha256=$receiptSHA;purpose='isolated_targeted_regression_of_same_six_historical_jobs';source_final=$false;application_qualification=$false;production_retry_permitted=$false})
+$gate=ReadMap (Join-Path $art 'gate.json')
+$launch=[ordered]@{ArtifactRoot=$art;LinuxArtifactRoot=($linuxRoot+'/artifacts');PythonExecutable=$g.base_python;Controller=($g.linux_tools+'/replay-failed-queue-080.py');ControllerArgumentsFile=$specPath;RunId=$runId;TimeoutSeconds=1800;CleanupGraceSeconds=30;WslCrashDirectory=$g.wsl_crash_directory}
+$c=[ordered]@{
+ schema_version=1;scope='devbrain_targeted_queue_copy_regression_preparation';phase='queue-copy';name='queue_copy';status='prepared_not_run';run_id=$runId
+ windows_root=$root;linux_root=$linuxRoot;artifact_root=$art;linux_artifact_root=($linuxRoot+'/artifacts');data_dir=$dataDir
+ windows_tools=$g.windows_tools;linux_tools=$g.linux_tools;wrapper=(Join-Path $g.windows_tools 'run-supervised-080.ps1');controller=$launch.Controller;controller_basename='replay-failed-queue-080.py';controller_sha256=$freeze.helper_files['replay-failed-queue-080.py']
+ base_python=$g.base_python;python_launcher=$app.python_launcher;source_root=$app.source_root;runtime=$gate.runtime
+ specification=$specPath;specification_sha256=(HashFile $specPath);required_artifacts=$spec.required_artifacts;input_freeze=$inputFreeze;input_freeze_sha256=(HashFile $inputFreeze);input_file_count=$files.Count
+ helper_file_count=38;helper_sha256=$freeze.helper_files;reviewed_helper_sha256=$freeze.helper_files;toolbundle_freeze=$g.freeze_manifest;toolbundle_freeze_sha256=$g.freeze_sha256
+ app_run_id=$app.run_id;app_snapshot=$app.run_id;source_snapshot=$app.run_id;source_freeze=$app.freeze_manifest;source_freeze_sha256=$app.freeze_sha256;app_freeze=$app.freeze_manifest;app_freeze_sha256=$app.freeze_sha256;app_file_count=198
+ app_prepare_receipt=$app.setup_receipt;app_prepare_receipt_sha256=$app.setup_receipt_sha256;source_final=$false;source_finalized=$false
+ guard_context=$guardPath;guard_context_sha256=$guardSHA;guard_receipt=$g.receipt;guard_receipt_sha256=$receiptSHA;guard_final_report=$g.final_report;guard_final_report_sha256=$g.final_report_sha256;guard_test_count=604;guard_module_count=12;guard_passed=$true;guard_actual_windows_exit_code=0;gate_sha256=$g.gate_sha256
+ candidate_directory=$candidate.candidate_directory;candidate_updater_sha256=$g.updater_sha256;candidate_zip_sha256=$g.candidate_zip_sha256;candidate_manifest_sha256=$g.candidate_manifest_sha256;candidate_build_observation_sha256=$candidate.observation_sha256
+ previous_failed_context=$oldPath;previous_failed_context_sha256=$oldSHA;previous_failed_specification_sha256=$old.specification_sha256;previous_failed_exec_session=54839;previous_failed_cleanup_admission=$diagnosisPath;previous_failed_cleanup_admission_sha256=$diagnosisSHA;historical_results_pooled=$false
+ latest_fixture_report=$fixturePath;latest_fixture_report_sha256=$fixtureSHA;latest_fixture_count=5;latest_fixture_passed=$true;fixture_qualification_scope='unchanged_runtime_instrumentation_only';fixture_guard_case_count=594;fixture_application_qualification=$false
+ acceptance=$old.acceptance;extraction_policy=@{work_seconds=120;outer_watchdog_seconds=125;inference_lease_seconds=210;guard_cases_actual_passed=604}
+ full_suite_attestation=$null;full_suite_attestation_sha256=$null;current_backend_actual_pass=$false;current_ui_passed=$false;current_ux_passed=$false;current_native_passed=$false;current_copilot_passed=$false;current_recall_passed=$false;current_frontend_passed=$false
+ target_regression_authorized_before_other_application_gates=$true;is_frozen_execution_spec=$true;launch_parameters_without_Execute=$launch;timeout_seconds=1800;cleanup_grace_seconds=30;wsl_crash_directory=$g.wsl_crash_directory
+ source_and_helper_hashes_verified=$true;backup_file_read_or_hashed_during_materialization=$false;private_backup_credentials_or_production_read=$false;original_roots_and_transcripts_accessed_during_staging=$false
+ production_remains_stopped=$true;production_retry_permitted=$false;production_modified=$false;production_services_started=$false;application_qualified=$false;release_qualified=$false;qualified=$false
+ linux_workload_started=$false;launch_permitted=$false;requires_root_serial_handoff=$true;launch_requires_explicit_serial_handoff=$true;preparation_only=$true;actual_windows_exit_code=$null;cleanup_complete=$false;receipt_sha256=$null
+}
+NewJson $contextPath $c
+@{context=$contextPath;context_sha256=(HashFile $contextPath);run_id=$runId;root=$root;spec_sha256=(HashFile $specPath);input_freeze_sha256=(HashFile $inputFreeze);input_files=$files.Count;argv_count=$spec.argv.Count;timeout_seconds=1800;linux_started=$false;private_backup_read=$false}|ConvertTo-Json -Depth 5
+

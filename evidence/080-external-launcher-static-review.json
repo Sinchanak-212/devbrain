@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "status": "prepared_static_only_runtime_gate_blocked",
+  "executed": false,
+  "runtime_tests_run": false,
+  "powershell_script_invoked": false,
+  "python_ast": "passed",
+  "powershell_parsefile": "passed",
+  "readonly_peer_review": "test_suite found no remaining concrete foreign-process cleanup or false-PASS blocker after venv launcher and helper binding fixes; this is not runtime validation",
+  "files_sha256": {
+    "release-tools/supervise-080.py": "2ad2d506664b5175c8b46bb116414d728f376a015f588554dbebff3d80116424",
+    "release-tools/test_devbrain_update080_smoke.py": "6709712db6cc76a0245fa75fdf1028bfd25a5a6a6237774f33125df8a82a755c",
+    "release-tools/run-supervised-080.ps1": "5d51e847895dcd310dad0cf99a270b615cf553a968d5792e2fdf3c3e26344217"
+  },
+  "supported_controllers": {
+    "run-full-suite-080.py": "full_suite_completed_pending_attestation",
+    "soak-workload-080.py": "workload_passed_pending_external_watch",
+    "test_devbrain_update080_smoke.py": "upgrade_smoke_completed_pending_attestation"
+  },
+  "gate_required_status": "pass",
+  "diagnostic_mode": false,
+  "qualification_passed": false,
+  "eight_hour_passed": false,
+  "production_changed": false,
+  "candidate_rebuilt": false,
+  "candidate_stale": true,
+  "limitations": [
+    "No runtime proof of Windows/WSL process, heartbeat, timeout or pidfd behavior was collected.",
+    "Loss of Windows supervisor or missing receipt cannot count as PASS.",
+    "Unexpected Linux supervisor death may require separately authorized tagged-process cleanup.",
+    "Upgrade smoke produces a pending-attestation controller report and external receipt; it does not qualify the full suite or soak.",
+    "BIOS and Windows restart remain outside the authorized scope."
+  ]
+}

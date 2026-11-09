@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "C:\Users\piotr\OneDrive\Dokumenty\ChatGPT\devbrain\evidence\audit-fullbackend-native-failure-20261109.py", line 22, in <module>
+    assert r["helper_sha256_start"] == r["helper_sha256_end"] == c["helper_sha256"]
+AssertionError

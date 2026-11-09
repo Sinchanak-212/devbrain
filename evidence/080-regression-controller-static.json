@@ -1,0 +1,40 @@
+{
+  "status": "prepared_not_run",
+  "ast_files": {
+    "run-regressions-080.py": {
+      "ast": "passed",
+      "sha256": "4da77c4260232a569a1f8d2b36c0865aecac82a5e2213ed5aa8400ffda216c0f"
+    },
+    "test_regressions080_guards.py": {
+      "ast": "passed",
+      "sha256": "a39da8a922935359b61041b24c5c0696d24767307e2d5c4c272672e11d6af265"
+    }
+  },
+  "authored_guard_cases": 20,
+  "tests_executed": false,
+  "linux_workloads_started": false,
+  "app_source_edited": false,
+  "qualification": false,
+  "phases": [
+    "guards",
+    "ux",
+    "frontend",
+    "recall"
+  ],
+  "full_suite_pass": false,
+  "eight_hour_qualification": false,
+  "source_freeze": "complete_static_peer_review",
+  "reviewed_fixes": [
+    "short_private_tmpdir_and_tempfile_cache",
+    "browser_single_worker_disable_gpu",
+    "both_audits_before_vulnerability_failure",
+    "exact_20_scored_recall_cases"
+  ],
+  "current_guard_modules": 8,
+  "historical_guard_aliases": false,
+  "peer_review": {
+    "reviewer": "test_suite",
+    "method": "read_only",
+    "blocking_findings": []
+  }
+}

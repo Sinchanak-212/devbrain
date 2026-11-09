@@ -1,0 +1,27 @@
+{
+  "native_failure": false,
+  "status": "passed",
+  "actual_windows_exit_code": 0,
+  "full_backend_pass": false,
+  "counts": {
+    "collected": 403,
+    "passed": 403,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0,
+    "unexpected_skips": 0,
+    "duplicates": 0,
+    "missing": 0,
+    "expected_skips": {},
+    "observed_skips": {}
+  },
+  "post_exit_seconds": 32,
+  "power_changed": false,
+  "sleep_restored": true,
+  "receipt_sha256": "9acfb3719b2e7991989f86904aca39d135ffaedd4f31bd8895031b56a4726ce6",
+  "run_id": "guards-gpu080-20261108T115515Z",
+  "actual_windows_exec_session": 52191,
+  "eight_hour_pass": false,
+  "scope_empty_seconds": 30.070716500000003,
+  "freeze_sha256": "9bd4e7bb14963d1132d780558b330037330b13ff913abdf0528553df00e643f0"
+}

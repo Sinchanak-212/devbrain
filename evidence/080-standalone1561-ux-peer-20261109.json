@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "scope": "standalone1561_preparation_independent_peer",
+  "prepared_context_sha256": "dd0b9167aefc8729ffd7ce3a218d23fc257fef890cf419bf0e8f4d6e3b4aea4b",
+  "from_prepared8598_not_passed_attestation": true,
+  "results": {
+    "launcher": {
+      "exact_approved_metadata_only_transform": true,
+      "other_64hex_literals_unchanged": true,
+      "sha256": "174a7e601b9b991a5baa02fe1bac109e78ec8c62e1b4aac61ed0b25cbb7572c7"
+    },
+    "materializer": {
+      "exact_approved_metadata_only_transform": true,
+      "other_64hex_literals_unchanged": true,
+      "sha256": "5f866de6f81c19b9a560c482510ec12305d7a7ecd71692f03123b52193a5cf94"
+    }
+  },
+  "seed_files_verified": 8,
+  "expected_backend_cases": 1561,
+  "actual_backend_session_binding_required": 56737,
+  "canonical_output_matches_current_backend": true,
+  "findings": [],
+  "materializer_executed_by_peer": false,
+  "observer_executed_by_peer": false,
+  "linux_started_by_peer": false,
+  "verdict": "static_ack_pending_root_actual_backend_admission_and_observer_exit"
+}

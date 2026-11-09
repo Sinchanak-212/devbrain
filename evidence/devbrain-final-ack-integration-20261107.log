@@ -1,0 +1,234 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-9.2.0, pluggy-1.7.0 -- /home/piotr/.cache/devbrain-validation-20261107/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /mnt/c/Users/piotr/OneDrive/Dokumenty/ChatGPT/devbrain/devbrain
+configfile: pyproject.toml
+plugins: asyncio-1.4.1.post1, platformdirs-4.14.5, anyio-4.16.0
+asyncio: mode=Mode.AUTO, debug=False, asyncio_default_fixture_loop_scope=function, asyncio_default_test_loop_scope=function
+collecting ... collected 153 items
+
+tests/test_api_agent.py::test_bootstrap_is_model_read_then_exact_ack_before_a_real_file_change PASSED [  0%]
+tests/test_api_agent.py::test_prepared_packet_delivery_cannot_authorize_ack_or_effects PASSED [  1%]
+tests/test_api_agent.py::test_partial_stops_before_generation_and_does_not_synthesize_ack PASSED [  1%]
+tests/test_api_agent.py::test_partial_archive_on_resume_stops_before_any_generation_even_if_prepare_would_be_ready PASSED [  2%]
+tests/test_api_agent.py::test_partial_archive_after_effect_preserves_real_result_but_never_reports_completed PASSED [  3%]
+tests/test_api_agent.py::test_partial_archive_prevents_checkpoint_compaction PASSED [  3%]
+tests/test_api_agent.py::test_relevant_state_change_closes_effect_gate_until_new_read_ack PASSED [  4%]
+tests/test_api_agent.py::test_bad_readback_never_authorizes_mutation PASSED [  5%]
+tests/test_api_agent.py::test_model_budget_is_bounded_and_price_is_unknown_without_rates PASSED [  5%]
+tests/test_api_agent.py::test_configured_price_never_turns_missing_counters_into_zero_cost[usage0] PASSED [  6%]
+tests/test_api_agent.py::test_configured_price_never_turns_missing_counters_into_zero_cost[usage1] PASSED [  7%]
+tests/test_api_agent.py::test_configured_price_never_turns_missing_counters_into_zero_cost[usage2] PASSED [  7%]
+tests/test_api_agent.py::test_known_token_counts_with_rates_have_an_explicit_estimate PASSED [  8%]
+tests/test_api_agent.py::test_large_tool_result_is_complete_in_archive_but_explicitly_bounded_for_model PASSED [  9%]
+tests/test_api_agent.py::test_authoritative_packet_with_credential_material_is_not_silently_redacted_and_acked PASSED [  9%]
+tests/test_api_agent.py::test_provider_failure_is_not_retried_and_actual_secret_never_enters_journal PASSED [ 10%]
+tests/test_api_agent.py::test_context_rejection_has_an_actionable_hint_and_is_not_retried PASSED [ 11%]
+tests/test_api_agent.py::test_ollama_trained_context_rejection_says_to_decrease_window_and_exposes_only_safe_counts PASSED [ 11%]
+tests/test_api_agent.py::test_ollama_unknown_context_reports_metadata_problem_without_invented_window_or_retry PASSED [ 12%]
+tests/test_api_agent.py::test_visible_partial_stream_is_durable_on_disconnect_without_a_false_complete_message PASSED [ 13%]
+tests/test_api_agent.py::test_one_character_network_deltas_cannot_reconstruct_registered_credentials PASSED [ 13%]
+tests/test_api_agent.py::test_recovery_uses_fsynced_completed_result_without_reexecuting PASSED [ 14%]
+tests/test_api_agent.py::test_uncertain_action_blocks_model_work_until_explicit_human_resolution PASSED [ 15%]
+tests/test_api_agent.py::test_duplicate_call_id_does_not_reexecute_an_effect PASSED [ 15%]
+tests/test_api_agent.py::test_explicit_interrupt_cancels_current_generation_without_retry PASSED [ 16%]
+tests/test_api_agent.py::test_context_compaction_requires_checkpoint_then_new_model_ack PASSED [ 16%]
+tests/test_api_agent.py::test_copilot_uses_same_model_ack_gate_and_visible_tool_history PASSED [ 17%]
+tests/test_api_agent.py::test_copilot_context_reset_preserves_checkpoint_and_demands_new_actual_ack PASSED [ 18%]
+tests/test_api_agent.py::test_parallel_copilot_tools_have_serial_approval_and_retired_callbacks_are_rejected PASSED [ 18%]
+tests/test_api_agent.py::test_state_change_while_confirmation_is_open_requires_new_ack_before_command PASSED [ 19%]
+tests/test_api_agent.py::test_copilot_incremental_usage_and_final_aggregate_are_not_double_counted PASSED [ 20%]
+tests/test_api_agent.py::test_production_memory_transport_and_model_orchestration_on_real_arcade PASSED [ 20%]
+tests/test_agent_memory.py::test_ack_tool_exposes_exact_readback_for_absent_and_present_plan_and_task PASSED [ 21%]
+tests/test_agent_memory.py::test_actual_model_read_and_exact_ack_are_required_then_stale_on_state_change[api] PASSED [ 22%]
+tests/test_agent_memory.py::test_actual_model_read_and_exact_ack_are_required_then_stale_on_state_change[copilot] PASSED [ 22%]
+tests/test_agent_memory.py::test_finite_archive_preserves_public_events_and_never_exports_provider_continuations PASSED [ 23%]
+tests/test_agent_memory.py::test_archive_replay_is_idempotent_and_native_resume_verifies_largest_captured_horizon[api] PASSED [ 24%]
+tests/test_agent_memory.py::test_archive_replay_is_idempotent_and_native_resume_verifies_largest_captured_horizon[copilot] PASSED [ 24%]
+tests/test_agent_memory.py::test_proved_public_archive_survives_local_log_loss_but_not_source_loss PASSED [ 25%]
+tests/test_agent_memory.py::test_corrupt_or_incomplete_live_journal_cannot_disappear_behind_old_proof PASSED [ 26%]
+tests/test_agent_memory.py::test_source_replacement_cannot_reuse_an_earlier_archive_proof PASSED [ 26%]
+tests/test_agent_memory.py::test_rewritten_journal_cannot_merge_away_previously_archived_history PASSED [ 27%]
+tests/test_agent_memory.py::test_same_own_session_cannot_continue_lost_sequence_but_new_session_can_use_history[missing] PASSED [ 28%]
+tests/test_agent_memory.py::test_same_own_session_cannot_continue_lost_sequence_but_new_session_can_use_history[empty] PASSED [ 28%]
+tests/test_agent_memory.py::test_same_own_session_cannot_continue_lost_sequence_but_new_session_can_use_history[rewritten] PASSED [ 29%]
+tests/test_agent_memory.py::test_missing_previously_proved_source_is_reported_without_recreating_its_identity[False] PASSED [ 30%]
+tests/test_agent_memory.py::test_missing_previously_proved_source_is_reported_without_recreating_its_identity[True] PASSED [ 30%]
+tests/test_agent_memory.py::test_scope_override_and_foreign_sources_are_rejected PASSED [ 31%]
+tests/test_agent_memory.py::test_native_plan_api_task_progress_and_copilot_handoff_keep_exact_versions PASSED [ 32%]
+tests/test_agent_memory.py::test_portable_snapshot_keeps_api_sources_done_and_no_session_authority PASSED [ 32%]
+tests/test_api_runtime.py::test_launch_and_immutable_config_never_contain_key PASSED [ 33%]
+tests/test_api_runtime.py::test_live_slot_reused_and_explicit_resume_reuses_logical_session PASSED [ 33%]
+tests/test_api_runtime.py::test_missing_credential_or_unknown_resume_cannot_spawn PASSED [ 34%]
+tests/test_api_runtime.py::test_invalid_private_configuration_refuses_identity_and_symlink PASSED [ 35%]
+tests/test_api_runtime.py::test_worker_environment_removes_known_and_configured_credentials PASSED [ 35%]
+tests/test_api_runtime.py::test_agent_data_inside_project_is_rejected_before_session_or_launch PASSED [ 36%]
+tests/test_api_runtime.py::test_reopening_live_agent_needs_no_new_credential_or_model_call PASSED [ 37%]
+tests/test_api_runtime.py::test_all_profiles_custom_credentials_are_absent_from_worker_spec PASSED [ 37%]
+tests/test_api_runtime.py::test_empty_slots_or_nonstring_client_cannot_start_default_native_agents PASSED [ 38%]
+tests/test_api_runtime.py::test_deleted_private_journal_requires_new_session_not_sequence_reuse PASSED [ 39%]
+tests/test_api_providers.py::test_four_wire_protocols_stream_tools_tokens_and_replay_continuations[openai] PASSED [ 39%]
+tests/test_api_providers.py::test_four_wire_protocols_stream_tools_tokens_and_replay_continuations[anthropic] PASSED [ 40%]
+tests/test_api_providers.py::test_four_wire_protocols_stream_tools_tokens_and_replay_continuations[openai_compatible] PASSED [ 41%]
+tests/test_api_providers.py::test_four_wire_protocols_stream_tools_tokens_and_replay_continuations[ollama] PASSED [ 41%]
+tests/test_api_providers.py::test_explicit_probe_uses_one_side_effect_free_nonce_tool[openai] PASSED [ 42%]
+tests/test_api_providers.py::test_explicit_probe_uses_one_side_effect_free_nonce_tool[anthropic] PASSED [ 43%]
+tests/test_api_providers.py::test_explicit_probe_uses_one_side_effect_free_nonce_tool[openai_compatible] PASSED [ 43%]
+tests/test_api_providers.py::test_explicit_probe_uses_one_side_effect_free_nonce_tool[ollama] PASSED [ 44%]
+tests/test_api_providers.py::test_model_list_is_read_only_and_local_ollama_needs_no_dummy_key[openai] PASSED [ 45%]
+tests/test_api_providers.py::test_model_list_is_read_only_and_local_ollama_needs_no_dummy_key[anthropic] PASSED [ 45%]
+tests/test_api_providers.py::test_model_list_is_read_only_and_local_ollama_needs_no_dummy_key[openai_compatible] PASSED [ 46%]
+tests/test_api_providers.py::test_model_list_is_read_only_and_local_ollama_needs_no_dummy_key[ollama] PASSED [ 47%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[401-auth_rejected-openai] PASSED [ 47%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[401-auth_rejected-anthropic] PASSED [ 48%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[401-auth_rejected-openai_compatible] PASSED [ 49%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[401-auth_rejected-ollama] PASSED [ 49%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[402-quota_exhausted-openai] PASSED [ 50%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[402-quota_exhausted-anthropic] PASSED [ 50%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[402-quota_exhausted-openai_compatible] PASSED [ 51%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[402-quota_exhausted-ollama] PASSED [ 52%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[403-access_denied-openai] PASSED [ 52%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[403-access_denied-anthropic] PASSED [ 53%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[403-access_denied-openai_compatible] PASSED [ 54%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[403-access_denied-ollama] PASSED [ 54%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[404-model_or_endpoint_missing-openai] PASSED [ 55%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[404-model_or_endpoint_missing-anthropic] PASSED [ 56%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[404-model_or_endpoint_missing-openai_compatible] PASSED [ 56%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[404-model_or_endpoint_missing-ollama] PASSED [ 57%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[408-network_timeout-openai] PASSED [ 58%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[408-network_timeout-anthropic] PASSED [ 58%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[408-network_timeout-openai_compatible] PASSED [ 59%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[408-network_timeout-ollama] PASSED [ 60%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[413-context_limit-openai] PASSED [ 60%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[413-context_limit-anthropic] PASSED [ 61%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[413-context_limit-openai_compatible] PASSED [ 62%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[413-context_limit-ollama] PASSED [ 62%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[422-unsupported_request-openai] PASSED [ 63%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[422-unsupported_request-anthropic] PASSED [ 64%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[422-unsupported_request-openai_compatible] PASSED [ 64%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[422-unsupported_request-ollama] PASSED [ 65%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[429-rate_limited-openai] PASSED [ 66%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[429-rate_limited-anthropic] PASSED [ 66%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[429-rate_limited-openai_compatible] PASSED [ 67%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[429-rate_limited-ollama] PASSED [ 67%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[500-provider_unavailable-openai] PASSED [ 68%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[500-provider_unavailable-anthropic] PASSED [ 69%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[500-provider_unavailable-openai_compatible] PASSED [ 69%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[500-provider_unavailable-ollama] PASSED [ 70%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[307-provider_redirect_denied-openai] PASSED [ 71%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[307-provider_redirect_denied-anthropic] PASSED [ 71%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[307-provider_redirect_denied-openai_compatible] PASSED [ 72%]
+tests/test_api_providers.py::test_errors_are_classified_without_secret_or_body_echo_and_without_retry[307-provider_redirect_denied-ollama] PASSED [ 73%]
+tests/test_api_providers.py::test_quota_response_is_distinct_from_rate_limit[openai] PASSED [ 73%]
+tests/test_api_providers.py::test_quota_response_is_distinct_from_rate_limit[anthropic] PASSED [ 74%]
+tests/test_api_providers.py::test_quota_response_is_distinct_from_rate_limit[openai_compatible] PASSED [ 75%]
+tests/test_api_providers.py::test_quota_response_is_distinct_from_rate_limit[ollama] PASSED [ 75%]
+tests/test_api_providers.py::test_network_failures_do_not_retry_an_uncertain_generation[openai] PASSED [ 76%]
+tests/test_api_providers.py::test_network_failures_do_not_retry_an_uncertain_generation[anthropic] PASSED [ 77%]
+tests/test_api_providers.py::test_network_failures_do_not_retry_an_uncertain_generation[openai_compatible] PASSED [ 77%]
+tests/test_api_providers.py::test_network_failures_do_not_retry_an_uncertain_generation[ollama] PASSED [ 78%]
+tests/test_api_providers.py::test_truncated_stream_never_returns_partial_tool_calls[openai] PASSED [ 79%]
+tests/test_api_providers.py::test_truncated_stream_never_returns_partial_tool_calls[anthropic] PASSED [ 79%]
+tests/test_api_providers.py::test_truncated_stream_never_returns_partial_tool_calls[openai_compatible] PASSED [ 80%]
+tests/test_api_providers.py::test_truncated_stream_never_returns_partial_tool_calls[ollama] PASSED [ 81%]
+tests/test_api_providers.py::test_malformed_tool_arguments_are_rejected[openai] PASSED [ 81%]
+tests/test_api_providers.py::test_malformed_tool_arguments_are_rejected[anthropic] PASSED [ 82%]
+tests/test_api_providers.py::test_malformed_tool_arguments_are_rejected[openai_compatible] PASSED [ 83%]
+tests/test_api_providers.py::test_malformed_tool_arguments_are_rejected[ollama] PASSED [ 83%]
+tests/test_api_providers.py::test_probe_empty_answer_is_not_a_success PASSED [ 84%]
+tests/test_api_providers.py::test_output_limit_and_size_limit_do_not_return_a_success PASSED [ 84%]
+tests/test_api_providers.py::test_missing_official_key_does_not_make_a_network_request PASSED [ 85%]
+tests/test_api_providers.py::test_redirect_is_blocked_even_when_injected_client_would_follow_it PASSED [ 86%]
+tests/test_api_providers.py::test_context_limit_on_http_400_is_classified_for_engine_recovery[openai] PASSED [ 86%]
+tests/test_api_providers.py::test_context_limit_on_http_400_is_classified_for_engine_recovery[anthropic] PASSED [ 87%]
+tests/test_api_providers.py::test_context_limit_on_http_400_is_classified_for_engine_recovery[openai_compatible] PASSED [ 88%]
+tests/test_api_providers.py::test_context_limit_on_http_400_is_classified_for_engine_recovery[ollama] PASSED [ 88%]
+tests/test_api_providers.py::test_ollama_large_context_is_rejected_before_request_until_window_explicitly_increased PASSED [ 89%]
+tests/test_api_providers.py::test_ollama_unknown_trained_context_never_generates_or_claims_receipt[metadata0] PASSED [ 90%]
+tests/test_api_providers.py::test_ollama_unknown_trained_context_never_generates_or_claims_receipt[metadata1] PASSED [ 90%]
+tests/test_api_providers.py::test_ollama_unknown_trained_context_never_generates_or_claims_receipt[metadata2] PASSED [ 91%]
+tests/test_api_providers.py::test_ollama_unknown_trained_context_never_generates_or_claims_receipt[metadata3] PASSED [ 92%]
+tests/test_api_providers.py::test_ollama_unknown_trained_context_never_generates_or_claims_receipt[metadata4] PASSED [ 92%]
+tests/test_api_providers.py::test_ollama_server_training_cap_is_not_mistaken_for_requested_context PASSED [ 93%]
+tests/test_api_providers.py::test_cancelled_stream_propagates_and_is_not_retried PASSED [ 94%]
+tests/test_api_providers.py::test_adapter_against_actual_local_http_server[openai] PASSED [ 94%]
+tests/test_api_providers.py::test_adapter_against_actual_local_http_server[anthropic] PASSED [ 95%]
+tests/test_api_providers.py::test_adapter_against_actual_local_http_server[openai_compatible] PASSED [ 96%]
+tests/test_api_providers.py::test_adapter_against_actual_local_http_server[ollama] PASSED [ 96%]
+tests/test_api_workspace_e2e.py::test_production_worker_actual_ack_stream_archive_and_reattach FAILED [ 97%]
+tests/test_api_memory_integration.py::test_actual_ack_file_edit_refresh_checkpoint_and_native_handoff[openai] PASSED [ 98%]
+tests/test_api_memory_integration.py::test_actual_ack_file_edit_refresh_checkpoint_and_native_handoff[anthropic] PASSED [ 98%]
+tests/test_api_memory_integration.py::test_actual_ack_file_edit_refresh_checkpoint_and_native_handoff[openai_compatible] PASSED [ 99%]
+tests/test_api_memory_integration.py::test_actual_ack_file_edit_refresh_checkpoint_and_native_handoff[ollama] PASSED [100%]
+
+=================================== FAILURES ===================================
+________ test_production_worker_actual_ack_stream_archive_and_reattach _________
+
+worker_stack = <test_api_workspace_e2e.WorkerStack object at 0x7a1492ed9010>
+
+    def test_production_worker_actual_ack_stream_archive_and_reattach(worker_stack):
+        stack = worker_stack
+        run = stack.start()
+        def ready():
+            screen = stack.capture(run)
+            assert "Gotowy." in screen, screen
+            return screen
+>       eventually(ready)
+
+tests/test_api_workspace_e2e.py:247: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+tests/test_api_workspace_e2e.py:67: in eventually
+    return check()
+           ^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+    def ready():
+        screen = stack.capture(run)
+>       assert "Gotowy." in screen, screen
+E       AssertionError: 
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         
+E         Pane is dead (status 1, Sat Nov  7 10:32:32 2026)
+E         
+E       assert 'Gotowy.' in '\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPane is dead (status 1, Sat Nov  7 10:32:32 2026)\n'
+
+tests/test_api_workspace_e2e.py:245: AssertionError
+- generated xml file: /mnt/c/Users/piotr/OneDrive/Dokumenty/ChatGPT/devbrain/evidence/devbrain-final-ack-integration-20261107.xml -
+=========================== short test summary info ============================
+FAILED tests/test_api_workspace_e2e.py::test_production_worker_actual_ack_stream_archive_and_reattach
+================== 1 failed, 152 passed in 212.31s (0:03:32) ===================

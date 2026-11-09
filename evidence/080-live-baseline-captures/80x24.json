@@ -1,0 +1,37 @@
+{
+  "sidebar": {
+    "pane": "%0",
+    "width": 80,
+    "height": 23,
+    "dead": false,
+    "sha256": "62f18b4f3fdca4a91b3babc3691df0040685932c60fad2d37996c724155cc513"
+  },
+  "client1": {
+    "pane": "%1",
+    "width": 1,
+    "height": 14,
+    "dead": false,
+    "sha256": "0287cb8eda314ec137fcb1093ceb3bbc13635382d4f799fe2e740b14d7be3e98"
+  },
+  "client2": {
+    "pane": "%3",
+    "width": 76,
+    "height": 14,
+    "dead": false,
+    "sha256": "45f3a3ba8abe865e0fcae85c1376b9b964aab73c4ee877de5fce4ca8a611264c"
+  },
+  "inspector": {
+    "pane": "%2",
+    "width": 15,
+    "height": 8,
+    "dead": false,
+    "sha256": "93df5728402ce93990752339f7d67424bff3eb5c397b134a51af1540687c09b2"
+  },
+  "graph": {
+    "pane": "%4",
+    "width": 62,
+    "height": 8,
+    "dead": false,
+    "sha256": "21806ba5e9ab9cf825f062a1f2345f050a7c3d4b89196e11c4004260ec179896"
+  }
+}

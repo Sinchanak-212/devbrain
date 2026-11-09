@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_public_build_output_policy_evidence",
+  "status": "public_source_reviewed_private_contents_unknown",
+  "reviewed_utc": "2026-11-08T20:39:00.171172+00:00",
+  "candidate_context_sha256": "cdd27ef8e5326c85ab4f85af562b2826c20f3b63cfd07c454441cb3fbf7766d6",
+  "archives": [
+    {
+      "mode": "baseline072",
+      "public_zip": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\final-candidate-length080-20261108T203252Z\\releases\\devbrain-0.7.2.zip",
+      "zip_sha256": "6b65e7315895b8c44b84bafc9146dfcdae732c3890f959d0e5e58cbf4fd9aa2c",
+      "source_files": 182,
+      "package_files": 64,
+      "no_root_dist_inventory_collision": true,
+      "wheel_packages": [
+        "src/devbrain"
+      ],
+      "public_pyproject_sha256": "1aedc0000e9d8ab46fb0a4e094e5fcd736f395ba27733a569633e54955e083cd",
+      "public_installer_sha256": "dd30326186269f4ff45a5ae2924ca932565386543bfcd319fba6768e68fd86c3",
+      "installer_reads_checkout_not_root_build_archive": true
+    },
+    {
+      "mode": "target080",
+      "public_zip": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\final-candidate-length080-20261108T203252Z\\releases\\candidates\\0.8.0\\devbrain-0.8.0.zip",
+      "zip_sha256": "4fb8b1203dfce52eb5bfd094b2649899316e09ada64cbd2dc14e1bb8de071508",
+      "source_files": 198,
+      "package_files": 69,
+      "no_root_dist_inventory_collision": true,
+      "wheel_packages": [
+        "src/devbrain"
+      ],
+      "public_pyproject_sha256": "f6d9437c3a0af9ec5ea234bfd29d5fc090ade758b7612cc1c2be2dcf2ca266d3",
+      "public_installer_sha256": "b48ace4634b0ce2d6b44f9a2bb1ebe0fc502a2044f2121afd5f97a4a49fc5617",
+      "installer_reads_checkout_not_root_build_archive": true
+    }
+  ],
+  "updater_sha256": "0a1cf86a23a4a0c8e0b664837e4974387cdb5e9001e011c52af179765f6c9dec",
+  "updater_payload_files": 60,
+  "updater_root_build_output_collision": false,
+  "updater_source_root_deleted_or_replaced": false,
+  "updater_removal_calls": [
+    "temporary.replace",
+    "temporary.unlink",
+    "temporary.replace",
+    "temporary.unlink"
+  ],
+  "builder_sha256": "b3783bbd0a193d92e9ff9b24c2abd4926ffbb7aaf10a8edeaa1ebf3485c0d5e9",
+  "builder_explicit_dist_skip": true,
+  "policy": "Only exact root dist normal owned directory may be preserved as unmanaged output; manifest collision, symlink/reparse/wrong type refuse; no contents, names or actual hashes inspected or exported. Unknown other extras continue to block.",
+  "private_generated_contents_confirmed": false,
+  "private_source_or_output_read": false,
+  "linux_started": false,
+  "production_modified": false,
+  "baseline_comparison_requalified": false,
+  "deployment_authorized": false
+}

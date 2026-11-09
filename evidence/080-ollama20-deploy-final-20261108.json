@@ -1,0 +1,63 @@
+{
+  "required_accuracy": 0.9,
+  "scope": "devbrain_real_ollama20_final_quality",
+  "full_release_qualified": false,
+  "attempted": 20,
+  "run_id": "ollama20-deploy-final080-20261108T171720Z-4ec44bba",
+  "initial_boot_id": "d564cdfd-f271-47b9-b480-2892732e2a45",
+  "sleep_inhibition_restored": true,
+  "resource_monitor_stopped": true,
+  "actual_windows_exec_session": 43787,
+  "model": "qwen3.5:9b",
+  "source_snapshot": "app080-20261108T160614Z",
+  "resource_monitor_samples": 30,
+  "actual_windows_exit_code": 0,
+  "insufficient_evidence_answers": [
+    {
+      "scenario_status": "passed",
+      "id": "recall17_unknown",
+      "status": "partial",
+      "critical": false,
+      "diagnostic_code": "insufficient_evidence"
+    },
+    {
+      "scenario_status": "passed",
+      "id": "recall18_isolation",
+      "status": "partial",
+      "critical": true,
+      "diagnostic_code": "insufficient_evidence"
+    }
+  ],
+  "receipt": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\ollama20-deploy-final080-20261108T171720Z-4ec44bba\\artifacts\\receipt.json",
+  "evaluation_cases_completed": 20,
+  "scope_empty_verified": true,
+  "embedding_model": "qwen3-embedding:0.6b",
+  "source_freeze_sha256": "5ea43988e1943c783e802acbe5a39fdfcc3318d41655ed244716a69a0d71b28f",
+  "recorded_utc": "2026-11-08T18:01:38.5254649Z",
+  "production_modified": false,
+  "receipt_sha256": "8be8007b7e62f06c91c15f87698e08e9ba1c45e271eb0c9236b44f602c9f7e92",
+  "real_ollama": true,
+  "schema_version": 1,
+  "cases_passed": 20,
+  "num_ctx": 16384,
+  "scope_quiet_seconds": 33.22131350000001,
+  "continuous_eight_hours_qualified": false,
+  "scoring_unchanged": true,
+  "final_boot_id": "d564cdfd-f271-47b9-b480-2892732e2a45",
+  "power_changed": false,
+  "critical_facts_passed": true,
+  "critical_cases": 13,
+  "cleanup_complete": true,
+  "native_failure": false,
+  "status": "passed",
+  "external_post_exit_seconds": 37,
+  "deterministic_checks": {
+    "separate_namespace": true,
+    "exact_current_version": true,
+    "exact_task_states": true,
+    "project_isolation": true,
+    "provenance_scope": true
+  },
+  "factual_accuracy": 1.0,
+  "complete_answers": 18
+}

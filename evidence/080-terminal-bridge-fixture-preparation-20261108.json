@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "status": "prepared_not_run",
+  "file": "devbrain/tests/test_terminal_bridge.py",
+  "sha256": "041eed0f3391544edfdc5ffbafdf96f73328927439e63842d92a1a8e5546fa0f",
+  "change": "Controlled attach fixture supplies an existing owned executable0700; strict resolver and fake execve plus environment assertions retained",
+  "windows_ast": "passed",
+  "production_code_changed": false,
+  "runtime_tests_run": false,
+  "expected_ux_cases": 303,
+  "expected_ux_modules": 26,
+  "peer_review_status": "readonly_ack_no_concrete_blocker",
+  "frozen": true,
+  "peer_review": "evidence/080-terminal-bridge-fixture-peer-review-20261108.json",
+  "peer_review_sha256": "374755ef5dab2da46ff672c1ca17219ab6d5d32214c62feda76d5e6ed24ca5f9"
+}

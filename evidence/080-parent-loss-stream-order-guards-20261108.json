@@ -1,0 +1,88 @@
+{
+  "linux_started": false,
+  "source_sha256": "afa056ef9ba0860e02dc32cc109d2102787e8fa78590db39645eff81c4eeeff0",
+  "process_signalling_tested": false,
+  "scope": "devbrain_parent_loss_windows_guards",
+  "real_power_api_called": false,
+  "checks": [
+    {
+      "case": "none",
+      "errors": [],
+      "passed": true,
+      "restore_attempts": 1
+    },
+    {
+      "case": "kill",
+      "errors": [
+        "Cleanup: synthetic kill"
+      ],
+      "passed": true,
+      "restore_attempts": 1
+    },
+    {
+      "case": "wait",
+      "errors": [
+        "Cleanup: synthetic wait"
+      ],
+      "passed": true,
+      "restore_attempts": 1
+    },
+    {
+      "case": "flush",
+      "errors": [
+        "Cleanup: synthetic flush"
+      ],
+      "passed": true,
+      "restore_attempts": 1
+    },
+    {
+      "case": "restore",
+      "errors": [
+        "Sleep restoration: synthetic restore"
+      ],
+      "passed": true,
+      "restore_attempts": 1
+    },
+    {
+      "case": "dispose",
+      "errors": [
+        "Handle disposal: synthetic dispose"
+      ],
+      "passed": true,
+      "restore_attempts": 1
+    },
+    {
+      "case": "hash",
+      "errors": [],
+      "passed": true,
+      "restore_attempts": 1
+    },
+    {
+      "case": "publish",
+      "errors": [],
+      "passed": true,
+      "restore_attempts": 1
+    },
+    {
+      "case": "multiple",
+      "errors": [
+        "Cleanup: synthetic multiple",
+        "Sleep restoration: synthetic restore",
+        "Handle disposal: synthetic dispose"
+      ],
+      "passed": true,
+      "restore_attempts": 1
+    },
+    {
+      "case": "parent_streams_oracle_exited_False",
+      "passed": true,
+      "close_calls": 0
+    },
+    {
+      "case": "parent_streams_oracle_exited_True",
+      "passed": true,
+      "close_calls": 1
+    }
+  ],
+  "passed": true
+}

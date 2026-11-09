@@ -1,0 +1,210 @@
+{
+  "schema_version": 1,
+  "scope": "test_suite_user_stop_durable_handoff",
+  "status": "stopped_by_explicit_user_request_no_more_execution",
+  "created_utc": "2026-11-08T22:40:41.766537+00:00",
+  "user_instruction": "STOP now; save handoff; root shuts down whole Windows after cleanup. Do not stage or run anything else. No8h this session.",
+  "own_active_windows_processes": [],
+  "own_active_linux_processes": [],
+  "root_reported_all_linux_workloads_stopped": true,
+  "last_root_owned_workload": {
+    "session": 82992,
+    "mode": "guards604",
+    "actual_exit_code": 0,
+    "natural_exit": true,
+    "observed_by_root_utc": "2026-11-08T22:38:56Z",
+    "closing_windows_audit_actual_exit_code": 0
+  },
+  "source": {
+    "run_id": "app080-20261108T222731Z",
+    "context": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-app-ux-snapshot-active-context.json",
+    "context_sha256": "d0a5b7e2682cd3f540fcce87446517fb8a11b6712f689aeb6df6dfbf562c771c",
+    "freeze": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\app080-20261108T222731Z\\source-freeze.json",
+    "freeze_sha256": "ad77e00450537294fd26200d0713915689d82ff5a90e65f6c8fb1285fcbb4703",
+    "app_files": 198,
+    "frozen_files": 209,
+    "pins": 59,
+    "prepare_actual_root_session": 11195,
+    "prepare_actual_exit_code": 0,
+    "prepare_receipt_sha256": "4cba08753a5d44463687271f5e695ccddac4d2284ca348b66630f480facde918",
+    "expected_backend_cases": 1561,
+    "expected_ux_cases": 381,
+    "source_root": "/home/piotr/.cache/devbrain-runtime-080/postbios-app080-20261108T222731Z/project/devbrain",
+    "python_launcher": "/home/piotr/.cache/devbrain-runtime-080/postbios-app080-20261108T222731Z/venv/bin/python"
+  },
+  "v8": {
+    "context": {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-final-candidate-build-ready-context-v8-20261108.json",
+      "sha256": "6d6ce8780c9c4fa9d04d3bfbfca3f2fe1852c1390122605dc5513a82eb2a118b"
+    },
+    "run_id": "final-candidate-sidebar080-20261108T223128Z",
+    "actual_root_session": 25627,
+    "actual_exit_code": 0,
+    "status": "candidate_built_observed_not_qualified",
+    "updater_sha256": "6371e83c278fbb5b953680398434bb2a7f6d2c06e13dda0efb42592311097405",
+    "zip_sha256": "f48276a0d82a15f5f6df13884f56d94f23337459d704ff0ea5f0226f14969e71",
+    "manifest_sha256": "8055443f8891eeedb6bb3b7c4d8040053cf69786bf4bf6965fa967197e8b0a89",
+    "observation_sha256": "758e420c604b3aaaa81adebfdb22c7de8379614056542ae5a2106e0b3ba5d5c9"
+  },
+  "guards604": {
+    "context": {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-guards-queue-budget-active-context-20261108.json",
+      "sha256": "9e9d865acea676f9fab11225c54e49095610e44feb37d9a0b0cd6e882633e6d6"
+    },
+    "final_report": {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-guards-sidebar-resize-final-20261108.json",
+      "sha256": "ad4a0f638bef723c4e8c918e2daeb4f71eac60e238d32ea454586ca53d326e8f"
+    },
+    "receipt": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\guards-sidebar-resize080-20261108T223449Z\\artifacts\\receipt.json",
+    "receipt_sha256": "9dca1fd31a494fd015d3ba198af5a7ea453211f93c484bdf5b0d931f33865f84",
+    "run_id": "guards-sidebar-resize080-20261108T223449Z",
+    "actual_root_session": 82992,
+    "actual_exit_code": 0,
+    "status": "passed",
+    "finalized_by_root_not_rerun_by_this_agent": true,
+    "helpers": 38,
+    "modules": 12,
+    "cases": 604,
+    "inputs": 56,
+    "tools": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\guards-sidebar-resize080-20261108T223449Z\\tools",
+    "freeze_sha256": "7e3a840ac8b6d230cc9831bdd9a28a0e7ae604ee02d34481650915ca09513f5d",
+    "spec_sha256": "d6a45e2f81b67a3a973462db01f9d11825c44fdc1c81f96dd72b30a649aadbae",
+    "finalizer": {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\finalize-guards-sidebar-resize-20261108.py",
+      "sha256": "a8264953615b1698a63c41e9a949765a4e8483761dc312fa8040c951b0e155ef"
+    },
+    "finalizer_already_executed_do_not_repeat": true
+  },
+  "pending_current_source": {
+    "full_backend1561": {
+      "status": "NOT_RUN_NOT_STAGED",
+      "stager": {
+        "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-fullbackend-sidebar-resize-604-20261108.ps1",
+        "sha256": "de36c4daac4b3589cad3dd9bfa95db7df0a1df34b3756cace6cecd0978e00635"
+      },
+      "future_context": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-fullbackend-sidebar-resize-active-context-20261108.json",
+      "finalizer_current_source_not_created": true
+    },
+    "ux381": {
+      "status": "NOT_RUN_NOT_STAGED",
+      "stager": {
+        "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-ux-sidebar-resize-604-20261108.ps1",
+        "sha256": "8a4eb75de06a55e5e40c3db58739d8b90079381c23fa6b6962550b29c861ff5c"
+      },
+      "master": {
+        "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-ux-sidebar-resize-604-templates-20261108.json",
+        "sha256": "c6e226ee4f4e232f08b91d123bd5514391aeb1dd87badac9ad551b7537fe8b0e"
+      },
+      "peer": {
+        "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-ux-sidebar-resize-stager-peer-review-20261108.json",
+        "sha256": "85ebcc5112c643007c8261db84bb8eb093d3dc26c39b7deb227a54ce3bb264d3"
+      },
+      "future_context": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-ux-sidebar-resize-active-context-20261108.json",
+      "modules": 28,
+      "root_requested_first_after_guard_next_session": true,
+      "finalizer_current_source_not_created": true
+    },
+    "entire_six_copy": {
+      "status": "NOT_RUN_NOT_STAGED",
+      "owner": "queue_review",
+      "stager": {
+        "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-queue-copy-sidebar-resize-604-20261108.ps1",
+        "sha256": "85a8c697f814bcd2380e98be0eb5ddd787f921986373d66f3c1a6eb323408152"
+      },
+      "plan": {
+        "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-queue-copy-sidebar-resize-stage-plan-20261108.json",
+        "sha256": "7c1d1f7f0bb45b969c1c0a6247e960f726e436bc27ec9eae77297f55fcbfbaf4"
+      },
+      "peer": {
+        "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-queue-copy-sidebar-resize-stager-peer-review-20261108.json",
+        "sha256": "efaf84f94e89999db86d5e011e0cbdaca06c6ad6c2901ba83847abe2531dd70a"
+      },
+      "original_six_must_run_in_fresh_namespace": true
+    },
+    "actual_ui5plus3": {
+      "status": "NOT_RUN_NOT_STAGED_PEER_PENDING",
+      "owner": "queue_review",
+      "master": {
+        "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-interactive-sidebar-resize-agent-templates-20261108.json",
+        "sha256": "4d5597f51bc8ebb0da7b286a1a8b167a0bf088f150649726e39078edc325ceb3"
+      },
+      "stager": {
+        "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-interactive-sidebar-resize-agent-dom-604-20261108.ps1",
+        "sha256": "37e11f8c2b08537b7147f2c131c0ca5b85a17870b1e1a9bcedf4bc121a2abd0c"
+      },
+      "independent_peer_not_completed": true,
+      "primary_client": "Codex selected through normal UI before Start; no controller/model/environment override",
+      "duration_seconds": 1800,
+      "outer_seconds": 1980,
+      "strict_visual_acceptance_literal_boolean_true_required": true
+    },
+    "standalone_fullsuite1561": {
+      "status": "NOT_CREATED_NOT_RUN",
+      "requires": "Actual complete1561 root exit0, exact JUnit/collection/receipt/source/maps/quiet proof and immutable final context",
+      "canonical_output_rule": "NEW actual backend artifact_root/final-full-suite.json; never reuse old1557 output",
+      "reviewed_seed_base": {
+        "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-standalone-length-repair-attestation-prepared-context-20261108.json",
+        "sha256": null,
+        "note": "Verify exact existing seed hash before cloning; no new1561 seed exists."
+      },
+      "old_1557_materializer_sha256": "de263bb59d27fa73e63a4f590f99e6169ea6d83375b4425b3c9310b93b4da7a6",
+      "old_1557_observer_sha256": "c7e8ca2373c32d22cb0113b902dc8c4fb13b0cdd19f2e69b09e8ab0564690b4f",
+      "direct_qualified_cli_no_controller_alias": true
+    },
+    "native_copilot_ollama20_frontend_smoke": {
+      "status": "ALL_NOT_RUN_NOT_STAGED",
+      "master": {
+        "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-sidebar-resize-remaining-gate-templates-604-20261108.json",
+        "sha256": "f4e039f5040cd70f2f3b0aa18699bfacc92e1f445ad2bb81dd685d96b2643dba"
+      },
+      "next5_stager": {
+        "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-five-sidebar-final-gates-after-ui-20261108.ps1",
+        "sha256": "37293adac1ea634fc9da250c80fd88bebaf0491bc1369c4c997d157818bd0c84"
+      },
+      "peer": {
+        "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-sidebar-remaining-conditional-peer-review-20261108.json",
+        "sha256": "8a7b6747688bdfbe77ca5f5d66091e9e95bc4f7c24c24411436f1a41e020603f"
+      },
+      "requires_actual_current_backend_canonical_ux_copy_and_visual_ui": true
+    },
+    "eight_hour": {
+      "status": "NOT_RUN_EXPLICITLY_PROHIBITED_THIS_SESSION",
+      "inert_stager_only": {
+        "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-final-eight-hour-sidebar-resize-604-20261108.ps1",
+        "sha256": "3527b2c82c372c4d8764d0ff3a8a4be3e84d6c1e78c503044fe94cc8af9cc5ee"
+      },
+      "next_session_must_start_fresh_28800_seconds_after_all_real_preconditions": true
+    }
+  },
+  "historical_visual_failure": {
+    "run_id": "interactive-length-repair-rerun080-20261108T220216Z-b584d2e0",
+    "root_session": 14823,
+    "raw_mechanical_receipt_passed": true,
+    "visual_acceptance_passed": false,
+    "overall_UI_qualified": false,
+    "final_report": {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-interactive-length-repair-rerun-final-20261108.json",
+      "sha256": "82113271f187304850db1d335a592d623a0b434880c68eafea1190780bf61ddc"
+    },
+    "all_eight_mechanical_observations_do_not_override_actual_crop": true
+  },
+  "history_rules": [
+    "Keep all older candidate/source/failed UI/copy/receipt files unchanged.",
+    "Previous1557/377/copy6 passes belong to source202627 and are not new222731 application proof.",
+    "Runtime five d466 remains source160614/594 only after same seven instrumentation bytes, not current application qualification.",
+    "Do not rerun completed a826 finalizer or mutate final guard context after admission."
+  ],
+  "next_session_sequence": [
+    "Obtain user resume and verify fresh boot/power/runtime/source/pins/native/quota readiness; production remains stopped.",
+    "Use current source222731 and current38map; verify hashes before any metadata materialization.",
+    "Materialize and run381UX first per root, then entire6 and complete1561 serially; stop on actual failure.",
+    "Canonical standalone1561 after actual backend0; current actualUI5+3 with no clipped More and strict root visual acceptance.",
+    "Native/Copilot/Ollama20/frontend/updater smoke all on current source/candidate.",
+    "Only subsequently fresh8h when explicitly resumed and all required proof manifests passed; no continuous time pooling."
+  ],
+  "production072_private_database": "STOPPED_UNMODIFIED",
+  "all_pre8h_complete": false,
+  "release_qualified": false,
+  "shutdown_owner": "root",
+  "no_additional_workload_authorized_after_this_write": true
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "scope": "backend1561_finalizer_independent_metadata_peer",
+  "finalizer_sha256": "0296e54383e74b69cf2b3fc454180dfa334c592b9b77fd15f1ee998311f9f8ab",
+  "baseline_sha256": "6fde419ca33f28487c792172a12609a7693b42703b1fa7085b251c1886fbac8b",
+  "exact_metadata_only_transform": true,
+  "metadata_replacements": 10,
+  "AST_valid": true,
+  "acceptance_assertions_unchanged_except_expected1561_and_current_actual_bindings": true,
+  "current_context_spec_freeze_match": true,
+  "findings": [],
+  "finalizer_executed": false,
+  "linux_started": false,
+  "backend_actual_exit_observed_by_peer": false,
+  "verdict": "static_ack_pending_actual_root_exit0"
+}

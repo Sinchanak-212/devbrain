@@ -1,0 +1,95 @@
+{
+  "continuous_eight_hours_qualified": false,
+  "scope_empty_verified": true,
+  "runtime": {
+    "node": {
+      "path": "/home/piotr/.cache/devbrain-validation-20261107/tooling/node-v22.14.0-linux-x64/bin/node",
+      "sha256": "1abce2374a485bddae3c27b17a3e3143e2780232026e627c4fe74ddde3f380a1",
+      "version": "v22.14.0"
+    },
+    "npm": {
+      "path": "/home/piotr/.cache/devbrain-validation-20261107/tooling/node-v22.14.0-linux-x64/lib/node_modules/npm/bin/npm-cli.js",
+      "sha256": "8e5f6f3429f8cdbe693cdc29904e9d5a7b127a494bd15c804bd54c7403bfcbe7",
+      "hash_scope": "cli_entrypoint",
+      "version": "10.9.2"
+    },
+    "chromium": {
+      "path": "/home/piotr/.cache/devbrain-validation-20261107/tooling/playwright/chromium-1193/chrome-linux/chrome",
+      "sha256": "5386de944dc312f838d69a974253d23bdb029acc072e28e6b11aa478c8b504d5",
+      "version": "Chromium 140.0.7339.186"
+    }
+  },
+  "steps": {
+    "install": {
+      "returncode": 0,
+      "actual_exit_verified": true
+    },
+    "unit": {
+      "returncode": 0,
+      "actual_exit_verified": true
+    },
+    "build": {
+      "returncode": 0,
+      "actual_exit_verified": true
+    },
+    "browser": {
+      "returncode": 0,
+      "actual_exit_verified": true
+    },
+    "server_shutdown": {
+      "actual_exit_verified": true,
+      "returncode": 143
+    },
+    "audit_all": {
+      "returncode": 0,
+      "actual_exit_verified": true
+    },
+    "audit_runtime": {
+      "returncode": 0,
+      "actual_exit_verified": true
+    }
+  },
+  "receipt_sha256": "128b801a0120e550cf167eed61be1c4ca8364742d9d59fd4e6a579a0f3d2b200",
+  "run_id": "frontend-deploy-final080-20261108T171720Z-4b8f555c",
+  "source_freeze_sha256": "5ea43988e1943c783e802acbe5a39fdfcc3318d41655ed244716a69a0d71b28f",
+  "all_current_built_bytes_match_candidate": true,
+  "full_release_qualified": false,
+  "scope_quiet_seconds": 33.1778252,
+  "final_boot_id": "4cd15899-6d47-425f-8bdf-d38854d686e8",
+  "schema_version": 1,
+  "production_modified": false,
+  "browser": {
+    "passed": 8,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "actual_windows_exec_session": 79070,
+  "receipt": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\frontend-deploy-final080-20261108T171720Z-4b8f555c\\artifacts\\receipt.json",
+  "build_comparison_sha256": "0b5ac6044c4c5f73a169e9009589d6e5e67c6f1d5a96e494022f856a6802ebf3",
+  "recorded_utc": "2026-11-08T18:08:30.6184687Z",
+  "synthetic_browser_mocks": true,
+  "current_built_files": 7,
+  "sleep_inhibition_restored": true,
+  "unit": {
+    "passed": 10,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "native_failure": false,
+  "cleanup_complete": true,
+  "power_changed": false,
+  "retained_packaged_files": [
+    "assets/graph-mXQgwRjf.js",
+    "assets/index-BRWYG2kS.css",
+    "assets/index-DLbTmMZ8.js",
+    "assets/terminal-BkZtEzRC.js"
+  ],
+  "source_snapshot": "app080-20261108T160614Z",
+  "initial_boot_id": "4cd15899-6d47-425f-8bdf-d38854d686e8",
+  "status": "passed",
+  "external_post_exit_seconds": 35,
+  "scope": "devbrain_final_frontend_regression",
+  "actual_windows_exit_code": 0
+}

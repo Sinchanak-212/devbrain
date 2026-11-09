@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "scope": "canonical_ux381_windows_finalizer_preparation",
+  "status": "prepared_not_executed_pending_actual69791exit0",
+  "baseline_sha256": "8db41ad0fc023debcd2a6360d52a7977477701bbcef7afceea7240d577c37577",
+  "finalizer": "evidence\\finalize-ux-sidebar-resize-20261109.py",
+  "finalizer_sha256": "ecfc580857ceab5747f4f06eab3dedb142bf437d16ebf5242552ab1e41a045c1",
+  "metadata_changes": {
+    "41294": "69791",
+    "377": "381",
+    "080-ux-length-repair-active-context-20261108.json": "080-ux-sidebar-resize-active-context-20261108.json",
+    "ux-length-repair080-20261108T204650Z-5bc27ae5": "ux-sidebar-resize080-20261109T100428Z-18c73e95",
+    "0831d6c12c851c36e3edd6e6858e182b010c35b2f909e6d79f99b0257c30d169": "d419c848402e982aa844e1d155c264ecde410d88b7919228ca3d602417ebd38a",
+    "9655dcfa2a2342fc4b2c3c077cce4c881de2b27371fad599d8b4dc8b53ccfd82": "5c7e8ea5f52f852b61b3f26e4892498bbba44eccdbb6426d3a891b08b1081ad0",
+    "app080-20261108T202627Z": "app080-20261108T222731Z",
+    "1f35dae9f2b3f894bb67535a215e29cba3c1235120ff30daa387bd5450f03e14": "ad77e00450537294fd26200d0713915689d82ff5a90e65f6c8fb1285fcbb4703",
+    "4e18e967ea94bbe43c807e86c65c9d46a2d7205241a9713a7b6406dc8a97526e": "4cba08753a5d44463687271f5e695ccddac4d2284ca348b66630f480facde918",
+    "080-ux-length-repair-final-20261108.json": "080-ux-sidebar-resize-final-20261109.json"
+  },
+  "exact_reversible_metadata_only_delta": true,
+  "AST_valid": true,
+  "all_acceptance_assertions_unchanged_except_expected381_and_current_bindings": true,
+  "current_spec_and_freeze_bindings_match": true,
+  "root_host_go_sha256": "1f193a494465f6cc7f8418d62939043f31442ee62e44d1ee14cbab9cbbfb456d",
+  "finalizer_executed": false,
+  "new_linux_started_by_finalizer": false
+}

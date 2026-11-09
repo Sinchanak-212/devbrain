@@ -1,0 +1,691 @@
+{
+  "task": "Implement and fully qualify DevBrain 0.8.0 including continuous 8h; production 0.7.2/private DB STOPPED.",
+  "app": {
+    "snapshot": "app080-20261108T202627Z",
+    "freeze": "1f35dae9f2b3f894bb67535a215e29cba3c1235120ff30daa387bd5450f03e14",
+    "status": "prepared_passed",
+    "source": "/home/piotr/.cache/devbrain-runtime-080/postbios-app080-20261108T202627Z/project/devbrain",
+    "python": "/home/piotr/.cache/devbrain-runtime-080/postbios-app080-20261108T202627Z/venv/bin/python",
+    "count": 198,
+    "totalCount": 209,
+    "expectedBackend": 1557,
+    "expectedUX": 377,
+    "prepareSession": 39447,
+    "stageSession": 79542,
+    "stageActualExit": 0,
+    "finalSourceFreeze": false,
+    "prepareExit": 0,
+    "prepReceipt": "4e18e967ea94bbe43c807e86c65c9d46a2d7205241a9713a7b6406dc8a97526e",
+    "quietSeconds": 32.1314672,
+    "pins": 59
+  },
+  "linux_workload_active": {
+    "kind": "current-source UX377/28 measured latency",
+    "session": 41294,
+    "context": "evidence/080-ux-length-repair-active-context-20261108.json"
+  },
+  "oldFailedBackend": {
+    "context": "evidence/080-full-backend-final-active-context-20261108.json",
+    "run_id": "full-backend-final080-20261108T141923Z",
+    "rootSession": 35179,
+    "actualExit": 1,
+    "counts": "1474 passed /4failed/0skip /1478complete",
+    "safeNextReport": "evidence/080-full-backend-final-failed-safe-next-20261108.json",
+    "safeNextSha": "323a430148e089c9cb9a6106382bd1bbbeddf9f4dce956de7bdd7bd41757c8ea"
+  },
+  "latestPassedTools": {
+    "context": "evidence/080-guards-queue-budget-active-context-20261108.json",
+    "contextSha": "0d47b2ea314be36b18749076196693227d91d8395645ad1779a412894582565d",
+    "receipt": "c2469d14d080ecdf96d42d6dc4c887207a706898ea3681fa5b10749a26113b82",
+    "report": "evidence/080-guards-length-repair-final-20261108.json",
+    "reportSha": "e3c5362952f7d56f5dc7f5d9e45678752bf8304060c961baee8fe49c372e63b5",
+    "count": 604,
+    "helpers": 38,
+    "modules": 12,
+    "session": 76710,
+    "actualExit": 0,
+    "source": "app080-20261108T202627Z",
+    "freeze": "799680c55a32fc5354b5a10d8da68c4dd54c13d6d79bb636f0f88bf53794648f",
+    "status": "passed"
+  },
+  "pendingTools": null,
+  "next": "UX41294actual0+final377latency/frameaudit; genuineUIstage/operator5+3OSscreens/rootreadonlyphotos thenactualUIcleanup/OAuth; realnative/Copilot/Ollama20/frontend/smoke; all8functional+canonical1557 beforecontinuous8h28800 (NEVERSTARTED); all11+backup/installUI/prod6single retries/resume. USERconditionalquota≤5%=cancel.jsonownedcontrollergracefulstop/actualcleanup≥30/savehandoff/shutdown.exe /s /t0 no/f. Currentquota37%weekly21:09,5hunavailable.",
+  "eightHours": "NEVER STARTED",
+  "uiPast": "134240 had genuine agent8/8 and3nativeOSPNGs, actualexit0/receipt404a..., sourcechange nowtest-only but strict finalsourceproof needrebind/rerun as planned.",
+  "scriptStores": {
+    "0": "prepare_and_verify_locale_app_snapshot",
+    "1": "launch_prepared_final474_serial_qualification (normalizes app_freeze/source_freeze alias)",
+    "2": "run_one_final474_fixture",
+    "3": "open_readonly_windows_observer_toast",
+    "4": "capture_live_windows_observer_toast (-A -v effective status)",
+    "5": "detach_readonly_windows_observer_toast",
+    "6": "stage_three_reviewed_backend_test_deltas",
+    "7": "run_one_final529_fixture",
+    "runDeployFixture": "run_one_final_deploy_fixture",
+    "auditDeployFixture": "audit_one_final_deploy_fixture",
+    "latestLaunch": "launch_prepared_latest_serial_qualification"
+  },
+  "candidate": {
+    "context": "evidence/080-final-candidate-build-ready-context-v7-20261108.json",
+    "source": "app080-20261108T202627Z",
+    "actualSession": 41768,
+    "actualExit": 0,
+    "status": "BUILT_REVIEWED_MECHANICAL_NOTQUALIFIED",
+    "contextSha": "cdd27ef8e5326c85ab4f85af562b2826c20f3b63cfd07c454441cb3fbf7766d6",
+    "updaterSha": "0a1cf86a23a4a0c8e0b664837e4974387cdb5e9001e011c52af179765f6c9dec",
+    "zipSha": "4fb8b1203dfce52eb5bfd094b2649899316e09ada64cbd2dc14e1bb8de071508",
+    "manifestSha": "f15ac4aa5640545455dacbf70333282c4d154a3b37647f29cb70db2f7f1df44d",
+    "observationSha": "e32ce6f6d0442fea7b2780974fcddd0fb4fcd3380a14342b6f4701104e1efc18",
+    "admittedContextMustStayCdd27": true
+  },
+  "templates": "evidence/080-finalsource-gate-templates-594-deploy-20261108.json",
+  "pendingAppFix": {
+    "status": "FROZEN_CURRENT202627_AND_FULL1557+CANONICAL+604+ENTIRE6_PASSED;UX377RUNNING",
+    "files": [
+      "devbrain/src/devbrain/agent.py",
+      "devbrain/tests/test_extraction_safety.py"
+    ],
+    "agentSha": "a734cc2d16df403dd94c1f97648267d152ef0caba7ceb08dda0de32a5c8931dd",
+    "testSha": "b3d90caa95382e9e90d7a85aa57f801db30f7ec5af45e03aecd97dadcb1801aa",
+    "prepSha": "5eab009d4cdeccbf47f9f96da19d52c0aefbb9631c3314c3ec49d2ccfe677560",
+    "peerSha": "d5b4afc4a089e32640facaa83d3108f6158bdf3c07e26a91e7d510f82c1147b3",
+    "qrPeerSha": "d9dab7e45d3d17ffb908720c90b3ff9ab63cd3fe7c0fc45597a7fe5394ea1349",
+    "sourceCount198": true,
+    "noChangesAfterV7": true
+  },
+  "controlled529": {
+    "normal": {
+      "root72554": 0,
+      "driver": 0,
+      "oracle": "906b4b097e61593abfe5d6b34d518679aac9920e0cadb8152725679986d0f17a",
+      "scope": 30.5277,
+      "outer": 33
+    },
+    "nonzero": {
+      "root8512": 0,
+      "driver": 1,
+      "child": 7,
+      "scope": 30.3787,
+      "outer": 33,
+      "qaOraclePending": true
+    },
+    "timeout": {
+      "root90010": 0,
+      "driver": 1,
+      "child": -15,
+      "scope": 30.7631872,
+      "outer": 34,
+      "qaOraclePending": true
+    },
+    "orphan": {
+      "root16198": 0,
+      "driver": 1,
+      "child": 0,
+      "scope": 32.9516095,
+      "outer": 35,
+      "envEmpty": true,
+      "falseCleanupClaim": true,
+      "qaOraclePending": true
+    },
+    "parentLoss": {
+      "root94842": 0,
+      "driver": 0,
+      "pid": 42400,
+      "originalOraclePassed": true,
+      "postOracle": 30.7588734,
+      "qaAuditPending": true
+    }
+  },
+  "coordinationWarning": "CRITICAL: completedagents DO NOT WAKE on send_message. Always collaboration.followup_task for newwork/continuation. Root caught idleallagents andacknowledgeddelaytouser; nowTSpatch/RRreview/QR5oracles running.",
+  "controlledDeploy": {
+    "normal": {
+      "rootSession": 27353,
+      "actualExit": 0,
+      "driverPid": 57792,
+      "driverExit": 0,
+      "oracle": "cc9f0ae2a404d9e2d1c418a5d691b1bf7692c69986d6dbbf3ae4beac4eea5c31",
+      "safeNext": true
+    },
+    "context": "evidence/080-controlled-fixtures-deploy-active-context-20261108.json",
+    "boundManifestSha": "4edb72e49dbf851d7ccf3597d9b240c105ff0547218b2b2c022dac7233763d8c",
+    "nonzero": {
+      "rootSession": 9496,
+      "actualRootExit": 0,
+      "driverPid": 34892,
+      "driverExit": 1,
+      "oracle": "09838905d918ca91af2dfc98c69fc185b0343df8cac34001d924bb60bb78f4b4",
+      "rawReceiptPassed": false,
+      "safeNext": true
+    },
+    "timeout": {
+      "rootSession": 58438,
+      "actualRootExit": 0,
+      "driverPid": 62228,
+      "driverExit": 1,
+      "oracle": "d33098fbea288a84d3cd6a62bb73bd43daaca7e8c3e42262221eea76f8c7b037",
+      "rawReceiptPassed": false,
+      "safeNext": true
+    },
+    "orphan": {
+      "rootSession": 50449,
+      "actualRootExit": 0,
+      "driverPid": 58436,
+      "driverExit": 1,
+      "oracle": "11a3a427314e793e34ec8baa3eba98a3a66d519303da5602e356aab95b50dadf",
+      "rawReceiptPassed": false,
+      "safeNext": true
+    },
+    "parentLoss": {
+      "rootSession": 54905,
+      "actualRootExit": 0,
+      "driverPid": 57856,
+      "driverExit": 0,
+      "oracle": "070510097ae7c3ab60e03da071b238b08dddd9f47626674caeb89dbc85b3cd98",
+      "safeNext": true
+    },
+    "final": {
+      "passed": true,
+      "report": "evidence/080-controlled-fixtures-deploy-final-20261108.json",
+      "sha": "d466c012f3bbfa8134154c85d510b82d758f8422c4facdedf986482b26d3260c",
+      "count": 5
+    }
+  },
+  "queueCopyFailure": {
+    "session": 54839,
+    "exit": 1,
+    "context": "evidence/080-queue-copy-deploy-active-context-20261108.json",
+    "diagnosis": "evidence/080-queue-copy-deploy-failed-diagnosis-20261108.json",
+    "diagnosisSha": "050ecdc829cada2e4a278ced3fbe85e9998fb55e6da0848bb4fdf4ff65e6a25c",
+    "scopeSafeNext": true,
+    "rawFailUntouched": true,
+    "progress": "two imports complete, third extract cancelled30.031s, fourth not attempted; no completed model response recorded, zero writes forfailedextract",
+    "newNativeFailure": false
+  },
+  "orchestrationLesson": "Always inspect exec_command exit_code before dependent calls! Targetcopy precheck expected wrong pending-state label and failed; unconditional next genericlaunch started authorizedcorrectcopy afteritsowncorehashchecks. Rootverifiedall15inputs+38helper afterstart, matchingTSpriorpeer. No app/qualificationfault frommetadata typo; keeptransparent, neverrepeatunconditionaldependency.",
+  "latestFailedCopy": {
+    "session": 3122,
+    "actualExit": 1,
+    "source": "app080-20261108T192100Z",
+    "context": "evidence/080-queue-copy-task-state-restaged-active-context-20261108.json",
+    "diagnosis": "evidence/080-queue-copy-taskstate-failed-diagnosis-20261108.json",
+    "diagnosisSha": "46ef06c29aece8a796cc8a9984170daaab6ea6e563ce0448459be65589fbb671",
+    "strictOwnedScopeSafeNext": true,
+    "scopeSeconds": 30.0711832,
+    "outerSeconds": 34,
+    "rawFailUntouched": true,
+    "nativeFailure": false,
+    "progress": "first4 completed; fifth extract a6d7f6ae-10f6-4388-8086-8f80cfa107d4 failedinvalid_json aftertwo length1200 responses23.390+23.308sec;46.711<120;zeroextractedwrites; sixthnotattempted/finalcountsnotreached",
+    "previousThirdNowPassed": "30bee886-18cb-4a1b-89db-8edc314e1aec6records27.034secs"
+  },
+  "freshSixCopy": {
+    "context": "evidence/080-queue-copy-task-state-restaged-active-context-20261108.json",
+    "contextSha": "29644485f6acd019f3de7398f8323c25378ccbf7900b13e547636dd5dadb7f82",
+    "run": "queue-copy-taskstate080-20261108T194411Z-efaf25f0",
+    "spec": "0d1cfce4425e1b695e2e1f1806b26390f358c0a718b794551244faa35a650c6a",
+    "freeze": "9631aba3e126a114e997302fb7886489720a03285ca0591fb092b2130b29c9f2",
+    "status": "FAILED_ACTUAL3122EXIT1_SAFE_NEXT_46ef",
+    "frozenInputs": 15,
+    "rootOnlyLinux": true,
+    "priorUnobservedWindowsStagePreserved": "080-queue-copy-task-state-active-context-20261108.json/4b61 NOTRUN"
+  },
+  "preparedUX": {
+    "context": "evidence/080-ux-length-repair-active-context-20261108.json",
+    "contextSha": "af91a75594ee9bbfe20d1e0bab4c73ae2eaa09ffce45ddd6643c2c3b7486a204",
+    "expected": 377,
+    "modules": 28,
+    "stageSession": 72076,
+    "actualStageExit": 0,
+    "peer": "83f289f47d2e6dc076e3b8bc60921c84d84c1f3a510f7d47990cfceb07dbb918",
+    "status": "running",
+    "actualSession": 41294
+  },
+  "preparedStandalone": {
+    "context": "evidence/080-standalone-task-state-attestation-envelope-20261108.json",
+    "initialSha": "664a00e9 (readactualfullSHA)",
+    "materializer": "af293087698237364fa68ce2034ebf6ba14c101b20eb0455060ebd7cbf690d61",
+    "launcher": "a3b40d6521253b2548f3e03a6e7c6e74bfdd3ffefb72b8e163dd569e206c238b",
+    "actualWindowsStageSession": 29853,
+    "actualStageExit": 0,
+    "peer": "6104a48da659a7a2e9cbfe392101f62ef9ac61312c6e80b6fe380f82a2115403",
+    "expectedBackendSession": 64756,
+    "status": "PASSED_SOURCE192100_ACTUAL22773_ONLY",
+    "canonical": "NEWBACKEND/artifacts/final-full-suite.json"
+  },
+  "remainingTemplateMaster": {
+    "path": "evidence/080-taskstate-remaining-gate-templates-604-20261108.json",
+    "sha": "2bca65e979e4a7990a9c7f4c5044263b3b5ae96fefc3e78f3becbc4831ac7910",
+    "status": "NOTRUN proofsNULL"
+  },
+  "eightHoursMaterializerNew": {
+    "path": "evidence/stage-final-eight-hour-taskstate-604-20261108.ps1",
+    "sha": "40e8033fdb29d670a932c2bc4800109486b521008cfa1857317ca1e99706cbf4",
+    "peer": "58f780fa34cb53747902667dc664a5b8cd2ad0e79fed157ec753133fcc41d417",
+    "readyContext": "evidence/080-taskstate-eight-hour-materializer-ready-context-20261108.json",
+    "readySha": "6f061774d9fbb49768cf7db43845911f504c794afa53ed36f4bc31ac3ec039b6",
+    "proofTemplateSha": "149e6f3b94504184fc45246a708bae12666aa0d81b53875e801075be401b3031",
+    "status": "NOT STAGED NEVER RUN, requires actual1537canonical/all8currentfunctionalproofs/source192100/v6/new604; focusedcopypriorflagsfalse intentionallyokay"
+  },
+  "historical160614": {
+    "latestUx": {
+      "count": 377,
+      "receipt": "91ed4dbfb8e7de42f5244d8418b08c460497876076e3835152d714253fadc271",
+      "report": "evidence/080-ux-assistantpref-final-20261108.json",
+      "passed": true
+    },
+    "latestUi": {
+      "passed": true,
+      "tasks": 5,
+      "geometries": 3,
+      "parentExit": 0,
+      "receipt": "6ab41f349292691882e736aadbc8bfca02510a4d9483d6e522474e9bc4d8f23d",
+      "report": "evidence/080-interactive-assistantpref-final-20261108.json",
+      "reportSha": "0a2c55a4638515dd5b188261f058e002b536be8287b962ac3efd2f440b9404c7",
+      "sourceFinalFreeze": true,
+      "source": "app080-20261108T160614Z",
+      "operatorReportSha": "18327784056c1edc6ea31f60caa4af4ceb1e32ad6c04316713dfcb034006ec5b"
+    },
+    "finalBackend": {
+      "passed": true,
+      "expected": 1508,
+      "actual": 1508,
+      "context": "evidence/080-fullbackend-deploy-active-context-20261108.json",
+      "contextSha": "7e4e1c2ac76bdce83075577763dbb5ed46ff172b9c1ddc1afadbe8266142bafb",
+      "receipt": "9240e55ef83bbde4bbf66b8906066e582844bf73874c273720de8c8b27bb606d",
+      "reportSha": "ca55f97f3268cff73cacfb039b8acc7406ec7f8740eb4508c53be2e8c9e341ee",
+      "actualSession": 46894,
+      "actualExit": 0,
+      "backendSourceFiles": 153
+    },
+    "fullSuiteAttestation": {
+      "passed": true,
+      "session": 78778,
+      "exit": 0,
+      "canonical": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\fullbackend-deploy-final080-20261108T171720Z-28700701\\artifacts\\final-full-suite.json",
+      "sha": "68ada7d441f2f9996884d239b36c5a37f91c74a2aa941d4f3bbd961c410a1af8",
+      "observationSha": "e94ed36ff87eee41c0b24cd709c3d8538fc8fb69b538337dd2604b81e342c466",
+      "context": "evidence/080-standalone-full-suite-attestation-envelope-v2-20261108.json",
+      "contextSha": "5187c6ae216993d2e75bf58159b2ded53e3d7ddff686aa40d6ec89171a55620d",
+      "report": "evidence/080-full-suite-attestation-final-20261108.json",
+      "reportSha": "46ee0bbf94b69cb77e365327a87c836e804f6efd2fc32248bacc68c2d7e9651b",
+      "backendContextMustStay7e4": true
+    },
+    "nativeFinal": {
+      "passed": true,
+      "session": 69948,
+      "exit": 0,
+      "receipt": "259a008f7e7f6ef51fc49a3039fd8562bdde8a54c2172057a13d714e99e3f681",
+      "report": "evidence/080-native-deploy-final-20261108.json",
+      "reportSha": "30f863d1084c3b3f636a44a4db0f3e11d8b0e6b333d8be3d20e89f91be7278a3",
+      "context": "evidence/080-native-deploy-active-context-20261108.json",
+      "contextSha": "56fe9263320ba39be5050c94c5eece0dbe17a1c4e7b8154a74e4f3faac982fa4",
+      "realNativeCompactionTested": false,
+      "syntheticPrecompactEvent": true,
+      "oauthSyncRelease": true
+    },
+    "copilotFinal": {
+      "passed": true,
+      "session": 69166,
+      "exit": 0,
+      "receipt": "abdaf4afaf1898e8b00332f329268b0a3a700ed9f764596033a398d1741e54fa",
+      "report": "evidence/080-copilot-deploy-final-20261108.json",
+      "reportSha": "c7d22cf187dac418a2f177d74d3a31582e3d01fa47ba491acf1153997e7b3b6e",
+      "context": "evidence/080-copilot-deploy-active-context-20261108.json",
+      "contextSha": "a51308cecc5c5bae60db07cb936767824c5f6a08b077537b82bf6a441432232a",
+      "apiKeyUsed": false,
+      "accountMode": true
+    },
+    "ollamaFinal": {
+      "passed": true,
+      "session": 43787,
+      "exit": 0,
+      "context": "evidence/080-ollama20-deploy-active-context-20261108.json",
+      "contextSha": "552c137e13653b9df53b9cee56b7eacca4024e68688ae8049b6d0eac669b6b09",
+      "receipt": "8be8007b7e62f06c91c15f87698e08e9ba1c45e271eb0c9236b44f602c9f7e92",
+      "report": "evidence/080-ollama20-deploy-final-20261108.json",
+      "reportSha": "167bd037ef2505664779ff8147df5c6326082e77bdcf48250f89845931bb4c1c",
+      "cases": 20,
+      "accuracy": 1,
+      "criticalCases": 13,
+      "answers": {
+        "complete": 18,
+        "partial": 2,
+        "partialIds": [
+          "recall17_unknown",
+          "recall18_isolation"
+        ],
+        "meaning": "Intended abstain=true expected unknown, scorer allows correctly scoped absence, not timeout"
+      }
+    },
+    "frontendFinal": {
+      "passed": true,
+      "session": 79070,
+      "exit": 0,
+      "context": "evidence/080-frontend-deploy-active-context-20261108.json",
+      "contextSha": "4d4c6ee50e88e5ada620794e9dec2e3c7f455f310e3ab7900ec61a80ccbc1972",
+      "receipt": "128b801a0120e550cf167eed61be1c4ca8364742d9d59fd4e6a579a0f3d2b200",
+      "report": "evidence/080-frontend-deploy-final-20261108.json",
+      "reportSha": "42472696e020d71a3b019c0c12853383147e185b5bf53bbe75ad048ec5cae7e2",
+      "unit": 10,
+      "browser": 8,
+      "auditAll0": true,
+      "build": {
+        "currentFiles": 7,
+        "packagedStaticFiles": 11,
+        "current7ByteEqual": true,
+        "retainedOlderUnused4": true,
+        "comparisonSha": "0b5ac6044c4c5f73a169e9009589d6e5e67c6f1d5a96e494022f856a6802ebf3",
+        "initialWholeInventoryComparisonMistakeCorrectedWithoutAnySourceChanges": true
+      }
+    },
+    "finalGates": {
+      "master": "evidence/080-five-final-deploy-gate-contexts-20261108.json",
+      "sha": "22753fd101a3417b91f255684909af68f5da76f3eb7d0369a5a403260e8d69c3",
+      "contexts": {
+        "fullbackend": "evidence/080-fullbackend-deploy-active-context-20261108.json",
+        "native": "evidence/080-native-deploy-active-context-20261108.json",
+        "copilot": "evidence/080-copilot-deploy-active-context-20261108.json",
+        "ollama20": "evidence/080-ollama20-deploy-active-context-20261108.json",
+        "frontend": "evidence/080-frontend-deploy-active-context-20261108.json"
+      },
+      "backendInputFreeze": "8f85c26e301f16eb2f1c53ced4dc3de64f3803b4ac7520e879c3108f49c37c21",
+      "backendSpec": "23ae669479976bd8751b7e83eba155cb9dc5e7a0a04726ebf521327509176fab"
+    },
+    "remainingProposalMaster": "evidence/080-remaining-final-gate-proposals-38-assistantpref-v4-20261108.json",
+    "remainingProposalSha": "268059bc3bb944a6d1a68544e003525b1bdd85cf408280af1bda5785e853afb5",
+    "remainingProposalMasterSha": "9a6f1f845eb4bbe14791b46b67e6f8af43fcc17bf37f97ad74798d09672a5c63",
+    "currentFiveTemplateSha": "e79efd45aaa0b61c67c154d2c4796f71f4f84a2e156de8fa53be71100b8c6c2b",
+    "queueSmokeMaster": "evidence/080-queue-smoke-deploy-contexts-20261108.json",
+    "queueSmokeMasterSha": "54f47a791e6cc7f75b689a118a0e201fae17af73d1bbb9cef37b762b2511c84f",
+    "queueContext": "evidence/080-queue-copy-deploy-active-context-20261108.json",
+    "smokeContext": "evidence/080-updater-smoke-deploy-active-context-20261108.json",
+    "eightHourMaterializer": {
+      "ready": "evidence/080-final-eight-hour-materializer-ready-context-20261108.json",
+      "readySha": "4a2c03e9ce88ef1dfc8cb413d7f3e73384442b78172e3bb647adcf11b8e62c64",
+      "script": "stage-final-eight-hour-594-20261108.ps1",
+      "scriptSha": "89377628f9543c6fd59101c8407694fb5cbca03232d6cdeeab7f46d1f5d709e8",
+      "peer": "f2c505000de2e608254ada6cc2f8c7445c6f81c7d239a66413fd45585249a062",
+      "status": "NOT_STAGE_NOT_RUN; requiresactualfrontend/queue/smoke andall8functionalproofs"
+    }
+  },
+  "historical183259": {
+    "unexecutedBackend1517": {
+      "context": "evidence/080-fullbackend-budget-active-context-20261108.json",
+      "contextSha": "2e5f054612440203daf2438c4564c848ba6fb78e32aeadd4ba06bf60b0a13e9e",
+      "specSha": "88f006f71698949fda062a3b96a8aa3e6146402f2f1648b9d72f1b9303bcb465",
+      "freezeSha": "3276ed20024d55bbd19301314d7dfad4e0cc25addcac5fb042dae97146603143",
+      "count": 1517,
+      "status": "NOTRUN aftertargetedcopyactualcleanup"
+    },
+    "original604stagers": {
+      "contextExpected": "evidence/080-guards-queue-budget-active-context-20261108.json",
+      "stager": "evidence/stage-queue-budget-guards-604-20261108.ps1",
+      "stagerSha": "47941a74cfed995cb297f0940ae719f5ce4b3c1b147089d179701ad05f87708c",
+      "backendStager": "evidence/stage-fullbackend-budget-604-20261108.ps1",
+      "backendStagerSha": "46836d7631c6fe3299c5102c8844c847ad99d1360f7a119e412c0a303a25dd2d",
+      "backendPeer": "d9d9baea5e012cfe1297357667ddf05ab2242e008e9fbc91ff810e4730f43c88",
+      "guardCount": 604,
+      "backendCount": 1517,
+      "status": "TS executingWindowsstager only, rootwilllaunchLinux"
+    }
+  },
+  "baselineVisual": {
+    "report": "evidence/080-baseline-visual-final-20261108.json",
+    "sha": "91450d6f6445a8b0c0fe2c7e7f020e245e6dee893a8f35cfa3ef344542d55e45",
+    "genuineOSCaptures": 3,
+    "old072Only": true,
+    "readonlyObserversAllActualExited": true,
+    "rootReViewed80And180Now": true,
+    "notFinal080Acceptance": true
+  },
+  "earlyBaselineSourceCheck": {
+    "session": 64776,
+    "actualExit": 1,
+    "status": "FAILED_EXPECTED_SOURCES_ALL182EXACT_UNEXPECTED1",
+    "context": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\source-preflight-baseline072-20261108T202335Z-99cb5d07\\prepared-context.json",
+    "cleanupAdmission": "dc89e2f2db7eb27755dbf69c4fcfa86096aceac2d6bb1dcf200b66cdfc485941",
+    "safeNextRootVerified": true,
+    "rawFailUnchanged": true,
+    "needsClassifyingExtraBeforeProduction": true,
+    "extraClassification": {
+      "report": "evidence/080-source-baseline-extra-metadata-20261108.json",
+      "sha": "2774bf310b4656b4278c3f84df4889d4a8ac58b3ff929b2c9472525fe58a006f",
+      "classification": "root normal directory publicknownbuilddistributioncategory, no contents/names/hashes exported; not yet allowed/ignored; RR staticprovesinstallerdoesnotconsume/manage",
+      "modified": false
+    },
+    "cleanupIndependentPeer": "51f1ca4235cbbc490ad176fab352602eb75822db7b8ef366fbd19563a6b9784c"
+  },
+  "historical192100": {
+    "backend": {
+      "context": "evidence/080-fullbackend-task-state-active-context-20261108.json",
+      "initialContextSha": "6a62bae928555d33065f694efda6c6bfe7faa4c0d7a3cd4882110e7b62bb40e9",
+      "expected": 1537,
+      "actualCollection": 1537,
+      "status": "passed",
+      "session": 64756,
+      "run": "fullbackend-task-state080-20261108T194004Z-10aeac53",
+      "spec": "c30bce64e41f53a7353333229c5d891addc0a6a2e8dafc0856de5aeed0cbcd09",
+      "freeze": "5ee06b84eeddb4c256d41126b0aaa1807d5025b19023c0a3451cb87b4d51e213",
+      "prechecksAll14And38Passed": true,
+      "followupStandalonePrepared": true,
+      "actualExit": 0,
+      "contextSha": "9bcea72c22082b2a03b2d751fa419116e2c457e3e3f487a39b685e016e8a3324",
+      "receipt": "b7a58b9bfd6397a956d9fddf5f4b275f4a533c383af33270d5f0e789ce498f0c",
+      "reportSha": "8cfc6e8b4c4f84871dc9642a3befb776516b14999ca1a868ebf379e3f7d3c800",
+      "actual": 1537,
+      "junit": {
+        "failures": 0,
+        "errors": 0,
+        "skips": 0
+      },
+      "admittedContextMustStay9bcea": true,
+      "canonicalAttestationSha": "8d22694d4f11ec2a966249578d77faf8210c1d1c6bd31e0ee4130230df85b36a"
+    },
+    "candidateV6": {
+      "context": "evidence/080-final-candidate-build-ready-context-v6-20261108.json",
+      "actualSession": 98526,
+      "actualExit": 0,
+      "status": "V6_ACTUAL_BUILT_REVIEWED_NOT_QUALIFIED",
+      "source": "app080-20261108T192100Z",
+      "contextSha": "c0adf65d68f858b03b4c4b72979c7ab73a55d4e76a922034061ec59176acf3f4",
+      "updaterSha": "238e19945eba1ff4866765f4c75e01f698d55db029214aa5e57f2a01a221ef1b",
+      "zipSha": "070469b5a63e28a19ed1e3d12ac96965c182a03a077dbe410bdcb6071bb35e7f",
+      "manifestSha": "00341186a1462fd9bb8c463c49b1ffd4e050b4275cd1ae315a18dcf979a0db07",
+      "observationSha": "8bb3189533900490e7077e1c2612b3d3c4a0f1ec317ccea46ec39185f01cce8c",
+      "admittedContextMustStayC0": true
+    },
+    "prior604": {
+      "count": 604,
+      "helpers": 38,
+      "modules": 12,
+      "context": "evidence/080-guards-queue-budget-active-context-20261108.json",
+      "contextSha": "7e1b2c594bbdd2355ff182192561ed5544f39efeba538d3ccb0d70d428550223",
+      "receipt": "4cd621cdeea918ca9f67c405f463fe1ac1be47546009e39c542b4ad1bbeb6e36",
+      "report": "evidence/080-guards-task-state-final-20261108.json",
+      "reportSha": "d48bbafc09d31b8a2d12db4c572c309e86c39e1f5851fa7289cc8bf53b2d8ae4",
+      "freeze": "18cf1042edd389cba9647308fc4b71b8b9543cd5c8aaa92dd3ee80bc7ffc7cf8",
+      "actualSession": 30021,
+      "actualExit": 0
+    }
+  },
+  "rootOrchestrationNote": "After39447dispatch, JS bookkeeping referenced PowerShell-local priorRoot, causingReferenceError AFTERsuccessfuldispatch; session saved beforeerror, checkpointcorrected, DONOTREPEATprepare.",
+  "latest604Actual": {
+    "session": 76710,
+    "exit": 0,
+    "context": "evidence/080-guards-queue-budget-active-context-20261108.json",
+    "run": "guards-length-repair080-20261108T203656Z",
+    "freeze": "799680c55a32fc5354b5a10d8da68c4dd54c13d6d79bb636f0f88bf53794648f",
+    "spec": "3ca1cb1b01c4f6ccee0f17bca2a8167676b4f5c5a1004c6ae227e2f60db8e812",
+    "status": "passed"
+  },
+  "currentGuards": {
+    "context": "evidence/080-guards-queue-budget-active-context-20261108.json",
+    "contextSha": "0d47b2ea314be36b18749076196693227d91d8395645ad1779a412894582565d",
+    "receipt": "c2469d14d080ecdf96d42d6dc4c887207a706898ea3681fa5b10749a26113b82",
+    "report": "evidence/080-guards-length-repair-final-20261108.json",
+    "reportSha": "e3c5362952f7d56f5dc7f5d9e45678752bf8304060c961baee8fe49c372e63b5",
+    "count": 604,
+    "helpers": 38,
+    "modules": 12,
+    "session": 76710,
+    "actualExit": 0
+  },
+  "currentCopy": {
+    "source": "app080-20261108T202627Z",
+    "session": 55674,
+    "actualExit": 0,
+    "all6": true,
+    "status": "COPY_ONLY_PASSED",
+    "context": "evidence/080-queue-copy-length-repair-active-context-20261108.json",
+    "contextSha": "7285aa2a59c5c27356954df208d03e3dbfbb7c210e35978d384b9628cd63f96b",
+    "receipt": "612fe7ff7b542dc687d8f76a3f890fdd474631dfd5f5694a7db51c6a459f4644",
+    "report": "evidence/080-queue-copy-length-repair-final-20261108.json",
+    "reportSha": "19338e5db7779609154bdd0633e3dcdcc99ca9b7d25f824116302e85ff4e411b",
+    "scopeSeconds": 32.695558,
+    "outerSeconds": 36,
+    "unrelatedJobsUnchanged": true,
+    "duplicateSourcesAndJobsBeforeAfter0": true,
+    "sourceAndJobCountsUnchanged": true,
+    "first5AllComplete": true,
+    "extracts": {
+      "third": {
+        "written": 6,
+        "seconds": 24.562
+      },
+      "fifth": {
+        "initialDone": "length",
+        "initialEval1200": 1200,
+        "repairDone": "stop",
+        "repairEval": 1275,
+        "written": 6,
+        "seconds": 41.668
+      },
+      "sixth": {
+        "initialDone": "length",
+        "initialEval1200": 1200,
+        "repairDone": "stop",
+        "repairEval": 1521,
+        "written": 4,
+        "skipped": 2,
+        "scope": "completed_with_omissions, duplicate-content dedup inferred from exhaustive publicpaths andzeroRejectionCount; no privatecontent read",
+        "seconds": 47.473
+      }
+    },
+    "notProductionRetry": true
+  },
+  "currentBackend": {
+    "context": "evidence/080-fullbackend-length-repair-active-context-20261108.json",
+    "initialContextSha": "ab7a9c3073c9d9bf79a8a4f8bb14795b1ed9ef4a529df1da3a207ae34b43b831",
+    "expected": 1557,
+    "status": "passed",
+    "session": 5384,
+    "run": "fullbackend-length-repair080-20261108T204439Z-b2a1ac34",
+    "spec": "7a8c3c16e7ec3238e19e95edc637819f3e2597017cf5d03e422f6cde58138e45",
+    "freeze": "a5f46fa5a9b2f3261efc4f8b301f572ca9f21155ade95f12c9bc1a6714b20fbf",
+    "prechecksAll14And38Passed": true,
+    "actualExit": 0,
+    "contextSha": "1c101b5e4f9c56226d7bf4a3a979e2f5b34f4c4cdae7d33349048a3bece36133",
+    "reportSha": "d9515cf5eb9ee4904039b5b8967ec845e690bd4986807e75d2e6dc7e266cb241",
+    "receipt": "44fea7c912bda9bf128d96f80797b557217f531fcafda30181c59e00e3bc20af",
+    "actual": 1557,
+    "admittedContextMustStay1c101": true,
+    "canonicalPassed": true,
+    "canonicalSha": "41642d8f3fc308c157cb801e12a0364a7e39c67df64f188287f1a4513b70dcc7",
+    "canonicalReport": "evidence/080-full-suite-length-repair-attestation-final-20261108.json",
+    "canonicalReportSha": "a69ed84567d15e9f364794e1bdb07c5d7428bcbb56bbbb9937793ad617e7b80a",
+    "standaloneContextSha": "96b4bb44c957d906c45f94a19ebf21a437fa53ca919efc66a35a12ebe4962857",
+    "standaloneActualSession": 4727
+  },
+  "uiTemplatesCurrent": {
+    "master": "evidence/080-interactive-length-repair-agent-templates-20261108.json",
+    "masterSha": "5f7a9ffe5467eaa2f203986a7385fe60243da249dd6e3b023792f0b72f0c45a4",
+    "stager": "evidence/stage-interactive-length-repair-agent-604-20261108.ps1",
+    "stagerSha": "992ef717655b1c901e556034a32af781a092ae47fb8367523e3a70038b78bf29",
+    "peer": "6f4d18f65c449ae48c8c7ee58e866d51ed107bac4fc18160fb106ce54d47e8f3",
+    "status": "NOTSTAGED requiresactual1557+377+6(currentcopypassnowready);source202627/v7/604"
+  },
+  "draftReport": {
+    "path": "evidence/080-release-current-draft-20261108.md",
+    "sha": "9a8d59bd8656014ee792b16fef2b957a9cf0dc65eef89b96df14fd81e531689e",
+    "scope": "DRAFT at1557RUNNING, copyfinalwaspendingnowcompleted; nofinalclaim"
+  },
+  "quotaPolicy": {
+    "userRequested": true,
+    "metric": "Codex account remaining weekly and/or 5-hour, NOT context",
+    "thresholdRemainingPercent": 5,
+    "action": "When an applicable observed window is <=5%, stop owned work, durably save full handoff and source/evidence, verify cleanup then shut down entire Windows computer. Never infer missing limits as0. No shutdown now.",
+    "checkEveryMinutes": 15,
+    "tool": "mcp__codex_app__get_usage_limits",
+    "usage": {
+      "readUtc": "2026-11-08T20:58:29.134Z",
+      "ordinaryUsageAllowed": true,
+      "byLimitId": {
+        "codex": {
+          "windows": [
+            {
+              "window": "primary",
+              "durationMinutes": 10080,
+              "usedPercent": 61,
+              "remainingPercent": 39,
+              "resetsAtUTC": "2026-11-15T14:12:45.000Z"
+            }
+          ]
+        }
+      },
+      "legacyWindows": [
+        {
+          "window": "primary",
+          "durationMinutes": 10080,
+          "usedPercent": 61,
+          "remainingPercent": 39,
+          "resetsAtUTC": "2026-11-15T14:12:45.000Z"
+        }
+      ],
+      "legacyLimitId": "codex"
+    },
+    "latest": {
+      "readUtc": "2026-11-08T21:09:10.977Z",
+      "windows": [
+        {
+          "durationMinutes": 10080,
+          "remainingPercent": 37,
+          "resetsAtUTC": "2026-11-15T14:12:45.000Z"
+        }
+      ],
+      "ordinaryUsageAllowed": true,
+      "threshold": 5,
+      "thresholdReached": false
+    }
+  },
+  "earlyBaselineV7": {
+    "session": 37492,
+    "actualExit": 0,
+    "passed": true,
+    "matched": 182,
+    "missing": 0,
+    "modified": 0,
+    "unexpected": 0,
+    "unmanagedDirIgnoredWithoutContentRead": true,
+    "mustRepeatBeforeApply": true,
+    "report": "evidence/080-source-baseline-v7-early-final-20261108.json"
+  },
+  "currentStandalone1557": {
+    "session": 4727,
+    "actualExit": 0,
+    "passed": true,
+    "canonicalSha": "41642d8f3fc308c157cb801e12a0364a7e39c67df64f188287f1a4513b70dcc7",
+    "context": "evidence/080-standalone-length-repair-attestation-envelope-20261108.json",
+    "contextSha": "96b4bb44c957d906c45f94a19ebf21a437fa53ca919efc66a35a12ebe4962857",
+    "report": "evidence/080-full-suite-length-repair-attestation-final-20261108.json",
+    "reportSha": "a69ed84567d15e9f364794e1bdb07c5d7428bcbb56bbbb9937793ad617e7b80a",
+    "observationSha": "3271c56d26fff63861f3cfb8546fdb0ea8e0668411f2834fb1d38956dfd17811"
+  },
+  "handoffFiles": [
+    "evidence/DEV BRAIN 0.8.0 - HANDOFF.md",
+    "evidence/080-handoff-live-checkpoint-20261108.json",
+    "evidence/080-handoff-serial-launch-template.ps1",
+    "evidence/080-handoff-ui-orchestration-examples.json",
+    "evidence/080-length-repair-durable-handoff-20261108.md",
+    "evidence/080-ui-length-repair-handoff-backend1557-passed-20261108.json",
+    "evidence/080-release-review-durable-handoff-20261108.md"
+  ]
+}

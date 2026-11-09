@@ -1,0 +1,109 @@
+{
+  "utc": "2026-11-09T13:18:37.8536314+00:00",
+  "closed_work": {
+    "owned_Linux_scopes_closed": true,
+    "final_OAuth_sync_completed": true,
+    "owned_Windows_terminal_identities_exited": true,
+    "all_subagents_report_idle": true,
+    "new_processes_authorized_after_quota": false,
+    "source_auth_leases_released": true
+  },
+  "scope": "authoritative_QUOTA_STOP_next_session_start_here",
+  "next_session_first_steps": [
+    "Read this file and the bound authoritative handoff; verify account quota before any test",
+    "Do not rerun/reapply completed1605/425/eightfiles merely because sessionchanged",
+    "Confirm runtimebinary hashes/pins/power and per-run freshboot baselines; between-idle-trial WSLboot changes alone do not invalidate an earlier completed trial",
+    "Check production remains stopped; no deploy/resume until all gates and eventual authorized8h pass"
+  ],
+  "UI": {
+    "packet_stale_after_checkpoint": true,
+    "native_session_id_at_last_observation": null,
+    "raw_canonical_exit_code": 1,
+    "layout_passed": true,
+    "agent_five_functional_tasks": "completed on same process; initial ACK only",
+    "real_Windows_PrintWindow_geometries": [
+      "80x24",
+      "120x36",
+      "180x55"
+    ],
+    "overall_acceptance_passed": false,
+    "raw_canonical_acceptance": "FAIL: five task observations rather than required eight; three OS geometry photos separate",
+    "current_ACK_after_checkpoint": false,
+    "native_Resume_after_client_exit": "unverified; requires actual trusted hook execution and ordinary client exit/resume, no synthetic/guessed identity"
+  },
+  "release_qualified": false,
+  "production": {
+    "version": "0.7.2",
+    "resumed": false,
+    "service": "STOPPED",
+    "private_database": "STOPPED"
+  },
+  "working_source": {
+    "actual_new_prepared_App_context": "080-app-native-failure-diagnostic-prepared-context-20261109.json",
+    "source_freeze_sha256": "9e5168bece45cf3c06bd0abded7e1573b51cf55778570fdc49c8e0a8872e81b9",
+    "UX425_all_passed": true,
+    "backend1605_all_passed": true,
+    "actual_new_prepared_App_context_sha256": "387f9f0075a89195e52164c1e83a15261afc7847508ec3462f5f094d9404fd92",
+    "all198_files_match_tested_snapshot": true,
+    "global_legacy_App_context": "080-app-ux-snapshot-active-context.json remains OLDd0a5/ad77 by design, not the currentworking-source pointer",
+    "eight_reviewed_files_applied": true,
+    "do_not_reapply_patch": true
+  },
+  "schema_version": 1,
+  "quota": {
+    "trigger_verified": true,
+    "five_hour": "unavailable, notzero",
+    "threshold_percent": 5,
+    "weekly_remaining_percent": 5,
+    "checked_utc": "2026-11-09T13:14:51.387Z"
+  },
+  "remaining_pre8h": [
+    "Complete actual trusted native hook/nativeID/exit+Resume path; preserve permissions and no unknown-operation retry",
+    "Complete final-source UI acceptance with all eight canonical observations linked to real three photos; original FAIL untouched",
+    "Run or honestly admit same-source finalfrontend/nativeCodex-Claude-Codex/Copilot-account/Ollama20/copy6/newV9upgrade-backup-restore gates; historicalad77 results are scoped evidence",
+    "NewV9smoke remains NOTSTARTED: no stager, Stage, Linux test or model/account request; resume exact73426canonical smoke workflow from bound8da handoff",
+    "If sourcechanges again, freeze newgeneration and repeat affected required gates; do not pool partial source generations",
+    "8h is explicitly NOT authorized in this run and has NEVERstarted; leave for separately authorized later continuation"
+  ],
+  "stop_reason": "User standing instruction: stop/save/full handoff/shutdown at verified Codex account remaining <=5%",
+  "shutdown": {
+    "status": "PREPARED_NOT_YET_INVOKED",
+    "authorized_by_prior_user_instruction": true,
+    "force_flag": false,
+    "request_record": "080-WINDOWS-SHUTDOWN-REQUEST-20261109.json",
+    "owner": "root",
+    "command": "shutdown.exe /s /t 0"
+  },
+  "bound_proofs": [
+    {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-NEXT-SESSION-AUTHORITATIVE-PRE8H-20261109.json",
+      "sha256": "351f501cda67a3fdadac0323154ff0c7f31b5edb7a4c6c7cd4c838b5d38dbc47"
+    },
+    {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-reviewed-working-source-apply-final-20261109.json",
+      "sha256": "c58dfd81d3a0b22b1c318a77debe54a39b73ed68cc2bea489eb4cd35deed0f42"
+    },
+    {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-working-source-apply-independent-final-peer-20261109.json",
+      "sha256": "3a9d95d0b14c4dd2969aca4627908357c95a2253bb45af081f818662a7816536"
+    },
+    {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-root-shutdown-quiescence-20261109.json",
+      "sha256": "c802d75489619b78efe43c1a2ac4e624a7fcf652db569b2dccdd8f50ae2d7c9d"
+    },
+    {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-copy6-stop-smoke-NOTSTARTED-20261109.json",
+      "sha256": "8da55a0702768e6f33ef4827779e2a094ee1360e104c85bc25b15fccc3c454bb"
+    },
+    {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-prototype-real-wt-ui-failed-acceptance-safe-next-20261109.json",
+      "sha256": "87958ff26b8cab75b4879a395a5b0a59191f05609449b813e120dea01212ae19"
+    }
+  ],
+  "eight_hour_started": false,
+  "main_handoff": {
+    "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-NEXT-SESSION-AUTHORITATIVE-PRE8H-20261109.json",
+    "sha256": "351f501cda67a3fdadac0323154ff0c7f31b5edb7a4c6c7cd4c838b5d38dbc47"
+  },
+  "status": "STOPPED_SAVED_READY_FOR_AUTHORIZED_WINDOWS_SHUTDOWN"
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_source_comparison_standalone_envelope_independent_static_peer",
+  "created_utc": "2026-11-08T20:12:13.0184314Z",
+  "status": "static_ack_prepared_not_run",
+  "verdict": "PASS",
+  "findings": [],
+  "launcher": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\release-tools\\run-source-preflight080.ps1",
+  "launcher_sha256": "0673ad4bd4485bf9ffecc9e18d6e1c6d8ce5a65bc92be87342601145bf7cac0f",
+  "materializer": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-production-source-preflight-080.ps1",
+  "materializer_sha256": "e325afcd3b15a28a6d9706b7235c806c77d16ddda01079e338a19e16ed06023c",
+  "checker_sha256": "90bc047d2d166c5a6814b01c663313199a4e4591c6b135629c7be04f45e99409",
+  "approved_observer_sha256": "effa58f4721b45060d531ebcbd22bb0aa96587bf9cf743f77685ff510f3ff7c2",
+  "PS_parse_errors": 0,
+  "public_ZIP_inventories_independently_verified": [
+    {
+      "release_zip_sha256": "6b65e7315895b8c44b84bafc9146dfcdae732c3890f959d0e5e58cbf4fd9aa2c",
+      "package_files": 64,
+      "mode": "baseline072",
+      "files": 182
+    },
+    {
+      "release_zip_sha256": "070469b5a63e28a19ed1e3d12ac96965c182a03a077dbe410bdcb6071bb35e7f",
+      "package_files": 69,
+      "mode": "target080",
+      "files": 198
+    }
+  ],
+  "checker_argv_count": 15,
+  "bounded_argv_count": 19,
+  "checker_timeout_seconds": 60,
+  "kill_after_seconds": 5,
+  "proxy_deadline_seconds": 72,
+  "post_actual_exit_observation_required_seconds": 30,
+  "reviewed_properties": [
+    "Default-inert materializer and observer",
+    "Fresh canonical physical root and CreateNew single-attempt claim",
+    "Pinned checker, ZIP, gate and exact15/19 argv before process start",
+    "Retained Windows child identity, actual ExitCode and complete streams",
+    "Only direct qualified base Python; native SHA and readlink probe retained",
+    "Nonzero, timeout or unobserved cleanup remain failed and require manual PID/birth admission",
+    "Observed boot/native/power tail and StopSleep nested finally retained from approved observer",
+    "Exact fixed output keys, flags and bounded integer counters; mismatch cannot become PASS",
+    "No registered-controller alias or application/deployment qualification claim"
+  ],
+  "Stage_invoked": false,
+  "Execute_invoked": false,
+  "Linux_executed": false,
+  "production_read": false,
+  "production_modified": false,
+  "app_or_frozen_helpers_modified": false,
+  "runtime_PASS_claimed": false
+}

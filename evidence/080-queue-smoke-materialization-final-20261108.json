@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_queue_smoke_materialization_final",
+  "status": "prepared_not_run",
+  "created_utc": "2026-11-08T17:48:53.775017+00:00",
+  "master": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-queue-smoke-deploy-contexts-20261108.json",
+  "master_sha256": "54f47a791e6cc7f75b689a118a0e201fae17af73d1bbb9cef37b762b2511c84f",
+  "actual_windows_staging_session": 57725,
+  "actual_windows_exit_code": 0,
+  "stager": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-queue-smoke-after-attestation-594-v2-20261108.ps1",
+  "stager_sha256": "4c1af845aa86bcee4a5b681bc0c4b5a6cadf4c5b551c42f85351e277997f2d81",
+  "independent_peer_review": "test_suite final readonly delta ACK4c1af845; admission read-only checks passed; no Linux",
+  "contexts": [
+    {
+      "phase": "queue_copy",
+      "run_id": "queue-copy-deploy-final080-20261108T174737Z-b0ea6966",
+      "context": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-queue-copy-deploy-active-context-20261108.json",
+      "context_sha256": "13d3eb0b294969fa30cc11955bd7c2e6ce1246851a5ceebe4f4c6ec9e55d8e59",
+      "specification_sha256": "2dd6d4a8042f8be0ead5cac9bcff772b904ec293c6f701b530d13ea7cfd40e44",
+      "input_freeze_sha256": "dd6fb0c05d89904828b96a2d62161cadbf49c1af031f62620f3f43d819856b72",
+      "files_verified": 16,
+      "remaining_launch_prerequisites": [
+        "native",
+        "copilot",
+        "recall"
+      ],
+      "launch_permitted": false
+    },
+    {
+      "phase": "upgrade_smoke",
+      "run_id": "updater-smoke-deploy-final080-20261108T174737Z-3efd226e",
+      "context": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-updater-smoke-deploy-active-context-20261108.json",
+      "context_sha256": "b5988af4ffb130ebb4fa36d3385fe58408a1cedba480f53f5179109c2e81436b",
+      "specification_sha256": "5214f96f39a49c1e9da0d557f824a625a118149e2ffc6c6ffb78406a4e0d784f",
+      "input_freeze_sha256": "419f1d881df4ea4cb9cf6a3a0887e09f361bc118c54e4521f93ec7e168d25cc9",
+      "files_verified": 21,
+      "remaining_launch_prerequisites": [],
+      "launch_permitted": false
+    }
+  ],
+  "public_input_files_verified": 37,
+  "full_suite_attestation_sha256": "68ada7d441f2f9996884d239b36c5a37f91c74a2aa941d4f3bbd961c410a1af8",
+  "controlled_fixtures_report_sha256": "d466c012f3bbfa8134154c85d510b82d758f8422c4facdedf986482b26d3260c",
+  "private_backup_or_credentials_read": false,
+  "production_modified": false,
+  "linux_workload_started": false,
+  "eight_hour_started": false,
+  "soak_and_deployment_proposals_remain_non_executed_and_missing_other_final_proofs": true
+}

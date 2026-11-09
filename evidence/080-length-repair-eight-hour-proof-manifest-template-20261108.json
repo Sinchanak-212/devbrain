@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_length_repair_eight_hour_prerequisites",
+  "status": "pending_actual_current_source_application_proofs",
+  "template_master_sha256": "c9576982a7b550b0991dd6edfccf98cc87abd3c776ad572da4f4730e1c3b0a0c",
+  "source_freeze_sha256": "1f35dae9f2b3f894bb67535a215e29cba3c1235120ff30daa387bd5450f03e14",
+  "guard": {
+    "context": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-guards-queue-budget-active-context-20261108.json",
+    "context_sha256": "0d47b2ea314be36b18749076196693227d91d8395645ad1779a412894582565d",
+    "receipt_sha256": "c2469d14d080ecdf96d42d6dc4c887207a706898ea3681fa5b10749a26113b82",
+    "final_report_sha256": "e3c5362952f7d56f5dc7f5d9e45678752bf8304060c961baee8fe49c372e63b5"
+  },
+  "backend": {
+    "context": null,
+    "context_sha256": null,
+    "receipt_sha256": null,
+    "final_report_sha256": null
+  },
+  "standalone": {
+    "context": null,
+    "context_sha256": null,
+    "attestation_sha256": null,
+    "observation_sha256": null,
+    "final_report_sha256": null
+  },
+  "gates": {
+    "ux": {
+      "context": null,
+      "context_sha256": null,
+      "receipt_sha256": null,
+      "final_report_sha256": null,
+      "run_id": null
+    },
+    "interactive": {
+      "context": null,
+      "context_sha256": null,
+      "receipt_sha256": null,
+      "final_report_sha256": null,
+      "run_id": null
+    },
+    "native": {
+      "context": null,
+      "context_sha256": null,
+      "receipt_sha256": null,
+      "final_report_sha256": null,
+      "run_id": null
+    },
+    "copilot": {
+      "context": null,
+      "context_sha256": null,
+      "receipt_sha256": null,
+      "final_report_sha256": null,
+      "run_id": null
+    },
+    "recall": {
+      "context": null,
+      "context_sha256": null,
+      "receipt_sha256": null,
+      "final_report_sha256": null,
+      "run_id": null
+    },
+    "frontend": {
+      "context": null,
+      "context_sha256": null,
+      "receipt_sha256": null,
+      "final_report_sha256": null,
+      "run_id": null
+    },
+    "queue_copy": {
+      "context": null,
+      "context_sha256": null,
+      "receipt_sha256": null,
+      "final_report_sha256": null,
+      "run_id": null
+    },
+    "upgrade_smoke": {
+      "context": null,
+      "context_sha256": null,
+      "receipt_sha256": null,
+      "final_report_sha256": null,
+      "run_id": null
+    }
+  },
+  "note": "Copy to a NEW completed proof manifest and fill only actual context/receipt/report hashes after root observed exit and cleanup. No historical app receipt substitution. Current1557 canonical attestation stays inside its actual backend artifact root."
+}

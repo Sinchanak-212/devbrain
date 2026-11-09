@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_length_repair_eight_hour_prerequisites",
+  "status": "partial_actual_backend_and_queue_bound_standalone_and_other_gates_pending",
+  "template_master_sha256": "c9576982a7b550b0991dd6edfccf98cc87abd3c776ad572da4f4730e1c3b0a0c",
+  "source_freeze_sha256": "1f35dae9f2b3f894bb67535a215e29cba3c1235120ff30daa387bd5450f03e14",
+  "guard": {
+    "context": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-guards-queue-budget-active-context-20261108.json",
+    "context_sha256": "0d47b2ea314be36b18749076196693227d91d8395645ad1779a412894582565d",
+    "receipt_sha256": "c2469d14d080ecdf96d42d6dc4c887207a706898ea3681fa5b10749a26113b82",
+    "final_report_sha256": "e3c5362952f7d56f5dc7f5d9e45678752bf8304060c961baee8fe49c372e63b5"
+  },
+  "backend": {
+    "context": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-fullbackend-length-repair-active-context-20261108.json",
+    "context_sha256": "1c101b5e4f9c56226d7bf4a3a979e2f5b34f4c4cdae7d33349048a3bece36133",
+    "receipt_sha256": "44fea7c912bda9bf128d96f80797b557217f531fcafda30181c59e00e3bc20af",
+    "final_report_sha256": "d9515cf5eb9ee4904039b5b8967ec845e690bd4986807e75d2e6dc7e266cb241"
+  },
+  "standalone": {
+    "context": null,
+    "context_sha256": null,
+    "attestation_sha256": null,
+    "observation_sha256": null,
+    "final_report_sha256": null
+  },
+  "gates": {
+    "ux": {
+      "context": null,
+      "context_sha256": null,
+      "receipt_sha256": null,
+      "final_report_sha256": null,
+      "run_id": null
+    },
+    "interactive": {
+      "context": null,
+      "context_sha256": null,
+      "receipt_sha256": null,
+      "final_report_sha256": null,
+      "run_id": null
+    },
+    "native": {
+      "context": null,
+      "context_sha256": null,
+      "receipt_sha256": null,
+      "final_report_sha256": null,
+      "run_id": null
+    },
+    "copilot": {
+      "context": null,
+      "context_sha256": null,
+      "receipt_sha256": null,
+      "final_report_sha256": null,
+      "run_id": null
+    },
+    "recall": {
+      "context": null,
+      "context_sha256": null,
+      "receipt_sha256": null,
+      "final_report_sha256": null,
+      "run_id": null
+    },
+    "frontend": {
+      "context": null,
+      "context_sha256": null,
+      "receipt_sha256": null,
+      "final_report_sha256": null,
+      "run_id": null
+    },
+    "queue_copy": {
+      "context": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-queue-copy-length-repair-active-context-20261108.json",
+      "context_sha256": "7285aa2a59c5c27356954df208d03e3dbfbb7c210e35978d384b9628cd63f96b",
+      "receipt_sha256": "612fe7ff7b542dc687d8f76a3f890fdd474631dfd5f5694a7db51c6a459f4644",
+      "final_report_sha256": "19338e5db7779609154bdd0633e3dcdcc99ca9b7d25f824116302e85ff4e411b",
+      "run_id": "queue-copy-length-repair080-20261108T204333Z-d7f0e530"
+    },
+    "upgrade_smoke": {
+      "context": null,
+      "context_sha256": null,
+      "receipt_sha256": null,
+      "final_report_sha256": null,
+      "run_id": null
+    }
+  },
+  "note": "Actual current1557 backend and entire6 copy bound. Standalone final review plus seven other application gates remain NULL. No Stage/Execute; no immutable inputs changed."
+}

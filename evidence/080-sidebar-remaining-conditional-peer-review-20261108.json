@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "scope": "sidebar_remaining_conditional_gates_peer_review",
+  "status": "static_ack_not_staged_pending_current_application_gates",
+  "created_utc": "2026-11-08T22:38:49.968687+00:00",
+  "files": {
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-sidebar-resize-remaining-gate-templates-604-20261108.json": "f4e039f5040cd70f2f3b0aa18699bfacc92e1f445ad2bb81dd685d96b2643dba",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-five-sidebar-final-gates-after-ui-20261108.ps1": "37293adac1ea634fc9da250c80fd88bebaf0491bc1369c4c997d157818bd0c84",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-final-eight-hour-sidebar-resize-604-20261108.ps1": "3527b2c82c372c4d8764d0ff3a8a4be3e84d6c1e78c503044fe94cc8af9cc5ee",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-sidebar-remaining-conditional-preparation-20261108.json": "4b56002d352c001656c2c2cfc85e56172b3d51a512c5d445a89dc5cd23cde379"
+  },
+  "findings": [],
+  "verified_public_input_count": 24,
+  "verified_helper_count": 38,
+  "powershell_parse_errors": 0,
+  "unchanged_function_counts": [
+    14,
+    15
+  ],
+  "spec_changes_only_source_venv_and_current_v8_smoke_paths": true,
+  "strict_visual_acceptance_literal_boolean_true_preserved": true,
+  "new_optional_proof_manifest_requires_exact_sha_and_full_original_admission": true,
+  "default_pending_proof_remains_inadmissible": true,
+  "expected_backend_cases": 1561,
+  "expected_ux_cases": 381,
+  "source_snapshot": "app080-20261108T222731Z",
+  "current_guard_pending_at_template_creation": true,
+  "old_application_results_pooled": false,
+  "stage_executed": false,
+  "linux_executed": false,
+  "private_credentials_or_backup_read": false,
+  "eight_hour_launch_authorized_this_session": false,
+  "next_session_requires_fresh_runtime_source_power_native_boot_checks": true
+}

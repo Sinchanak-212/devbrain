@@ -1,0 +1,274 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_072_visual_baseline_final_evidence_review",
+  "status": "baseline_visual_completed_evidence_reviewed",
+  "run_id": "baseline-visual072-20261108T120027Z",
+  "baseline_version": "0.7.2",
+  "baseline_only": true,
+  "baseline_visual_evidence_complete": true,
+  "baseline_is_080_acceptance": false,
+  "baseline_is_080_human_acceptance": false,
+  "agent_acceptance_passed": false,
+  "human_acceptance_passed": false,
+  "software_qualification_passed": false,
+  "operator": "agent",
+  "human_reported": false,
+  "agent_reported": true,
+  "actual_windows_exit_code": 0,
+  "finished_utc": "2026-11-08T13:21:23.4000153Z",
+  "reviewed_utc": "2026-11-08T13:28:09Z",
+  "windows_only_review": true,
+  "linux_workloads_started_during_review": false,
+  "app_or_helpers_modified": false,
+  "archive_sha256": "6b65e7315895b8c44b84bafc9146dfcdae732c3890f959d0e5e58cbf4fd9aa2c",
+  "python_launcher": "/home/piotr/.cache/devbrain-upgrade-validation-080/20261108T105519Z-d81485b8/backup-072-venv/bin/python",
+  "artifact_root": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\baseline-visual072-20261108T120027Z\\artifacts",
+  "receipt_passed": true,
+  "receipt_sha256": "783748c64d1395252d3969dfbf4c592f04006b21a5c94fed94d05dae736a3efb",
+  "receipt_bound_artifacts_verified": true,
+  "artifact_sha256": {
+    "receipt.json": "783748c64d1395252d3969dfbf4c592f04006b21a5c94fed94d05dae736a3efb",
+    "agent-baseline-viewer-evidence.json": "9b8ada2943d8d136d9609d8100ddeb5312eca0cab687b59614eda73d9f3cd593",
+    "windows-observer-120x36-exit.json": "c3fdcada2cb109c46bb2854083369111a985bfc2a4cf25448cdccd1d2bf2afbd",
+    "interactive-results.json": "b7b34d3a7bb4d4a2a33eb14485cb7a5d45b92b2340d01ba29627ff4863de1b15",
+    "spec.json": "fc56e887c8c0cbad0c3b9ea4f27baacc6ce0fee1df342ea98efab48455549866",
+    "controller-report.json": "2ebbbc92e03c3b64b14039db95c4ee244fde52b0e5f82bd6658bcf61a6af37c8",
+    "windows-terminal-072-180x55.png.capture.json": "053fc13c20dd6dc21d1a3bb51f356b20d498ff5099e43b78132bdac319a69c4b",
+    "windows-observer-180x55.json": "42deab5c5a9e4d39e8591769562ce5f16e616032f1396a5e6fe22598112bb24e",
+    "windows-observer-80x24.json": "8f8d970b2a4384ec58c05ccb2f34ebe51b38a346e4a035127c615c288ae01c25",
+    "gate.json": "a6bd365cea68986ed6795990272c766679bbd29fd9407e904a12c2956bcdf7fb",
+    "windows-terminal-072-80x24.png": "1f458f96b32e5839df777cc9fc569086d69f20ae934bb1ebf26b91daacc33a97",
+    "power-samples.jsonl": "68d6f48a0831438fc710014dce3f265e681ef23eaf6f6de1dea8e7065026cbf5",
+    "windows-terminal-072-180x55.png": "d051f3f7d78a18320e30518dbe47059029e90aa802581444893eb218081ad74d",
+    "windows-terminal-072-120x36.png": "13626ac984f77598f04c48efc32227cef7691cbba7342f5cd4a293120ed2a845",
+    "supervisor-exit.json": "19e798281cc8b1f48e1407a72ceb430335f9afc0ba629f8e38aed2b5c5bea250",
+    "interactive-ready.json": "b42e244e16606ac5a1b2018f03b82f2796b2323a105a64fc5944fb060c35be54",
+    "windows-observer-80x24-exit.json": "0abc7b815429ca736db811d9a642d16e2ea66d3c15b8b9e2b0a96d350d80ce21",
+    "windows-observer-180x55-exit.json": "823afa7e8eaa02d4ffc8cecdd4868a4f71b9f227c1d4d1fea33f96badcafca3e",
+    "supervisor-report.json": "5da1ab13a95d2942108f9c85f36addcb53e50f5a332aa27a934b62c00340e82a",
+    "windows-observer-120x36.json": "38edf0288f9c789ce150bb283003fd5dfb7df4edfb8f5f8f5d44ef7d0371d4a1",
+    "windows-terminal-072-120x36.png.capture.json": "64db768dfe0d6138eda64b47bcc6e13afa206c38a07cd299444895c77e6f8597",
+    "agent-pty-relay-pixels.py": "8fb2f158d52dda3a4b8e3a2ea01f1603f4aa52647877790da0ea26d52e38d646",
+    "windows-terminal-072-80x24.png.capture.json": "4a063c350c452b87236a5ae664d02931c915aa395fac5df1ba6a6854430dc371"
+  },
+  "cleanup": {
+    "controller_exit_verified": true,
+    "supervisor_exit_verified": true,
+    "proxy_actual_exit_verified": true,
+    "controller_quiet_seconds": 30.094,
+    "scope_quiet_seconds": 32.80424669999991,
+    "outer_quiet_seconds": 34,
+    "scope_empty_verified": true,
+    "remaining_scope_processes": [],
+    "remaining_tagged_processes": [],
+    "forced_cleanup": false,
+    "native_failure": false,
+    "new_wsl_dumps": [],
+    "new_kernel_fatals": [],
+    "engine_actual_exit_verified": true,
+    "all_viewers_actual_exit_verified": true,
+    "native_binaries_unchanged": true
+  },
+  "power": {
+    "unchanged": true,
+    "settings_sha256": "6bac59f1660b69c8c9e8d83728cbb7cf2fd184458181fa05a351b72c4c2d9dc1",
+    "sample_count": 22,
+    "maximum_observed_gap_seconds": 30.691006600000037,
+    "maximum_allowed_gap_seconds": 45,
+    "sleep_inhibition_restored": true
+  },
+  "official_observations": {
+    "geometry:120x36": {
+      "kind": "geometry",
+      "size": "120x36",
+      "actual_size": [
+        120,
+        36
+      ],
+      "task": null,
+      "status": "passed",
+      "operator": "agent",
+      "human_reported": false,
+      "agent_reported": true,
+      "time": 1794143718.646403
+    },
+    "geometry:80x24": {
+      "kind": "geometry",
+      "size": "80x24",
+      "actual_size": [
+        80,
+        24
+      ],
+      "task": null,
+      "status": "passed",
+      "operator": "agent",
+      "human_reported": false,
+      "agent_reported": true,
+      "time": 1794143845.598172
+    },
+    "geometry:180x55": {
+      "kind": "geometry",
+      "size": "180x55",
+      "actual_size": [
+        180,
+        55
+      ],
+      "task": null,
+      "status": "passed",
+      "operator": "agent",
+      "human_reported": false,
+      "agent_reported": true,
+      "time": 1794143975.8445559
+    }
+  },
+  "official_task_claim_count": 0,
+  "os_captures": [
+    {
+      "size": "80x24",
+      "png": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\baseline-visual072-20261108T120027Z\\artifacts\\windows-terminal-072-80x24.png",
+      "png_sha256": "1f458f96b32e5839df777cc9fc569086d69f20ae934bb1ebf26b91daacc33a97",
+      "pixel_dimensions": [
+        769,
+        521
+      ],
+      "logical_primary": {
+        "pid": 10124,
+        "tty": "/dev/pts/8",
+        "kernel_winsize": [
+          24,
+          80,
+          640,
+          384
+        ],
+        "client": [
+          80,
+          24
+        ],
+        "window": [
+          80,
+          23
+        ],
+        "active_sidebar": [
+          80,
+          22
+        ]
+      },
+      "readonly_observer": {
+        "pid": 12038,
+        "birth": "34594",
+        "tty": "/dev/pts/9",
+        "actual_exit_verified": true,
+        "read_only": true,
+        "ignore_size": true
+      },
+      "api": "PrintWindow",
+      "window_identity_verified": true,
+      "visually_reviewed_by_root": true,
+      "visually_reviewed_by_queue_review": true
+    },
+    {
+      "size": "120x36",
+      "png": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\baseline-visual072-20261108T120027Z\\artifacts\\windows-terminal-072-120x36.png",
+      "png_sha256": "13626ac984f77598f04c48efc32227cef7691cbba7342f5cd4a293120ed2a845",
+      "pixel_dimensions": [
+        1129,
+        749
+      ],
+      "logical_primary": {
+        "pid": 3119,
+        "tty": "/dev/pts/8",
+        "kernel_winsize": [
+          36,
+          120,
+          960,
+          576
+        ],
+        "client": [
+          120,
+          36
+        ],
+        "window": [
+          120,
+          35
+        ],
+        "active_sidebar": [
+          120,
+          34
+        ]
+      },
+      "readonly_observer": {
+        "pid": 8105,
+        "birth": "22832",
+        "tty": "/dev/pts/9",
+        "actual_exit_verified": true,
+        "read_only": true,
+        "ignore_size": true
+      },
+      "api": "PrintWindow",
+      "window_identity_verified": true,
+      "visually_reviewed_by_root": true,
+      "visually_reviewed_by_queue_review": true
+    },
+    {
+      "size": "180x55",
+      "png": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\baseline-visual072-20261108T120027Z\\artifacts\\windows-terminal-072-180x55.png",
+      "png_sha256": "d051f3f7d78a18320e30518dbe47059029e90aa802581444893eb218081ad74d",
+      "pixel_dimensions": [
+        1669,
+        1110
+      ],
+      "logical_primary": {
+        "pid": 14046,
+        "tty": "/dev/pts/8",
+        "kernel_winsize": [
+          55,
+          180,
+          1440,
+          880
+        ],
+        "client": [
+          180,
+          55
+        ],
+        "window": [
+          180,
+          54
+        ],
+        "active_sidebar": [
+          24,
+          53
+        ]
+      },
+      "readonly_observer": {
+        "pid": 16402,
+        "birth": "47561",
+        "tty": "/dev/pts/9",
+        "actual_exit_verified": true,
+        "read_only": true,
+        "ignore_size": true
+      },
+      "api": "PrintWindow",
+      "window_identity_verified": true,
+      "visually_reviewed_by_root": true,
+      "visually_reviewed_by_queue_review": true
+    }
+  ],
+  "visual_comparison_notes": {
+    "small": "80x24 shows the legacy Projects sidebar with wrapped private path; first three action rows visible and remaining actions below the viewport.",
+    "medium": "120x36 shows legacy Projects with all ten old actions in two columns.",
+    "large": "180x55 shows the real legacy five-pane cockpit, narrow Projects sidebar, two idle native-client placeholders, memory inspector and graph.",
+    "unicode": "Polish and Japanese synthetic project labels render in all three actual PNGs."
+  },
+  "models_launched": false,
+  "auth_changed": false,
+  "global_mcp_changed": false,
+  "production_data_accessed": false,
+  "oauth_cache_sync_passed": true,
+  "oauth_cache_release_passed": true,
+  "known_nonqualification_fields": {
+    "controller_embedded_exit_verified": false,
+    "controller_status": "baseline_visual_completed_pending_external_watch",
+    "reason": "The controller cannot attest its own final exit. The separately hashed supervisor and outer receipt attest actual exit and completed quiet windows. Baseline remains excluded from 0.8.0 acceptance."
+  },
+  "created_utc": "2026-11-08T13:30:17.8631811Z"
+}

@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_deployment_registration_preparation",
+  "status": "static_prepared_pending_controller_review_and_new_guard_qualification",
+  "created_utc": "2026-11-08T16:45:49.255411+00:00",
+  "baseline_guard_run": "guards-backup-final080-20261108T151755Z",
+  "baseline_guard_receipt_sha256": "9f6c16a82b820b06135ecb073ba85223f002a5b31cacf8276ec06996d43782d2",
+  "files": {
+    "supervise-080.py": {
+      "baseline_sha256": "0d6d1c71b8c9d40d8e81504fc25d0039585a2b203667146720f4195d9a46099f",
+      "sha256": "865f3b19b3140218da9b080dc517f5eefb724718d96317a88ac37942128a910f",
+      "outside_registration_and_inventory_byte_identical": true
+    },
+    "run-supervised-080.ps1": {
+      "baseline_sha256": "97eba590a231e5e3006c50d81d2303c45df2a261fe90c04e3486609627277704",
+      "sha256": "721109e2295099fcc4dea6e1a1bc55e773e577e2de673931c33a7e4bb7812c74",
+      "outside_registration_and_inventory_byte_identical": true
+    },
+    "attest-full-suite-080.py": {
+      "baseline_sha256": "329d62434830f5e9ed88bbb37c00aad6106e95526c2d0ac61d0c9757d72697d6",
+      "sha256": "def4cde1e76febbda1a7351bec045e5eeb2e63ad83e750ea4280b39037eb36ee",
+      "outside_registration_and_inventory_byte_identical": true
+    },
+    "run-regressions-080.py": {
+      "baseline_sha256": "a8f0eadd6de9aca0cda3034b6adfed0a27b0b97f711cca77f4084cb67a159f30",
+      "sha256": "7b3997838a3b1e894e845f2f8a1a1fad656b9feceb456d272e8dc6d7f0577fb2",
+      "outside_registration_and_inventory_byte_identical": true
+    },
+    "test_regressions080_guards.py": {
+      "baseline_sha256": "deabd121d3a22194102b53189b5a6b502a27f5c318ba0ceec7eec0d39a0f2257",
+      "sha256": "daadfc290bdaf7b73b0f19459d44b5f345915cdd17a1eaa7fb113616911dc5a7",
+      "outside_registration_and_inventory_byte_identical": true
+    },
+    "test_production_queue080_guards.py": {
+      "baseline_sha256": "fe4072f4073bd68523a85de1a2efdd480b4330b1d6f83f3aa7c52463136182bc",
+      "sha256": "982e28c1d78efd19d044b6537a63e797531f807c0d726b984937b2b99daee836",
+      "outside_registration_and_inventory_byte_identical": true
+    },
+    "test_production_backup080_guards.py": {
+      "baseline_sha256": "48afeb8cf63dea1ea42870c1afabeee9c133c6843007b5cbc164cf27faea0a55",
+      "sha256": "122135ad7e83083afc6db2bd729fbd63cbf109461a1a890a6456c172e551c9ce",
+      "outside_registration_and_inventory_byte_identical": true
+    }
+  },
+  "controller": "deploy-production080.py",
+  "controller_status": "production_deployment_completed_pending_external_watch",
+  "controller_scope": "devbrain_production_deployment",
+  "dependencies": [
+    "retry-production-queue-080.py",
+    "validate-native-account080.py"
+  ],
+  "required_artifacts": [
+    "production-deployment-admission.json",
+    "production-deployment-results.json"
+  ],
+  "guard_module_count": 12,
+  "helper_count_expected_after_two_new_files": 38,
+  "new_controller_and_guards_owned_by": "release_review",
+  "expected_test_count": null,
+  "actual_collection_authoritative": true,
+  "static_checks": {
+    "python_ast_files_passed": 6,
+    "powershell_parse_errors": 0,
+    "exact_registration_and_inventory_only": true,
+    "inventory_rg_completed": true
+  },
+  "other_eleven_references": "Existing eleven release-admission proofs; unchanged because unrelated to guard-module inventory.",
+  "linux_started": false,
+  "tests_run": false,
+  "app_sources_changed": false,
+  "qualified": false,
+  "historical529_mutated": false,
+  "requires_before_future_gates": [
+    "controller_and_guard_peer_review",
+    "new_whole_guard_run_actual_pass_and_external_cleanup",
+    "five_controlled_fixtures_on_new_wrappers_actual_pass_and_cleanup"
+  ],
+  "qualification_impact": "Existing application UX/UI evidence remains valid for its source and observed tools. New deployment/controller maps require their own tooling qualification; future backend and account/recall/frontend/soak evidence must bind the new qualified bundle."
+}

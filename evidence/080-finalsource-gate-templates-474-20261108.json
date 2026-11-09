@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_final_source_gate_templates",
+  "status": "templates_only_pending_actual_final_474",
+  "created_utc": "2026-11-08T14:12:05.9918456Z",
+  "source_snapshot": "app080-20261108T134240Z",
+  "source_freeze_sha256": "86ceb039990ab2c46966e5d4e412f83a6876f2a99b8a2112d08ddddac1ad92ab",
+  "app_prepare_receipt_sha256": "48880bebbc94a8806b42b9bf2b17ee26d92526bc0870d9c0e08a55cf56643180",
+  "source_file_count": 198,
+  "source_finalized": false,
+  "launch_permitted": false,
+  "linux_started": false,
+  "network_or_account_queries": false,
+  "app_or_helpers_edited": false,
+  "templates": {
+    "fullbackend": {
+      "timeout_seconds": 7200,
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\finalsource-gate-templates-474-20261108\\fullbackend.template.json",
+      "status": "template_not_run_pending_final_474",
+      "sha256": "d8cf30a4f0cf652ffd573397fefb05ad9956c4c2f99f24ec098b59f049944366",
+      "controller_basename": "run-full-suite-080.py"
+    },
+    "native": {
+      "timeout_seconds": 1200,
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\finalsource-gate-templates-474-20261108\\native.template.json",
+      "status": "template_not_run_pending_final_474",
+      "sha256": "a269d31bd32b037c7e1e1a3cf365f2ff1aa29c0db316f2ad8cae6f0903348884",
+      "controller_basename": "validate-native-account080.py"
+    },
+    "copilot": {
+      "timeout_seconds": 420,
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\finalsource-gate-templates-474-20261108\\copilot.template.json",
+      "status": "template_not_run_pending_final_474",
+      "sha256": "923afb8227e3bdf9d27e189099004f02e4a009b785313d9630b7628a723324ce",
+      "controller_basename": "validate-copilot-account080.py"
+    },
+    "ollama20": {
+      "timeout_seconds": 3600,
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\finalsource-gate-templates-474-20261108\\ollama20.template.json",
+      "status": "template_not_run_pending_final_474",
+      "sha256": "5cdca4ebaa38d8fc89210b1148326d4f2155c991ca327e930b6cbb658083ca95",
+      "controller_basename": "run-regressions-080.py"
+    },
+    "frontend": {
+      "timeout_seconds": 2100,
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\finalsource-gate-templates-474-20261108\\frontend.template.json",
+      "status": "template_not_run_pending_final_474",
+      "sha256": "8023bdc1757a5d112565fc1b42734a5394b67ed04d4f4499939c5d40a7507aac",
+      "controller_basename": "run-regressions-080.py"
+    }
+  },
+  "guard_design_review": {
+    "not_runtime_proof": true,
+    "sha256": "ea71062000946932527e997d996e82a2a193b7e362763dfe6da1ec356ac86142",
+    "expected_tests": 474,
+    "expected_modules": 10,
+    "expected_helpers": 34,
+    "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-production-retry-legacy-lock-peer-review-20261108.json"
+  },
+  "final_guard_context": null,
+  "final_guard_receipt": null,
+  "final_guard_receipt_sha256": null,
+  "next_sequence": [
+    "ActualUI controllerexit/scopequiet/OAuthrelease.",
+    "Mechanical candidate build observation.",
+    "Whole474 finalcandidate guards actualPASS+externalcleanup.",
+    "Materialize these five templates once against passed474; real validations run serially by root.",
+    "Fullbackend actualreceipt then independent attestation on original qualified source.",
+    "8h stage only after every required realgate and source-bound fullsuite attestation.",
+    "8h28800 active seconds and postcleanup externalwatch then attest_soak; final restore/upgradesmoke/deployment follow root."
+  ],
+  "historical_contexts_preserved": true,
+  "repeated_full_staging_avoided": true,
+  "runtime_pass_claimed": false,
+  "supersedes_template_manifest": {
+    "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-finalsource-gate-templates-20261108.json",
+    "original_preserved": true,
+    "sha256": "fb4898b52c4965ac377b68ba1e6f0b59edb2335722580614d5b1072208baf373"
+  }
+}

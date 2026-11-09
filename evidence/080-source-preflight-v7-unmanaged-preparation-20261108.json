@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_v7_unmanaged_output_source_preflight_preparation",
+  "status": "prepared_not_run_pending_peer_and_root_serial_handoff",
+  "created_utc": "2026-11-08T20:42:45.475090+00:00",
+  "files": {
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\release-tools\\check-production-source080-v7.py": "47838bbff07f73639563c43d0f37c5c92e3dc8ff7ab0529132e4d4fad570b8b3",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\release-tools\\run-source-preflight080-v7.ps1": "f03ddf073f85636c3fc5ac53d892f695ec761f5674117c3b8d98afbdd3a819be",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-production-source-preflight-v7-080.ps1": "366e3c1d221f80d58d4cd6bd294f54cbb30e3f66160667c7b043d1a62a0860dc",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\test-production-source-unmanaged080.py": "426550ab610c3fa504692093b8b0199e23af47d273f44a0efcfb16ce8d5712c4",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\test-production-source-observer-v7-080.ps1": "892e12c6659ba7fde9df927a4b737df80ee7e047156933dabb36aa0b831cdc9f"
+  },
+  "public_policy": "evidence/080-unmanaged-build-output-public-policy-20261108.json",
+  "public_policy_sha256": "dd4312ebed54b8aea60c9bfccad0317f8f12fcf2e7d6c173099d707c407f425d",
+  "candidate_context_sha256": "cdd27ef8e5326c85ab4f85af562b2826c20f3b63cfd07c454441cb3fbf7766d6",
+  "target_zip_sha256": "4fb8b1203dfce52eb5bfd094b2649899316e09ada64cbd2dc14e1bb8de071508",
+  "baseline_zip_sha256": "6b65e7315895b8c44b84bafc9146dfcdae732c3890f959d0e5e58cbf4fd9aa2c",
+  "public_inventory_files": [
+    182,
+    198
+  ],
+  "public_package_files": [
+    64,
+    69
+  ],
+  "checker_function_delta_only": [
+    "scan_source"
+  ],
+  "observer_exact_pin_only_transform": true,
+  "qualified_observer_runtime_component_proof": "immutable historical604/193425, identical wrapper/power hashes, no app qualification claim",
+  "new_policy": "Preserve exact root dist as unmanaged owned normal directory without inspecting children; reject manifest collision, wrong type, symlink/reparse or identity change; other unknown extra entries still block.",
+  "synthetic_windows_scan_test_methods": 8,
+  "synthetic_windows_scan_branches": 16,
+  "synthetic_windows_scan_actual_exit": 0,
+  "synthetic_windows_output_verifier_cases": 29,
+  "synthetic_windows_output_verifier_actual_exit": 0,
+  "powershell_parse_files": 3,
+  "powershell_parse_errors": 0,
+  "windows_python_ast_passed": true,
+  "old_checker_observer_stager_preserved": true,
+  "old_baseline_failure_64776_unchanged": true,
+  "private_generated_contents_confirmed": false,
+  "production_read": false,
+  "production_modified": false,
+  "linux_started": false,
+  "stage_executed": false,
+  "observer_executed": false,
+  "checker_main_executed": false,
+  "frozen_helpers_38_changed": false,
+  "app_changed": false,
+  "comparison_qualified": false,
+  "deployment_authorized": false,
+  "fresh_baseline_required_before_deployment": true,
+  "fresh_target_whole_198_required_after_deployment": true
+}

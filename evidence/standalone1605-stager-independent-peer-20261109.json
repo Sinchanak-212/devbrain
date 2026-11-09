@@ -1,0 +1,40 @@
+{
+  "Stage_or_Prepare_or_Linux_invoked": false,
+  "models_accounts_or_App_changed": false,
+  "backend_actual_count": 1605,
+  "original_pure_stager_function_code_unchanged_EOL_only": 10,
+  "findings": [
+    "Stager copied mixed LF/CRLF function bodies to CRLF only; after EOL normalization all pure function code is identical. Generated helpers are compared byte-for-byte to exact allowed transforms.",
+    "Set reverse_transform_only_root_tools_session_count=false and add reverse_transform_only_root_tools_count_and_diagnostic_status=true, to disclose the honest status literal retarget. No code guard change required."
+  ],
+  "stager_sha256": "19943bb8fea50075e3dc7f3a7cfb887115142c5cf584139f53ca5543b77e4dad",
+  "eight_hour_started": false,
+  "generated": {
+    "materializer": {
+      "allowed_delta_only": "fresh root/tools,1561->1605 observer count, diagnostic completed backend status literal",
+      "admission_function_changed_only_as_declared": [],
+      "byteidentical_pure_functions": 4,
+      "parse_errors": 0,
+      "function_count": 4,
+      "fixed64hex_literal_set_unchanged": true
+    },
+    "observer": {
+      "allowed_delta_only": "fresh root/tools,1561->1605 observer count, diagnostic completed backend status literal",
+      "admission_function_changed_only_as_declared": [
+        "Verify-Inputs",
+        "Verify-Outputs"
+      ],
+      "byteidentical_pure_functions": 2,
+      "parse_errors": 0,
+      "function_count": 4,
+      "fixed64hex_literal_set_unchanged": true
+    }
+  },
+  "backend_actual_session": 74540,
+  "PS_parse_errors": 0,
+  "source_freeze_sha256": "9e5168bece45cf3c06bd0abded7e1573b51cf55778570fdc49c8e0a8872e81b9",
+  "status": "passed_pending_one_metadata_label_correction",
+  "schema_version": 1,
+  "actual_prewrite_validation_passed": true,
+  "scope": "readonly_standalone1605_stager_peer"
+}

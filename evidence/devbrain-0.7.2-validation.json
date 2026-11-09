@@ -1,0 +1,91 @@
+{
+  "status": "updated_with_unresolved_host_instability",
+  "recorded_at": "2026-11-07T11:24:52.6476838+01:00",
+  "version": "0.7.2",
+  "installation": {
+    "installed_version": "0.7.2",
+    "source_version": "0.7.2",
+    "protected_files_unchanged": {
+      ".local/share/devbrain/config.json": true,
+      ".local/share/devbrain/cockpit/preferences.json": true,
+      ".local/share/devbrain/credentials/api-keys.json": true,
+      ".local/share/devbrain/runtime/copilot/config.json": true,
+      ".local/share/devbrain/models.lock.json": true,
+      ".codex/auth.json": true,
+      ".claude/.credentials.json": true
+    },
+    "source_files_verified": 182,
+    "installed_files_verified": 64,
+    "source_mismatches": [],
+    "installed_mismatches": [],
+    "backup": "/home/piotr/.local/state/devbrain-updates/20261107T093838Z-bbfafb96",
+    "release_updater_sha256": "bf1bd27200108e8e0da5bbbe42d44e7b3eb2736ae74e2886508c8cc5bb097e67",
+    "applied_updater_sha256": "61c4da4c2fcbbb80abcbc091c4ca83eaaebb34584e28e06e527b8b62a251560e",
+    "final_test_only_sync": {
+      "status": "passed",
+      "path": "/home/piotr/src/devbrain/tests/test_native_evaluation.py",
+      "only_test_changed": true,
+      "database_opened": false,
+      "installed_application_changed": false,
+      "updater_receipt_changed": false,
+      "backup": "/home/piotr/.local/state/devbrain-updates/20261107T101931Z-final-test-sync",
+      "sha256": "c1a1d9d58b0f9d4bb78f25dd91bdd05b871c57b02bb78a4d82a737111c334916"
+    },
+    "release_zip_sha256": "6b65e7315895b8c44b84bafc9146dfcdae732c3890f959d0e5e58cbf4fd9aa2c",
+    "status": "passed"
+  },
+  "backend": {
+    "collection": 1275,
+    "passed_without_c1": 1219,
+    "passed_only_diagnostic_c1": 56,
+    "unique_passed_all_documented_modes": 1275,
+    "scope": "Frozen baseline snapshot plus targeted final 0.7.2 regressions and post-update retries. This is not one uninterrupted full run on the final source. Final full native/evaluation rerun aborted; earlier completed targeted and native-parser evidence is retained.",
+    "default_runtime_stability": "NOT CONFIRMED: Java C2 crash and independent Python SSL abort reproduced after WSL update. C1 passing is a diagnostic workaround, not a demonstrated root-cause repair.",
+    "evidence": "devbrain-test-coverage-20261107.json"
+  },
+  "frontend": {
+    "build": "passed",
+    "unit_passed": 10,
+    "browser_passed": 8,
+    "npm_audit_findings": 0,
+    "evidence": "devbrain-frontend-validation-20261107.json"
+  },
+  "copilot": {
+    "account_auth": "passed",
+    "api_key_provided": false,
+    "live_agent_protocol": "resume_context -> ack_resume -> read_file",
+    "account_survives_restart": true,
+    "evidence": [
+      "copilot-live-agent-e2e-20261107.json",
+      "installed-copilot-after-restart-20261107.json"
+    ]
+  },
+  "native_clients": {
+    "live_handoff_phases_passed": 3,
+    "final_full_regression": "interrupted_python_sigabrt",
+    "evidence": [
+      "local-native-20261107T092521Z.json",
+      "native-evaluation-post-update-20261107.json"
+    ]
+  },
+  "release_smoke": {
+    "status": "passed",
+    "runtime_condition": "isolated Java engine; TieredStopAtLevel=1; max heap 1 GiB; no retry",
+    "evidence": "devbrain-0.7.2-upgrade-smoke.json",
+    "updater_guards_passed": 5
+  },
+  "wsl": {
+    "version": "3.0.3.0",
+    "kernel": "6.18.54.1-microsoft-standard-WSL2",
+    "authorized_update_and_shutdown_completed": true,
+    "stability_problem_resolved": false
+  },
+  "production_services": "left_stopped",
+  "unfinished_validation": [
+    "20-case real Ollama recall",
+    "final installed production TUI/graph run",
+    "retry and diagnose six historical production failed jobs"
+  ],
+  "unfinished_reason": "Independent Java C2 and Python SSL crashes recurred after WSL update. Production database operations and heavy model tests were not resumed.",
+  "bios_or_global_java_settings_changed": false
+}

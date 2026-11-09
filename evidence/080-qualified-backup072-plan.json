@@ -1,0 +1,130 @@
+{
+  "commands": [
+    {
+      "step": "Extract",
+      "description": "Verify immutable ZIP SHA, then safely extract its package under fresh source; reject absolute, parent traversal and linked entries"
+    },
+    {
+      "step": "Export locked dependencies",
+      "argv": [
+        "/home/piotr/.local/bin/uv",
+        "export",
+        "--directory",
+        "{source}",
+        "--locked",
+        "--no-dev",
+        "--no-emit-project",
+        "--format",
+        "requirements-txt",
+        "--output-file",
+        "{constraints}"
+      ]
+    },
+    {
+      "step": "Create independent venv",
+      "argv": [
+        "/home/piotr/.local/bin/uv",
+        "venv",
+        "--python",
+        "/home/piotr/.cache/devbrain-runtime-080/runtimes/python/bin/python3.12",
+        "{venv}"
+      ]
+    },
+    {
+      "argv": [
+        "/home/piotr/.local/bin/uv",
+        "pip",
+        "install",
+        "--python",
+        "{venv}/bin/python",
+        "--constraints",
+        "{constraints}",
+        "{source}"
+      ],
+      "step": "Install noneditable package",
+      "timeout_seconds": 600
+    },
+    {
+      "interface": "verify_package(Path(literal_backup_python), runtime, package[backup_version], package[backup_package_sha256], package[backup_dependency_pins])",
+      "execution_flags": [
+        "-I",
+        "-B"
+      ],
+      "step": "Verify wheel identity",
+      "expected_version": "0.7.2"
+    }
+  ],
+  "execution_routes": {
+    "standalone_gap": "No dedicated standalone backup-venv controller is currently registered in the frozen204028 supervisor allowlist. Author/review that controller plus guards or use the existing authorized smoke lifecycle; do not run shell preparation outside supervision.",
+    "already_implemented": "test_devbrain_update080_smoke.py creates this independent backup venv during its isolated real upgrade/restore smoke"
+  },
+  "scope": "qualified_backup_072_wheel_venv_preparation",
+  "status": "prepared_not_executed",
+  "created_utc": "2026-11-08T08:17:43.1206438Z",
+  "environment": {
+    "UV_PYTHON_DOWNLOADS": "never",
+    "scope": "Per-process only; no global PATH or alternatives changes",
+    "remove": [
+      "JAVA_TOOL_OPTIONS",
+      "JDK_JAVA_OPTIONS",
+      "_JAVA_OPTIONS"
+    ],
+    "JAVA_HOME": "/home/piotr/.cache/devbrain-runtime-080/runtimes/jdk-21.0.13+9",
+    "path_prefix": "/home/piotr/.cache/devbrain-runtime-080/runtimes/jdk-21.0.13+9/bin",
+    "UV_OFFLINE": "1"
+  },
+  "identity_requirements": [
+    "sys._base_executable and /proc/self/exe resolve to exact qualified Python; binary SHA checked before and after",
+    "sys.prefix is the fresh backup venv, distinct from base interpreter",
+    "devbrain version exactly0.7.2; import origin inside fresh venv/site-packages; direct_url is not editable",
+    "Full installed package byte manifest and dependency pins match those generated from immutable0.7.2 ZIP",
+    "Backup venv is outside mutable source, explicit data directory and uv tool environment; overlaps in either direction rejected",
+    "Record literal backup Python, venv path, package/pin hashes and all immutable inputs in report"
+  ],
+  "runtime": {
+    "java_executable": "/home/piotr/.cache/devbrain-runtime-080/runtimes/jdk-21.0.13+9/bin/java",
+    "historical_gate_sha256": "a6bd365cea68986ed6795990272c766679bbd29fd9407e904a12c2956bcdf7fb",
+    "fresh_preflight_receipt": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\restart080-20261108T081302Z\\receipt.json",
+    "python_binary_sha256": "23bc148d2b48964b621c5561ff2b81c1d9c7b717967a7491efbf12f4304882b5",
+    "fresh_preflight_receipt_sha256": "9b521e1848664ea24dad94fa6795fd7cdf2258a7c958569b8854d71e22020f9e",
+    "python_executable": "/home/piotr/.cache/devbrain-runtime-080/runtimes/python/bin/python3.12",
+    "tmux_binary_sha256": "b4338a07981a2d6e008578059050cf91e43e086929630358937a4df365766669",
+    "java_binary_sha256": "9cad3f2620d3ef2ed10b26f922af7e773d54fdaa05f615d6d6df014f3fec4155",
+    "tmux_executable": "/home/piotr/.cache/devbrain-runtime-080/runtimes/tmux-3.8/bin/tmux"
+  },
+  "baseline": {
+    "windows_zip": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\preflight080-20261107T200408Z\\releases\\devbrain-0.7.2.zip",
+    "linux_zip": "/mnt/c/Users/piotr/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/DevBrain/qualification/preflight080-20261107T200408Z/releases/devbrain-0.7.2.zip",
+    "sha256": "6b65e7315895b8c44b84bafc9146dfcdae732c3890f959d0e5e58cbf4fd9aa2c"
+  },
+  "later_validation": [
+    "Run real backup and restore on synthetic isolated data in smoke using this072wheel",
+    "Verify restored payload collections exactly and read it with0.8.0",
+    "Production private database backup/restore is a separate deployment action; this spec does not start it"
+  ],
+  "no_venv_created": true,
+  "admission": [
+    "Fresh restart preflight PASS with Balanced183settings fingerprint6bac59f1660b69c8c9e8d83728cbb7cf2fd184458181fa05a351b72c4c2d9dc1",
+    "Complete process-supervision fixture qualification before a new supervised preparation controller",
+    "Freeze candidate updater/builder SHA and expected backup manifest; old preflightcandidate must not silently substitute newer payload",
+    "One serial owned scope; actual process exits, empty scope and at least30s Windows native-failure watch",
+    "First mismatch/native/nonzero/timeout/uncertaincleanup stops; offline cache miss stops instead of resolving newer versions"
+  ],
+  "no_linux_processes_started": true,
+  "prohibited_for_this_preparation": [
+    "Import or execute old production console/runtime",
+    "Modify historical qualified venv194513 or package sources",
+    "Start JVM, DB, model requests, account login or production services merely to prepare the wheel"
+  ],
+  "purpose": "Independent immutable 0.7.2 package for backup/restore while the mutable source and uv tool environment are upgraded",
+  "layout": {
+    "artifacts": "New physical Windows qualification/backup072-{run_id} root mapped to /mnt/c",
+    "literal_backup_python": "{venv}/bin/python",
+    "source": "{private_parent}/{run_id}/source",
+    "constraints": "{private_parent}/{run_id}/backup-072-constraints.txt",
+    "run_id": "Allocate a fresh UUID run id at execution",
+    "venv": "{private_parent}/{run_id}/backup-072-venv",
+    "private_parent": "/home/piotr/.cache/devbrain-backup-072"
+  },
+  "schema_version": 1
+}

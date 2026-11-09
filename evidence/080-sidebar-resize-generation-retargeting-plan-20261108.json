@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_sidebar_resize_generation_retargeting_plan",
+  "status": "prepared_metadata_pending_applied_source_freeze",
+  "created_utc": "2026-11-08T22:25:00.460738+00:00",
+  "proposal": {
+    "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-sidebar-resize-proposal-20261108.json",
+    "sha256": "350acb0bffc0ccc9ee793b9bc4d34ff5d8e8dcd64ae42e3cb64397f8b06a8f96"
+  },
+  "peer_review": {
+    "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-sidebar-resize-proposal-peer-review-20261108.json",
+    "sha256": "69fae0b54f8db62cd52e948e06ba2aa4a305a6d774b31a7612a1fcc65ccc817c"
+  },
+  "source_run_id": null,
+  "source_freeze_sha256": null,
+  "app_prepare_receipt_sha256": null,
+  "v8_candidate_context_sha256": null,
+  "v8_output_sha256": null,
+  "new_guard_receipt_sha256": null,
+  "expected": {
+    "app_files": 198,
+    "frozen_files": 209,
+    "package_pins": 59,
+    "helper_files": 38,
+    "guard_modules": 12,
+    "guard_cases": 604,
+    "whole_backend_cases": 1561,
+    "ux_cases": 381,
+    "ux_modules": 28,
+    "queue_original_jobs": 6,
+    "actual_ui_tasks": 5,
+    "actual_ui_geometries": 3
+  },
+  "actual_collection_authoritative": true,
+  "baseline_guard": {
+    "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-guards-queue-budget-active-context-20261108.json",
+    "sha256": "0d47b2ea314be36b18749076196693227d91d8395645ad1779a412894582565d"
+  },
+  "baseline_candidate": {
+    "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-final-candidate-build-ready-context-v7-20261108.json",
+    "sha256": "cdd27ef8e5326c85ab4f85af562b2826c20f3b63cfd07c454441cb3fbf7766d6"
+  },
+  "stager_bases": {
+    "v8_candidate": {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-candidate-build-v7-20261108.ps1",
+      "sha256": "970c43aa1dfe79171c838f110199e83e11b4faca52982f72fd853d5b1346ac52"
+    },
+    "guards604": {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-length-repair-guards-604-20261108.ps1",
+      "sha256": "b0953b95d1a3aea3b923cd710c1c1cb86a3f5bd5dea548e0af3e6dc3165f37b5"
+    },
+    "backend1561": {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-fullbackend-length-repair-604-v2-20261108.ps1",
+      "sha256": "b9090ea8d4bbdc59dbac440bb81c99a638c7470bf0186036c275c32299017559"
+    },
+    "ux381": {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-ux-length-repair-604-20261108.ps1",
+      "sha256": "337c38e0470031e86c617a05c6bc3db3fe5ac66d29dd1e594aa9c6b98a8da3e2"
+    }
+  },
+  "permitted_stager_changes": [
+    "Exact new app run/source/venv/freeze and actual preparation bindings",
+    "V8 candidate paths and actual output hashes after bounded mechanical build",
+    "Fresh namespace and CreateNew history; archive actual prior guard context byte-exact before replacement",
+    "Expected full backend1561 and UX381 counts; module inventories unchanged",
+    "Current source proof references and actual future guard/output receipts; no historical app PASS retagging"
+  ],
+  "unchanged_contracts": [
+    "All38 frozen helper bytes, supervisor registration, scope ownership and runtime binaries",
+    "Canonical filesystem/path checks, process/cleanup observation boundaries",
+    "Whole collection, no selectors, zero expected skips, TMPDIR=/tmp, default C2",
+    "Finalizer actual root exit0 requirement, raw artifacts and full exact JUnit node IDs",
+    "UI1800/outer1980, official8 observations, actual root viewed Windows PNGs and strict visual acceptance"
+  ],
+  "runtime_fixture_reference": {
+    "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-controlled-fixtures-deploy-final-20261108.json",
+    "sha256": "d466c012f3bbfa8134154c85d510b82d758f8422c4facdedf986482b26d3260c"
+  },
+  "runtime_fixture_original_source": "app080-20261108T160614Z",
+  "runtime_fixture_use": "runtime supervision only after exact seven instrumentation hashes remain identical; no new app qualification inferred",
+  "runtime_fixture_rerun_requested": false,
+  "owners": {
+    "app_snapshot_and_all_linux": "root",
+    "app_patch_and_strict_UI_admission": "release_review",
+    "v8_guards_backend_ux_standalone_metadata": "test_suite",
+    "whole_six_copy_metadata_delegation_requested": "queue_review"
+  },
+  "sequence": [
+    "Root actual old UI cleanup SAFE_NEXT then authorized two-file app application and new immutable snapshot",
+    "Root new app prepare actual0 then Windows V8 envelope publication and root mechanical build",
+    "Windows fresh604 same38 source-bound staging then root actual604 and final evidence review",
+    "Windows stage fresh whole6/backend1561/UX381; root chooses serial order and performs actual full gates",
+    "Canonical standalone attestation at new backend artifacts/final-full-suite.json after actual backend0",
+    "Fresh actual UI5+3 with EN/PL current-resize/full More evidence and visual_acceptance_passed literal true",
+    "Current-source real native, Copilot, Ollama20, frontend, final updater smoke gates",
+    "Save durable handoff then root shuts down Windows; NO8h launch this session"
+  ],
+  "all_future_results": null,
+  "application_qualification": false,
+  "stage_invoked": false,
+  "linux_started": false,
+  "app_or_helper_files_modified": false,
+  "eight_hour_launch_permitted_this_session": false
+}

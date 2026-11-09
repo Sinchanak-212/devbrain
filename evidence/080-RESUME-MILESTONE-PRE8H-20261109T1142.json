@@ -1,0 +1,88 @@
+{
+  "next": [
+    "Run reviewed attached terminalreply diagnostic direct vsactualbridge with actualWT metadataobserver BEFORE queries",
+    "If both clean, inspect bounded detachedstartup timing differential; do not claim exactCodexreproduction from genericprobe",
+    "Review proposal UXfixes and necessary causefix; freeze NEWgeneration if App changed; preserve allold source-bound proofs",
+    "Complete finalsame-source actualinteractiveUI fiveagentkeyboardtasks and three genuineOSphotos80x24/120x36/180x55",
+    "Only actualUI PASS permits V2postUIattestations for5diagnostics; originalflagsremainimmutable",
+    "Finish all pre8h work and durable handoff; DO NOTstart8h orproduction"
+  ],
+  "current_tests": {
+    "terminal_probe_first": "actual80360/1 readinesscoordinationtimeout;0queries/0arms/0WT; strictSAFE_NEXTc143; not App/native failure",
+    "frontend": "10unit+8browser/build/audits diagnostic PASS",
+    "full_backend_standalone": "formal PASS, actual45868/0",
+    "full_backend": "1561/1561 formal PASS, actual56737/0",
+    "interactive_ui": "FAILED actual98979/1: Codex timed out discarding buffered terminal input, actualWT solewriter beforeStart, noACK/nativeSession. Strict ownedSAFE_NEXT4a4e; all accounts released",
+    "Ollama": "20/20, accuracy1.0, critical13/13 diagnostic PASS",
+    "historical6_copy_only": "6/6 completed, actual61090/0; production retries NOT performed",
+    "ux_formal": "381/381 formal PASS, actual69791/0",
+    "upgrade_copy": "real072-080 backup+restore/readback diagnostic PASS",
+    "Copilot": "real GitHubaccount/noAPIkey/protocolACK diagnostic PASS",
+    "native": "real Codex-Claude-Codex diagnostic PASS, actual95003/0; noTTYclaim; syntheticprecompact only"
+  },
+  "user_scope": "Continue independent tests and fixes, parallel isolated instances allowed, collect functional failures; NO8h",
+  "schema_version": 1,
+  "source": "app080-20261108T222731Z",
+  "current_activity": {
+    "ux_fix": "Agent proposal copies ONLY for lifecycle-awareStartingnotice and safegenericfailurebanner, no App edits yet",
+    "terminal_probe": "New unchanged7043/c558 freshdd90 prepared Windows63171/0; NO Linux yet. Root observer5318 peer review pending before Windowswatcher+rootGO"
+  },
+  "scope": "pre8h_resume_milestone",
+  "production": "0.7.2 and privateDB STOPPED",
+  "confirmed_ui_findings": [
+    "Nativepane does not guarantee actionable failure feedback after terminalexit",
+    "Projects Startingselectedassistant notice remains after asyncnativefailure",
+    "80x24 normaloverflow can partiallyclip nonfocusedprimaryaction; actualfocusedcontrolvisible; nonblockingnote"
+  ],
+  "eight_hour_authorized": false,
+  "source_freeze_sha256": "ad77e00450537294fd26200d0713915689d82ff5a90e65f6c8fb1285fcbb4703",
+  "utc": "2026-11-09T11:42:27.1728899+00:00",
+  "account_quota": {
+    "checked_utc": "2026-11-09T11:38:30.450Z",
+    "weekly_remaining_percent": 13,
+    "five_hour": "unavailable, notzero",
+    "shutdown_threshold_percent": 5,
+    "policy": "At verified<=5 stop newwork, ownedcleanup+30s observation, fullhandoff then Windows shutdown /s /t0 without /f"
+  },
+  "bound_proofs": [
+    {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-fullbackend-sidebar-resize-final-20261109.json",
+      "sha256": "90272cf32524a02a4c80d3c47203728748ebd924d89152df72cc58a3cab104a3"
+    },
+    {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-full-suite-sidebar-resize-attestation-final-20261109.json",
+      "sha256": "d5482d12ae7776916d82223fdc7917a1d30b57c1be73eb93443f73e8dc4f0c67"
+    },
+    {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-ux-sidebar-resize-final-20261109.json",
+      "sha256": "7c261553d83da3f2b38e26e204c9385f34a95f4e976d95398a011b223c9de976"
+    },
+    {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-queue-copy-sidebar-resize-final-20261109.json",
+      "sha256": "e00816e8d2c8c6a66ecdac5b8af460431f75944f98653b4d58692a2ec3421515"
+    },
+    {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-independent-five-diagnostics-completed-20261109.json",
+      "sha256": "bcc2e30b656a7c9b7e21ea447d4491de0584e15db807004f2c9f1b448a4fb86b"
+    },
+    {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-real-wt-formal-ui-failed-safe-next-20261109.json",
+      "sha256": "4a4ea200f296144c5894cec899243219540abd149adb239ec93510c0cb94b183"
+    },
+    {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-terminal-input-probe-first-failed-safe-next-20261109.json",
+      "sha256": "c14322f3856c1500a3c5cc0809aac3593f941a89ad511aaf2e0542294b1a37da"
+    },
+    {
+      "path": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\post-ui-admission-standalone-compatible-v2-20261109.json",
+      "sha256": "b0782c06c2ed39af10b17085a2ab8364e4024ed526ef7451d7adbd90ca5d9f4b"
+    }
+  ],
+  "unproven_causes": [
+    "Startup terminal capability query/attach timing",
+    "TERM actualinner vslaunch mismatch",
+    "Exact Crossterm parser fragment behavior"
+  ],
+  "release_qualified": false,
+  "eight_hour_started": false
+}

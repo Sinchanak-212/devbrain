@@ -1,0 +1,19 @@
+{
+  "config_modified": false,
+  "recorded_utc": "2026-11-08T09:41:40.7392005Z",
+  "database_opened": false,
+  "schema_version": 1,
+  "settings": {
+    "embedding_model": "qwen3-embedding:0.6b",
+    "chat_model": "qwen3.5:9b",
+    "ollama_url": "http://127.0.0.1:11434",
+    "max_steps": 8,
+    "poll_seconds": 10.0,
+    "answer_tokens": 1200,
+    "ask_timeout": 60.0,
+    "num_ctx": 16384
+  },
+  "source": "/home/piotr/.local/share/devbrain/config.json",
+  "scope": "preserved_local_model_settings_metadata",
+  "service_started": false
+}

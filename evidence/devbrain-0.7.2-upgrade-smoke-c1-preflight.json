@@ -1,0 +1,15 @@
+{
+  "status": "failed",
+  "started_at_utc": "2026-11-07T10:23:23Z",
+  "kernel": "6.18.54.1-microsoft-standard-WSL2",
+  "boot_id": "44a44f82-70ad-4cc5-b703-6f6572e2dc3a",
+  "run_root": "/home/piotr/.cache/devbrain-upgrade-validation-20261107/c1-engine-5f2af3af",
+  "model_inference": false,
+  "gpu_workload": false,
+  "updater_sha256": "bf1bd27200108e8e0da5bbbe42d44e7b3eb2736ae74e2886508c8cc5bb097e67",
+  "zip_sha256": "6b65e7315895b8c44b84bafc9146dfcdae732c3890f959d0e5e58cbf4fd9aa2c",
+  "runtime_condition": "isolated Java engine; TieredStopAtLevel=1; max heap 1 GiB; no retry",
+  "error_type": "FileNotFoundError",
+  "owned_engine_stopped": true,
+  "finished_at_utc": "2026-11-07T10:23:24Z"
+}

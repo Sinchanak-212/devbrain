@@ -1,0 +1,66 @@
+[  298.806649] RDX: 0000000000033140 RSI: 0000000000000000 RDI: 0000000000000016
+[  298.806782] RBP: ffffb042cf2cf7b0 R08: 0000000000000400 R09: ffff9dd6c7d80000
+[  298.806929] R10: 00000000fffffedb R11: 0000000000000000 R12: ffff9dd6c7db3140
+[  298.807054] R13: 0000000000000016 R14: ffffb042cf2cf730 R15: 0000000000000016
+[  298.807519] FS:  0000796c4e1fb6c0(0000) GS:ffff9dd6c7a80000(0000) knlGS:0000000000000000
+[  298.807973] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  298.808304] CR2: 0000000000000018 CR3: 0000000270a28001 CR4: 0000000000370ee0
+[  298.808655] Call Trace:
+[  298.808905]  <TASK>
+[  298.808994]  ? update_sd_lb_stats.constprop.0+0x1d3/0x880
+[  298.809252]  find_busiest_group+0x4d/0x480
+[  298.809348]  load_balance+0x14f/0xeb0
+[  298.809424]  ? sched_clock+0x14/0x30
+[  298.809494]  ? sched_clock_cpu+0x14/0x1a0
+[  298.809563]  newidle_balance+0x1e3/0x430
+[  298.809631]  pick_next_task_fair+0x4d/0x4d0
+[  298.809718]  __schedule+0x17c/0xb00
+[  298.809867]  schedule+0x6f/0xf0
+[  298.809994]  schedule_timeout+0x14f/0x160
+[  298.810084]  ? ttwu_queue_wakelist+0xd3/0x110
+[  298.810209]  ? preempt_count_add+0x86/0xd0
+[  298.810304]  __wait_for_common+0x8f/0x1c0
+[  298.810378]  ? __pfx_schedule_timeout+0x10/0x10
+[  298.810478]  wait_for_completion_state+0x25/0x40
+[  298.810571]  do_coredump+0x293/0x16b0
+[  298.810665]  ? __wake_up+0x17/0x20
+[  298.810735]  ? netlink_broadcast_filtered+0x145/0x490
+[  298.810831]  ? cn_netlink_send_mult+0x1b4/0x200
+[  298.810938]  ? __pfx_cn_filter+0x10/0x10
+[  298.811044]  get_signal+0x95b/0xa90
+[  298.811122]  arch_do_signal_or_restart+0x33/0x280
+[  298.811209]  exit_to_user_mode_prepare+0xd4/0x140
+[  298.811296]  syscall_exit_to_user_mode+0x2a/0x50
+[  298.811382]  ? x64_sys_call+0x11d0/0x2020
+[  298.811447]  do_syscall_64+0x67/0xb0
+[  298.811512]  ? syscall_exit_to_user_mode+0x2f/0x50
+[  298.811603]  ? x64_sys_call+0x18b9/0x2020
+[  298.811668]  ? do_syscall_64+0x67/0xb0
+[  298.811731]  ? irqentry_exit+0x3f/0x50
+[  298.811795]  ? exc_page_fault+0x84/0x160
+[  298.811860]  entry_SYSCALL_64_after_hwframe+0x78/0xe2
+[  298.811945] RIP: 0033:0xd20
+[  298.811996] Code: Unable to access opcode bytes at 0xcf6.
+[  298.812092] RSP: 002b:0000796c4e1f9b50 EFLAGS: 00010206
+[  298.812177] RAX: 00000000000006be RBX: 0000000000000fff RCX: 0000796c202f5d00
+[  298.812300] RDX: 0000000000000001 RSI: 00000000000006af RDI: 0000796c2035d908
+[  298.812430] RBP: 0000796c4e1f9ba0 R08: 0000000000000000 R09: 0000796c202f6d10
+[  298.812554] R10: 0000000000000010 R11: 00000000000007a8 R12: 0000000000000013
+[  298.812693] R13: 0000000000000001 R14: 0000796c2035d8e8 R15: 0000796c4e1f9b60
+[  298.812835]  </TASK>
+[  298.812903] Modules linked in: intel_rapl_msr intel_rapl_common kvm_intel kvm irqbypass crc32c_intel sch_fq_codel configfs autofs4 br_netfilter bridge stp llc ip_tables tun
+[  298.813214] CR2: 0000000000000018
+[  298.813409] ---[ end trace 0000000000000000 ]---
+[  298.813766] RIP: 0010:idle_cpu+0x13/0x60
+[  298.813972] Code: 0f 1f 80 00 00 00 00 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 66 0f 1f 00 0f 1f 44 00 00 55 48 63 ff 48 c7 c0 40 31 03 <00> 45 31 c0 48 03 04 fd 40 9d a9 87 48 89 e5 48 8b 90 70 09 00 00
+[  298.814508] RSP: 0018:ffffb042cf2cf6d8 EFLAGS: 00010046
+[  298.814624] RAX: 0000000000000000 RBX: ffffb042cf2cf930 RCX: 0000000000000016
+[  298.814766] RDX: 0000000000033140 RSI: 0000000000000000 RDI: 0000000000000016
+[  298.814908] RBP: ffffb042cf2cf7b0 R08: 0000000000000400 R09: ffff9dd6c7d80000
+[  298.815046] R10: 00000000fffffedb R11: 0000000000000000 R12: ffff9dd6c7db3140
+[  298.815183] R13: 0000000000000016 R14: ffffb042cf2cf730 R15: 0000000000000016
+[  298.815325] FS:  0000796c4e1fb6c0(0000) GS:ffff9dd6c7a80000(0000) knlGS:0000000000000000
+[  298.815461] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+[  298.815574] CR2: 0000000000000cf6 CR3: 0000000270a28001 CR4: 0000000000370ee0
+[  298.815711] Kernel panic - not syncing: Fatal exception
+[  298.817018] Kernel Offset: 0x5000000 from 0xffffffff81000000 (relocation range: 0xffffffff80000000-0xffffffffbfffffff)

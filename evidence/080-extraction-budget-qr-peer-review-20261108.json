@@ -1,0 +1,53 @@
+{
+  "modified_app_files": 4,
+  "preparation": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-extraction-budget-preparation-20261108.json",
+  "linux_workload_started": false,
+  "production_accessed": false,
+  "existing_app_files_compared": 198,
+  "frozen160614_modified": false,
+  "reviewed_file_sha256": {
+    "devbrain/tests/test_extraction_safety.py": "6012b9f2f7630ab9972cd91c39334d9c297278ed49b4ecd879bc2f8a455b44f3",
+    "devbrain/tests/test_memory_stabilization.py": "adc5d4a036bc8ce4c2feda5f43b96e7aebd2ea13ba61dad886bb539784f4e253",
+    "devbrain/src/devbrain/agent.py": "8a9d46638d70ab1141d1f3d6856ee23b2583756ba2e401241baefffe30e969fa",
+    "devbrain/src/devbrain/service.py": "278e92667cc74181936b7f3fd9fee5b3ff11d699833aa219a13fb010320d7913"
+  },
+  "reviewer_tests_executed": false,
+  "central_functions": [
+    "extraction_work_budget",
+    "extraction_outer_timeout",
+    "inference_lease_seconds"
+  ],
+  "application_or_release_qualified": false,
+  "status": "static_ack_pending_fresh_source_and_runtime_qualification",
+  "runtime_pass_claim": false,
+  "created_utc": "2026-11-08T18:31:28.6375517Z",
+  "app_or_helper_modified_by_reviewer": false,
+  "inference_lease_floor_seconds": 120,
+  "findings": [],
+  "baseline_freeze_sha256": "5ea43988e1943c783e802acbe5a39fdfcc3318d41655ed244716a69a0d71b28f",
+  "actual_collection_required": true,
+  "preparation_sha256": "8f0f342befeac6415cd4de882144c1e191be04725e3421a6b6512e7ab9485866",
+  "unchanged_app_files": 194,
+  "reviewer_Python_or_CLI_executed": false,
+  "planned_backend_cases": 1517,
+  "new_cases_authored": 9,
+  "scope": "devbrain_extraction_budget_independent_static_peer_review",
+  "schema_version": 1,
+  "outer_watchdog_seconds": 125,
+  "work_budget_seconds": 120,
+  "verdict": "PASS",
+  "inference_lease_seconds": 210,
+  "verified_static_chains": [
+    "Initial call and optional repair share one snapshot work_budget and one monotonic deadline; extraction async timeout uses that same snapshot.",
+    "Service imports central functions at create_app and uses inference lease for real Store claim; extract watchdog is separate while embed remains30.",
+    "Existing _extraction_deadline task.cancelling and monotonic checks, synchronous transaction rollback, source freshness and stale-attempt guards are unchanged.",
+    "No await or executor commit is introduced inside extraction persistence; a provider swallowing cancellation still reaches the existing cancellation/deadline guard before commit.",
+    "Tests exercise actual service lifespan, InferenceQueue and Store claim/finish; model transport is scripted, unrelated scanner/memory/backup producers are idle.",
+    "Four inner timeout cases cover initial/repair and cooperative/suppressed cancellation, assert timeout rather than cancelled, one attempt/one claim, no late records/revisions/nodes/edges and safe diagnostics.",
+    "Two independent watchdog cases remove the inner deadline intentionally and verify requested extract timeout and unchanged embed30 budget, failed one-attempt result and no late writes.",
+    "Default and shortened-budget contracts are exercised; pre-existing rollback regression explicitly fixes its prior30second test budget and original assertions remain unchanged."
+  ],
+  "baseline_freeze": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\app080-20261108T160614Z\\source-freeze.json",
+  "models_called": false,
+  "embedding_processing_budget_seconds": 30
+}

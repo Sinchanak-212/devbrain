@@ -1,0 +1,159 @@
+DevBrain 0.8.0 — nowy interfejs terminalowy
+Stan na 8 listopada 2026 r.
+
+Status: przygotowane źródła i instrukcje 0.8.0. Ten plik nie potwierdza
+wdrożenia 0.8.0 do produkcji ani zaliczenia pełnych testów lub próby 8 h.
+Po aktualizacji BIOS-u do 4601 zaliczono odrębną kwalifikację runtime.
+Po ponownym uruchomieniu komputera sprawdzono zgodność binariów, zależności
+i zapisanych wyników oraz przywrócono wybrany plan Windows Zrównoważony.
+Następnie zaliczono pięć kontrolowanych scenariuszy nadzoru oraz nowy,
+niezależny przebieg 316/316 testów zabezpieczeń narzędzi. Historyczny wynik
+222/222 pozostaje osobnym dowodem. Te wyniki nie zastępują końcowego testu aplikacji
+ani nie potwierdzają usunięcia przyczyny wszystkich historycznych awarii.
+Konteksty dowodów: evidence/080-postbios-active-context.json,
+evidence/080-guards-final-20261108.json, evidence/080-controlled-fixtures-final-20261108.json
+i evidence/080-restart-active-context.json.
+
+Nieaktywny kandydat znajduje się w releases/candidates/0.8.0/. Manifest
+oznacza go jako candidate, qualified=false. Kandydat jest nieaktualny względem
+nowych źródeł i kontraktu backupu; nie przebudowano go w trakcie diagnostyki. Raport
+evidence/080-candidate-static-validation.json potwierdza wyłącznie budowę,
+AST i spójność sum kontrolnych. Ruff przeszedł przed ostatnimi zmianami
+obserwatora awarii w helperze smoke; końcowej rewizji nie uruchamiano po
+wstrzymaniu procesów runtime. Smoke aktualizacji, guardy procesów
+i instalacja produkcyjna tej paczki pozostają not_run.
+
+Aktualizator nie wykonuje flashowania BIOS-u, zmian firmware ani restartu
+Windows. Produkcja pozostaje wersją 0.7.2; przygotowanie helperów nie
+uruchamia jej usług, nie instaluje 0.8.0 i nie otwiera produkcyjnej bazy.
+
+NOWY KONTRAKT AKTUALIZACJI — PRZYGOTOWANY, JESZCZE NIEWYKONANY
+
+--check-only sprawdza wyłącznie pliki i nie uruchamia podprocesów.
+Wykonanie aktualizacji wymaga jednocześnie:
+  --python          dokładny bazowy Python z zaliczonej kwalifikacji
+  --backup-python   osobny, nieedytowalny wheel/venv DevBrain 0.7.2
+  --runtime-gate    istniejący raport kwalifikacji ze statusem pass
+  --data-dir        jawny katalog dotychczasowych danych
+
+Sam aktualizator uruchamia się tym samym kwalifikowanym Pythonem. Przed
+dostępem do danych sprawdza bazę i SHA obu interpreterów, pochodzenie
+pakietu 0.7.2, pełny manifest z archiwalnego ZIP-a i przypięte zależności.
+Backup oraz status/stop wykonuje przez --backup-python, bez wywoływania
+starego skryptu devbrain. Przygotowany smoke sprawdzi rzeczywisty backup
+i restore w osobnych danych oraz zachowanie kont, profili, modeli i ustawień.
+Nie jest to jeszcze wynik testu. Instrukcje: devbrain/docs/README.md.
+
+OBSŁUGA 0.8.0
+
+Po zainstalowaniu i zweryfikowaniu tej wersji uruchom w Ubuntu WSL:
+
+    devbrain
+
+1. Projects: wybierz projekt i naciśnij Enter. Otwiera się podgląd projektu.
+   Add folder dodaje folder przez wpisaną ścieżkę Linux/Windows albo wybór
+   klawiaturą. Nazwa projektu może pozostać pusta.
+2. Project: sprawdź nazwę asystenta. Add assistant pozwala dodać połączenie,
+   zachowując dotychczasowe przydziały. Start work uruchamia tylko wskazanego
+   asystenta. Otwarcie projektu i oglądanie pamięci nie rozpoczynają pracy.
+3. Connections skupia nazwy połączeń, logowanie kont, modele i klucze.
+   GitHub Copilot → Connect GitHub account używa konta, bez własnego klucza
+   API. Brakujący runtime jest pobierany dopiero po osobnym potwierdzeniu.
+   Limity i odwołania do poświadczeń znajdują się w Advanced.
+4. More zawiera sesje, zarządzanie asystentami, snapshoty, import i ustawienia.
+   More → Settings → Language → Polski zmienia język. Domyślnie jest English.
+   Focus pokazuje jeden widok; opcjonalny Cockpit wiele paneli na dużym ekranie.
+
+KLAWIATURA
+
+    Ctrl+B, potem Spacja     wyszukiwalne menu
+    Ctrl+B, potem ?          pomoc
+    Ctrl+B, potem p/1/2/i/g  projekty/asystenci/pamięć/graf
+    Ctrl+B, potem Tab        następny widok
+    Ctrl+B, potem d          odłącz; devbrain dołącza ponownie
+    Ctrl+B, potem Ctrl+B     przekaż Ctrl+B do natywnego klienta
+    Tab / Shift+Tab          następny/poprzedni element DevBrain
+    Enter / Esc              wybierz / wróć
+    Ctrl+S                   zapisz formularz
+
+Start work z globalnego menu najpierw pokazuje projekt do potwierdzenia.
+Na ekranie projektu dopiero przycisk Start work lub lokalne w uruchamia pracę.
+Natywne Codex CLI i Claude Code zachowują własne skróty i dialogi zgód.
+Gdy środowisko jest otwarte w innym terminalu, wybierz Observe (read only),
+Take control albo Return to shell. Enter domyślnie otwiera podgląd. Jawne
+przejęcie sterowania przekazuje klawiaturę, bez uruchamiania drugiej sesji.
+W agencie DevBrain: Ctrl+Enter wysyła, Ctrl+C przerywa, Ctrl+R otwiera
+rozstrzygnięcie działania bez potwierdzonego wyniku. Rozstrzygnięcie zapisuje
+notatkę i nie powtarza polecenia. Zapis wymaga Ctrl+S.
+
+PAMIĘĆ I BEZPIECZEŃSTWO
+
+Dokładny ACK modelu, kontrola wersji, granice projektu i jednorazowe zgody
+na polecenia pozostają wymagane. Przeglądanie i wybór projektu nie są ACK.
+Klucze są maskowane; opcjonalny lokalny zapis nie jest szyfrowany. Profile,
+klucze i zgody nie są przenoszone w snapshotach pamięci. Szczegóły techniczne
+pozostają dostępne, ale podstawowy ekran używa czytelnych opisów.
+
+DOWODY WYBRANYCH TESTÓW UI
+
+- evidence/080-terminal-panels-ux.xml: 31/31 PASS, bez bazy i modeli,
+  w tym nawigacja klawiaturą EN/PL, 80×24 i 120×35, jawny start jednego
+  asystenta, puste wyszukiwanie, wybór folderu i zachowanie formularza.
+- evidence/080-terminal-bindings-command.xml: 3/3 PASS, w tym tłumaczenie
+  skrótów bez zmiany priority/routingu i opóźnione polecenie A→B bez startu.
+- evidence/080-terminal-confirmation-summary.xml: 1/1 PASS; potwierdzenie
+  importu pokazuje cel i liczby wpisów, Szczegóły nie zatwierdzają operacji,
+  a Esc odmawia. Zgoda na polecenie nadal pokazuje jego pełną treść.
+- evidence/080-live-final-captures/: zapis rzeczywistych paneli tmux jako
+  ANSI/SVG/PNG. To obraz paneli, a nie zrzut systemowego okna Windows.
+  Późniejsze małe poprawki skrótów i przygotowania startu mają osobne testy.
+
+Nie sumuj tych wyników z historycznymi testami 0.7.2 jako pełnego PASS 0.8.0.
+Dokładne wyniki pozostałych zakresów są w osobnych raportach evidence.
+
+PIĘĆ ZADAŃ KLAWIATURĄ — JESZCZE NIEWYKONANE
+
+Zgodnie z decyzją użytkownika zadania wykona agent, bez myszy, w 120×36.
+Wynik zostanie oznaczony jako test agenta (agent_reported=true,
+human_reported=false). Osobno zostanie sprawdzony wygląd w 80×24, 120×36
+i 180×55. Należy zapisać ukończenie, liczbę klawiszy, błędy oraz zachowanie
+wprowadzonych danych. Obecność tej listy nie oznacza zaliczenia zadań.
+
+1. Rozpocznij pracę: Projects → wybierz syntetyczny projekt A → Enter.
+   Sprawdź katalog i nazwę asystenta. Dopiero Start work uruchamia pracę;
+   użyj przycisku przez Tab/Enter albo lokalnego w. Odczytaj osobne stany
+   sesji, połączenia, pamięci i sterowania.
+2. Zmień projekt i wróć do sesji: Ctrl+B, p → projekt B → Enter. Samo
+   otwarcie B nie uruchamia asystenta. Wróć do A i wybierz Resume session.
+   Zachowane mają być sesja, treść pracy i pojedynczy proces asystenta.
+3. Znajdź źródło ustalenia: Ctrl+B, i → wybierz ustalenie → otwórz jego
+   źródło i odczytaj fragment dowodowy oraz wersję. Powrót przez Esc ma
+   zachować fokus. Graf jest dodatkową drogą: Ctrl+B, g, potem [ / ] i Enter.
+4. Zmień połączenie lub model: paleta → Connections → nazwa połączenia.
+   Wybierz dostępny model z listy i zapisz. Zweryfikuj nazwę na projekcie;
+   test połączenia uruchamiaj osobną, jawną akcją. Sam zapis nie generuje
+   odpowiedzi ani nie rozpoczyna następnego asystenta.
+5. Odzyskaj pracę po rozłączeniu: Ctrl+B, d odłącza terminal. Przygotowany
+   launcher testowy ma umożliwić powrót klawiaturą, bez wpisywania komendy
+   w powłoce. Sprawdź tę samą sesję, zachowaną pracę, fokus i sterowanie;
+   nie może powstać drugi asystent ani powtórzone działanie.
+
+Zadania odbiorowe wymagają rzeczywistej izolowanej instancji z syntetyczną
+bazą i prawdziwymi połączeniami. Preview z odmową zapisu ich nie zastępuje.
+Osobno sprawdź wybór folderu, EN/PL, puste wyszukiwanie, Unicode, formularz
+po błędzie i zmianę rozmiaru. Dla każdego zadania zapisz: geometria, wynik,
+liczba klawiszy, trudności oraz utrata danych/fokusu, jeśli wystąpiła.
+
+Syntetyczny podgląd blokuje operacyjne zapisy, logowanie i generowanie
+odpowiedzi. Sprawdza wygląd, nawigację i kontrolowaną odmowę. Pięć zadań
+odbiorowych wykonuje się osobno, po kwalifikacji środowiska.
+
+INSTRUKCJE
+
+    devbrain/README.md        skrót działania i instalacja
+    devbrain/docs/TERMINAL.md pełna obsługa terminala 0.8.0
+    devbrain/docs/API.md      połączenia, Copilot, modele, klucze i zgody
+    devbrain/docs/README.md   szczegóły instalacji, aktualizacji i pamięci
+
+Historyczne START_HERE_0.7.2.txt i raport 0.7.2 pozostają opisem poprzedniej
+wersji. Nie zastępują aktualnej kwalifikacji środowiska ani tego interfejsu.

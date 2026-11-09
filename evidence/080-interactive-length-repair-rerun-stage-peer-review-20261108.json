@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_interactive_rerun_namespace_peer_review",
+  "status": "readonly_ack_not_staged",
+  "reviewer": "/root/test_suite",
+  "created_utc": "2026-11-08T22:01:55.9488115+00:00",
+  "script": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-interactive-length-repair-rerun-agent-dom-604-20261108.ps1",
+  "script_sha256": "c8aa4e8d470976b26b34e2b71285a1f382af77accda5b3577767ebbde0192e5c",
+  "parent_sha256": "45e6b3a7c441eeeafe7b29c1680f3857db278ab0e4e057357a7cca880dac87be",
+  "exact_byte_reverse_transform": true,
+  "changes": [
+    "Distinct output context080-interactive-length-repair-rerun-agent-active-context-20261108.json",
+    "Fresh run prefix interactive-length-repair-rerun080-"
+  ],
+  "all_other_bytes_unchanged": true,
+  "ps_parse_errors": 0,
+  "duration_seconds_unchanged": 1800,
+  "outer_timeout_seconds_unchanged": 1980,
+  "official_argv_count_unchanged": 23,
+  "proof_checks_unchanged": true,
+  "no_overwrite_checks_unchanged": true,
+  "old_partial_trial_preserved": true,
+  "findings": [],
+  "stage_executed": false,
+  "linux_executed": false,
+  "application_helpers_modified": false,
+  "requires_root_prior_actual_cleanup_handoff": true
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_task_state_guard_and_backend_stagers_independent_static_peer",
+  "status": "static_ack_not_executed",
+  "verdict": "PASS",
+  "findings": [],
+  "reviewed_files": {
+    "evidence/stage-task-state-guards-604-20261108.ps1": "7609e2b8c3508228a3247b8e14329199ec8b655947352d130391df2f77b171a0",
+    "evidence/stage-fullbackend-task-state-604-20261108.ps1": "52ce4bd6a51d825a58ef391217f78e7bb0a5909ff7afad09f5d5a60948dfaf09"
+  },
+  "full_lines_reviewed": [
+    242,
+    202
+  ],
+  "PS_parse_errors": [
+    0,
+    0
+  ],
+  "workload_API_commands_present": false,
+  "verified_static_chains": [
+    "Exact new192100 source and explicit successful preparation are required; guard staging also requires actual current v6 build and matching198-source candidate manifest.",
+    "All38 helper bytes remain unchanged from actual604; fresh56-input guard bundle is fully hashed before metadata publication.",
+    "Completed prior604 active context is archived CreateNew and verified byte-exact only after fresh staging succeeds; new metadata is written to verified temporary then moved into place with before/after/archive checks.",
+    "Backend1537 uses a distinct fresh context/root, actual current604 raw counts and hash maps, whole tests with no skips/deselection and unchanged TMPDIR/locale.",
+    "Historical d466 five fixtures are honestly restricted to source160614/594 and seven unchanged runtime instrumentation files; no current UI/UX/application PASS is inferred."
+  ],
+  "Stage_executed": false,
+  "Linux_executed": false,
+  "source_or_helpers_modified": false,
+  "created_utc": "2026-11-08T19:33:45.9647606Z"
+}

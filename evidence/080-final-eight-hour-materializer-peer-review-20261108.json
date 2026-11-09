@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_final_eight_hour_materializer_peer_review",
+  "status": "readonly_static_ack_pending_remaining_real_gates",
+  "stager": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\stage-final-eight-hour-594-20261108.ps1",
+  "stager_sha256": "89377628f9543c6fd59101c8407694fb5cbca03232d6cdeeab7f46d1f5d709e8",
+  "proof_template": "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\080-final-eight-hour-proof-manifest-template-20261108.json",
+  "proof_template_sha256": "02592dddddfc81ae75af29a65dea40c2d7eb6e90877ca911f9205471e71e8e89",
+  "parser_errors": 0,
+  "new_concrete_blockers": [],
+  "pending_actual_proofs": [
+    "frontend",
+    "queue_copy",
+    "upgrade_smoke"
+  ],
+  "reviewed_contracts": [
+    "Default inert; -Stage performs filesystem preparation only and creates nothing before complete admission",
+    "Canonical actual1508 attestation68ada/receipt9240, observed78778exit0 and immutable source160614 are required",
+    "Actual594 and current5d466 bound; UX/UI own529 instrumentation remains separately qualified, never retagged38",
+    "All8 functional contexts bind exact run/source/runtime, raw receipt hashes, completed Windows exits, supervisor cleanup, boot/native/power and grace",
+    "Native3phaseACK/CAS and account-onlyCopilot evidence checked without reading credentials",
+    "Recall retains original20-case threshold0.9/allcritical/deterministic/originalscore and complete-or-partial statuses; no false20complete claim",
+    "Frontend separate frozen manifest, tests/build/audits; six exact queue jobs and finalv4smoke preservation predicates",
+    "Fresh canonical roots/CreateNew and copied evidence digests; run/root substitutions only",
+    "28800continuous seconds/900cycle, exact localmodels, GPUJSONL required and future finalsoak attestation",
+    "Launch remains false until root serial handoff; eight_hour_qualification remains false"
+  ],
+  "limitations": [
+    "Pending frontend/queue/smoke real result branches cannot be accepted until their actual final reports exist",
+    "This review does not run the materializer or qualify an eight-hour workload"
+  ],
+  "source_helpers_changed": false,
+  "linux_workload_started": false,
+  "stage_executed": false,
+  "credential_or_private_backup_read": false,
+  "created_utc": "2026-11-08T18:09:46.5910509Z"
+}

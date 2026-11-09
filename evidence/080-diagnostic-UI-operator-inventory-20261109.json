@@ -1,0 +1,243 @@
+{
+  "schema_version": 1,
+  "scope": "diagnostic_UI_keyboard_agent_inventory",
+  "created_utc": "2026-11-09T10:55:14.875Z",
+  "run_id": "diag-interactive-sidebar080-20261109T101932Z-4251d02d",
+  "controller_exec_session": 94565,
+  "controller_actual_exit": null,
+  "operator": "agent",
+  "human_reported": false,
+  "diagnostic_only": true,
+  "application_qualified": false,
+  "release_qualified": false,
+  "all_clients_success": false,
+  "overall_UI_passed": false,
+  "source_snapshot": "app080-20261108T222731Z",
+  "source_freeze_sha256": "ad77e00450537294fd26200d0713915689d82ff5a90e65f6c8fb1285fcbb4703",
+  "formal_prerequisites_claimed_passed": false,
+  "initial_findings": {
+    "schema_version": 1,
+    "created_utc": "2026-11-09T10:38:21.130Z",
+    "scope": "diagnostic_interactive_start_findings_not_release_qualification",
+    "run_id": "diag-interactive-sidebar080-20261109T101932Z-4251d02d",
+    "controller_exec_session": 94565,
+    "primary_viewer_exec_session": 67874,
+    "source_snapshot": "app080-20261108T222731Z",
+    "source_freeze_sha256": "ad77e00450537294fd26200d0713915689d82ff5a90e65f6c8fb1285fcbb4703",
+    "codex": {
+      "run_id": "69b38cbee0724bada829c08ffca012d8",
+      "pid": 39685,
+      "birth": "78228",
+      "generation": 1,
+      "lifecycle": "failed",
+      "exit_code": 1,
+      "logical_session_id": "f99d4066-61cd-4277-94ef-5bddc0f689c5",
+      "native_session_id": null,
+      "acknowledged": false,
+      "explicit_Start_work_count": 1,
+      "initial_browse_native_count": 0,
+      "redacted_public_error": "Error: timed out discarding buffered terminal input",
+      "error_class": "terminal_input_timeout",
+      "underlying_cause_proven": false,
+      "CPR_TERM_geometry_auth_usage_cause_proven": false,
+      "native_pane_after_exit": "120x33",
+      "retry_performed": false,
+      "binary_release_directory_version": "0.166.0",
+      "binary_sha256": "b8a11fedf24b2dfb59a70c9e52b030f9a508dcd49cd2dd0d41956f4c785156b8"
+    },
+    "observer_correction": {
+      "description": "Early read-only sampler treated runs.json dictionary as a list after the one Start; assertion corrected without a second Start. No product failure inferred from the observer assertion.",
+      "no_native_operation_retry": true
+    },
+    "claude_first": {
+      "run_id": "10a64cac8c2f4f1c9eff475e12bfcb33",
+      "generation": 1,
+      "lifecycle": "failed",
+      "exit_code": 1,
+      "native_session_id": null,
+      "acknowledged": false,
+      "classification": "operator_cancelled_at_default_No_exit_trust_dialog",
+      "application_failure_claimed": false,
+      "uncertain_model_operation_retried": false
+    },
+    "claude_second": {
+      "run_id": "de197b2e943547afb1f1779cb1c4449e",
+      "pid": 86124,
+      "birth": "132179",
+      "generation": 2,
+      "logical_session_id": "73fa3f4c-a958-4d59-90cb-19ee899a0b47",
+      "native_session_id": "14bef927-4a0b-445d-82b5-1ffe169c4623",
+      "lifecycle": "running",
+      "acknowledged": true,
+      "stale": false,
+      "status": "ready",
+      "root_explicit_gen2_authorized": true,
+      "trust_yes_selection_observed_before_Enter": true,
+      "mcp_approval_scope": "only_current_DevBrain_fixture_server",
+      "all_future_MCP_servers_approved": false
+    },
+    "formal_prerequisites_not_claimed_passed": true,
+    "diagnostic_only": true,
+    "application_qualified": false,
+    "release_qualified": false,
+    "all_clients_success": false,
+    "raw_terminal_buffer_or_credentials_exported": false,
+    "account_queries_by_reviewer": false,
+    "additional_model_prompts_typed": 0
+  },
+  "task_results": {
+    "start": {
+      "status": "failed",
+      "client": "codex",
+      "actual_exit": 1,
+      "public_error": "Error: timed out discarding buffered terminal input",
+      "underlying_cause_proven": false
+    },
+    "switch": {
+      "status": "passed",
+      "proof": {
+        "same_native_run": true,
+        "same_live_pid_birth": true,
+        "same_generation": true,
+        "same_logical_session": true,
+        "same_native_session": true,
+        "acknowledged": true,
+        "native_total": 3,
+        "work_request_empty": true,
+        "handled_request_unchanged": true
+      }
+    },
+    "source": {
+      "status": "passed",
+      "proof": {
+        "source_uri": "ux://A/evidence",
+        "source_marker": "UX_A_ZAZOLC",
+        "opened_in_actual_Memory_Sources_view": true,
+        "official_pass_recorded": true,
+        "read_only_navigation": true
+      }
+    },
+    "connection": {
+      "status": "failed_operator_evidence_not_application_verdict",
+      "saved_reopened_Claude_sonnet": false,
+      "actual_model_readback": null,
+      "label_changed_to_sonnet_observed": true,
+      "same_live_native": true,
+      "native_count": 3,
+      "no_new_Start_or_model_request": true,
+      "premature_official_pass_preserved": true,
+      "official_correction_accepted": false,
+      "reason_correction_not_accepted": "viewer/controller expiry before correction write",
+      "operator_batched_keys_edited_wrong_field": true,
+      "application_save_failure_proven": false
+    },
+    "reconnect": {
+      "status": "passed",
+      "proof": {
+        "actual_clients_empty_after_detach": true,
+        "same_native_run": true,
+        "same_live_pid_birth": true,
+        "same_generation": true,
+        "same_native_session": true,
+        "acknowledged": true,
+        "no_shell_in_user_flow": true
+      }
+    }
+  },
+  "geometries": {
+    "sizes": [
+      "120x36",
+      "80x24",
+      "180x55"
+    ],
+    "official_geometry_events_passed": 3,
+    "root_personally_viewed_genuine_OS_images": 3,
+    "root_visual_review_sha256": "17e18e3ad299da6e10acb8bc86cb94ff45438a8b17e936d670a22fa9b93fb36b",
+    "layout_visual_passed": true,
+    "compact80_note": "Initially nonfocused primary-variant Resume bottom border clipped by scrollviewport with long path. Normal Tab autoscrolled and revealed whole3row button, no newStart; not a proved focus/functional bug.",
+    "focus_view_120_and80": true,
+    "cockpit_view_180_sidebar24_columns": true,
+    "three_images": {
+      "size120": "6262e22c89f982a65507a757d1fc6a69b321a6f19e2fd3d07c07207ebac9989b",
+      "size80": "000f8548b511e708ae186d5b8dd3d9f93cb6d943138ec2720cc48ae32e5688b5",
+      "size180": "c200ba151d53ade55b74c5e4ee27e27b52680c9a9573fe14dad7ff1172824e45"
+    }
+  },
+  "language": {
+    "EN_actual_observed_all3_sizes": true,
+    "manual_PL_toggle_executed": false,
+    "PL_NOT_CLAIMED": true,
+    "reason": "Prioritized independent tasks/photos before deadline; manualPL remains missing in this diagnostic run."
+  },
+  "native_model_warning": {
+    "public_warning_seen_by_root": "could not get prepared packet",
+    "nonfatal": true,
+    "later_real_resume_context_and_ack_verified_ready": true,
+    "cause_unknown": true,
+    "application_bug_proven": false
+  },
+  "operator_errors": [
+    {
+      "code": "initial_native_registry_schema_reader_assertion",
+      "corrected_read_only_without_Start_retry": true
+    },
+    {
+      "code": "Claude_gen1_default_No_exit_selected",
+      "known_outcome_exit1_before_native_session_ACK": true,
+      "application_failure_claimed": false,
+      "root_authorized_fresh_gen2": true
+    },
+    {
+      "code": "task4_premature_pass_before_verification",
+      "readback_model_null_proves_model_change_unverified": true,
+      "raw_official_event_not_modified": true,
+      "external_verdict_failed": true
+    },
+    {
+      "code": "normal_finish_deadline_missed",
+      "requested_finish_target_UTC": "2026-11-09T10:50:00Z",
+      "controller_expiry_UTC": "2026-11-09T10:52:32.257Z",
+      "last_observed_UTC": "2026-11-09T10:53:13Z",
+      "normal_menu9_sent": false
+    }
+  ],
+  "viewer_actual_results": [
+    {
+      "size": "120x36_first",
+      "exec_session": 67874,
+      "actual_exit": 0
+    },
+    {
+      "size": "80x24",
+      "exec_session": 86840,
+      "actual_exit": 0
+    },
+    {
+      "size": "180x55",
+      "exec_session": 58911,
+      "actual_exit": 0
+    },
+    {
+      "size": "120x36_final",
+      "exec_session": 83551,
+      "actual_exit": 1,
+      "reason": "operator controller deadline/expiry"
+    }
+  ],
+  "cleanup_so_far": {
+    "controller_cleanup_complete": true,
+    "external_viewers_actual_exit_verified": true,
+    "oauth_phase_sync": true,
+    "oauth_final_cache_sync": true,
+    "oauth_cache_release": true,
+    "owned_JVM_actual_exit_verified": true,
+    "owned_JVM_returncode": 143,
+    "forced_cleanup": false,
+    "outer_observer_actual_exit_pending": true
+  },
+  "no_new_input_or_models_after_expiry": true,
+  "raw_PASS_FAIL_evidence_preserved": true,
+  "no_historical_results_pooled": true,
+  "no_private_source_credentials_SQL_account_values_or_full_terminal_buffer_exported": true,
+  "eight_hours_started": false
+}

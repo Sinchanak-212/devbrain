@@ -1,0 +1,327 @@
+{
+  "schema_version": 1,
+  "scope": "devbrain_actual_entire_six_private_queue_copy_final",
+  "status": "passed_focused_queue_copy_only",
+  "passed": true,
+  "created_utc": "2026-11-08T20:54:47.9366597Z",
+  "run_id": "queue-copy-length-repair080-20261108T204333Z-d7f0e530",
+  "actual_windows_exec_session": 55674,
+  "actual_windows_exit_code": 0,
+  "root_actual_exit_observation_source": "Root retained exec session55674 actualexit0 explicitly reported before final audit",
+  "cleanup_complete": true,
+  "safe_next_workload": true,
+  "source_snapshot": "app080-20261108T202627Z",
+  "source_freeze_sha256": "1f35dae9f2b3f894bb67535a215e29cba3c1235120ff30daa387bd5450f03e14",
+  "app_prepare_receipt_sha256": "4e18e967ea94bbe43c807e86c65c9d46a2d7205241a9713a7b6406dc8a97526e",
+  "qualified_package_pins_preserved": 59,
+  "app_files_rehashed": 198,
+  "source_bundle_files_rehashed": 209,
+  "actual_controller_code_manifest_files": 153,
+  "actual_controller_manifest_matches_current_guard": true,
+  "isolated_import_and_literal_venv_verified": true,
+  "guard_context_sha256": "0d47b2ea314be36b18749076196693227d91d8395645ad1779a412894582565d",
+  "guard_receipt_sha256": "c2469d14d080ecdf96d42d6dc4c887207a706898ea3681fa5b10749a26113b82",
+  "guard_cases": 604,
+  "helper_map_files_rehashed": 38,
+  "executed_outer_helper_count": 7,
+  "executed_Linux_helper_count": 6,
+  "frozen_inputs_rehashed": 15,
+  "backup_sha256": "698591d33252a1f0e802a01fac78feb90f56ef37fc0c5f717ed26667f635ac70",
+  "all_six_replayed": true,
+  "selected_job_count": 6,
+  "selected_kinds": {
+    "extract": 3,
+    "import": 3
+  },
+  "selected_jobs": [
+    {
+      "attempts": 2,
+      "state": "completed",
+      "previous_attempts": 1,
+      "error_code": null,
+      "kind": "import",
+      "id": "034d96bc-0e0f-45fc-9a29-7dc2470b8bd2",
+      "ordinal": 1,
+      "retry_count": 1
+    },
+    {
+      "attempts": 2,
+      "state": "completed",
+      "previous_attempts": 1,
+      "error_code": null,
+      "kind": "import",
+      "id": "1584c210-6c34-439c-a325-2de7104ea1e6",
+      "ordinal": 2,
+      "retry_count": 1
+    },
+    {
+      "attempts": 2,
+      "state": "completed",
+      "previous_attempts": 1,
+      "error_code": null,
+      "kind": "extract",
+      "diagnostics": {
+        "repair_attempted": false,
+        "model_calls": [
+          {
+            "phase": "initial",
+            "done_reason": "stop",
+            "prompt_eval_count": 832,
+            "eval_count": 1118,
+            "total_duration": 24128217122
+          }
+        ],
+        "budget": {
+          "timeout_seconds": 120.0,
+          "elapsed_seconds": 24.562
+        },
+        "counts": {
+          "candidate_records": 6,
+          "accepted_records": 6,
+          "skipped_records": 0,
+          "written_records": 6
+        },
+        "persistence_stage": "save_diagnostics",
+        "rejection_counts": {
+          "blank_content": 0,
+          "blank_evidence": 0,
+          "quote_absent_source": 0,
+          "reserved_metadata": 0
+        },
+        "code": "ok",
+        "stage": "extract",
+        "repair_outcome": "not_needed",
+        "validation_codes": []
+      },
+      "id": "30bee886-18cb-4a1b-89db-8edc314e1aec",
+      "ordinal": 3,
+      "retry_count": 1
+    },
+    {
+      "attempts": 2,
+      "state": "completed",
+      "previous_attempts": 1,
+      "error_code": null,
+      "kind": "import",
+      "id": "4cae21d0-463d-4bce-ab43-dda2fedd8264",
+      "ordinal": 4,
+      "retry_count": 1
+    },
+    {
+      "attempts": 3,
+      "state": "completed",
+      "previous_attempts": 2,
+      "error_code": null,
+      "kind": "extract",
+      "diagnostics": {
+        "repair_attempted": true,
+        "model_calls": [
+          {
+            "phase": "initial",
+            "done_reason": "length",
+            "prompt_eval_count": 678,
+            "eval_count": 1200,
+            "total_duration": 20375937121
+          },
+          {
+            "phase": "repair",
+            "done_reason": "stop",
+            "prompt_eval_count": 1291,
+            "eval_count": 1275,
+            "total_duration": 21041980940
+          }
+        ],
+        "budget": {
+          "timeout_seconds": 120.0,
+          "elapsed_seconds": 41.668
+        },
+        "counts": {
+          "candidate_records": 6,
+          "accepted_records": 6,
+          "skipped_records": 0,
+          "written_records": 6
+        },
+        "persistence_stage": "save_diagnostics",
+        "rejection_counts": {
+          "blank_content": 0,
+          "blank_evidence": 0,
+          "quote_absent_source": 0,
+          "reserved_metadata": 0
+        },
+        "code": "ok",
+        "stage": "extract",
+        "repair_outcome": "succeeded",
+        "validation_codes": [
+          "output_truncated"
+        ]
+      },
+      "id": "a6d7f6ae-10f6-4388-8086-8f80cfa107d4",
+      "ordinal": 5,
+      "retry_count": 1
+    },
+    {
+      "attempts": 2,
+      "state": "completed",
+      "previous_attempts": 1,
+      "error_code": null,
+      "kind": "extract",
+      "diagnostics": {
+        "repair_attempted": true,
+        "model_calls": [
+          {
+            "phase": "initial",
+            "done_reason": "length",
+            "prompt_eval_count": 676,
+            "eval_count": 1200,
+            "total_duration": 20446833916
+          },
+          {
+            "phase": "repair",
+            "done_reason": "stop",
+            "prompt_eval_count": 1290,
+            "eval_count": 1521,
+            "total_duration": 26835779563
+          }
+        ],
+        "budget": {
+          "timeout_seconds": 120.0,
+          "elapsed_seconds": 47.473
+        },
+        "counts": {
+          "candidate_records": 6,
+          "accepted_records": 6,
+          "skipped_records": 2,
+          "written_records": 4
+        },
+        "persistence_stage": "save_diagnostics",
+        "rejection_counts": {
+          "blank_content": 0,
+          "blank_evidence": 0,
+          "quote_absent_source": 0,
+          "reserved_metadata": 0
+        },
+        "code": "completed_with_omissions",
+        "stage": "extract",
+        "repair_outcome": "succeeded",
+        "validation_codes": [
+          "output_truncated"
+        ]
+      },
+      "id": "bb9187d3-85f8-42ba-8439-be42acc42c1d",
+      "ordinal": 6,
+      "retry_count": 1
+    }
+  ],
+  "attempt_delta_each": 1,
+  "retry_count_each": 1,
+  "unrelated_jobs_unchanged": true,
+  "counts_before": {
+    "sources": 1287,
+    "chunks": 2529,
+    "records": 39,
+    "nodes": 132,
+    "edges": 116,
+    "embeddings": 1931,
+    "projects": 1,
+    "jobs": {
+      "pending": 1221,
+      "running": 0,
+      "completed": 3610,
+      "failed": 6
+    },
+    "archived": 1287,
+    "indexed": 1277,
+    "processed": 117,
+    "unassigned_sources": 0,
+    "inbox": 0,
+    "plans": 1,
+    "sessions": 18,
+    "check_runs": 3
+  },
+  "counts_after": {
+    "sources": 1287,
+    "chunks": 2529,
+    "records": 55,
+    "nodes": 151,
+    "edges": 132,
+    "embeddings": 1931,
+    "projects": 1,
+    "jobs": {
+      "pending": 1221,
+      "running": 0,
+      "completed": 3616,
+      "failed": 0
+    },
+    "archived": 1287,
+    "indexed": 1277,
+    "processed": 120,
+    "unassigned_sources": 0,
+    "inbox": 0,
+    "plans": 1,
+    "sessions": 18,
+    "check_runs": 3
+  },
+  "duplicate_counts_before": {
+    "jobs": 0,
+    "sources": 0
+  },
+  "duplicate_counts_after": {
+    "jobs": 0,
+    "sources": 0
+  },
+  "extracted_records_written": 16,
+  "length_only_repair_real_capacity_exercised_on_jobs": [
+    5,
+    6
+  ],
+  "sixth_completed_with_omissions": true,
+  "sixth_skipped_records": 2,
+  "sixth_omission_classification": "duplicate_content_skip_inferred_from_exhaustive_public_counter_write_paths",
+  "sixth_omission_public_code_evidence": [
+    "agent.py:944 prefilter skipped path requires rejection_counts increment; all four counters0",
+    "agent.py:1030 and1069 are the only remaining skipped_records increments, both duplicate-content checks"
+  ],
+  "no_private_duplicate_content_or_identifiers_inspected": true,
+  "no_zero_omissions_claim": true,
+  "scope_empty_verified": true,
+  "scope_quiet_seconds": 32.695558000000005,
+  "outer_post_exit_seconds": 36,
+  "own_engine_actual_exit_verified": true,
+  "own_engine_returncode": 143,
+  "native_boot_power_sleep_clean": true,
+  "power_sample_count": 9,
+  "maximum_observed_power_gap_seconds": 31,
+  "power_active_guid_and_canonical_settings_checked_every_sample": true,
+  "unobservable_external_process_count": 2,
+  "external_process_origin_proven": false,
+  "cleanup_claim_limited_to_owned_scope": true,
+  "receipt": "C:\\Users\\piotr\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\DevBrain\\qualification\\queue-copy-length-repair080-20261108T204333Z-d7f0e530\\artifacts\\receipt.json",
+  "receipt_sha256": "612fe7ff7b542dc687d8f76a3f890fdd474631dfd5f5694a7db51c6a459f4644",
+  "raw_artifact_sha256": {
+    "probe-scope.stdout.log": "f04789119c7c3f7252fe089bc971a3452bc61765a652964f8fb589a0fc968b62",
+    "power-samples.jsonl": "53eb6c1606e6a6e216d13d89359d97737ec5219f20b6fa8dcace95027178a9b5",
+    "supervisor-exit.json": "b955f0b6ab6aa898c545d383bb72a222da0d08e8ea82bb5840015b85944cc0f0",
+    "probe-boot.stdout.log": "2a7ea5e145e9cad592cdcb94435eb1147b97cc6f66a71775befd8afe17ecfaa3",
+    "mapping-proof.json": "63955ea2f170df8beb96e01fa7ddbcaea4aa228bcd068112c47bdc0fb45c36f2",
+    "controller-report.json": "6917f1b003f485fabc7e66a0fddb831f1038d746a180b572e1361178512bce2b",
+    "receipt.json": "612fe7ff7b542dc687d8f76a3f890fdd474631dfd5f5694a7db51c6a459f4644",
+    "controller.stdout.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "spec.json": "16f680b8d47e5dfd0e5553bbeb266f3f7bd7c364c3fbbf0f26a58cc1bb97ad18",
+    "gate.json": "a6bd365cea68986ed6795990272c766679bbd29fd9407e904a12c2956bcdf7fb",
+    "controller.stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "supervisor-report.json": "12cd7ce0bd2311b473716a3ea0f25651f93dfab5fdf1924309a680f37b5704d4",
+    "probe-kernel.stdout.log": "48967deb1053e43f503859dec55e7c97a7396ba7b771c5d52c635409cfde6c7e"
+  },
+  "raw_PASS_and_cleanup_flags_unmodified": true,
+  "historical_results_pooled": false,
+  "fresh_original_backup_copy": true,
+  "production_modified": false,
+  "production_retry_permitted": false,
+  "application_qualified": false,
+  "release_qualified": false,
+  "current_backend1557_qualified_by_this_report": false,
+  "current_UI_or_UX_qualified_by_this_report": false,
+  "Linux_executed_by_reviewer": false,
+  "backup_or_production_database_read_by_reviewer": false,
+  "raw_model_source_error_SQL_credentials_or_private_source_digests_exported": false
+}

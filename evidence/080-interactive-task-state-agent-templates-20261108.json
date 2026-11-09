@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-11-08T19:51:53.7011178Z",
+  "current_UX_passed": false,
+  "operator": "agent",
+  "source_snapshot": "app080-20261108T192100Z",
+  "required_tasks": 5,
+  "actual_v6_context_sha256": "c0adf65d68f858b03b4c4b72979c7ab73a55d4e76a922034061ec59176acf3f4",
+  "status": "prepared_not_run_pending_current_prerequisites",
+  "required_observations": 8,
+  "source_freeze_sha256": "0f46007731a08309644cc46a7bb28a3d57b6d6693e7f470593d87e5cfa773613",
+  "application_qualified": false,
+  "current_backend_passed": false,
+  "app_prepare_receipt_sha256": "c9034ec96e53b320e2ec6fc29a7f1bcb492a35b9c8fc8353b6047891c2649f63",
+  "launch_permitted": false,
+  "files": {
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\interactive-task-state-agent-templates-20261108\\interactive.context.template.json": "eb84501f67432e727b2fff2e63906cb22f707bd2360b42d5647fa0fccc13dd14",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\interactive-task-state-agent-templates-20261108\\operator-protocol.json": "054b1795dead1de89fac3faebd1596b1d223c86ffa0b2f1e42f12e9319e39392",
+    "C:\\Users\\piotr\\OneDrive\\Dokumenty\\ChatGPT\\devbrain\\evidence\\interactive-task-state-agent-templates-20261108\\interactive.spec.template.json": "0a4886b18c0e67350ff420d2adffe8ea57d08f683cb595a5065bff8be2aea8c6"
+  },
+  "current_queue_passed": false,
+  "schema_version": 1,
+  "actual604_receipt_sha256": "4cd621cdeea918ca9f67c405f463fe1ac1be47546009e39c542b4ad1bbeb6e36",
+  "required_sizes": 3,
+  "credentials_read": false,
+  "Linux_executed": false,
+  "scope": "devbrain_fresh_interactive_task_state_templates",
+  "human_reported": false
+}
